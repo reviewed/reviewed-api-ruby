@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/websites/50241b9c5da4ac8d38000001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - bdc3228106bfcfd2a324957b7f2afb6c
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Cache-Control:
+      - no-cache, no-store
+      X-Rate-Limit:
+      - '100000'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"6d5f9d547742f98cef111e50d7be45fb"'
+      X-Request-Id:
+      - 55e12d2c299e1fc292992fdaff01eef8
+      X-Runtime:
+      - '0.018187'
+      Connection:
+      - close
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"50241b9c5da4ac8d38000001","article_ids":[],"code":"tst","created_at":"2012-08-09T20:20:45Z","name":"test
+        website","updated_at":"2012-08-09T20:20:45Z","url":"http://localhost:3000"}'
+    http_version: 
+  recorded_at: Thu, 09 Aug 2012 22:09:13 GMT
+recorded_with: VCR 2.2.4
