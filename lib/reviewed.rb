@@ -2,10 +2,16 @@ $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'active_support/core_ext'
 require 'rest_client'
+require 'forwardable'
 
 require 'reviewed/version'
+require 'reviewed/util'
 require 'reviewed/base'
+require 'reviewed/collection'
+
 require 'reviewed/website'
+require 'reviewed/product'
+require 'reviewed/article'
 
 module Reviewed
   class ConfigurationError < StandardError; end
@@ -29,5 +35,13 @@ module Reviewed
 
   def self.base_uri
     @@config[:base_uri]
+  end
+
+  def self.verify_key!
+    if Reviewed.api_key.present?
+      true
+    else
+      raise ConfigurationError.new("Please set Reviewed.api_key before making a request")
+    end
   end
 end

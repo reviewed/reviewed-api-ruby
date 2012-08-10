@@ -42,9 +42,9 @@ http_interactions:
       Etag:
       - ! '"6d5f9d547742f98cef111e50d7be45fb"'
       X-Request-Id:
-      - 55e12d2c299e1fc292992fdaff01eef8
+      - 889e93b902eb15ac7b43b507c436f302
       X-Runtime:
-      - '0.018187'
+      - '0.018828'
       Connection:
       - close
       Server:
@@ -54,5 +54,5 @@ http_interactions:
       string: ! '{"id":"50241b9c5da4ac8d38000001","article_ids":[],"code":"tst","created_at":"2012-08-09T20:20:45Z","name":"test
         website","updated_at":"2012-08-09T20:20:45Z","url":"http://localhost:3000"}'
     http_version: 
-  recorded_at: Thu, 09 Aug 2012 22:09:13 GMT
+  recorded_at: Fri, 10 Aug 2012 21:31:18 GMT
 recorded_with: VCR 2.2.4

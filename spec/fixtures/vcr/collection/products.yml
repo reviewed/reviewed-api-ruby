@@ -1,0 +1,363 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - bdc3228106bfcfd2a324957b7f2afb6c
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Cache-Control:
+      - no-cache, no-store
+      X-Rate-Limit:
+      - '100000'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"8f0361baf4590b10a275d412216482ad"'
+      X-Request-Id:
+      - 5c24b62438ba1ebc3b487f1c25c28ce0
+      X-Runtime:
+      - '0.192603'
+      Connection:
+      - close
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: !ruby/string
+        str: ! '{"pagination":{"total":1000,"total_pages":50,"first_page":true,"last_page":false,"previous_page":0,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1},"data":[{"id":"5022e5425da4ac7d4f00042c","created_at":"2012-08-08T22:16:34Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 500","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":9},"b":{"value":499,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:34Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5415da4ac7d4f00042b","created_at":"2012-08-08T22:16:33Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 500","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3992,"weight":2},"b":{"value":1996,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:33Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5415da4ac7d4f00042a","created_at":"2012-08-08T22:16:33Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 499","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2,"weight":4},"b":{"value":0,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:33Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000429","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 499","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1992,"weight":1},"b":{"value":1992,"weight":6}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000428","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 498","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":4},"b":{"value":0,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000427","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 498","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":994,"weight":0},"b":{"value":4473,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53f5da4ac7d4f000426","created_at":"2012-08-08T22:16:31Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 497","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":2},"b":{"value":1488,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:31Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53f5da4ac7d4f000425","created_at":"2012-08-08T22:16:31Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 497","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1984,"weight":9},"b":{"value":1488,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:31Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53e5da4ac7d4f000424","created_at":"2012-08-08T22:16:30Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 496","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":4},"b":{"value":1980,"weight":6}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:30Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53e5da4ac7d4f000423","created_at":"2012-08-08T22:16:30Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 496","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2970,"weight":4},"b":{"value":3465,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:30Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000422","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 495","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":7,"weight":7},"b":{"value":4446,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000421","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 495","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1482,"weight":7},"b":{"value":988,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000420","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 494","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":5},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f00041f","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 494","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3944,"weight":5},"b":{"value":2958,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f00041e","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 493","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4,"weight":4},"b":{"value":3444,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53c5da4ac7d4f00041d","created_at":"2012-08-08T22:16:28Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 493","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3444,"weight":9},"b":{"value":2460,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:28Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53c5da4ac7d4f00041c","created_at":"2012-08-08T22:16:28Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 492","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3,"weight":8},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:28Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53b5da4ac7d4f00041b","created_at":"2012-08-08T22:16:27Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 492","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1473,"weight":8},"b":{"value":982,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:27Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53a5da4ac7d4f00041a","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 491","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":8},"b":{"value":980,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53a5da4ac7d4f000419","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 491","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":980,"weight":2},"b":{"value":3430,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}]}'
+        net_http_res: &70120202709540 !ruby/object:Net::HTTPOK
+          http_version: '1.0'
+          code: '200'
+          message: OK
+          header:
+            access-control-allow-origin:
+            - ! '*'
+            access-control-allow-methods:
+            - OPTIONS, GET, POST, PUT, DELETE
+            access-control-max-age:
+            - '1000'
+            access-control-allow-credentials:
+            - 'true'
+            access-control-allow-headers:
+            - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+              Content-Type
+            cache-control:
+            - no-cache, no-store
+            x-rate-limit:
+            - '100000'
+            content-type:
+            - application/json; charset=utf-8
+            x-ua-compatible:
+            - IE=Edge
+            etag:
+            - ! '"8f0361baf4590b10a275d412216482ad"'
+            x-request-id:
+            - 5c24b62438ba1ebc3b487f1c25c28ce0
+            x-runtime:
+            - '0.192603'
+            connection:
+            - close
+            server:
+            - thin 1.4.1 codename Chromeo
+          body: !ruby/string
+            str: ! '{"pagination":{"total":1000,"total_pages":50,"first_page":true,"last_page":false,"previous_page":0,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1},"data":[{"id":"5022e5425da4ac7d4f00042c","created_at":"2012-08-08T22:16:34Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 500","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":9},"b":{"value":499,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:34Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5415da4ac7d4f00042b","created_at":"2012-08-08T22:16:33Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 500","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3992,"weight":2},"b":{"value":1996,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:33Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5415da4ac7d4f00042a","created_at":"2012-08-08T22:16:33Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 499","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2,"weight":4},"b":{"value":0,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:33Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000429","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 499","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1992,"weight":1},"b":{"value":1992,"weight":6}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000428","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 498","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":4},"b":{"value":0,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000427","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 498","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":994,"weight":0},"b":{"value":4473,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53f5da4ac7d4f000426","created_at":"2012-08-08T22:16:31Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 497","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":2},"b":{"value":1488,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:31Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53f5da4ac7d4f000425","created_at":"2012-08-08T22:16:31Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 497","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1984,"weight":9},"b":{"value":1488,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:31Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53e5da4ac7d4f000424","created_at":"2012-08-08T22:16:30Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 496","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":4},"b":{"value":1980,"weight":6}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:30Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53e5da4ac7d4f000423","created_at":"2012-08-08T22:16:30Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 496","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2970,"weight":4},"b":{"value":3465,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:30Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000422","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 495","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":7,"weight":7},"b":{"value":4446,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000421","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 495","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1482,"weight":7},"b":{"value":988,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000420","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 494","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":5},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f00041f","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 494","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3944,"weight":5},"b":{"value":2958,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f00041e","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 493","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4,"weight":4},"b":{"value":3444,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53c5da4ac7d4f00041d","created_at":"2012-08-08T22:16:28Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 493","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3444,"weight":9},"b":{"value":2460,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:28Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53c5da4ac7d4f00041c","created_at":"2012-08-08T22:16:28Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 492","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3,"weight":8},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:28Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53b5da4ac7d4f00041b","created_at":"2012-08-08T22:16:27Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 492","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1473,"weight":8},"b":{"value":982,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:27Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53a5da4ac7d4f00041a","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 491","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":8},"b":{"value":980,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53a5da4ac7d4f000419","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 491","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":980,"weight":2},"b":{"value":3430,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}]}'
+            net_http_res: *70120202709540
+            args: &70120204032600
+              :method: :get
+              :url: http://localhost:3000/api/v1/products
+              :headers:
+                X-Reviewed-Authorization: bdc3228106bfcfd2a324957b7f2afb6c
+                accept: json
+            code: 200
+          read: true
+          __read_body_previously_called: true
+        args: *70120204032600
+        code: 200
+    http_version: 
+  recorded_at: Fri, 10 Aug 2012 21:31:50 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/products?page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - bdc3228106bfcfd2a324957b7f2afb6c
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Cache-Control:
+      - no-cache, no-store
+      X-Rate-Limit:
+      - '100000'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"762018ce77df5b419e19617ddf9aaa8b"'
+      X-Request-Id:
+      - 08e8be4a172c5c30732f50e996ce58e8
+      X-Runtime:
+      - '0.103375'
+      Connection:
+      - close
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: !ruby/string
+        str: ! '{"pagination":{"total":1000,"total_pages":50,"first_page":false,"last_page":false,"previous_page":1,"next_page":3,"out_of_bounds":false,"offset":20,"current_page":2},"data":[{"id":"5022e53a5da4ac7d4f000418","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 490","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4,"weight":1},"b":{"value":1467,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000417","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 490","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1467,"weight":9},"b":{"value":3912,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000416","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 489","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":9,"weight":5},"b":{"value":1464,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000415","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 489","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2928,"weight":9},"b":{"value":4392,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000414","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 488","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":6,"weight":4},"b":{"value":487,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000413","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 488","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1948,"weight":3},"b":{"value":2922,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000412","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 487","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":5,"weight":8},"b":{"value":972,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000411","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 487","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1458,"weight":3},"b":{"value":4374,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f000410","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 486","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3,"weight":2},"b":{"value":3395,"weight":4}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040f","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 486","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1940,"weight":2},"b":{"value":0,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040e","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 485","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":6,"weight":4},"b":{"value":484,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040d","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 485","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2904,"weight":3},"b":{"value":3872,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040c","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 484","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":2},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040b","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 484","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1932,"weight":7},"b":{"value":483,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040a","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 483","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":6,"weight":4},"b":{"value":482,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000409","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 483","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4338,"weight":5},"b":{"value":4338,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000408","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 482","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":9,"weight":1},"b":{"value":3848,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000407","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 482","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1443,"weight":9},"b":{"value":1443,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000406","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+          Super Foo 481","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":5},"b":{"value":3360,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000405","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+          Foo 481","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4320,"weight":1},"b":{"value":1920,"weight":4}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}]}'
+        net_http_res: &70120198453240 !ruby/object:Net::HTTPOK
+          http_version: '1.0'
+          code: '200'
+          message: OK
+          header:
+            access-control-allow-origin:
+            - ! '*'
+            access-control-allow-methods:
+            - OPTIONS, GET, POST, PUT, DELETE
+            access-control-max-age:
+            - '1000'
+            access-control-allow-credentials:
+            - 'true'
+            access-control-allow-headers:
+            - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+              Content-Type
+            cache-control:
+            - no-cache, no-store
+            x-rate-limit:
+            - '100000'
+            content-type:
+            - application/json; charset=utf-8
+            x-ua-compatible:
+            - IE=Edge
+            etag:
+            - ! '"762018ce77df5b419e19617ddf9aaa8b"'
+            x-request-id:
+            - 08e8be4a172c5c30732f50e996ce58e8
+            x-runtime:
+            - '0.103375'
+            connection:
+            - close
+            server:
+            - thin 1.4.1 codename Chromeo
+          body: !ruby/string
+            str: ! '{"pagination":{"total":1000,"total_pages":50,"first_page":false,"last_page":false,"previous_page":1,"next_page":3,"out_of_bounds":false,"offset":20,"current_page":2},"data":[{"id":"5022e53a5da4ac7d4f000418","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 490","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4,"weight":1},"b":{"value":1467,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000417","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 490","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1467,"weight":9},"b":{"value":3912,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000416","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 489","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":9,"weight":5},"b":{"value":1464,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000415","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 489","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2928,"weight":9},"b":{"value":4392,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000414","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 488","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":6,"weight":4},"b":{"value":487,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000413","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 488","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1948,"weight":3},"b":{"value":2922,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000412","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 487","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":5,"weight":8},"b":{"value":972,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5395da4ac7d4f000411","created_at":"2012-08-08T22:16:25Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 487","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1458,"weight":3},"b":{"value":4374,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:25Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f000410","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 486","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3,"weight":2},"b":{"value":3395,"weight":4}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040f","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 486","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1940,"weight":2},"b":{"value":0,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040e","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 485","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":6,"weight":4},"b":{"value":484,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040d","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 485","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2904,"weight":3},"b":{"value":3872,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040c","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 484","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":2},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040b","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 484","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1932,"weight":7},"b":{"value":483,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5385da4ac7d4f00040a","created_at":"2012-08-08T22:16:24Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 483","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":6,"weight":4},"b":{"value":482,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:24Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000409","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 483","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4338,"weight":5},"b":{"value":4338,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000408","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 482","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":9,"weight":1},"b":{"value":3848,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000407","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 482","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1443,"weight":9},"b":{"value":1443,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000406","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+              Super Foo 481","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":5},"b":{"value":3360,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5375da4ac7d4f000405","created_at":"2012-08-08T22:16:23Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+              Foo 481","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4320,"weight":1},"b":{"value":1920,"weight":4}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:23Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}]}'
+            net_http_res: *70120198453240
+            args: &70120203201280
+              :method: :get
+              :url: http://localhost:3000/api/v1/products?page=2
+              :headers:
+                X-Reviewed-Authorization: bdc3228106bfcfd2a324957b7f2afb6c
+                accept: json
+            code: 200
+          read: true
+          __read_body_previously_called: true
+        args: *70120203201280
+        code: 200
+    http_version: 
+  recorded_at: Fri, 10 Aug 2012 21:31:50 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/products?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - bdc3228106bfcfd2a324957b7f2afb6c
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Cache-Control:
+      - no-cache, no-store
+      X-Rate-Limit:
+      - '100000'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"8f0361baf4590b10a275d412216482ad"'
+      X-Request-Id:
+      - 8dab0aed1d557a96e93d4718ca57a280
+      X-Runtime:
+      - '0.191819'
+      Connection:
+      - close
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"total":1000,"total_pages":50,"first_page":true,"last_page":false,"previous_page":0,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1},"data":[{"id":"5022e5425da4ac7d4f00042c","created_at":"2012-08-08T22:16:34Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 500","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":9},"b":{"value":499,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:34Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5415da4ac7d4f00042b","created_at":"2012-08-08T22:16:33Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 500","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3992,"weight":2},"b":{"value":1996,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:33Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5415da4ac7d4f00042a","created_at":"2012-08-08T22:16:33Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 499","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2,"weight":4},"b":{"value":0,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:33Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000429","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 499","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1992,"weight":1},"b":{"value":1992,"weight":6}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000428","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 498","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":4},"b":{"value":0,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e5405da4ac7d4f000427","created_at":"2012-08-08T22:16:32Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 498","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":994,"weight":0},"b":{"value":4473,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:32Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53f5da4ac7d4f000426","created_at":"2012-08-08T22:16:31Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 497","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":2},"b":{"value":1488,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:31Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53f5da4ac7d4f000425","created_at":"2012-08-08T22:16:31Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 497","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1984,"weight":9},"b":{"value":1488,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:31Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53e5da4ac7d4f000424","created_at":"2012-08-08T22:16:30Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 496","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":4},"b":{"value":1980,"weight":6}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:30Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53e5da4ac7d4f000423","created_at":"2012-08-08T22:16:30Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 496","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":2970,"weight":4},"b":{"value":3465,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:30Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000422","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 495","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":7,"weight":7},"b":{"value":4446,"weight":8}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000421","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 495","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1482,"weight":7},"b":{"value":988,"weight":0}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f000420","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 494","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":8,"weight":5},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f00041f","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 494","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3944,"weight":5},"b":{"value":2958,"weight":5}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53d5da4ac7d4f00041e","created_at":"2012-08-08T22:16:29Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 493","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":4,"weight":4},"b":{"value":3444,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:29Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53c5da4ac7d4f00041d","created_at":"2012-08-08T22:16:28Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 493","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3444,"weight":9},"b":{"value":2460,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:28Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53c5da4ac7d4f00041c","created_at":"2012-08-08T22:16:28Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 492","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":3,"weight":8},"b":{"value":0,"weight":7}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:28Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53b5da4ac7d4f00041b","created_at":"2012-08-08T22:16:27Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 492","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1473,"weight":8},"b":{"value":982,"weight":1}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:27Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53a5da4ac7d4f00041a","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":10,"optical":true},"name":"Canon
+        Super Foo 491","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":1,"weight":8},"b":{"value":980,"weight":9}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::DSLR","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"5022e53a5da4ac7d4f000419","created_at":"2012-08-08T22:16:26Z","manufacturer_specs":{"depth":null,"height":null,"width":null,"original_price":null,"zoom":5,"optical":false},"name":"Canon
+        Foo 491","product_rating":null,"raw_rating":null,"raw_scores":{"a":{"value":980,"weight":2},"b":{"value":3430,"weight":2}},"scaled_scores":{},"updated_at":"2012-08-08T22:16:26Z","website_ids":[],"_type":"Electronics::Cameras::PointAndShoot","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}]}'
+    http_version: 
+  recorded_at: Fri, 10 Aug 2012 21:31:50 GMT
+recorded_with: VCR 2.2.4

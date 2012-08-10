@@ -38,9 +38,9 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 851ecdfe92dc4d35a6d5935c64eaf0da
+      - b45a268e56c5bad1e8f9b346c0e058a7
       X-Runtime:
-      - '0.007239'
+      - '0.006819'
       Connection:
       - close
       Server:
@@ -49,7 +49,7 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"message":"Api Key not found"}'
     http_version: 
-  recorded_at: Thu, 09 Aug 2012 22:09:13 GMT
+  recorded_at: Fri, 10 Aug 2012 21:31:18 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/websites/notfound
@@ -90,9 +90,9 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 8b7483d3b0033028fe8278c95b2c9fff
+      - c8427c959971e091f375af7347fbb013
       X-Runtime:
-      - '0.017105'
+      - '0.015706'
       Connection:
       - close
       Server:
@@ -101,5 +101,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"message":"Record Not Found"}'
     http_version: 
-  recorded_at: Thu, 09 Aug 2012 22:09:13 GMT
+  recorded_at: Fri, 10 Aug 2012 21:31:18 GMT
 recorded_with: VCR 2.2.4

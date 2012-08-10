@@ -1,6 +1,6 @@
 module Reviewed
   class Base
-    attr_accessor :raw_response
+    attr_accessor :raw_response, :resource_url
 
     def initialize(attributes={}, raw_response=nil)
       attributes.symbolize_keys!
@@ -14,22 +14,34 @@ module Reviewed
     end
 
     def method_missing(sym, *args, &block)
-      @attributes[sym]
+      if @attributes.has_key?(sym)
+        @attributes[sym]
+      else
+        raise NoMethodError.new("undefined method '#{sym}' for #{to_s}")
+      end
     end
 
     def self.find(id)
-      unless Reviewed.api_key.present?
-        raise ConfigurationError.new("Please set Reviewed.api_key before making a request")
-      end
-
-      headers = {}
-      headers['X-Reviewed-Authorization'] = Reviewed.api_key
-      headers['accept'] = 'json'
-      url = "#{Reviewed.base_uri}/#{API_VERSION}/#{resource_name.pluralize}/#{id}"
+      Reviewed.verify_key!
 
       begin
-        response = RestClient.get(url, headers)
+        response = RestClient.get(resource_url(id), Util.build_request_headers)
         new(JSON.parse(response), response)
+      rescue RestClient::Exception => e
+        raise ResourceError.new(e.message)
+      end
+    end
+
+    def self.all
+      where({})
+    end
+
+    def self.where(options={})
+      Reviewed.verify_key!
+
+      begin
+        response = RestClient.get(resource_url(nil, options), Util.build_request_headers)
+        Collection.new(self, response, options)
       rescue RestClient::Exception => e
         raise ResourceError.new(e.message)
       end
@@ -41,6 +53,12 @@ module Reviewed
 
     def self.resource_name
       @resource_name ||= self.name.split('::').last.downcase
+    end
+
+    def self.resource_url(id=nil, options={})
+      url = [Reviewed.base_uri, API_VERSION, resource_name.pluralize, id].compact.join("/")
+      query_string = Util.build_query_string(options)
+      query_string.blank? ? url : "#{url}?#{query_string}"
     end
   end
 end
