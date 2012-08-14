@@ -17,7 +17,7 @@ module Reviewed
       if @attributes.has_key?(sym)
         @attributes[sym]
       else
-        raise NoMethodError.new("undefined method '#{sym}' for #{to_s}")
+        super
       end
     end
 
