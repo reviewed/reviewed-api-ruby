@@ -10,7 +10,7 @@ module Reviewed
       end
 
       @raw_response = raw_response
-      @attributes = attributes
+      @attributes = Hashie::Mash.new(attributes)
     end
 
     def method_missing(sym, *args, &block)
