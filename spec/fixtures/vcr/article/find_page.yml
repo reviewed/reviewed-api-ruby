@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/articles/minden-master-ii-grill-review
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - bdc3228106bfcfd2a324957b7f2afb6c
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Cache-Control:
+      - no-cache, no-store
+      X-Rate-Limit:
+      - '100000'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"6481b5f397fed0b1d34ffcbf9edee263"'
+      X-Request-Id:
+      - 20a37c7758f3809a3bbf0dd65e9c15ba
+      X-Runtime:
+      - '0.691402'
+      Connection:
+      - close
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"50346c3d60de7d1bee006023","name":"Minden Master II Grill Review","slug":"minden-master-ii-grill-review","summary":null,"website_ids":["5033da7960de7d6457000012"],"tags":[],"created_at":"2012-05-15T21:15:16Z","updated_at":"2012-05-18T19:34:54Z","pages":[{"id":"50346c3d60de7d1bee006024","name":"Introduction","slug":"minden-master-ii-grill-review","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[{"id":"50346c3d60de7d1bee006025","name":"Introduction","body":"Though
+        the <r:product:name /> ($479 MSRP) turned in solid performance numbers, it''s
+        missing features and controls that similar-priced grills include. This grill
+        actually had one of the fastest heatup times of the grills we''ve tested and
+        was consistent and efficient on its high-fire setting. ","notes":"","created_at":null,"updated_at":null}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"50346c3d60de7d1bee006026","name":"Design","slug":"minden-master-ii-grill-review/design","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[{"id":"50346c3d60de7d1bee006027","name":"Design
+        Summary","body":"The <r:product:name /> is decent-sized grill with pretty
+        normal design, with the exception of its green coating.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006028","name":"Controls
+        2","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006029","name":"Controls
+        3","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00602a","name":"Main
+        Grilling Area 2","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00602b","name":"Warming
+        Area 2","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00602c","name":"Side
+        Area","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00602d","name":"Side
+        Area 2","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00602e","name":"Side
+        Area 3","body":null,"notes":null,"created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00602f","name":"Thermometer
+        2","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006030","name":"Product
+        Tour","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006031","name":"Controls","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006032","name":"Main
+        Grilling Area","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006033","name":"Warming
+        Area","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006034","name":"Side
+        Areas","body":null,"notes":null,"created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006035","name":"Thermometer","body":"","notes":"","created_at":null,"updated_at":null}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"50346c3d60de7d1bee006036","name":"Performance","slug":"minden-master-ii-grill-review/performance","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[{"id":"50346c3d60de7d1bee006037","name":"Performance
+        Summary","body":"You''ll get superb heat-up time and good high and low temperature
+        performance from the <r:product:name />.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006038","name":"Heatup
+        Time Description","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006039","name":"Low
+        Temperature Cooking Performance","body":"At just less than 10 minutes to cook
+        our test patties, the <r:product:name /> performed capably on the grill''s
+        low-fire setting. It also achieved solid consistency across the three burners
+        as there wasn''t too much deviation in temperature.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00603a","name":"Low
+        Temperature Uniformity","body":"With the exception of one thermocouple on
+        the left, there wasn''t too much deviation across the grill surface. Most
+        areas on the surface were from 615-650 degrees.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00603b","name":"Low
+        Temperature Consistency","body":"Consistency on the \t<r:product:name /> wasn''t
+        great, as the middle of the grill reached a high of 708 and a low of 539 degrees.
+        This will affect users because they may have steaks that are done on one part
+        and others that need more time.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00603c","name":"High
+        Temperature Cooking Performance","body":"You''ll need less than 8 minutes,
+        which is well below average and a great time, to cook up hamburger patties
+        while cooking on high temperature.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00603d","name":"High
+        Temperature Uniformity","body":"The <r:product:name /> cooks with relative
+        uniformity. We didn''t see too much of a variation in temperatures on the
+        cooking area.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00603e","name":"High
+        Temperature Consistency","body":"One thing you won''t need to worry about
+        with the <r:product:name /> is burner consistency. Almost all thermocouples
+        were within 20 degrees of each other.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00603f","name":"Warming
+        Tray","body":null,"notes":null,"created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006040","name":"Lid
+        & Handle Temperature","body":"The allowable temperature for the outside of
+        a grill is 131 degrees. Unfortunately for the <r:product:name />, all of the
+        thermocouples we placed on the outside were higher than that. Furthermore,
+        one of them reached a whopping 147 degrees. You may want to use gloves when
+        using this grill.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006041","name":"Output
+        & Fuel Life Description","body":"","notes":"","created_at":null,"updated_at":null}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"50346c3d60de7d1bee006042","name":"Features
+        & Usability","slug":"minden-master-ii-grill-review/features-and-usability","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[{"id":"50346c3d60de7d1bee006043","name":"Features
+        & Usability Summary","body":"The <r:product:name /> is pretty intuitive, but
+        cleaning isn''t easy.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006044","name":"Controls
+        2","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006045","name":"Controls
+        3","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006046","name":"Controls
+        Description","body":"There are three black plastic burner buttons on the front
+        of the <r:product:name /> and a red automatic ignition button on the right.
+        Don''t worry about turning these on by accident, because you need to press
+        down on the burner buttons to turn the gas on.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006047","name":"Fuel
+        Description","body":"The <r:product:name /> uses liquid propane for fuel.
+        The easy-to-use regulator is included and under the grilling area is storage
+        space where the 20-pound propane canister fits. You''ll need to go through
+        the back of the grill to remove the tank.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006048","name":"Lighter
+        Description","body":"The red ignition button on the right will click loudly
+        when you press it.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006049","name":"Cooking
+        Area Description","body":"The \t<r:product:name />''s primary cooking surface
+        is 365 square inches, which isn''t the biggest size we''ve seen but it won''t
+        prevent you from cooking a bunch of burgers at once either. There is a single
+        grate and it''s a bit heavy and not easy to remove for cleaning.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00604a","name":"Warming
+        Area Description","body":"The warming tray is located at the back of the grilling
+        area and can''t be removed for cleaning.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00604b","name":"Other
+        Areas Description","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00604c","name":"Cleanup
+        Description","body":"There''s just the single grate on top of the burners
+        that''s heavy and hard to remove. Once you do get it off the grill, though,
+        it''s easy to just wipe down the grease trays that cover the burners. The
+        grease funnels into a tray that you can pull out of the back by grabbing the
+        wooden handle that protrudes from the back of the grill.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00604d","name":"Other
+        Features Description","body":"You''ll have access to a food tray/chopping
+        block on the right and by lifting up the tray on the left, you''ll see the
+        tool storage compartment. Both sides also have hooks for tool storage. On
+        the top of the grill is a thermometer that reaches 600 degrees. If you''re
+        looking to move the grill, keep in mind that though it has solid wheels, it''s
+        somewhat heavy to wheel around.\n","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee00604e","name":"Construction
+        Description","body":null,"notes":null,"created_at":null,"updated_at":null}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"50346c3d60de7d1bee006052","name":"Conclusion","slug":"minden-master-ii-grill-review/conclusion","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[{"id":"50346c3d60de7d1bee006053","name":"Conclusion
+        Summary","body":"","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006054","name":"Conclusion
+        Performance","body":"Overall, this is a decent grill, but you may be able
+        to get similarly-performing grills at a cheaper price.","notes":"","created_at":null,"updated_at":null},{"id":"50346c3d60de7d1bee006055","name":"Conclusion
+        Usability","body":"","notes":"","created_at":null,"updated_at":null}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"50346c3d60de7d1bee006056","name":"Specs
+        & Ratings","slug":"minden-master-ii-grill-review/specs-and-ratings","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"50346c3d60de7d1bee006057","name":"Snippets","slug":"minden-master-ii-grill-review/snippets","summary":"summary","created_at":"2012-08-22T05:21:01Z","updated_at":"2012-08-22T05:21:01Z","sections":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"products":[{"id":"5033f4c3aee356ccd7a50252","name":"Master
+        II","_type":"Home::Grills::Gas","product_rating":null,"manufacturer_specs":{"brand_name":"(Minden)","manufacturer_name":"Minden","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","publishable_on":"2012-05-18T19:34:00Z","Fuel":["LP
+        Gas"],"Install Type":"Freestanding","Finish or Color":"Green","Side Burner":"No","Rotisserie":"No","Original
+        Price":479.0},"article_ids":["503465e360de7db4e5006275","50346c3d60de7d1bee006023"],"created_at":"2012-05-15T21:12:15Z","updated_at":"2012-08-22T05:21:01Z","attachments":[],"brand":null,"raw_scores":{},"scaled_scores":{},"rateable":"unrateable","rateable?":true,"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"authors":[],"attachments":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}'
+    http_version: 
+  recorded_at: Wed, 22 Aug 2012 18:32:54 GMT
+recorded_with: VCR 2.2.4
