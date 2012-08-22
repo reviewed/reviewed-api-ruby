@@ -2,7 +2,7 @@ module Reviewed
   class Collection
     include Enumerable
     extend Forwardable
-    def_delegators :@items, :<<, :[], :[]=, :each, :first, :last, :concat, :map, :collect, :empty?
+    def_delegators :@items, :<<, :[], :[]=, :each, :first, :last, :length, :concat, :map, :collect, :empty?
 
     attr_accessor :raw_response
 
