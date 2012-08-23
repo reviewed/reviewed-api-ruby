@@ -12,6 +12,7 @@ require 'reviewed/collection'
 
 require 'reviewed/website'
 require 'reviewed/product'
+require 'reviewed/author'
 require 'reviewed/article'
 
 module Reviewed
