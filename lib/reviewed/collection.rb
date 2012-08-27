@@ -4,6 +4,8 @@ module Reviewed
     extend Forwardable
     def_delegators :@items, :<<, :[], :[]=, :each, :first, :last, :length, :concat, :map, :collect, :empty?
 
+    PER_PAGE = 20
+
     attr_accessor :raw_response
 
     def initialize(klass, json, options={})
@@ -22,6 +24,18 @@ module Reviewed
       @klass = klass
     end
 
+    def limit_value
+      PER_PAGE
+    end
+
+    def num_pages
+      total_pages
+    end
+
+    def total_count
+      total
+    end
+
     def next_page
       return nil if @page_attributes[:last_page]
       fetch_page(@page_attributes[:next_page])
@@ -37,8 +51,9 @@ module Reviewed
     end
 
     def method_missing(sym, *args, &block)
-      if @page_attributes.has_key?(sym)
-        @page_attributes[sym]
+      clean_sym = sym.to_s.gsub(/\?/, '').to_sym
+      if @page_attributes.has_key?(clean_sym)
+        @page_attributes[clean_sym]
       else
         super
       end
