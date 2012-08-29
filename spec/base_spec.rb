@@ -6,7 +6,7 @@ module Reviewed
 end
 
 module Reviewed
-  class Product < Base
+  class Article < Base
   end
 end
 
@@ -30,7 +30,7 @@ describe Reviewed::Base do
 
   describe 'find' do
     before(:each) do
-      Reviewed::Example.resource_name = 'website' # test
+      Reviewed::Example.resource_name = 'article' # test
     end
 
     it 'raises an error if the api key is not set' do
@@ -45,15 +45,15 @@ describe Reviewed::Base do
       use_vcr_cassette 'base/find_ok'
 
       it 'fetches content from the api' do
-        model = Reviewed::Example.find('50241b9c5da4ac8d38000001')
+        model = Reviewed::Example.find('5036d7dd60de7d2065075752')
         model.raw_response.should_not be_nil
       end
 
       it 'parses response json and returns an object' do
-        model = Reviewed::Example.find('50241b9c5da4ac8d38000001')
+        model = Reviewed::Example.find('5036d7dd60de7d2065075752')
         model.class.should == Reviewed::Example
-        model.id.should == '50241b9c5da4ac8d38000001'
-        model.name.should == 'test website'
+        model.id.should == '5036d7dd60de7d2065075752'
+        model.name.should == 'Fast Appliances To Save You Time'
       end
     end
 
@@ -80,24 +80,24 @@ describe Reviewed::Base do
     use_vcr_cassette 'base/where_collection'
 
     it 'returns a collection' do
-      collection = Reviewed::Product.all
+      collection = Reviewed::Article.all
       collection.class.should == Reviewed::Collection
     end
 
     it 'returns the appropriate page of results' do
-      collection = Reviewed::Product.where(:page => 2)
-      collection.total.should == 1000
+      collection = Reviewed::Article.where(:page => 2)
+      collection.total.should == 7141
       collection.current_page.should == 2
     end
 
     it 'filters collections using other supported options' do
-      collection = Reviewed::Product.where(:keywords => '498')
-      collection.total.should == 2
+      collection = Reviewed::Article.where(:keywords => 'minden')
+      collection.total.should == 1
       collection.last_page.should be_true
     end
 
     it 'returns an empty set if no matching data was found' do
-      collection = Reviewed::Product.where(:keywords => 'doesnotcompute')
+      collection = Reviewed::Article.where(:keywords => 'doesnotcompute')
       collection.should be_empty
       collection.total.should == 0
       collection.out_of_bounds.should be_true
@@ -113,15 +113,15 @@ describe Reviewed::Base do
 
   describe 'resource url' do
     it 'returns an individual resource' do
-      Reviewed::Example.resource_url('dci').should == 'http://localhost:3000/api/v1/websites/dci'
+      Reviewed::Example.resource_url('article-123').should == 'https://the-guide-staging.herokuapp.com/api/v1/articles/article-123'
     end
 
     it 'returns a collection of resources' do
-      Reviewed::Example.resource_url(nil).should == 'http://localhost:3000/api/v1/websites'
+      Reviewed::Example.resource_url(nil).should == 'https://the-guide-staging.herokuapp.com/api/v1/articles'
     end
 
     it 'includes a query parameter' do
-      Reviewed::Example.resource_url(nil, page: 2).should == 'http://localhost:3000/api/v1/websites?page=2'
+      Reviewed::Example.resource_url(nil, page: 2).should == 'https://the-guide-staging.herokuapp.com/api/v1/articles?page=2'
     end
   end
 end

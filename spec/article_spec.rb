@@ -6,8 +6,8 @@ describe Reviewed::Article do
 
     it 'finds a page with a matching slug' do
       article = Reviewed::Article.find('minden-master-ii-grill-review')
-      article.pages.length.should == 7
-      article.find_page('performance').should == article.pages[2]
+      article.pages.length.should == 4
+      article.find_page('performance').should == article.pages[1]
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/websites/50241b9c5da4ac8d38000001
+    uri: https://the-guide-staging.herokuapp.com/api/v1/websites/50241b9c5da4ac8d38000001
     body:
       encoding: US-ASCII
       string: ''
@@ -12,7 +12,247 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Reviewed-Authorization:
-      - bdc3228106bfcfd2a324957b7f2afb6c
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 Aug 2012 03:23:03 GMT
+      Server:
+      - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - 2b1844df21eb146f019f2b5275133202
+      X-Runtime:
+      - '0.281239'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '30'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Record Not Found"}'
+    http_version: 
+  recorded_at: Wed, 29 Aug 2012 03:23:02 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/websites/5036c5f360de7d206500b11b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 Aug 2012 03:27:06 GMT
+      Server:
+      - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - 9576ed2454a30ccd554414ee496dc99a
+      X-Runtime:
+      - '0.976992'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Record Not Found"}'
+    http_version: 
+  recorded_at: Wed, 29 Aug 2012 03:27:05 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/5036c5f360de7d206500b11b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 Aug 2012 03:33:27 GMT
+      Server:
+      - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - 3626ec9e771f5b6531cddb5c2c3b02fe
+      X-Runtime:
+      - '0.774739'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Record Not Found"}'
+    http_version: 
+  recorded_at: Wed, 29 Aug 2012 03:33:26 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50241b9c5da4ac8d38000001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 Aug 2012 03:33:27 GMT
+      Server:
+      - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - 57afd1f76da45c6f5150018b5bddd456
+      X-Runtime:
+      - '0.074553'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Record Not Found"}'
+    http_version: 
+  recorded_at: Wed, 29 Aug 2012 03:33:26 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/5036d7dd60de7d2065075752
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
       User-Agent:
       - Ruby
   response:
@@ -20,39 +260,51 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Max-Age:
-      - '1000'
       Access-Control-Allow-Credentials:
       - 'true'
       Access-Control-Allow-Headers:
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
         Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
       Cache-Control:
       - no-cache, no-store
-      X-Rate-Limit:
-      - '100000'
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge
+      Date:
+      - Wed, 29 Aug 2012 03:38:18 GMT
       Etag:
-      - ! '"6d5f9d547742f98cef111e50d7be45fb"'
-      X-Request-Id:
-      - 889e93b902eb15ac7b43b507c436f302
-      X-Runtime:
-      - '0.018828'
-      Connection:
-      - close
+      - ! '"d89d1b0cf945ef53c59fca6065e56759"'
       Server:
       - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - 388c5ebc8e18e6aecc413b84bd5ebc61
+      X-Runtime:
+      - '0.060404'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"id":"50241b9c5da4ac8d38000001","article_ids":[],"code":"tst","created_at":"2012-08-09T20:20:45Z","name":"test
-        website","updated_at":"2012-08-09T20:20:45Z","url":"http://localhost:3000"}'
+      string: ! '{"id":"5036d7dd60de7d2065075752","name":"Fast Appliances To Save
+        You Time","slug":"fast-appliances-to-save-you-time","summary":null,"website_ids":["5033da7960de7d6457000011"],"tags":["Feature"],"created_at":"2012-08-09T16:33:14Z","updated_at":"2012-08-14T18:44:41Z","pages":[],"products":[],"authors":[{"id":"5036f36360de7d6716000099","name":"Keith
+        Barry","title":"Editor","short_bio":"  This is the default bio for a author.
+        It can be edited\n  in the defaults.rb configatron file.\n","long_bio":"  This
+        is the default bio for a author. It can be edited\n  in the defaults.rb configatron
+        file.\n","created_at":"2012-08-24T03:22:11Z","updated_at":"2012-08-24T03:22:11Z","social":{"email":"kbarry@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?s=48&d=mm","medium":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?s=128&d=mm","normal":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?d=mm"},"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}'
     http_version: 
-  recorded_at: Fri, 10 Aug 2012 21:31:18 GMT
+  recorded_at: Wed, 29 Aug 2012 03:38:16 GMT
 recorded_with: VCR 2.2.4

@@ -4,8 +4,6 @@ module Reviewed
     extend Forwardable
     def_delegators :@items, :<<, :[], :[]=, :each, :first, :last, :length, :concat, :map, :collect, :empty?
 
-    PER_PAGE = 20
-
     attr_accessor :raw_response
 
     def initialize(klass, json, options={})
@@ -25,7 +23,7 @@ module Reviewed
     end
 
     def limit_value
-      PER_PAGE
+      per_page
     end
 
     def num_pages

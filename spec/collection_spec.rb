@@ -52,11 +52,11 @@ describe Reviewed::Collection do
 
   describe 'page attributes (pagination)' do
     it 'returns the total item count' do
-      @collection.total.should == 1000
+      @collection.total.should == 15060
     end
 
     it 'returns the total number of pages' do
-      @collection.total_pages.should == 50
+      @collection.total_pages.should == 753
     end
 
     it 'indicates whether this is the first or last page' do
@@ -70,6 +70,14 @@ describe Reviewed::Collection do
 
     it 'returns the offset' do
       @collection.offset.should == 0
+    end
+
+    it 'returns the limit value (max per page)' do
+      @collection.per_page.should == 20
+    end
+
+    it 'returns the number of entries on the current page' do
+      @collection.entries_on_page.should == 20
     end
   end
 end
