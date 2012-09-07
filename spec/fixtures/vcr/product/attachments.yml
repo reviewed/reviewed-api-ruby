@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products/medium-green-charcoal
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 07 Sep 2012 16:05:30 GMT
+      Last-Modified:
+      - Wed, 05 Sep 2012 17:53:39 GMT
+      Server:
+      - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - a09dc855659679b4c21e788f1a3d165e
+      X-Runtime:
+      - '0.095892'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"503eb5038fd4f58eaf310c21","name":"Medium Green / Charcoal","slug":"medium-green-charcoal","_type":"Home::Grills::Charcoal","types":[],"product_rating":4.79,"ranking":{"total":60,"rank":3},"msrp":null,"manufacturer_specs":{"brand_name":"(Big
+        Green Egg)","manufacturer_name":"Big Green Egg","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","publishable_on":"2011-10-12T18:55:00Z","Fuel":["Charcoal"],"Install
+        Type":"Freestanding","Total cooking area":177.0,"Finish or Color":"Green","Ignition
+        type":"Manual","Side Burner":"No","Rotisserie":"No","Original Price":649.0},"article_ids":["504563ee60de7d97ec000341"],"created_at":"2011-10-12T18:55:14Z","updated_at":"2012-09-05T17:53:39Z","attachments":[{"id":"504563ee60de7d97ec00039e","name":"BGE-medium-web1.jpg","type":"image","content_type":"image/jpeg","file_size":81744,"tags":["Vanity"],"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web1.jpg","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00039f","name":"BGE-medium-web2.jpg","type":"image","content_type":"image/jpeg","file_size":81744,"tags":["Hero"],"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"brand":null,"raw_scores":{"Heatup
+        Time Rating":{"value":15.0,"weight":10.0},"Low Temp Performance Rating":{"value":8.84,"weight":12.5},"Low
+        Temp Uniformity Rating":{"value":8.9,"weight":2.5},"Low Temp Consistency Rating":{"value":8.5,"weight":2.5},"High
+        Temp Performance Rating":{"value":12.19,"weight":12.5},"High Temp Uniformity
+        Rating":{"value":4.97,"weight":2.5},"High Temp Consistency Rating":{"value":1.63,"weight":2.5},"Warming
+        Performance Rating":{"value":0.0,"weight":5.0},"Construction Rating":{"value":7.95,"weight":2.5},"Controls
+        Rating":{"value":1.0,"weight":10.0},"Fuel Rating":{"value":4.0,"weight":5.0},"Lighter
+        Rating":{"value":0.0,"weight":5.0},"Cooking Area Rating":{"value":8.99,"weight":10.0},"Warming
+        Area Rating":{"value":0.0,"weight":2.5},"Cleanup Rating":{"value":7.0,"weight":5.0},"Case
+        Heat Rating":{"value":13.31,"weight":5.0},"Other Features Rating":{"value":0.0,"weight":5.0},"Other
+        Areas Rating":{"value":0.0,"weight":2.5}},"scaled_scores":{"Heatup Time Rating":4.17,"Low
+        Temp Performance Rating":8.12,"Low Temp Uniformity Rating":7.16,"Low Temp
+        Consistency Rating":4.17,"High Temp Performance Rating":10.0,"High Temp Uniformity
+        Rating":0.0,"High Temp Consistency Rating":0.0,"Warming Performance Rating":0.0,"Construction
+        Rating":0.0,"Controls Rating":1.0,"Fuel Rating":1.43,"Lighter Rating":0.0,"Cooking
+        Area Rating":0.0,"Warming Area Rating":0.0,"Cleanup Rating":2.5,"Case Heat
+        Rating":10.0,"Other Features Rating":0.0,"Other Areas Rating":0.0},"rateable":"rateable","rateable?":true,"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}'
+    http_version: 
+  recorded_at: Fri, 07 Sep 2012 16:05:31 GMT
+recorded_with: VCR 2.2.4
