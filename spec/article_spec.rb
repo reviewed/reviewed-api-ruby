@@ -23,10 +23,10 @@ describe Reviewed::Article do
     end
 
     it 'finds attachments by tag' do
-      attachments = @article.attachments('Hero')
+      attachments = @article.attachments('hero')
       attachments.length.should == 1
       attachments.each do |attachment|
-        attachment.tags.should include('Hero')
+        attachment.tags.join(',').should match(/hero/i)
       end
     end
   end

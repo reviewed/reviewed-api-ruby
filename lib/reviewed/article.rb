@@ -7,7 +7,7 @@ module Reviewed
     def attachments(tag=nil)
       if tag.present?
         @attributes[:attachments].select do |attachment|
-          attachment.tags.include?(tag)
+          attachment.tags.map(&:downcase).include?(tag)
         end
       else
         @attributes[:attachments]
