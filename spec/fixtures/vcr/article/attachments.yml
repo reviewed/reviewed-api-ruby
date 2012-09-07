@@ -1,0 +1,281 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/big-green-egg-medium-charcoal-grill-review
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 07 Sep 2012 15:17:40 GMT
+      Etag:
+      - ! '"862a321943be049879ec5b750875b178"'
+      Server:
+      - thin 1.4.1 codename Chromeo
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '100000'
+      X-Request-Id:
+      - 6a1e04877b9463410c035ddb8b4b5fb5
+      X-Runtime:
+      - '0.421730'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"504563ee60de7d97ec000341","name":"Big Green Egg Medium Charcoal
+        Grill Review","slug":"big-green-egg-medium-charcoal-grill-review","summary":null,"website_ids":["5033da7960de7d6457000012"],"tags":["review"],"created_at":"2011-11-29T20:18:15Z","updated_at":"2012-03-30T06:49:27Z","pages":[{"id":"504563ee60de7d97ec000342","name":"Introduction","slug":"big-green-egg-medium-charcoal-grill-review","summary":"Introduction","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000343","name":"Introduction","notes":"","created_at":null,"updated_at":null,"body":"The
+        <r:product:name /> is a classic charcoal grill with a simple design: a ceramic
+        vessel that holds a load of charcoal. While the design is simple, don''t think
+        that it offers generic performance as well. The <r:product:name /> will heat
+        your food up quick and maintain consistent high-temperature cooking."}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000344","name":"Design","slug":"big-green-egg-medium-charcoal-grill-review/design","summary":"The
+        \t<r:product:model /> is a large, heavy charcoal grill that is well constructed
+        and built. ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000345","name":"Design
+        Summary","notes":"","created_at":null,"updated_at":null,"body":"The \t<r:product:model
+        /> is a large, heavy charcoal grill that is well constructed and built. "},{"id":"504563ee60de7d97ec000346","name":"Controls
+        2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000347","name":"Controls
+        3","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000348","name":"Main
+        Grilling Area 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000349","name":"Warming
+        Area 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034a","name":"Side
+        Area","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034b","name":"Side
+        Area 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034c","name":"Side
+        Area 3","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034d","name":"Thermometer
+        2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034e","name":"Product
+        Tour","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034f","name":"Controls","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000350","name":"Main
+        Grilling Area","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000351","name":"Warming
+        Area","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000352","name":"Side
+        Areas","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000353","name":"Thermometer","notes":"","created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000354","name":"Performance","slug":"big-green-egg-medium-charcoal-grill-review/performance","summary":"Excellent
+        performance overall, especially at high temperature. The cooking area is small,
+        though. ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000355","name":"Performance
+        Summary","notes":"","created_at":null,"updated_at":null,"body":"Excellent
+        performance overall, especially at high temperature. The cooking area is small,
+        though. "},{"id":"504563ee60de7d97ec000356","name":"Heatup Time Description","notes":"","created_at":null,"updated_at":null,"body":"The
+        <r:product:model /> was a very quick grill to heat up; we found that it could
+        reach our low temperature target of 325\u00b0F in just 35 seconds and our
+        high temperature target of 625\u00b0F in just 36 seconds. We reached these
+        two settings by adjusting the air vents on the lid and on the bottom of the
+        grill body: the low fire setting by half opening the vent, and the high fire
+        setting by completely opening it."},{"id":"504563ee60de7d97ec000357","name":"Low
+        Temperature Cooking Performance","notes":"","created_at":null,"updated_at":null,"body":"Running
+        at our low temperature target of about 325\u00b0F, we found that the grill
+        would take just over 11 minutes to cook our test patties, which is fairly
+        fast for a  grill of this type. "},{"id":"504563ee60de7d97ec000358","name":"Low
+        Temperature Uniformity","notes":"","created_at":null,"updated_at":null,"body":"We
+        also look at the consistency of the temperature across the cooking surface,
+        and the <r:product:model /> did well here, producing uniform temperatures
+        across the cooking area. We did find that it was a little hotter at one edge,
+        but again, that is not unusual for a charcoal grill."},{"id":"504563ee60de7d97ec000359","name":"Low
+        Temperature Consistency","notes":"","created_at":null,"updated_at":null,"body":"The
+        temperature also remained consistent over time, with only moderate variations
+        in the temperature. This should mean good, even cooking of food"},{"id":"504563ee60de7d97ec00035a","name":"High
+        Temperature Cooking Performance","notes":"","created_at":null,"updated_at":null,"body":"Opening
+        the air vents on the base and lid of the grill increased the temperature,
+        and we found equally good performance from this grill cooking food at these
+        higher temperatures. Here, the grill was able to cook our test patties in
+        just over 8 minutes.  "},{"id":"504563ee60de7d97ec00035b","name":"High Temperature
+        Uniformity","notes":"","created_at":null,"updated_at":null,"body":"We did
+        find that the temperature across the cooking area was a lot less consistent
+        here, though; the extra flow of air from the open vents seems to create more
+        hot zones, especially in the center of the cooking grate, which was nearly
+        200\u00b0F hotter than close to the edges."},{"id":"504563ee60de7d97ec00035c","name":"High
+        Temperature Consistency","notes":"","created_at":null,"updated_at":null,"body":"The
+        temperature also varied over time, with the temperature rising and falling
+        on the cooking grate somewhat more often as the fire rose and fell than we
+        like to see. "},{"id":"504563ee60de7d97ec00035d","name":"Warming Tray","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00035e","name":"Lid
+        & Handle Temperature","notes":"","created_at":null,"updated_at":null,"body":"Although
+        the grill body got rather hot (rising to a toasty 300\u00b0F), the handle
+        that you use to lift the lid remained cool; even after running the grill for
+        a full hour, this wooden handle didn''t go much above 80\u00b0F, which means
+        that it is safe and comfortable to use. "},{"id":"504563ee60de7d97ec00035f","name":"Output
+        & Fuel Life Description","notes":"","created_at":null,"updated_at":null,"body":"We
+        don\u2019t measure the BTU/Hr output of charcoal grills, but we did find that
+        this grill can produce a lot of heat with a large load of charcoal onboard.
+        It also retains heat well: the body of the grill remains very warm for several
+        hours after the charcoal has run out."}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000360","name":"Features
+        & Usability","slug":"big-green-egg-medium-charcoal-grill-review/features-and-usability","summary":"Very
+        simple to use (even a caveman could do it), but that means no extra features.
+        ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000361","name":"Features
+        & Usability Summary","notes":"","created_at":null,"updated_at":null,"body":"Very
+        simple to use (even a caveman could do it), but that means no extra features.
+        "},{"id":"504563ee60de7d97ec000362","name":"Controls 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000363","name":"Controls
+        3","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000364","name":"Controls
+        Description","notes":"","created_at":null,"updated_at":null,"body":"The controls
+        on this grill are basic, to put it mildly: you control the temperature by
+        opening and closing vents on the base of the grill body and the lid. Open
+        the vents, and more air rushes through to the charcoal fuel, leading to a
+        higher temperature. "},{"id":"504563ee60de7d97ec000365","name":"Fuel Description","notes":"","created_at":null,"updated_at":null,"body":"The
+        <r:product:model /> uses charcoal, which fits into the space below the grate."},{"id":"504563ee60de7d97ec000366","name":"Lighter
+        Description","notes":"","created_at":null,"updated_at":null,"body":"There
+        is no lighter on this grill, so you have to ignite the charcoal yourself."},{"id":"504563ee60de7d97ec000367","name":"Cooking
+        Area Description","notes":"","created_at":null,"updated_at":null,"body":"The
+        cooking area is rather small: just 177 square inches. In our tests, we were
+        only able to fit two of our test patties onto this space, so that might be
+        a big problem for large families or party use. If you want to cook a lot of
+        food at once, you should look at a gas grill with a larger cooking area, or
+        one of the larger Big Green Egg models that offers more space to cook."},{"id":"504563ee60de7d97ec000368","name":"Warming
+        Area Description","notes":"","created_at":null,"updated_at":null,"body":"There
+        is no warming area on this grill."},{"id":"504563ee60de7d97ec000369","name":"Other
+        Areas Description","notes":"","created_at":null,"updated_at":null,"body":"No
+        side areas or other places to put food before or after cooking are included.
+        Big Green Egg does offer a number of shelves that clip onto the side of the
+        grill, as well as a range of wooden tables designed to hold the Big Green
+        Egg medium grill. These do cost extra, though. "},{"id":"504563ee60de7d97ec00036a","name":"Cleanup
+        Description","notes":"","created_at":null,"updated_at":null,"body":"Cleaning
+        up the grill is easy; the cooking grate lifts out for easy cleaning, although
+        the cast iron is not suitable for dishwashing. You have to scoop out the ash
+        from the charcoal, as there is no way to remove it from underneath. "},{"id":"504563ee60de7d97ec00036b","name":"Other
+        Features Description","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00036c","name":"Construction
+        Description","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00036d","name":"COMP
+        1","slug":"big-green-egg-medium-charcoal-grill-review/comp-1","summary":"COMP
+        1","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec00036e","name":"Comp
+        1 Description","notes":"","created_at":null,"updated_at":null,"body":"Both
+        of these grills use charcoal fuel, but the Weber offers the relative luxury
+        of a gas-assisted starter, and has a much larger cooking area. The Big Green
+        Egg is more consistent, though, and has a simple, straightforward design that
+        will appeal to charcoal purists. "},{"id":"504563ee60de7d97ec00036f","name":"unnamed
+        section","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000370","name":"COMP
+        2","slug":"big-green-egg-medium-charcoal-grill-review/comp-2","summary":"COMP
+        2","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000371","name":"Comp
+        2 Description","notes":"","created_at":null,"updated_at":null,"body":"Both
+        of these grills offer the same simple, straightforward design to grilling,
+        using charcoal fuel and not offering any bells or whistles. The Big Green
+        Egg feels better constructed, though, and more likely to stand up to heavy
+        use and weather. It is also better finished, with some nice touches like a
+        wooden handle that stays cooler and a better seal around the lid that keeps
+        the heat in. "},{"id":"504563ee60de7d97ec000372","name":"unnamed section","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000373","name":"COMP
+        3","slug":"big-green-egg-medium-charcoal-grill-review/comp-3","summary":"COMP
+        3","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000374","name":"Comp
+        3 Description","notes":"","created_at":null,"updated_at":null,"body":"The
+        eternal battle of the grill purists is here: charcoal vs gas. The charcoal
+        fuel of the Big Green Egg produces a more natural heat, but takes longer to
+        get running when you include the time to load and prep the grill with fuel).
+        The Kenmore also has more features, with a side burner and a more controllable
+        heat level. But in the end, the choice comes down to which you prefer to cook
+        with: charcoal or gas. "},{"id":"504563ee60de7d97ec000375","name":"unnamed
+        section","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000376","name":"Conclusion","slug":"big-green-egg-medium-charcoal-grill-review/conclusion","summary":"A
+        very simple to use grill with great overall performance. ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000377","name":"Conclusion
+        Summary","notes":"","created_at":null,"updated_at":null,"body":"A very simple
+        to use grill with great overall performance. "},{"id":"504563ee60de7d97ec000378","name":"Conclusion
+        Performance","notes":"","created_at":null,"updated_at":null,"body":"We found
+        good performance from the Big Green Egg, with short cooking times and uniform
+        temperatures. We did find that the temperatures did vary somewhat with the
+        vents open and the grill running at maximum, but this didn''t seem to be a
+        problem when we cooked our test dishes. Our only major issue here was the
+        fact that the cooking area is very small; we were only able to get two test
+        patties onto it at a time. "},{"id":"504563ee60de7d97ec000379","name":"Conclusion
+        Usability","notes":"","created_at":null,"updated_at":null,"body":"At the risk
+        of throwing out a cliche, the <r:product:brand:name /> is so simple, even
+        a caveman could use it. Using the grill just involves loading it with charcoal,
+        firing it up and throwing the food onto the grill. As long as the caveman
+        hasn''t grown accustomed to things like lighters, side burners and lights,
+        though: this grill eschews these for a more straightforward design. "}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00037a","name":"Specs
+        & Ratings","slug":"big-green-egg-medium-charcoal-grill-review/specs-and-ratings","summary":"Specs
+        & Ratings","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00037b","name":"unclassified_sections","slug":"big-green-egg-medium-charcoal-grill-review/unclassified_sections","summary":"meta-data
+        and such","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec00037c","name":"Display
+        Title","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00037d","name":"Browser
+        Title","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00037e","name":"Description","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00037f","name":"Keywords","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000380","name":"Comp
+        1 ID","notes":"","created_at":null,"updated_at":null,"body":"13194"},{"id":"504563ee60de7d97ec000381","name":"Comp
+        2 ID","notes":"","created_at":null,"updated_at":null,"body":"13352"},{"id":"504563ee60de7d97ec000382","name":"Comp
+        3 ID","notes":"","created_at":null,"updated_at":null,"body":"13270"},{"id":"504563ee60de7d97ec000383","name":"Design","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000384","name":"Performance","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000385","name":"Features
+        & Usability","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000386","name":"COMP
+        1","notes":"","created_at":null,"updated_at":null,"body":"Weber Performer
+        Comparison"},{"id":"504563ee60de7d97ec000387","name":"COMP 2","notes":"","created_at":null,"updated_at":null,"body":"Primo
+        Kamado Comparison"},{"id":"504563ee60de7d97ec000388","name":"COMP 3","notes":"","created_at":null,"updated_at":null,"body":"Kenmore
+        S3218AR Comparison"},{"id":"504563ee60de7d97ec000389","name":"Conclusion","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00038a","name":"Specs
+        & Ratings","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00038b","name":"Warming
+        Tray Performance","notes":"","created_at":null,"updated_at":null,"body":"There
+        is no warming tray on this grill. "},{"id":"504563ee60de7d97ec00038c","name":"Assembly
+        Description","notes":"","created_at":null,"updated_at":null,"body":"We found
+        the assembly of the <r:product:name /> to be pretty simple, taking us just
+        68 minutes to unpack, set up and get the grill going. The weight of the casing
+        does make this a two-person job, though, as one person can''t lift the casing
+        and put it into the stand (or the nest, as Big Green Egg describes it).   "},{"id":"504563ee60de7d97ec00038d","name":"Snippets","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00038e","name":"Summary","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
+        charcoal grill has good performance. "},{"id":"504563ee60de7d97ec00038f","name":"News
+        Box Excerpt","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
+        charcoal grill has good performance. "},{"id":"504563ee60de7d97ec000390","name":"Home
+        News Excerpt","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
+        charcoal grill has good performance. "},{"id":"504563ee60de7d97ec000391","name":"Home
+        Feature One-Liner","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
+        charcoal grill"},{"id":"504563ee60de7d97ec000392","name":"Event Page Feature
+        Image","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000393","name":"Event
+        Page Feature Title","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000394","name":"IR
+        Photo","notes":"","created_at":null,"updated_at":null,"body":"The image below
+        was taken with an infrared camera to show the heat levels of the top of the
+        grill. The numbers at the bottom indicate the temperature scale. "},{"id":"504563ee60de7d97ec000395","name":"Low
+        Fire Cooking Comparison","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000396","name":"High
+        Fire Cooking Comparison","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000397","name":"One-Line
+        Summary","notes":"Appears in the hero at the top of the home page and at the
+        top of the first page of the review.","created_at":null,"updated_at":null,"body":"<font
+        color=\"white\">Super-simple charcoal grill has good performance.</font>"},{"id":"504563ee60de7d97ec000398","name":"Pro
+        One","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000399","name":"Pro
+        Two","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039a","name":"Pro
+        Three","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039b","name":"Con
+        One","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039c","name":"Con
+        Two","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039d","name":"Con
+        Three","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039e","name":"Alternate
+        Hero Title","notes":"this defaults to the name of the article. Set this to
+        ''NOTEXT'' if you don''t want any text to overlay the hero image","created_at":null,"updated_at":null,"body":"Big
+        Green Egg"}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"products":[{"id":"503eb5038fd4f58eaf310c21","name":"Medium
+        Green / Charcoal","slug":"medium-green-charcoal","_type":"Home::Grills::Charcoal","types":[],"product_rating":4.79,"ranking":{"total":60,"rank":3},"msrp":null,"manufacturer_specs":{"brand_name":"(Big
+        Green Egg)","manufacturer_name":"Big Green Egg","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","publishable_on":"2011-10-12T18:55:00Z","Fuel":["Charcoal"],"Install
+        Type":"Freestanding","Total cooking area":177.0,"Finish or Color":"Green","Ignition
+        type":"Manual","Side Burner":"No","Rotisserie":"No","Original Price":649.0},"article_ids":["504563ee60de7d97ec000341"],"created_at":"2011-10-12T18:55:14Z","updated_at":"2012-09-05T17:53:39Z","attachments":[],"brand":null,"raw_scores":{"Heatup
+        Time Rating":{"value":15.0,"weight":10.0},"Low Temp Performance Rating":{"value":8.84,"weight":12.5},"Low
+        Temp Uniformity Rating":{"value":8.9,"weight":2.5},"Low Temp Consistency Rating":{"value":8.5,"weight":2.5},"High
+        Temp Performance Rating":{"value":12.19,"weight":12.5},"High Temp Uniformity
+        Rating":{"value":4.97,"weight":2.5},"High Temp Consistency Rating":{"value":1.63,"weight":2.5},"Warming
+        Performance Rating":{"value":0.0,"weight":5.0},"Construction Rating":{"value":7.95,"weight":2.5},"Controls
+        Rating":{"value":1.0,"weight":10.0},"Fuel Rating":{"value":4.0,"weight":5.0},"Lighter
+        Rating":{"value":0.0,"weight":5.0},"Cooking Area Rating":{"value":8.99,"weight":10.0},"Warming
+        Area Rating":{"value":0.0,"weight":2.5},"Cleanup Rating":{"value":7.0,"weight":5.0},"Case
+        Heat Rating":{"value":13.31,"weight":5.0},"Other Features Rating":{"value":0.0,"weight":5.0},"Other
+        Areas Rating":{"value":0.0,"weight":2.5}},"scaled_scores":{"Heatup Time Rating":4.17,"Low
+        Temp Performance Rating":8.12,"Low Temp Uniformity Rating":7.16,"Low Temp
+        Consistency Rating":4.17,"High Temp Performance Rating":10.0,"High Temp Uniformity
+        Rating":0.0,"High Temp Consistency Rating":0.0,"Warming Performance Rating":0.0,"Construction
+        Rating":0.0,"Controls Rating":1.0,"Fuel Rating":1.43,"Lighter Rating":0.0,"Cooking
+        Area Rating":0.0,"Warming Area Rating":0.0,"Cleanup Rating":2.5,"Case Heat
+        Rating":10.0,"Other Features Rating":0.0,"Other Areas Rating":0.0},"rateable":"rateable","rateable?":true,"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"authors":[{"id":"5045673e60de7d97ec0005fc","name":"Richard
+        Baguley","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"richard-baguley","created_at":"2012-09-04T02:28:14Z","updated_at":"2012-09-04T02:28:15Z","social":{"email":"rbaguley@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?s=48&d=mm","medium":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?s=128&d=mm","normal":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?d=mm"},"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[{"id":"504563ee60de7d97ec00039e","name":"BGE-medium-web1.jpg","type":"image","content_type":"image/jpeg","file_size":81744,"tags":["Vanity"],"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web1.jpg","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00039f","name":"BGE-medium-web2.jpg","type":"image","content_type":"image/jpeg","file_size":81744,"tags":["Hero"],"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}'
+    http_version: 
+  recorded_at: Fri, 07 Sep 2012 15:17:40 GMT
+recorded_with: VCR 2.2.4
