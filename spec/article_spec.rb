@@ -11,6 +11,21 @@ describe Reviewed::Article do
     end
   end
 
+  describe 'products' do
+    use_vcr_cassette 'article/products'
+
+    before(:each) do
+      @article = Reviewed::Article.find('big-green-egg-medium-charcoal-grill-review')
+    end
+
+    it 'returns products of the correct class' do
+      @article.products.should_not be_empty
+      @article.products.each do |product|
+        product.class.should == Reviewed::Product
+      end
+    end
+  end
+
   describe 'attachments' do
     use_vcr_cassette 'article/attachments'
 

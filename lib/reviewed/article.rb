@@ -4,6 +4,12 @@ module Reviewed
       pages.find { |page| page.slug.match(/#{slug}/i) }
     end
 
+    def products
+      (@attributes[:products] || []).map do |product|
+        Reviewed::Product.new(product)
+      end
+    end
+
     def attachments(tag=nil)
       if tag.present?
         @attributes[:attachments].select do |attachment|

@@ -5,7 +5,7 @@ describe Reviewed::Product do
     use_vcr_cassette 'product/attachments'
 
     before(:each) do
-      @product= Reviewed::Product.find('medium-green-charcoal')
+      @product = Reviewed::Product.find('medium-green-charcoal')
     end
 
     it 'returns all attachments' do
