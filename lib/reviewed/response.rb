@@ -6,7 +6,7 @@ module Reviewed
 
     def initialize(raw_response)
       @raw = raw_response
-      @json = JSON.parse(raw_response).symbolize_keys!
+      @json = JSON.parse(raw_response)
     end
   end
 end
