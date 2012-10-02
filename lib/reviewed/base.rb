@@ -24,12 +24,8 @@ module Reviewed
     def self.find(id)
       Reviewed.verify_key!
 
-      begin
-        response = RestClient.get(resource_url(id), Util.build_request_headers)
-        new(JSON.parse(response), response)
-      rescue RestClient::Exception => e
-        raise ResourceError.new(e.message)
-      end
+      response = Reviewed::Request.get(resource_url(id))
+      new(response.json, response.raw)
     end
 
     def self.all
@@ -39,12 +35,8 @@ module Reviewed
     def self.where(options={})
       Reviewed.verify_key!
 
-      begin
-        response = RestClient.get(resource_url(nil, options), Util.build_request_headers)
-        Collection.new(self, response, options)
-      rescue RestClient::Exception => e
-        raise ResourceError.new(e.message)
-      end
+      response = Reviewed::Request.get(resource_url(nil, options))
+      Collection.new(self, response.json, options)
     end
 
     def self.resource_name=(value)
