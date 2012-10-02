@@ -7,7 +7,6 @@ module Reviewed
     attr_accessor :raw_response
 
     def initialize(klass, json, options={})
-      json = JSON.parse(json).symbolize_keys!
       page_data = json[:pagination].symbolize_keys!
 
       @items = []

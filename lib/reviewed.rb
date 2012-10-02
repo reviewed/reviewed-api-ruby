@@ -9,6 +9,8 @@ require 'reviewed/version'
 require 'reviewed/util'
 require 'reviewed/base'
 require 'reviewed/collection'
+require 'reviewed/request'
+require 'reviewed/response'
 
 require 'reviewed/website'
 require 'reviewed/product'
