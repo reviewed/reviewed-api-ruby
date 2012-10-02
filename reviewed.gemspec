@@ -2,8 +2,8 @@
 require File.expand_path('../lib/reviewed/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Nick Plante"]
-  gem.email         = ["nap@zerosum.org"]
+  gem.authors       = ["Nick Plante", "Kevin Incorvia"]
+  gem.email         = ["development@reviewed.com"]
   gem.description   = %q{Client library for the Reviewed.com API}
   gem.summary       = %q{A Ruby Gem for Accessing the Reviewed.com API}
   gem.homepage      = ""
