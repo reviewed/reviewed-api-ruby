@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/authors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 02 Oct 2012 19:07:19 GMT
+      Etag:
+      - ! '"f79d99e2a0a99f3f72f228d9d759a42e"'
+      Server:
+      - thin 1.5.0 codename Knife
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '99999'
+      X-Request-Id:
+      - e33d5590a53df5d55434f336a3d34a8f
+      X-Runtime:
+      - '0.356420'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"total":171,"total_pages":9,"first_page":true,"last_page":false,"previous_page":null,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1,"per_page":20,"entries_on_page":20},"data":[{"id":"506b0bfebd02862270001329","created_at":"2012-10-02T15:45:02Z","updated_at":"2012-10-02T15:45:02Z","name":"Ben
+        Keough","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"ben-keough","social":{"email":"bkeough@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/c3ef0cecaccbc869b8977e181442a646?s=48&d=mm","medium":"http://www.gravatar.com/avatar/c3ef0cecaccbc869b8977e181442a646?s=128&d=mm","normal":"http://www.gravatar.com/avatar/c3ef0cecaccbc869b8977e181442a646?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfdbd02862270001328","created_at":"2012-10-02T15:45:01Z","updated_at":"2012-10-02T15:45:02Z","name":"Michael
+        T. Ruhl","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"michael-t-ruhl","social":{"email":"mruhl@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/a78693f1b3829300ba96bc7eecc0d889?s=48&d=mm","medium":"http://www.gravatar.com/avatar/a78693f1b3829300ba96bc7eecc0d889?s=128&d=mm","normal":"http://www.gravatar.com/avatar/a78693f1b3829300ba96bc7eecc0d889?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfdbd02862270001327","created_at":"2012-10-02T15:45:01Z","updated_at":"2012-10-02T15:45:01Z","name":"Ethan
+        Wolff-Mann","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"ethan-wolff-mann","social":{"email":"emann@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/7c6de3e830cfa67cdbcd8bed0364befb?s=48&d=mm","medium":"http://www.gravatar.com/avatar/7c6de3e830cfa67cdbcd8bed0364befb?s=128&d=mm","normal":"http://www.gravatar.com/avatar/7c6de3e830cfa67cdbcd8bed0364befb?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfdbd02862270001326","created_at":"2012-10-02T15:45:01Z","updated_at":"2012-10-02T15:45:01Z","name":"James
+        Johnston","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"james-johnston","social":{"email":"jj.johnston2@comcast.net"},"avatars":{"small":"http://www.gravatar.com/avatar/685359c9e6882600645bf66a432eea55?s=48&d=mm","medium":"http://www.gravatar.com/avatar/685359c9e6882600645bf66a432eea55?s=128&d=mm","normal":"http://www.gravatar.com/avatar/685359c9e6882600645bf66a432eea55?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfdbd02862270001325","created_at":"2012-10-02T15:45:01Z","updated_at":"2012-10-02T15:45:01Z","name":"Mike
+        Roorda","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"mike-roorda","social":{"email":"mroorda@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/7a6d40d47cc53e46807f6a6c40af58ab?s=48&d=mm","medium":"http://www.gravatar.com/avatar/7a6d40d47cc53e46807f6a6c40af58ab?s=128&d=mm","normal":"http://www.gravatar.com/avatar/7a6d40d47cc53e46807f6a6c40af58ab?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfdbd02862270001324","created_at":"2012-10-02T15:45:01Z","updated_at":"2012-10-02T15:45:01Z","name":"Tyler
+        Wells Lynch","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"tyler-wells-lynch","social":{"email":"tlynch@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/15f94920513f045bd68d25ed796c75f0?s=48&d=mm","medium":"http://www.gravatar.com/avatar/15f94920513f045bd68d25ed796c75f0?s=128&d=mm","normal":"http://www.gravatar.com/avatar/15f94920513f045bd68d25ed796c75f0?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfdbd02862270001323","created_at":"2012-10-02T15:45:01Z","updated_at":"2012-10-02T15:45:01Z","name":"Josh
+        Fields","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"josh-fields","social":{"email":"jfields@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/4316abf7ae494fb4f93c67a8507c4b29?s=48&d=mm","medium":"http://www.gravatar.com/avatar/4316abf7ae494fb4f93c67a8507c4b29?s=128&d=mm","normal":"http://www.gravatar.com/avatar/4316abf7ae494fb4f93c67a8507c4b29?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd02862270001322","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:01Z","name":"Jonathan
+        Chan","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"jonathan-chan","social":{"email":"jchan@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/8bd9e016c51a0a5be4923601e53df618?s=48&d=mm","medium":"http://www.gravatar.com/avatar/8bd9e016c51a0a5be4923601e53df618?s=128&d=mm","normal":"http://www.gravatar.com/avatar/8bd9e016c51a0a5be4923601e53df618?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd02862270001321","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Matthew
+        Zahnzinger","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"matthew-zahnzinger","social":{"email":"mzahnzinger@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/8eb9a81dddcabe7db217ee3f3a202f39?s=48&d=mm","medium":"http://www.gravatar.com/avatar/8eb9a81dddcabe7db217ee3f3a202f39?s=128&d=mm","normal":"http://www.gravatar.com/avatar/8eb9a81dddcabe7db217ee3f3a202f39?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd02862270001320","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Lee
+        Neikirk","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"lee-neikirk","social":{"email":"lneikirk@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/499082ae2166f577cbc10d2f98544ffd?s=48&d=mm","medium":"http://www.gravatar.com/avatar/499082ae2166f577cbc10d2f98544ffd?s=128&d=mm","normal":"http://www.gravatar.com/avatar/499082ae2166f577cbc10d2f98544ffd?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd0286227000131f","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"David
+        Swanson","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"david-swanson","social":{"email":"dswanson@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/97f2acf1588d850f27920785892965f6?s=48&d=mm","medium":"http://www.gravatar.com/avatar/97f2acf1588d850f27920785892965f6?s=128&d=mm","normal":"http://www.gravatar.com/avatar/97f2acf1588d850f27920785892965f6?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd0286227000131e","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Patrick
+        Ouellette","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"patrick-ouellette","social":{"email":"pouellette@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?s=48&d=mm","medium":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?s=128&d=mm","normal":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd0286227000131d","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Gene
+        Sloan","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"gene-sloan","social":{"email":"gsloan@usatoday.com"},"avatars":{"small":"http://www.gravatar.com/avatar/33027cac59dd6b8930091bda94b85da7?s=48&d=mm","medium":"http://www.gravatar.com/avatar/33027cac59dd6b8930091bda94b85da7?s=128&d=mm","normal":"http://www.gravatar.com/avatar/33027cac59dd6b8930091bda94b85da7?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfcbd0286227000131c","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Liam
+        McCabe","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"liam-mccabe","social":{"email":"lmccabe@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/09bf69f5c0b7e9b71014ed194b1f4764?s=48&d=mm","medium":"http://www.gravatar.com/avatar/09bf69f5c0b7e9b71014ed194b1f4764?s=128&d=mm","normal":"http://www.gravatar.com/avatar/09bf69f5c0b7e9b71014ed194b1f4764?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfbbd0286227000131b","created_at":"2012-10-02T15:44:59Z","updated_at":"2012-10-02T15:44:59Z","name":"Anonymous","title":"Editor","short_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","long_bio":"This is the default bio for a author. It can be edited
+        in the defaults.rb configatron file.\n","slug":"anonymous","social":{"email":"electricflux@live.com"},"avatars":{"small":"http://www.gravatar.com/avatar/7362890f3cd028c5d4f757bedae2fd94?s=48&d=mm","medium":"http://www.gravatar.com/avatar/7362890f3cd028c5d4f757bedae2fd94?s=128&d=mm","normal":"http://www.gravatar.com/avatar/7362890f3cd028c5d4f757bedae2fd94?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfbbd0286227000131a","created_at":"2012-10-02T15:44:59Z","updated_at":"2012-10-02T15:44:59Z","name":"Christian
+        Sherden","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"christian-sherden","social":{"email":"csherden@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/550984f6a0350bb06435c587a6a7296d?s=48&d=mm","medium":"http://www.gravatar.com/avatar/550984f6a0350bb06435c587a6a7296d?s=128&d=mm","normal":"http://www.gravatar.com/avatar/550984f6a0350bb06435c587a6a7296d?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfbbd02862270001319","created_at":"2012-10-02T15:44:59Z","updated_at":"2012-10-02T15:44:59Z","name":"Luke
+        Bergen","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"luke-bergen","social":{"email":"lbergen@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/2525364bec7b6147fd21f4796dd7f471?s=48&d=mm","medium":"http://www.gravatar.com/avatar/2525364bec7b6147fd21f4796dd7f471?s=128&d=mm","normal":"http://www.gravatar.com/avatar/2525364bec7b6147fd21f4796dd7f471?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfbbd02862270001318","created_at":"2012-10-02T15:44:59Z","updated_at":"2012-10-02T15:44:59Z","name":"Christopher
+        Snow","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"christopher-snow","social":{"email":"csnow@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/4e2a6a416de4c975a60c432a6c44491d?s=48&d=mm","medium":"http://www.gravatar.com/avatar/4e2a6a416de4c975a60c432a6c44491d?s=128&d=mm","normal":"http://www.gravatar.com/avatar/4e2a6a416de4c975a60c432a6c44491d?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfbbd02862270001317","created_at":"2012-10-02T15:44:59Z","updated_at":"2012-10-02T15:44:59Z","name":"Keith
+        Barry","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"keith-barry","social":{"email":"kbarry@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?s=48&d=mm","medium":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?s=128&d=mm","normal":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0bfabd02862270001316","created_at":"2012-10-02T15:44:58Z","updated_at":"2012-10-02T15:44:59Z","name":"Chris
+        Thomas","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"chris-thomas","social":{"email":"cthomas@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/29e724ec29940a903e976cf3e5536e08?s=48&d=mm","medium":"http://www.gravatar.com/avatar/29e724ec29940a903e976cf3e5536e08?s=128&d=mm","normal":"http://www.gravatar.com/avatar/29e724ec29940a903e976cf3e5536e08?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}]}'
+    http_version: 
+  recorded_at: Tue, 02 Oct 2012 19:07:09 GMT
+recorded_with: VCR 2.2.5

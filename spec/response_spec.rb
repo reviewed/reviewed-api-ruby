@@ -3,7 +3,7 @@ require 'spec_helper.rb'
 describe Reviewed::Response do
 
   describe "response" do
-    use_vcr_cassette 'request/authors'
+    use_vcr_cassette 'response/authors'
 
     before(:each) do
       @response = Reviewed::Request.get('authors')
