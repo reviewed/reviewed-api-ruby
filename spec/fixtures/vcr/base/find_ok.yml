@@ -2,247 +2,67 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/websites/50241b9c5da4ac8d38000001
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Aug 2012 03:23:03 GMT
-      Server:
-      - thin 1.4.1 codename Chromeo
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '100000'
-      X-Request-Id:
-      - 2b1844df21eb146f019f2b5275133202
-      X-Runtime:
-      - '0.281239'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Content-Length:
-      - '30'
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Record Not Found"}'
-    http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:23:02 GMT
-- request:
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/websites/5036c5f360de7d206500b11b
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Aug 2012 03:27:06 GMT
-      Server:
-      - thin 1.4.1 codename Chromeo
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '100000'
-      X-Request-Id:
-      - 9576ed2454a30ccd554414ee496dc99a
-      X-Runtime:
-      - '0.976992'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Record Not Found"}'
-    http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:27:05 GMT
-- request:
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/5036c5f360de7d206500b11b
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Aug 2012 03:33:27 GMT
-      Server:
-      - thin 1.4.1 codename Chromeo
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '100000'
-      X-Request-Id:
-      - 3626ec9e771f5b6531cddb5c2c3b02fe
-      X-Runtime:
-      - '0.774739'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Record Not Found"}'
-    http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:33:26 GMT
-- request:
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50241b9c5da4ac8d38000001
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Aug 2012 03:33:27 GMT
-      Server:
-      - thin 1.4.1 codename Chromeo
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '100000'
-      X-Request-Id:
-      - 57afd1f76da45c6f5150018b5bddd456
-      X-Runtime:
-      - '0.074553'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Record Not Found"}'
-    http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:33:26 GMT
-- request:
-    method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/articles/5036d7dd60de7d2065075752
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Reviewed-Authorization:
+      - '1234567890'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 03 Oct 2012 22:04:47 GMT
+      Server:
+      - thin 1.5.0 codename Knife
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Rack-Cache:
+      - miss
+      X-Rate-Limit:
+      - '99938'
+      X-Request-Id:
+      - 69e5413d41b1d21c2d2e9195ac746083
+      X-Runtime:
+      - '0.033892'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Record Not Found"}'
+    http_version: 
+  recorded_at: Wed, 03 Oct 2012 22:04:47 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/506b0b46bd02862270000747
     body:
       encoding: US-ASCII
       string: ''
@@ -276,21 +96,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Aug 2012 03:38:18 GMT
+      - Wed, 03 Oct 2012 22:09:17 GMT
       Etag:
-      - ! '"d89d1b0cf945ef53c59fca6065e56759"'
+      - ! '"aa98ef8ae37e036d96abb43fc1dd5e83"'
       Server:
-      - thin 1.4.1 codename Chromeo
+      - thin 1.5.0 codename Knife
       Strict-Transport-Security:
       - max-age=31536000
       X-Rack-Cache:
       - miss
       X-Rate-Limit:
-      - '100000'
+      - '99926'
       X-Request-Id:
-      - 388c5ebc8e18e6aecc413b84bd5ebc61
+      - ee61d26c3494fc2a9d8b43a00088e265
       X-Runtime:
-      - '0.060404'
+      - '0.251055'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -299,12 +119,146 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"id":"5036d7dd60de7d2065075752","name":"Fast Appliances To Save
-        You Time","slug":"fast-appliances-to-save-you-time","summary":null,"website_ids":["5033da7960de7d6457000011"],"tags":["Feature"],"created_at":"2012-08-09T16:33:14Z","updated_at":"2012-08-14T18:44:41Z","pages":[],"products":[],"authors":[{"id":"5036f36360de7d6716000099","name":"Keith
-        Barry","title":"Editor","short_bio":"  This is the default bio for a author.
-        It can be edited\n  in the defaults.rb configatron file.\n","long_bio":"  This
-        is the default bio for a author. It can be edited\n  in the defaults.rb configatron
-        file.\n","created_at":"2012-08-24T03:22:11Z","updated_at":"2012-08-24T03:22:11Z","social":{"email":"kbarry@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?s=48&d=mm","medium":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?s=128&d=mm","normal":"http://www.gravatar.com/avatar/5d65db5a750abb45284896865c5c1446?d=mm"},"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}'
+      string: ! '{"id":"506b0b46bd02862270000747","created_at":"2012-05-15T21:15:16Z","updated_at":"2012-10-02T15:42:02Z","name":"Minden
+        Master II Grill Review","summary":"","version":20,"website_ids":["506b05a7bd02867160000012"],"tags":["review"],"publish_on":"2012-05-18T19:34:00+00:00","attachment_ids":[],"primary_product_id":"506b06c40494340f5180a155","slug":"Minden-Master-II-Grill-Review","pages":[{"id":"506b0b46bd0286227000074a","name":"Introduction","summary":"Introduction","slug":"Minden-Master-II-Grill-Review","sections":[{"id":"506b0b46bd0286227000074c","name":"Introduction","notes":"","body":"Though
+        the <r:product:name /> ($479 MSRP) turned in solid performance numbers, it''s
+        missing features and controls that similar-priced grills include. This grill
+        actually had one of the fastest heatup times of the grills we''ve tested and
+        was consistent and efficient on its high-fire setting. "}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b46bd0286227000074e","name":"Design","summary":"The
+        <r:product:name /> is decent-sized grill with pretty normal design, with the
+        exception of its green coating.","slug":"Minden-Master-II-Grill-Review/Design","sections":[{"id":"506b0b46bd02862270000750","name":"Design
+        Summary","notes":"","body":"The <r:product:name /> is decent-sized grill with
+        pretty normal design, with the exception of its green coating."},{"id":"506b0b46bd02862270000751","name":"Controls
+        2","notes":"","body":""},{"id":"506b0b46bd02862270000752","name":"Controls
+        3","notes":"","body":""},{"id":"506b0b46bd02862270000753","name":"Main Grilling
+        Area 2","notes":"","body":""},{"id":"506b0b46bd02862270000754","name":"Warming
+        Area 2","notes":"","body":""},{"id":"506b0b46bd02862270000755","name":"Side
+        Area","notes":"","body":""},{"id":"506b0b46bd02862270000756","name":"Side
+        Area 2","notes":"","body":""},{"id":"506b0b46bd02862270000757","name":"Side
+        Area 3","notes":null,"body":""},{"id":"506b0b46bd02862270000758","name":"Thermometer
+        2","notes":"","body":""},{"id":"506b0b46bd02862270000759","name":"Product
+        Tour","notes":"","body":""},{"id":"506b0b46bd0286227000075a","name":"Controls","notes":"","body":""},{"id":"506b0b46bd0286227000075b","name":"Main
+        Grilling Area","notes":"","body":""},{"id":"506b0b46bd0286227000075c","name":"Warming
+        Area","notes":"","body":""},{"id":"506b0b46bd0286227000075d","name":"Side
+        Areas","notes":null,"body":""},{"id":"506b0b46bd0286227000075e","name":"Thermometer","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b47bd02862270000760","name":"Performance","summary":"You''ll
+        get superb heat-up time and good high and low temperature performance from
+        the <r:product:name />.","slug":"Minden-Master-II-Grill-Review/Performance","sections":[{"id":"506b0b47bd02862270000762","name":"Performance
+        Summary","notes":"","body":"You''ll get superb heat-up time and good high
+        and low temperature performance from the <r:product:name />."},{"id":"506b0b47bd02862270000763","name":"Heatup
+        Time Description","notes":"","body":""},{"id":"506b0b47bd02862270000764","name":"Low
+        Temperature Cooking Performance","notes":"","body":"At just less than 10 minutes
+        to cook our test patties, the <r:product:name /> performed capably on the
+        grill''s low-fire setting. It also achieved solid consistency across the three
+        burners as there wasn''t too much deviation in temperature."},{"id":"506b0b47bd02862270000765","name":"Low
+        Temperature Uniformity","notes":"","body":"With the exception of one thermocouple
+        on the left, there wasn''t too much deviation across the grill surface. Most
+        areas on the surface were from 615-650 degrees."},{"id":"506b0b47bd02862270000766","name":"Low
+        Temperature Consistency","notes":"","body":"Consistency on the \t<r:product:name
+        /> wasn''t great, as the middle of the grill reached a high of 708 and a low
+        of 539 degrees. This will affect users because they may have steaks that are
+        done on one part and others that need more time."},{"id":"506b0b47bd02862270000767","name":"High
+        Temperature Cooking Performance","notes":"","body":"You''ll need less than
+        8 minutes, which is well below average and a great time, to cook up hamburger
+        patties while cooking on high temperature."},{"id":"506b0b47bd02862270000768","name":"High
+        Temperature Uniformity","notes":"","body":"The <r:product:name /> cooks with
+        relative uniformity. We didn''t see too much of a variation in temperatures
+        on the cooking area."},{"id":"506b0b47bd02862270000769","name":"High Temperature
+        Consistency","notes":"","body":"One thing you won''t need to worry about with
+        the <r:product:name /> is burner consistency. Almost all thermocouples were
+        within 20 degrees of each other."},{"id":"506b0b47bd0286227000076a","name":"Warming
+        Tray","notes":null,"body":""},{"id":"506b0b47bd0286227000076b","name":"Lid
+        & Handle Temperature","notes":"","body":"The allowable temperature for the
+        outside of a grill is 131 degrees. Unfortunately for the <r:product:name />,
+        all of the thermocouples we placed on the outside were higher than that. Furthermore,
+        one of them reached a whopping 147 degrees. You may want to use gloves when
+        using this grill."},{"id":"506b0b47bd0286227000076c","name":"Output & Fuel
+        Life Description","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b47bd0286227000076e","name":"Features
+        & Usability","summary":"The <r:product:name /> is pretty intuitive, but cleaning
+        isn''t easy.","slug":"Minden-Master-II-Grill-Review/Features-and-Usability","sections":[{"id":"506b0b47bd02862270000770","name":"Features
+        & Usability Summary","notes":"","body":"The <r:product:name /> is pretty intuitive,
+        but cleaning isn''t easy."},{"id":"506b0b47bd02862270000771","name":"Controls
+        2","notes":"","body":""},{"id":"506b0b47bd02862270000772","name":"Controls
+        3","notes":"","body":""},{"id":"506b0b47bd02862270000773","name":"Controls
+        Description","notes":"","body":"There are three black plastic burner buttons
+        on the front of the <r:product:name /> and a red automatic ignition button
+        on the right. Don''t worry about turning these on by accident, because you
+        need to press down on the burner buttons to turn the gas on."},{"id":"506b0b47bd02862270000774","name":"Fuel
+        Description","notes":"","body":"The <r:product:name /> uses liquid propane
+        for fuel. The easy-to-use regulator is included and under the grilling area
+        is storage space where the 20-pound propane canister fits. You''ll need to
+        go through the back of the grill to remove the tank."},{"id":"506b0b47bd02862270000775","name":"Lighter
+        Description","notes":"","body":"The red ignition button on the right will
+        click loudly when you press it."},{"id":"506b0b47bd02862270000776","name":"Cooking
+        Area Description","notes":"","body":"The \t<r:product:name />''s primary cooking
+        surface is 365 square inches, which isn''t the biggest size we''ve seen but
+        it won''t prevent you from cooking a bunch of burgers at once either. There
+        is a single grate and it''s a bit heavy and not easy to remove for cleaning."},{"id":"506b0b47bd02862270000777","name":"Warming
+        Area Description","notes":"","body":"The warming tray is located at the back
+        of the grilling area and can''t be removed for cleaning."},{"id":"506b0b47bd02862270000778","name":"Other
+        Areas Description","notes":"","body":""},{"id":"506b0b47bd02862270000779","name":"Cleanup
+        Description","notes":"","body":"There''s just the single grate on top of the
+        burners that''s heavy and hard to remove. Once you do get it off the grill,
+        though, it''s easy to just wipe down the grease trays that cover the burners.
+        The grease funnels into a tray that you can pull out of the back by grabbing
+        the wooden handle that protrudes from the back of the grill."},{"id":"506b0b47bd0286227000077a","name":"Other
+        Features Description","notes":"","body":"You''ll have access to a food tray/chopping
+        block on the right and by lifting up the tray on the left, you''ll see the
+        tool storage compartment. Both sides also have hooks for tool storage. On
+        the top of the grill is a thermometer that reaches 600 degrees. If you''re
+        looking to move the grill, keep in mind that though it has solid wheels, it''s
+        somewhat heavy to wheel around.\n"},{"id":"506b0b47bd0286227000077b","name":"Construction
+        Description","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b48bd0286227000077d","name":"COMP
+        1","summary":"COMP 1","slug":"Minden-Master-II-Grill-Review/COMP-1","sections":[{"id":"506b0b48bd0286227000077f","name":"Comp
+        1 Description","notes":"","body":""},{"id":"506b0b48bd02862270000780","name":"unnamed
+        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b48bd02862270000782","name":"COMP
+        2","summary":"COMP 2","slug":"Minden-Master-II-Grill-Review/COMP-2","sections":[{"id":"506b0b48bd02862270000784","name":"Comp
+        2 Description","notes":"","body":""},{"id":"506b0b48bd02862270000785","name":"unnamed
+        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b48bd02862270000787","name":"COMP
+        3","summary":"COMP 3","slug":"Minden-Master-II-Grill-Review/COMP-3","sections":[{"id":"506b0b48bd02862270000789","name":"Comp
+        3 Description","notes":"","body":""},{"id":"506b0b48bd0286227000078a","name":"unnamed
+        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b49bd0286227000078c","name":"Conclusion","summary":"Conclusion","slug":"Minden-Master-II-Grill-Review/Conclusion","sections":[{"id":"506b0b49bd0286227000078e","name":"Conclusion
+        Summary","notes":"","body":""},{"id":"506b0b49bd0286227000078f","name":"Conclusion
+        Performance","notes":"","body":"Overall, this is a decent grill, but you may
+        be able to get similarly-performing grills at a cheaper price."},{"id":"506b0b49bd02862270000790","name":"Conclusion
+        Usability","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b49bd02862270000792","name":"Specs
+        & Ratings","summary":"Specs & Ratings","slug":"Minden-Master-II-Grill-Review/Specs-and-Ratings","sections":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b4abd02862270000795","name":"unclassified_sections","summary":"meta-data
+        and such","slug":"Minden-Master-II-Grill-Review/unclassified_sections","sections":[{"id":"506b0b4abd02862270000796","name":"Display
+        Title","notes":null,"body":""},{"id":"506b0b4abd02862270000797","name":"Browser
+        Title","notes":null,"body":""},{"id":"506b0b4abd02862270000798","name":"Description","notes":null,"body":""},{"id":"506b0b4abd02862270000799","name":"Keywords","notes":null,"body":""},{"id":"506b0b4abd0286227000079a","name":"Comp
+        1 ID","notes":"","body":""},{"id":"506b0b4abd0286227000079b","name":"Comp
+        2 ID","notes":"","body":""},{"id":"506b0b4abd0286227000079c","name":"Comp
+        3 ID","notes":"","body":""},{"id":"506b0b4abd0286227000079d","name":"Design","notes":"","body":""},{"id":"506b0b4abd0286227000079e","name":"Performance","notes":"","body":""},{"id":"506b0b4abd0286227000079f","name":"Features
+        & Usability","notes":"","body":""},{"id":"506b0b4abd028622700007a0","name":"COMP
+        1","notes":"","body":""},{"id":"506b0b4abd028622700007a1","name":"COMP 2","notes":"","body":""},{"id":"506b0b4abd028622700007a2","name":"COMP
+        3","notes":"","body":""},{"id":"506b0b4abd028622700007a3","name":"Conclusion","notes":"","body":""},{"id":"506b0b4abd028622700007a4","name":"Specs
+        & Ratings","notes":"","body":""},{"id":"506b0b4abd028622700007a5","name":"Warming
+        Tray Performance","notes":"","body":""},{"id":"506b0b4abd028622700007a6","name":"Assembly
+        Description","notes":"","body":""},{"id":"506b0b4abd028622700007a7","name":"Snippets","notes":"","body":""},{"id":"506b0b4abd028622700007a8","name":"Summary","notes":"","body":""},{"id":"506b0b4abd028622700007a9","name":"News
+        Box Excerpt","notes":"","body":""},{"id":"506b0b4abd028622700007aa","name":"Home
+        News Excerpt","notes":"","body":""},{"id":"506b0b4abd028622700007ab","name":"Home
+        Feature One-Liner","notes":"","body":""},{"id":"506b0b4abd028622700007ac","name":"Event
+        Page Feature Image","notes":"","body":""},{"id":"506b0b4abd028622700007ad","name":"Event
+        Page Feature Title","notes":"","body":""},{"id":"506b0b4abd028622700007ae","name":"IR
+        Photo","notes":"","body":""},{"id":"506b0b4abd028622700007af","name":"Low
+        Fire Cooking Comparison","notes":"","body":""},{"id":"506b0b4abd028622700007b0","name":"High
+        Fire Cooking Comparison","notes":"","body":""},{"id":"506b0b4abd028622700007b1","name":"One-Line
+        Summary","notes":"Appears in the hero at the top of the home page and at the
+        top of the first page of the review.","body":""},{"id":"506b0b4abd028622700007b2","name":"Pro
+        One","notes":"","body":"Lighting-quick heatup"},{"id":"506b0b4abd028622700007b3","name":"Pro
+        Two","notes":"","body":"Tool hooks and storage space"},{"id":"506b0b4abd028622700007b4","name":"Pro
+        Three","notes":"","body":""},{"id":"506b0b4abd028622700007b5","name":"Con
+        One","notes":"","body":"No side burners"},{"id":"506b0b4abd028622700007b6","name":"Con
+        Two","notes":"","body":"Inconsistent heating on low temp"},{"id":"506b0b4abd028622700007b7","name":"Con
+        Three","notes":"","body":""},{"id":"506b0b4abd028622700007b8","name":"Alternate
+        Hero Title","notes":"this defaults to the name of the article. Set this to
+        ''NOTEXT'' if you don''t want any text to overlay the hero image","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}}],"products":[{"id":"506b06c40494340f5180a155","created_at":"2012-05-15T21:12:15Z","updated_at":"2012-10-02T15:41:58Z","name":"Minden
+        Master II","slug":"minden-master-ii","_type":"Home::Grills::Gas","types":["Propane"],"product_rating":null,"ranking":{"total":null,"rank":null},"msrp":479.0,"manufacturer_specs":{"brand_name":"(Minden)","manufacturer_name":"Minden","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","Fuel":["LP
+        Gas"],"Install Type":"Freestanding","Finish or Color":"Green","Side Burner":"No","Rotisserie":"No","Original
+        Price":479.0},"article_ids":["506b0b46bd02862270000747"],"website_ids":["506b05a7bd02867160000012"],"publish_on":"2012-05-18T19:34:00+00:00","attachments":[{"id":"506b0c54bd028622700014c2","created_at":"2012-10-02T15:46:28Z","updated_at":"2012-10-02T15:46:28Z","name":"Minden-360MD-vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s50x50_Minden-360MD-vanity.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s150x150_Minden-360MD-vanity.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s250x250_Minden-360MD-vanity.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s500x500_Minden-360MD-vanity.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x400_Minden-360MD-vanity.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x400_Minden-360MD-vanity.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x110_Minden-360MD-vanity.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s100x60_Minden-360MD-vanity.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg","file_size":29538,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"brand":{"name":"Minden","url":null,"logo_url":null,"slug":"minden"},"raw_scores":{},"scaled_scores":{},"rateable":"unrateable","rateable?":true,"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"authors":[{"id":"506b0bfcbd0286227000131e","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Patrick
+        Ouellette","title":"Editor","short_bio":"This is the default bio for a author.
+        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
+        is the default bio for a author. It can be edited in the defaults.rb configatron
+        file.\n","slug":"patrick-ouellette","social":{"email":"pouellette@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?s=48&d=mm","medium":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?s=128&d=mm","normal":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[],"websites":[{"id":"506b05a7bd02867160000012","created_at":"2012-10-02T15:17:59Z","updated_at":"2012-10-02T15:26:13Z","name":"GrillsInfo.com","url":"grillsinfo.com","code":"GRI","permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"permissions":{"read":true,"create":true,"update":true,"destroy":true}}'
     http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:38:16 GMT
-recorded_with: VCR 2.2.4
+  recorded_at: Wed, 03 Oct 2012 22:09:17 GMT
+recorded_with: VCR 2.2.5

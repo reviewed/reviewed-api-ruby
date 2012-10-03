@@ -2,124 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/websites/50241b9c5da4ac8d38000001
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - xxxxxxxxxxxxxxxx
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Aug 2012 03:23:03 GMT
-      Server:
-      - thin 1.4.1 codename Chromeo
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Request-Id:
-      - c0a80c5c187bf43077d7996fb4a46540
-      X-Runtime:
-      - '0.012044'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Api Key not found"}'
-    http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:23:02 GMT
-- request:
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/websites/notfound
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Aug 2012 03:23:04 GMT
-      Server:
-      - thin 1.4.1 codename Chromeo
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '100000'
-      X-Request-Id:
-      - 3f5c58e32843a701fc2d4d697aaeecb4
-      X-Runtime:
-      - '0.025829'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Content-Length:
-      - '30'
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Record Not Found"}'
-    http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:23:02 GMT
-- request:
-    method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50241b9c5da4ac8d38000001
     body:
       encoding: US-ASCII
@@ -154,28 +36,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Aug 2012 03:33:28 GMT
+      - Wed, 03 Oct 2012 22:04:48 GMT
       Server:
-      - thin 1.4.1 codename Chromeo
+      - thin 1.5.0 codename Knife
       Strict-Transport-Security:
       - max-age=31536000
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - a12c938c839e21b1ec9e1cb77fcace26
+      - 234f0e4f21d5792b531403a13b205014
       X-Runtime:
-      - '0.150410'
+      - '0.039460'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Content-Length:
-      - '31'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
       string: ! '{"message":"Api Key not found"}'
     http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:33:26 GMT
+  recorded_at: Wed, 03 Oct 2012 22:04:48 GMT
 - request:
     method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/articles/notfound
@@ -212,19 +94,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Aug 2012 03:33:28 GMT
+      - Wed, 03 Oct 2012 22:04:48 GMT
       Server:
-      - thin 1.4.1 codename Chromeo
+      - thin 1.5.0 codename Knife
       Strict-Transport-Security:
       - max-age=31536000
       X-Rack-Cache:
       - miss
       X-Rate-Limit:
-      - '100000'
+      - '99937'
       X-Request-Id:
-      - 05c47881cd83d03519f75042c5872568
+      - 6575c999fa3b867be50d3d2bb6de528f
       X-Runtime:
-      - '0.173736'
+      - '0.126792'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -235,5 +117,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"message":"Record Not Found"}'
     http_version: 
-  recorded_at: Wed, 29 Aug 2012 03:33:27 GMT
-recorded_with: VCR 2.2.4
+  recorded_at: Wed, 03 Oct 2012 22:04:48 GMT
+recorded_with: VCR 2.2.5

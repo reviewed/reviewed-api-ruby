@@ -45,15 +45,15 @@ describe Reviewed::Base do
       use_vcr_cassette 'base/find_ok'
 
       it 'fetches content from the api' do
-        model = Reviewed::Example.find('5036d7dd60de7d2065075752')
+        model = Reviewed::Example.find('506b0b46bd02862270000747')
         model.raw_response.should_not be_nil
       end
 
       it 'parses response json and returns an object' do
-        model = Reviewed::Example.find('5036d7dd60de7d2065075752')
+        model = Reviewed::Example.find('506b0b46bd02862270000747')
         model.class.should == Reviewed::Example
-        model.id.should == '5036d7dd60de7d2065075752'
-        model.name.should == 'Fast Appliances To Save You Time'
+        model.id.should == '506b0b46bd02862270000747'
+        model.name.should == 'Minden Master II Grill Review'
       end
     end
 
@@ -86,7 +86,7 @@ describe Reviewed::Base do
 
     it 'returns the appropriate page of results' do
       collection = Reviewed::Article.where(:page => 2)
-      collection.total.should == 7141
+      collection.total.should > 1
       collection.current_page.should == 2
     end
 

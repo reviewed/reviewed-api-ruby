@@ -6,8 +6,10 @@ describe Reviewed::Article do
 
     it 'finds a page with a matching slug' do
       article = Reviewed::Article.find('minden-master-ii-grill-review')
-      article.pages.length.should == 4
-      article.find_page('performance').should == article.pages[1]
+      article.pages.length.should == 10
+      page = article.find_page('performance')
+      page.should == article.pages[2]
+      page.name.should == 'Performance'
     end
   end
 
@@ -34,7 +36,7 @@ describe Reviewed::Article do
     end
 
     it 'returns all attachments' do
-      @article.attachments.length.should > 1
+      @article.attachments.length.should >= 1
     end
 
     it 'finds attachments by tag' do
@@ -44,5 +46,10 @@ describe Reviewed::Article do
         attachment.tags.join(',').should match(/hero/i)
       end
     end
+
+    it 'does not have any matching attachments' do
+      attachments = @article.attachments('doesnotcompute')
+      attachments.length.should == 0
+    end 
   end
 end

@@ -36,7 +36,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 02 Oct 2012 19:07:19 GMT
+      - Wed, 03 Oct 2012 22:05:18 GMT
       Etag:
       - ! '"f79d99e2a0a99f3f72f228d9d759a42e"'
       Server:
@@ -46,11 +46,11 @@ http_interactions:
       X-Rack-Cache:
       - miss
       X-Rate-Limit:
-      - '99999'
+      - '99927'
       X-Request-Id:
-      - e33d5590a53df5d55434f336a3d34a8f
+      - ed973696091d6f0107565e05148f2b59
       X-Runtime:
-      - '0.356420'
+      - '0.266740'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -140,5 +140,5 @@ http_interactions:
         is the default bio for a author. It can be edited in the defaults.rb configatron
         file.\n","slug":"chris-thomas","social":{"email":"cthomas@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/29e724ec29940a903e976cf3e5536e08?s=48&d=mm","medium":"http://www.gravatar.com/avatar/29e724ec29940a903e976cf3e5536e08?s=128&d=mm","normal":"http://www.gravatar.com/avatar/29e724ec29940a903e976cf3e5536e08?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}]}'
     http_version: 
-  recorded_at: Tue, 02 Oct 2012 19:07:09 GMT
+  recorded_at: Wed, 03 Oct 2012 22:05:18 GMT
 recorded_with: VCR 2.2.5

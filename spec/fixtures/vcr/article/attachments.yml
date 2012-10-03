@@ -36,21 +36,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Sep 2012 15:17:40 GMT
+      - Wed, 03 Oct 2012 22:04:47 GMT
       Etag:
-      - ! '"862a321943be049879ec5b750875b178"'
+      - ! '"8b48161dd4f28575a54eb5a214971442"'
       Server:
-      - thin 1.4.1 codename Chromeo
+      - thin 1.5.0 codename Knife
       Strict-Transport-Security:
       - max-age=31536000
       X-Rack-Cache:
       - miss
       X-Rate-Limit:
-      - '100000'
+      - '99939'
       X-Request-Id:
-      - 6a1e04877b9463410c035ddb8b4b5fb5
+      - c5a2807653d01f345491c8629e7beec3
       X-Runtime:
-      - '0.421730'
+      - '0.294527'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -59,203 +59,186 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"id":"504563ee60de7d97ec000341","name":"Big Green Egg Medium Charcoal
-        Grill Review","slug":"big-green-egg-medium-charcoal-grill-review","summary":null,"website_ids":["5033da7960de7d6457000012"],"tags":["review"],"created_at":"2011-11-29T20:18:15Z","updated_at":"2012-03-30T06:49:27Z","pages":[{"id":"504563ee60de7d97ec000342","name":"Introduction","slug":"big-green-egg-medium-charcoal-grill-review","summary":"Introduction","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000343","name":"Introduction","notes":"","created_at":null,"updated_at":null,"body":"The
+      string: ! '{"id":"506b0b2bbd02862270000494","created_at":"2011-11-29T20:18:15Z","updated_at":"2012-10-02T15:41:36Z","name":"Big
+        Green Egg Medium Charcoal Grill Review","summary":"Super-simple charcoal grill
+        has good performance. ","version":20,"website_ids":["506b05a7bd02867160000012"],"tags":["review"],"publish_on":"2011-11-29T20:17:00+00:00","attachment_ids":["506b0b2fbd02862270000506"],"primary_product_id":"506b06970494340f51809caf","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review","pages":[{"id":"506b0b2bbd02862270000497","name":"Introduction","summary":"Introduction","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review","sections":[{"id":"506b0b2bbd02862270000499","name":"Introduction","notes":"","body":"The
         <r:product:name /> is a classic charcoal grill with a simple design: a ceramic
         vessel that holds a load of charcoal. While the design is simple, don''t think
         that it offers generic performance as well. The <r:product:name /> will heat
-        your food up quick and maintain consistent high-temperature cooking."}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000344","name":"Design","slug":"big-green-egg-medium-charcoal-grill-review/design","summary":"The
+        your food up quick and maintain consistent high-temperature cooking."}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2cbd0286227000049b","name":"Design","summary":"The
         \t<r:product:model /> is a large, heavy charcoal grill that is well constructed
-        and built. ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000345","name":"Design
-        Summary","notes":"","created_at":null,"updated_at":null,"body":"The \t<r:product:model
-        /> is a large, heavy charcoal grill that is well constructed and built. "},{"id":"504563ee60de7d97ec000346","name":"Controls
-        2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000347","name":"Controls
-        3","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000348","name":"Main
-        Grilling Area 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000349","name":"Warming
-        Area 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034a","name":"Side
-        Area","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034b","name":"Side
-        Area 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034c","name":"Side
-        Area 3","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034d","name":"Thermometer
-        2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034e","name":"Product
-        Tour","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00034f","name":"Controls","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000350","name":"Main
-        Grilling Area","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000351","name":"Warming
-        Area","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000352","name":"Side
-        Areas","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000353","name":"Thermometer","notes":"","created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000354","name":"Performance","slug":"big-green-egg-medium-charcoal-grill-review/performance","summary":"Excellent
+        and built. ","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/Design","sections":[{"id":"506b0b2cbd0286227000049d","name":"Design
+        Summary","notes":"","body":"The \t<r:product:model /> is a large, heavy charcoal
+        grill that is well constructed and built. "},{"id":"506b0b2cbd0286227000049e","name":"Controls
+        2","notes":"","body":""},{"id":"506b0b2cbd0286227000049f","name":"Controls
+        3","notes":"","body":""},{"id":"506b0b2cbd028622700004a0","name":"Main Grilling
+        Area 2","notes":"","body":""},{"id":"506b0b2cbd028622700004a1","name":"Warming
+        Area 2","notes":"","body":""},{"id":"506b0b2cbd028622700004a2","name":"Side
+        Area","notes":"","body":""},{"id":"506b0b2cbd028622700004a3","name":"Side
+        Area 2","notes":"","body":""},{"id":"506b0b2cbd028622700004a4","name":"Side
+        Area 3","notes":null,"body":""},{"id":"506b0b2cbd028622700004a5","name":"Thermometer
+        2","notes":"","body":""},{"id":"506b0b2cbd028622700004a6","name":"Product
+        Tour","notes":"","body":""},{"id":"506b0b2cbd028622700004a7","name":"Controls","notes":"","body":""},{"id":"506b0b2cbd028622700004a8","name":"Main
+        Grilling Area","notes":"","body":""},{"id":"506b0b2cbd028622700004a9","name":"Warming
+        Area","notes":"","body":""},{"id":"506b0b2cbd028622700004aa","name":"Side
+        Areas","notes":null,"body":""},{"id":"506b0b2cbd028622700004ab","name":"Thermometer","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2cbd028622700004ad","name":"Performance","summary":"Excellent
         performance overall, especially at high temperature. The cooking area is small,
-        though. ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000355","name":"Performance
-        Summary","notes":"","created_at":null,"updated_at":null,"body":"Excellent
-        performance overall, especially at high temperature. The cooking area is small,
-        though. "},{"id":"504563ee60de7d97ec000356","name":"Heatup Time Description","notes":"","created_at":null,"updated_at":null,"body":"The
-        <r:product:model /> was a very quick grill to heat up; we found that it could
-        reach our low temperature target of 325\u00b0F in just 35 seconds and our
-        high temperature target of 625\u00b0F in just 36 seconds. We reached these
-        two settings by adjusting the air vents on the lid and on the bottom of the
-        grill body: the low fire setting by half opening the vent, and the high fire
-        setting by completely opening it."},{"id":"504563ee60de7d97ec000357","name":"Low
-        Temperature Cooking Performance","notes":"","created_at":null,"updated_at":null,"body":"Running
-        at our low temperature target of about 325\u00b0F, we found that the grill
-        would take just over 11 minutes to cook our test patties, which is fairly
-        fast for a  grill of this type. "},{"id":"504563ee60de7d97ec000358","name":"Low
-        Temperature Uniformity","notes":"","created_at":null,"updated_at":null,"body":"We
+        though. ","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/Performance","sections":[{"id":"506b0b2cbd028622700004af","name":"Performance
+        Summary","notes":"","body":"Excellent performance overall, especially at high
+        temperature. The cooking area is small, though. "},{"id":"506b0b2cbd028622700004b0","name":"Heatup
+        Time Description","notes":"","body":"The <r:product:model /> was a very quick
+        grill to heat up; we found that it could reach our low temperature target
+        of 325\u00b0F in just 35 seconds and our high temperature target of 625\u00b0F
+        in just 36 seconds. We reached these two settings by adjusting the air vents
+        on the lid and on the bottom of the grill body: the low fire setting by half
+        opening the vent, and the high fire setting by completely opening it."},{"id":"506b0b2cbd028622700004b1","name":"Low
+        Temperature Cooking Performance","notes":"","body":"Running at our low temperature
+        target of about 325\u00b0F, we found that the grill would take just over 11
+        minutes to cook our test patties, which is fairly fast for a  grill of this
+        type. "},{"id":"506b0b2cbd028622700004b2","name":"Low Temperature Uniformity","notes":"","body":"We
         also look at the consistency of the temperature across the cooking surface,
         and the <r:product:model /> did well here, producing uniform temperatures
         across the cooking area. We did find that it was a little hotter at one edge,
-        but again, that is not unusual for a charcoal grill."},{"id":"504563ee60de7d97ec000359","name":"Low
-        Temperature Consistency","notes":"","created_at":null,"updated_at":null,"body":"The
-        temperature also remained consistent over time, with only moderate variations
-        in the temperature. This should mean good, even cooking of food"},{"id":"504563ee60de7d97ec00035a","name":"High
-        Temperature Cooking Performance","notes":"","created_at":null,"updated_at":null,"body":"Opening
-        the air vents on the base and lid of the grill increased the temperature,
-        and we found equally good performance from this grill cooking food at these
-        higher temperatures. Here, the grill was able to cook our test patties in
-        just over 8 minutes.  "},{"id":"504563ee60de7d97ec00035b","name":"High Temperature
-        Uniformity","notes":"","created_at":null,"updated_at":null,"body":"We did
-        find that the temperature across the cooking area was a lot less consistent
-        here, though; the extra flow of air from the open vents seems to create more
-        hot zones, especially in the center of the cooking grate, which was nearly
-        200\u00b0F hotter than close to the edges."},{"id":"504563ee60de7d97ec00035c","name":"High
-        Temperature Consistency","notes":"","created_at":null,"updated_at":null,"body":"The
-        temperature also varied over time, with the temperature rising and falling
-        on the cooking grate somewhat more often as the fire rose and fell than we
-        like to see. "},{"id":"504563ee60de7d97ec00035d","name":"Warming Tray","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00035e","name":"Lid
-        & Handle Temperature","notes":"","created_at":null,"updated_at":null,"body":"Although
-        the grill body got rather hot (rising to a toasty 300\u00b0F), the handle
-        that you use to lift the lid remained cool; even after running the grill for
-        a full hour, this wooden handle didn''t go much above 80\u00b0F, which means
-        that it is safe and comfortable to use. "},{"id":"504563ee60de7d97ec00035f","name":"Output
-        & Fuel Life Description","notes":"","created_at":null,"updated_at":null,"body":"We
+        but again, that is not unusual for a charcoal grill."},{"id":"506b0b2cbd028622700004b3","name":"Low
+        Temperature Consistency","notes":"","body":"The temperature also remained
+        consistent over time, with only moderate variations in the temperature. This
+        should mean good, even cooking of food"},{"id":"506b0b2cbd028622700004b4","name":"High
+        Temperature Cooking Performance","notes":"","body":"Opening the air vents
+        on the base and lid of the grill increased the temperature, and we found equally
+        good performance from this grill cooking food at these higher temperatures.
+        Here, the grill was able to cook our test patties in just over 8 minutes.  "},{"id":"506b0b2cbd028622700004b5","name":"High
+        Temperature Uniformity","notes":"","body":"We did find that the temperature
+        across the cooking area was a lot less consistent here, though; the extra
+        flow of air from the open vents seems to create more hot zones, especially
+        in the center of the cooking grate, which was nearly 200\u00b0F hotter than
+        close to the edges."},{"id":"506b0b2cbd028622700004b6","name":"High Temperature
+        Consistency","notes":"","body":"The temperature also varied over time, with
+        the temperature rising and falling on the cooking grate somewhat more often
+        as the fire rose and fell than we like to see. "},{"id":"506b0b2cbd028622700004b7","name":"Warming
+        Tray","notes":null,"body":""},{"id":"506b0b2cbd028622700004b8","name":"Lid
+        & Handle Temperature","notes":"","body":"Although the grill body got rather
+        hot (rising to a toasty 300\u00b0F), the handle that you use to lift the lid
+        remained cool; even after running the grill for a full hour, this wooden handle
+        didn''t go much above 80\u00b0F, which means that it is safe and comfortable
+        to use. "},{"id":"506b0b2cbd028622700004b9","name":"Output & Fuel Life Description","notes":"","body":"We
         don\u2019t measure the BTU/Hr output of charcoal grills, but we did find that
         this grill can produce a lot of heat with a large load of charcoal onboard.
         It also retains heat well: the body of the grill remains very warm for several
-        hours after the charcoal has run out."}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000360","name":"Features
-        & Usability","slug":"big-green-egg-medium-charcoal-grill-review/features-and-usability","summary":"Very
-        simple to use (even a caveman could do it), but that means no extra features.
-        ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000361","name":"Features
-        & Usability Summary","notes":"","created_at":null,"updated_at":null,"body":"Very
-        simple to use (even a caveman could do it), but that means no extra features.
-        "},{"id":"504563ee60de7d97ec000362","name":"Controls 2","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000363","name":"Controls
-        3","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000364","name":"Controls
-        Description","notes":"","created_at":null,"updated_at":null,"body":"The controls
-        on this grill are basic, to put it mildly: you control the temperature by
-        opening and closing vents on the base of the grill body and the lid. Open
-        the vents, and more air rushes through to the charcoal fuel, leading to a
-        higher temperature. "},{"id":"504563ee60de7d97ec000365","name":"Fuel Description","notes":"","created_at":null,"updated_at":null,"body":"The
-        <r:product:model /> uses charcoal, which fits into the space below the grate."},{"id":"504563ee60de7d97ec000366","name":"Lighter
-        Description","notes":"","created_at":null,"updated_at":null,"body":"There
-        is no lighter on this grill, so you have to ignite the charcoal yourself."},{"id":"504563ee60de7d97ec000367","name":"Cooking
-        Area Description","notes":"","created_at":null,"updated_at":null,"body":"The
-        cooking area is rather small: just 177 square inches. In our tests, we were
-        only able to fit two of our test patties onto this space, so that might be
-        a big problem for large families or party use. If you want to cook a lot of
-        food at once, you should look at a gas grill with a larger cooking area, or
-        one of the larger Big Green Egg models that offers more space to cook."},{"id":"504563ee60de7d97ec000368","name":"Warming
-        Area Description","notes":"","created_at":null,"updated_at":null,"body":"There
-        is no warming area on this grill."},{"id":"504563ee60de7d97ec000369","name":"Other
-        Areas Description","notes":"","created_at":null,"updated_at":null,"body":"No
-        side areas or other places to put food before or after cooking are included.
-        Big Green Egg does offer a number of shelves that clip onto the side of the
-        grill, as well as a range of wooden tables designed to hold the Big Green
-        Egg medium grill. These do cost extra, though. "},{"id":"504563ee60de7d97ec00036a","name":"Cleanup
-        Description","notes":"","created_at":null,"updated_at":null,"body":"Cleaning
+        hours after the charcoal has run out."}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2dbd028622700004bb","name":"Features
+        & Usability","summary":"Very simple to use (even a caveman could do it), but
+        that means no extra features. ","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/Features-and-Usability","sections":[{"id":"506b0b2dbd028622700004bd","name":"Features
+        & Usability Summary","notes":"","body":"Very simple to use (even a caveman
+        could do it), but that means no extra features. "},{"id":"506b0b2dbd028622700004be","name":"Controls
+        2","notes":"","body":""},{"id":"506b0b2dbd028622700004bf","name":"Controls
+        3","notes":"","body":""},{"id":"506b0b2dbd028622700004c0","name":"Controls
+        Description","notes":"","body":"The controls on this grill are basic, to put
+        it mildly: you control the temperature by opening and closing vents on the
+        base of the grill body and the lid. Open the vents, and more air rushes through
+        to the charcoal fuel, leading to a higher temperature. "},{"id":"506b0b2dbd028622700004c1","name":"Fuel
+        Description","notes":"","body":"The <r:product:model /> uses charcoal, which
+        fits into the space below the grate."},{"id":"506b0b2dbd028622700004c2","name":"Lighter
+        Description","notes":"","body":"There is no lighter on this grill, so you
+        have to ignite the charcoal yourself."},{"id":"506b0b2dbd028622700004c3","name":"Cooking
+        Area Description","notes":"","body":"The cooking area is rather small: just
+        177 square inches. In our tests, we were only able to fit two of our test
+        patties onto this space, so that might be a big problem for large families
+        or party use. If you want to cook a lot of food at once, you should look at
+        a gas grill with a larger cooking area, or one of the larger Big Green Egg
+        models that offers more space to cook."},{"id":"506b0b2dbd028622700004c4","name":"Warming
+        Area Description","notes":"","body":"There is no warming area on this grill."},{"id":"506b0b2dbd028622700004c5","name":"Other
+        Areas Description","notes":"","body":"No side areas or other places to put
+        food before or after cooking are included. Big Green Egg does offer a number
+        of shelves that clip onto the side of the grill, as well as a range of wooden
+        tables designed to hold the Big Green Egg medium grill. These do cost extra,
+        though. "},{"id":"506b0b2dbd028622700004c6","name":"Cleanup Description","notes":"","body":"Cleaning
         up the grill is easy; the cooking grate lifts out for easy cleaning, although
         the cast iron is not suitable for dishwashing. You have to scoop out the ash
-        from the charcoal, as there is no way to remove it from underneath. "},{"id":"504563ee60de7d97ec00036b","name":"Other
-        Features Description","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00036c","name":"Construction
-        Description","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00036d","name":"COMP
-        1","slug":"big-green-egg-medium-charcoal-grill-review/comp-1","summary":"COMP
-        1","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec00036e","name":"Comp
-        1 Description","notes":"","created_at":null,"updated_at":null,"body":"Both
-        of these grills use charcoal fuel, but the Weber offers the relative luxury
-        of a gas-assisted starter, and has a much larger cooking area. The Big Green
-        Egg is more consistent, though, and has a simple, straightforward design that
-        will appeal to charcoal purists. "},{"id":"504563ee60de7d97ec00036f","name":"unnamed
-        section","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000370","name":"COMP
-        2","slug":"big-green-egg-medium-charcoal-grill-review/comp-2","summary":"COMP
-        2","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000371","name":"Comp
-        2 Description","notes":"","created_at":null,"updated_at":null,"body":"Both
-        of these grills offer the same simple, straightforward design to grilling,
-        using charcoal fuel and not offering any bells or whistles. The Big Green
-        Egg feels better constructed, though, and more likely to stand up to heavy
-        use and weather. It is also better finished, with some nice touches like a
-        wooden handle that stays cooler and a better seal around the lid that keeps
-        the heat in. "},{"id":"504563ee60de7d97ec000372","name":"unnamed section","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000373","name":"COMP
-        3","slug":"big-green-egg-medium-charcoal-grill-review/comp-3","summary":"COMP
-        3","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000374","name":"Comp
-        3 Description","notes":"","created_at":null,"updated_at":null,"body":"The
-        eternal battle of the grill purists is here: charcoal vs gas. The charcoal
-        fuel of the Big Green Egg produces a more natural heat, but takes longer to
-        get running when you include the time to load and prep the grill with fuel).
-        The Kenmore also has more features, with a side burner and a more controllable
-        heat level. But in the end, the choice comes down to which you prefer to cook
-        with: charcoal or gas. "},{"id":"504563ee60de7d97ec000375","name":"unnamed
-        section","notes":null,"created_at":null,"updated_at":null,"body":""}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec000376","name":"Conclusion","slug":"big-green-egg-medium-charcoal-grill-review/conclusion","summary":"A
-        very simple to use grill with great overall performance. ","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec000377","name":"Conclusion
-        Summary","notes":"","created_at":null,"updated_at":null,"body":"A very simple
-        to use grill with great overall performance. "},{"id":"504563ee60de7d97ec000378","name":"Conclusion
-        Performance","notes":"","created_at":null,"updated_at":null,"body":"We found
-        good performance from the Big Green Egg, with short cooking times and uniform
-        temperatures. We did find that the temperatures did vary somewhat with the
-        vents open and the grill running at maximum, but this didn''t seem to be a
-        problem when we cooked our test dishes. Our only major issue here was the
-        fact that the cooking area is very small; we were only able to get two test
-        patties onto it at a time. "},{"id":"504563ee60de7d97ec000379","name":"Conclusion
-        Usability","notes":"","created_at":null,"updated_at":null,"body":"At the risk
-        of throwing out a cliche, the <r:product:brand:name /> is so simple, even
-        a caveman could use it. Using the grill just involves loading it with charcoal,
-        firing it up and throwing the food onto the grill. As long as the caveman
-        hasn''t grown accustomed to things like lighters, side burners and lights,
-        though: this grill eschews these for a more straightforward design. "}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00037a","name":"Specs
-        & Ratings","slug":"big-green-egg-medium-charcoal-grill-review/specs-and-ratings","summary":"Specs
-        & Ratings","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00037b","name":"unclassified_sections","slug":"big-green-egg-medium-charcoal-grill-review/unclassified_sections","summary":"meta-data
-        and such","created_at":"2012-09-04T02:14:06Z","updated_at":"2012-09-04T02:14:06Z","sections":[{"id":"504563ee60de7d97ec00037c","name":"Display
-        Title","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00037d","name":"Browser
-        Title","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00037e","name":"Description","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00037f","name":"Keywords","notes":null,"created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000380","name":"Comp
-        1 ID","notes":"","created_at":null,"updated_at":null,"body":"13194"},{"id":"504563ee60de7d97ec000381","name":"Comp
-        2 ID","notes":"","created_at":null,"updated_at":null,"body":"13352"},{"id":"504563ee60de7d97ec000382","name":"Comp
-        3 ID","notes":"","created_at":null,"updated_at":null,"body":"13270"},{"id":"504563ee60de7d97ec000383","name":"Design","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000384","name":"Performance","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000385","name":"Features
-        & Usability","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000386","name":"COMP
-        1","notes":"","created_at":null,"updated_at":null,"body":"Weber Performer
-        Comparison"},{"id":"504563ee60de7d97ec000387","name":"COMP 2","notes":"","created_at":null,"updated_at":null,"body":"Primo
-        Kamado Comparison"},{"id":"504563ee60de7d97ec000388","name":"COMP 3","notes":"","created_at":null,"updated_at":null,"body":"Kenmore
-        S3218AR Comparison"},{"id":"504563ee60de7d97ec000389","name":"Conclusion","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00038a","name":"Specs
-        & Ratings","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00038b","name":"Warming
-        Tray Performance","notes":"","created_at":null,"updated_at":null,"body":"There
-        is no warming tray on this grill. "},{"id":"504563ee60de7d97ec00038c","name":"Assembly
-        Description","notes":"","created_at":null,"updated_at":null,"body":"We found
-        the assembly of the <r:product:name /> to be pretty simple, taking us just
-        68 minutes to unpack, set up and get the grill going. The weight of the casing
-        does make this a two-person job, though, as one person can''t lift the casing
-        and put it into the stand (or the nest, as Big Green Egg describes it).   "},{"id":"504563ee60de7d97ec00038d","name":"Snippets","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00038e","name":"Summary","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
-        charcoal grill has good performance. "},{"id":"504563ee60de7d97ec00038f","name":"News
-        Box Excerpt","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
-        charcoal grill has good performance. "},{"id":"504563ee60de7d97ec000390","name":"Home
-        News Excerpt","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
-        charcoal grill has good performance. "},{"id":"504563ee60de7d97ec000391","name":"Home
-        Feature One-Liner","notes":"","created_at":null,"updated_at":null,"body":"Super-simple
-        charcoal grill"},{"id":"504563ee60de7d97ec000392","name":"Event Page Feature
-        Image","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000393","name":"Event
-        Page Feature Title","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000394","name":"IR
-        Photo","notes":"","created_at":null,"updated_at":null,"body":"The image below
-        was taken with an infrared camera to show the heat levels of the top of the
-        grill. The numbers at the bottom indicate the temperature scale. "},{"id":"504563ee60de7d97ec000395","name":"Low
-        Fire Cooking Comparison","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000396","name":"High
-        Fire Cooking Comparison","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000397","name":"One-Line
+        from the charcoal, as there is no way to remove it from underneath. "},{"id":"506b0b2dbd028622700004c7","name":"Other
+        Features Description","notes":"","body":""},{"id":"506b0b2dbd028622700004c8","name":"Construction
+        Description","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2dbd028622700004ca","name":"COMP
+        1","summary":"COMP 1","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/COMP-1","sections":[{"id":"506b0b2dbd028622700004cc","name":"Comp
+        1 Description","notes":"","body":"Both of these grills use charcoal fuel,
+        but the Weber offers the relative luxury of a gas-assisted starter, and has
+        a much larger cooking area. The Big Green Egg is more consistent, though,
+        and has a simple, straightforward design that will appeal to charcoal purists.
+        "},{"id":"506b0b2dbd028622700004cd","name":"unnamed section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2dbd028622700004cf","name":"COMP
+        2","summary":"COMP 2","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/COMP-2","sections":[{"id":"506b0b2ebd028622700004d1","name":"Comp
+        2 Description","notes":"","body":"Both of these grills offer the same simple,
+        straightforward design to grilling, using charcoal fuel and not offering any
+        bells or whistles. The Big Green Egg feels better constructed, though, and
+        more likely to stand up to heavy use and weather. It is also better finished,
+        with some nice touches like a wooden handle that stays cooler and a better
+        seal around the lid that keeps the heat in. "},{"id":"506b0b2ebd028622700004d2","name":"unnamed
+        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2ebd028622700004d4","name":"COMP
+        3","summary":"COMP 3","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/COMP-3","sections":[{"id":"506b0b2ebd028622700004d6","name":"Comp
+        3 Description","notes":"","body":"The eternal battle of the grill purists
+        is here: charcoal vs gas. The charcoal fuel of the Big Green Egg produces
+        a more natural heat, but takes longer to get running when you include the
+        time to load and prep the grill with fuel). The Kenmore also has more features,
+        with a side burner and a more controllable heat level. But in the end, the
+        choice comes down to which you prefer to cook with: charcoal or gas. "},{"id":"506b0b2ebd028622700004d7","name":"unnamed
+        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2ebd028622700004d9","name":"Conclusion","summary":"A
+        very simple to use grill with great overall performance. ","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/Conclusion","sections":[{"id":"506b0b2ebd028622700004db","name":"Conclusion
+        Summary","notes":"","body":"A very simple to use grill with great overall
+        performance. "},{"id":"506b0b2ebd028622700004dc","name":"Conclusion Performance","notes":"","body":"We
+        found good performance from the Big Green Egg, with short cooking times and
+        uniform temperatures. We did find that the temperatures did vary somewhat
+        with the vents open and the grill running at maximum, but this didn''t seem
+        to be a problem when we cooked our test dishes. Our only major issue here
+        was the fact that the cooking area is very small; we were only able to get
+        two test patties onto it at a time. "},{"id":"506b0b2ebd028622700004dd","name":"Conclusion
+        Usability","notes":"","body":"At the risk of throwing out a cliche, the <r:product:brand:name
+        /> is so simple, even a caveman could use it. Using the grill just involves
+        loading it with charcoal, firing it up and throwing the food onto the grill.
+        As long as the caveman hasn''t grown accustomed to things like lighters, side
+        burners and lights, though: this grill eschews these for a more straightforward
+        design. "}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2fbd028622700004df","name":"Specs
+        & Ratings","summary":"Specs & Ratings","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/Specs-and-Ratings","sections":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b2fbd028622700004e2","name":"unclassified_sections","summary":"meta-data
+        and such","slug":"Big-Green-Egg-Medium-Charcoal-Grill-Review/unclassified_sections","sections":[{"id":"506b0b2fbd028622700004e3","name":"Display
+        Title","notes":null,"body":""},{"id":"506b0b2fbd028622700004e4","name":"Browser
+        Title","notes":null,"body":""},{"id":"506b0b2fbd028622700004e5","name":"Description","notes":null,"body":""},{"id":"506b0b2fbd028622700004e6","name":"Keywords","notes":null,"body":""},{"id":"506b0b2fbd028622700004e7","name":"Comp
+        1 ID","notes":"","body":"13194"},{"id":"506b0b2fbd028622700004e8","name":"Comp
+        2 ID","notes":"","body":"13352"},{"id":"506b0b2fbd028622700004e9","name":"Comp
+        3 ID","notes":"","body":"13270"},{"id":"506b0b2fbd028622700004ea","name":"Design","notes":"","body":""},{"id":"506b0b2fbd028622700004eb","name":"Performance","notes":"","body":""},{"id":"506b0b2fbd028622700004ec","name":"Features
+        & Usability","notes":"","body":""},{"id":"506b0b2fbd028622700004ed","name":"COMP
+        1","notes":"","body":"Weber Performer Comparison"},{"id":"506b0b2fbd028622700004ee","name":"COMP
+        2","notes":"","body":"Primo Kamado Comparison"},{"id":"506b0b2fbd028622700004ef","name":"COMP
+        3","notes":"","body":"Kenmore S3218AR Comparison"},{"id":"506b0b2fbd028622700004f0","name":"Conclusion","notes":"","body":""},{"id":"506b0b2fbd028622700004f1","name":"Specs
+        & Ratings","notes":"","body":""},{"id":"506b0b2fbd028622700004f2","name":"Warming
+        Tray Performance","notes":"","body":"There is no warming tray on this grill.
+        "},{"id":"506b0b2fbd028622700004f3","name":"Assembly Description","notes":"","body":"We
+        found the assembly of the <r:product:name /> to be pretty simple, taking us
+        just 68 minutes to unpack, set up and get the grill going. The weight of the
+        casing does make this a two-person job, though, as one person can''t lift
+        the casing and put it into the stand (or the nest, as Big Green Egg describes
+        it).   "},{"id":"506b0b2fbd028622700004f4","name":"Snippets","notes":"","body":""},{"id":"506b0b2fbd028622700004f5","name":"Summary","notes":"","body":"Super-simple
+        charcoal grill has good performance. "},{"id":"506b0b2fbd028622700004f6","name":"News
+        Box Excerpt","notes":"","body":"Super-simple charcoal grill has good performance.
+        "},{"id":"506b0b2fbd028622700004f7","name":"Home News Excerpt","notes":"","body":"Super-simple
+        charcoal grill has good performance. "},{"id":"506b0b2fbd028622700004f8","name":"Home
+        Feature One-Liner","notes":"","body":"Super-simple charcoal grill"},{"id":"506b0b2fbd028622700004f9","name":"Event
+        Page Feature Image","notes":"","body":""},{"id":"506b0b2fbd028622700004fa","name":"Event
+        Page Feature Title","notes":"","body":""},{"id":"506b0b2fbd028622700004fb","name":"IR
+        Photo","notes":"","body":"The image below was taken with an infrared camera
+        to show the heat levels of the top of the grill. The numbers at the bottom
+        indicate the temperature scale. "},{"id":"506b0b2fbd028622700004fc","name":"Low
+        Fire Cooking Comparison","notes":"","body":""},{"id":"506b0b2fbd028622700004fd","name":"High
+        Fire Cooking Comparison","notes":"","body":""},{"id":"506b0b2fbd028622700004fe","name":"One-Line
         Summary","notes":"Appears in the hero at the top of the home page and at the
-        top of the first page of the review.","created_at":null,"updated_at":null,"body":"<font
-        color=\"white\">Super-simple charcoal grill has good performance.</font>"},{"id":"504563ee60de7d97ec000398","name":"Pro
-        One","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec000399","name":"Pro
-        Two","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039a","name":"Pro
-        Three","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039b","name":"Con
-        One","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039c","name":"Con
-        Two","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039d","name":"Con
-        Three","notes":"","created_at":null,"updated_at":null,"body":""},{"id":"504563ee60de7d97ec00039e","name":"Alternate
+        top of the first page of the review.","body":"<font color=\"white\">Super-simple
+        charcoal grill has good performance.</font>"},{"id":"506b0b2fbd028622700004ff","name":"Pro
+        One","notes":"","body":""},{"id":"506b0b2fbd02862270000500","name":"Pro Two","notes":"","body":""},{"id":"506b0b2fbd02862270000501","name":"Pro
+        Three","notes":"","body":""},{"id":"506b0b2fbd02862270000502","name":"Con
+        One","notes":"","body":""},{"id":"506b0b2fbd02862270000503","name":"Con Two","notes":"","body":""},{"id":"506b0b2fbd02862270000504","name":"Con
+        Three","notes":"","body":""},{"id":"506b0b2fbd02862270000505","name":"Alternate
         Hero Title","notes":"this defaults to the name of the article. Set this to
-        ''NOTEXT'' if you don''t want any text to overlay the hero image","created_at":null,"updated_at":null,"body":"Big
-        Green Egg"}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"products":[{"id":"503eb5038fd4f58eaf310c21","name":"Medium
-        Green / Charcoal","slug":"medium-green-charcoal","_type":"Home::Grills::Charcoal","types":[],"product_rating":4.79,"ranking":{"total":60,"rank":3},"msrp":null,"manufacturer_specs":{"brand_name":"(Big
-        Green Egg)","manufacturer_name":"Big Green Egg","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","publishable_on":"2011-10-12T18:55:00Z","Fuel":["Charcoal"],"Install
+        ''NOTEXT'' if you don''t want any text to overlay the hero image","body":"Big
+        Green Egg"}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}}],"products":[{"id":"506b06970494340f51809caf","created_at":"2011-10-12T18:55:14Z","updated_at":"2012-10-02T15:41:31Z","name":"Big
+        Green Egg Medium","slug":"big-green-egg-medium","_type":"Home::Grills::Charcoal","types":["Charcoal"],"product_rating":null,"ranking":{"total":null,"rank":null},"msrp":649.0,"manufacturer_specs":{"brand_name":"(Big
+        Green Egg)","manufacturer_name":"Big Green Egg","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","Fuel":["Charcoal"],"Install
         Type":"Freestanding","Total cooking area":177.0,"Finish or Color":"Green","Ignition
-        type":"Manual","Side Burner":"No","Rotisserie":"No","Original Price":649.0},"article_ids":["504563ee60de7d97ec000341"],"created_at":"2011-10-12T18:55:14Z","updated_at":"2012-09-05T17:53:39Z","attachments":[],"brand":null,"raw_scores":{"Heatup
+        type":"Manual","Side Burner":"No","Rotisserie":"No","Original Price":649.0},"article_ids":["506b0aecbd02862270000001","506b0b2bbd02862270000494"],"website_ids":["506b05a7bd02867160000012"],"publish_on":"2011-10-12T18:55:00+00:00","attachments":[{"id":"506b0c0dbd0286227000135c","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"MEgg.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s50x50_MEgg.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s150x150_MEgg.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s250x250_MEgg.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s500x500_MEgg.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s600x400_MEgg.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x400_MEgg.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x110_MEgg.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s100x60_MEgg.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/MEgg.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/MEgg.jpg","file_size":24813,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd0286227000135d","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-front.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s50x50_big-green-egg-medium-front.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s150x150_big-green-egg-medium-front.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s250x250_big-green-egg-medium-front.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s500x500_big-green-egg-medium-front.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s600x400_big-green-egg-medium-front.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s940x400_big-green-egg-medium-front.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s940x110_big-green-egg-medium-front.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s100x60_big-green-egg-medium-front.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/big-green-egg-medium-front.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/big-green-egg-medium-front.jpg","file_size":55035,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd0286227000135e","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-open.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s50x50_big-green-egg-medium-open.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s150x150_big-green-egg-medium-open.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s250x250_big-green-egg-medium-open.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s500x500_big-green-egg-medium-open.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s600x400_big-green-egg-medium-open.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s940x400_big-green-egg-medium-open.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s940x110_big-green-egg-medium-open.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s100x60_big-green-egg-medium-open.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/big-green-egg-medium-open.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/big-green-egg-medium-open.jpg","file_size":70486,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd0286227000135f","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-controls1.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s50x50_big-green-egg-medium-controls1.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s150x150_big-green-egg-medium-controls1.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s250x250_big-green-egg-medium-controls1.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s500x500_big-green-egg-medium-controls1.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s600x400_big-green-egg-medium-controls1.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s940x400_big-green-egg-medium-controls1.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s940x110_big-green-egg-medium-controls1.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s100x60_big-green-egg-medium-controls1.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/big-green-egg-medium-controls1.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/big-green-egg-medium-controls1.jpg","file_size":167315,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001360","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-controls2.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s50x50_big-green-egg-medium-controls2.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s150x150_big-green-egg-medium-controls2.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s250x250_big-green-egg-medium-controls2.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s500x500_big-green-egg-medium-controls2.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s600x400_big-green-egg-medium-controls2.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s940x400_big-green-egg-medium-controls2.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s940x110_big-green-egg-medium-controls2.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s100x60_big-green-egg-medium-controls2.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/big-green-egg-medium-controls2.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/big-green-egg-medium-controls2.jpg","file_size":115807,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001361","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-grilling-area.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s50x50_big-green-egg-medium-grilling-area.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s150x150_big-green-egg-medium-grilling-area.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s250x250_big-green-egg-medium-grilling-area.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s500x500_big-green-egg-medium-grilling-area.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s600x400_big-green-egg-medium-grilling-area.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s940x400_big-green-egg-medium-grilling-area.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s940x110_big-green-egg-medium-grilling-area.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s100x60_big-green-egg-medium-grilling-area.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/big-green-egg-medium-grilling-area.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/big-green-egg-medium-grilling-area.jpg","file_size":158340,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001362","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-thermometer.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s50x50_big-green-egg-medium-thermometer.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s150x150_big-green-egg-medium-thermometer.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s250x250_big-green-egg-medium-thermometer.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s500x500_big-green-egg-medium-thermometer.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s600x400_big-green-egg-medium-thermometer.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s940x400_big-green-egg-medium-thermometer.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s940x110_big-green-egg-medium-thermometer.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s100x60_big-green-egg-medium-thermometer.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/big-green-egg-medium-thermometer.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/big-green-egg-medium-thermometer.jpg","file_size":188598,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001363","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-handle.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s50x50_big-green-egg-medium-handle.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s150x150_big-green-egg-medium-handle.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s250x250_big-green-egg-medium-handle.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s500x500_big-green-egg-medium-handle.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s600x400_big-green-egg-medium-handle.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s940x400_big-green-egg-medium-handle.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s940x110_big-green-egg-medium-handle.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s100x60_big-green-egg-medium-handle.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/big-green-egg-medium-handle.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/big-green-egg-medium-handle.jpg","file_size":111104,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001364","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"BGE-medium-low-temp-consist.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s50x50_BGE-medium-low-temp-consist.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s150x150_BGE-medium-low-temp-consist.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s250x250_BGE-medium-low-temp-consist.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s500x500_BGE-medium-low-temp-consist.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s600x400_BGE-medium-low-temp-consist.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s940x400_BGE-medium-low-temp-consist.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s940x110_BGE-medium-low-temp-consist.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s100x60_BGE-medium-low-temp-consist.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/BGE-medium-low-temp-consist.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/BGE-medium-low-temp-consist.jpg","file_size":53574,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001365","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"BGE-medium-low-temp-unif.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s50x50_BGE-medium-low-temp-unif.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s150x150_BGE-medium-low-temp-unif.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s250x250_BGE-medium-low-temp-unif.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s500x500_BGE-medium-low-temp-unif.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s600x400_BGE-medium-low-temp-unif.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s940x400_BGE-medium-low-temp-unif.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s940x110_BGE-medium-low-temp-unif.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s100x60_BGE-medium-low-temp-unif.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/BGE-medium-low-temp-unif.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/BGE-medium-low-temp-unif.jpg","file_size":67286,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001366","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"BGE-medium-high-temp-consist.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s50x50_BGE-medium-high-temp-consist.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s150x150_BGE-medium-high-temp-consist.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s250x250_BGE-medium-high-temp-consist.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s500x500_BGE-medium-high-temp-consist.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s600x400_BGE-medium-high-temp-consist.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s940x400_BGE-medium-high-temp-consist.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s940x110_BGE-medium-high-temp-consist.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s100x60_BGE-medium-high-temp-consist.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/BGE-medium-high-temp-consist.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/BGE-medium-high-temp-consist.jpg","file_size":54871,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001367","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"BGE-medium-high-temp-unif.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s50x50_BGE-medium-high-temp-unif.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s150x150_BGE-medium-high-temp-unif.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s250x250_BGE-medium-high-temp-unif.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s500x500_BGE-medium-high-temp-unif.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s600x400_BGE-medium-high-temp-unif.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s940x400_BGE-medium-high-temp-unif.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s940x110_BGE-medium-high-temp-unif.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s100x60_BGE-medium-high-temp-unif.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/BGE-medium-high-temp-unif.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/BGE-medium-high-temp-unif.jpg","file_size":70516,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001368","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"big-green-egg-medium-open.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s50x50_big-green-egg-medium-open.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s150x150_big-green-egg-medium-open.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s250x250_big-green-egg-medium-open.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s500x500_big-green-egg-medium-open.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s600x400_big-green-egg-medium-open.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s940x400_big-green-egg-medium-open.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s940x110_big-green-egg-medium-open.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s100x60_big-green-egg-medium-open.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/big-green-egg-medium-open.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/big-green-egg-medium-open.jpg","file_size":70486,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001369","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"big-green-egg-medium-cleaning.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s50x50_big-green-egg-medium-cleaning.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s150x150_big-green-egg-medium-cleaning.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s250x250_big-green-egg-medium-cleaning.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s500x500_big-green-egg-medium-cleaning.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s600x400_big-green-egg-medium-cleaning.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s940x400_big-green-egg-medium-cleaning.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s940x110_big-green-egg-medium-cleaning.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s100x60_big-green-egg-medium-cleaning.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/big-green-egg-medium-cleaning.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/big-green-egg-medium-cleaning.jpg","file_size":180939,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd0286227000136a","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"big-green-egg-medium-IR.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s50x50_big-green-egg-medium-IR.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s150x150_big-green-egg-medium-IR.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s250x250_big-green-egg-medium-IR.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s500x500_big-green-egg-medium-IR.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s600x400_big-green-egg-medium-IR.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s940x400_big-green-egg-medium-IR.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s940x110_big-green-egg-medium-IR.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s100x60_big-green-egg-medium-IR.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/big-green-egg-medium-IR.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/big-green-egg-medium-IR.jpg","file_size":104199,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"brand":{"name":"Big
+        Green Egg","url":null,"logo_url":"https://s3.amazonaws.com/staging.reviewed.attachments/brand/c32bb02dc90868b3732566a0274ca535cc59c464/logo.png","slug":"big-green-egg"},"raw_scores":{"Heatup
         Time Rating":{"value":15.0,"weight":10.0},"Low Temp Performance Rating":{"value":8.84,"weight":12.5},"Low
         Temp Uniformity Rating":{"value":8.9,"weight":2.5},"Low Temp Consistency Rating":{"value":8.5,"weight":2.5},"High
         Temp Performance Rating":{"value":12.19,"weight":12.5},"High Temp Uniformity
@@ -265,17 +248,11 @@ http_interactions:
         Rating":{"value":0.0,"weight":5.0},"Cooking Area Rating":{"value":8.99,"weight":10.0},"Warming
         Area Rating":{"value":0.0,"weight":2.5},"Cleanup Rating":{"value":7.0,"weight":5.0},"Case
         Heat Rating":{"value":13.31,"weight":5.0},"Other Features Rating":{"value":0.0,"weight":5.0},"Other
-        Areas Rating":{"value":0.0,"weight":2.5}},"scaled_scores":{"Heatup Time Rating":4.17,"Low
-        Temp Performance Rating":8.12,"Low Temp Uniformity Rating":7.16,"Low Temp
-        Consistency Rating":4.17,"High Temp Performance Rating":10.0,"High Temp Uniformity
-        Rating":0.0,"High Temp Consistency Rating":0.0,"Warming Performance Rating":0.0,"Construction
-        Rating":0.0,"Controls Rating":1.0,"Fuel Rating":1.43,"Lighter Rating":0.0,"Cooking
-        Area Rating":0.0,"Warming Area Rating":0.0,"Cleanup Rating":2.5,"Case Heat
-        Rating":10.0,"Other Features Rating":0.0,"Other Areas Rating":0.0},"rateable":"rateable","rateable?":true,"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"authors":[{"id":"5045673e60de7d97ec0005fc","name":"Richard
+        Areas Rating":{"value":0.0,"weight":2.5}},"scaled_scores":{},"rateable":"rateable","rateable?":true,"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"authors":[{"id":"506b0bdfbd02862270001284","created_at":"2012-10-02T15:44:31Z","updated_at":"2012-10-02T15:44:31Z","name":"Richard
         Baguley","title":"Editor","short_bio":"This is the default bio for a author.
         It can be edited in the defaults.rb configatron file.\n","long_bio":"This
         is the default bio for a author. It can be edited in the defaults.rb configatron
-        file.\n","slug":"richard-baguley","created_at":"2012-09-04T02:28:14Z","updated_at":"2012-09-04T02:28:15Z","social":{"email":"rbaguley@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?s=48&d=mm","medium":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?s=128&d=mm","normal":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?d=mm"},"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[{"id":"504563ee60de7d97ec00039e","name":"BGE-medium-web1.jpg","type":"image","content_type":"image/jpeg","file_size":81744,"tags":["Vanity"],"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web1.jpg","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}},{"id":"504563ee60de7d97ec00039f","name":"BGE-medium-web2.jpg","type":"image","content_type":"image/jpeg","file_size":81744,"tags":["Hero"],"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg","permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}],"permissions":{"manage":true,"read":true,"create":true,"update":true,"destroy":true}}'
+        file.\n","slug":"richard-baguley","social":{"email":"rbaguley@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?s=48&d=mm","medium":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?s=128&d=mm","normal":"http://www.gravatar.com/avatar/37a74d06633f3ea7b793ce0217bc4153?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[{"id":"506b0b2fbd02862270000506","created_at":"2012-10-02T15:41:35Z","updated_at":"2012-10-02T15:41:35Z","name":"BGE-medium-web2.jpg","type":"file","tags":["Hero"],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s50x50_BGE-medium-web2.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s150x150_BGE-medium-web2.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s250x250_BGE-medium-web2.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s500x500_BGE-medium-web2.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s600x400_BGE-medium-web2.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x400_BGE-medium-web2.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x110_BGE-medium-web2.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s100x60_BGE-medium-web2.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg","file_size":81744,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"websites":[{"id":"506b05a7bd02867160000012","created_at":"2012-10-02T15:17:59Z","updated_at":"2012-10-02T15:26:13Z","name":"GrillsInfo.com","url":"grillsinfo.com","code":"GRI","permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"permissions":{"read":true,"create":true,"update":true,"destroy":true}}'
     http_version: 
-  recorded_at: Fri, 07 Sep 2012 15:17:40 GMT
-recorded_with: VCR 2.2.4
+  recorded_at: Wed, 03 Oct 2012 22:04:47 GMT
+recorded_with: VCR 2.2.5
