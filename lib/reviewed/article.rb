@@ -10,6 +10,10 @@ module Reviewed
       end
     end
 
+    def primary_product
+      products.select { |p| p.id == primary_product_id }.first
+    end
+
     def attachments(tag=nil)
       if tag.present?
         @attributes[:attachments].select do |attachment|

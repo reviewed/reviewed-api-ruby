@@ -28,6 +28,23 @@ describe Reviewed::Article do
     end
   end
 
+  describe 'primary_product' do
+    use_vcr_cassette 'article/products'
+
+    before(:each) do
+      @article = Reviewed::Article.find('big-green-egg-medium-charcoal-grill-review')
+      @product = @article.primary_product
+    end
+
+    it "returns the primary product" do
+      @product.id.should eql('506b06970494340f51809caf')
+    end
+
+    it "returns a product of the correct class" do
+      @product.class.should == Reviewed::Product
+    end
+  end
+
   describe 'attachments' do
     use_vcr_cassette 'article/attachments'
 
