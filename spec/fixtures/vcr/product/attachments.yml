@@ -2,143 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products/medium-green-charcoal
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 03 Oct 2012 22:05:17 GMT
-      Server:
-      - thin 1.5.0 codename Knife
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '99929'
-      X-Request-Id:
-      - 8d9d9964bd3f8db31846d96cffdd741a
-      X-Runtime:
-      - '0.034123'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Record Not Found"}'
-    http_version: 
-  recorded_at: Wed, 03 Oct 2012 22:05:17 GMT
-- request:
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products/big-green-egg-medium
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Reviewed-Authorization:
-      - '1234567890'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 03 Oct 2012 22:13:04 GMT
-      Last-Modified:
-      - Tue, 02 Oct 2012 15:41:31 GMT
-      Server:
-      - thin 1.5.0 codename Knife
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '99931'
-      X-Request-Id:
-      - ecfc61f7663ee2a8d9dcff0b25d4d2c8
-      X-Runtime:
-      - '0.097349'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"id":"506b06970494340f51809caf","created_at":"2011-10-12T18:55:14Z","updated_at":"2012-10-02T15:41:31Z","name":"Big
-        Green Egg Medium","slug":"big-green-egg-medium","_type":"Home::Grills::Charcoal","types":["Charcoal"],"product_rating":null,"ranking":{"total":null,"rank":null},"msrp":649.0,"manufacturer_specs":{"brand_name":"(Big
-        Green Egg)","manufacturer_name":"Big Green Egg","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","Fuel":["Charcoal"],"Install
-        Type":"Freestanding","Total cooking area":177.0,"Finish or Color":"Green","Ignition
-        type":"Manual","Side Burner":"No","Rotisserie":"No","Original Price":649.0},"article_ids":["506b0aecbd02862270000001","506b0b2bbd02862270000494"],"website_ids":["506b05a7bd02867160000012"],"publish_on":"2011-10-12T18:55:00+00:00","attachments":[{"id":"506b0c0dbd0286227000135c","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"MEgg.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s50x50_MEgg.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s150x150_MEgg.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s250x250_MEgg.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s500x500_MEgg.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s600x400_MEgg.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x400_MEgg.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x110_MEgg.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s100x60_MEgg.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/MEgg.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/MEgg.jpg","file_size":24813,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd0286227000135d","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-front.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s50x50_big-green-egg-medium-front.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s150x150_big-green-egg-medium-front.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s250x250_big-green-egg-medium-front.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s500x500_big-green-egg-medium-front.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s600x400_big-green-egg-medium-front.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s940x400_big-green-egg-medium-front.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s940x110_big-green-egg-medium-front.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/s100x60_big-green-egg-medium-front.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/big-green-egg-medium-front.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/82b009ac512afc838f93ed4ee500f935f0b5e14b/big-green-egg-medium-front.jpg","file_size":55035,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd0286227000135e","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-open.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s50x50_big-green-egg-medium-open.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s150x150_big-green-egg-medium-open.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s250x250_big-green-egg-medium-open.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s500x500_big-green-egg-medium-open.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s600x400_big-green-egg-medium-open.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s940x400_big-green-egg-medium-open.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s940x110_big-green-egg-medium-open.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/s100x60_big-green-egg-medium-open.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/big-green-egg-medium-open.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6bc40ba33f0778b952d3eff8991767dcec03a9b8/big-green-egg-medium-open.jpg","file_size":70486,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd0286227000135f","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-controls1.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s50x50_big-green-egg-medium-controls1.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s150x150_big-green-egg-medium-controls1.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s250x250_big-green-egg-medium-controls1.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s500x500_big-green-egg-medium-controls1.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s600x400_big-green-egg-medium-controls1.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s940x400_big-green-egg-medium-controls1.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s940x110_big-green-egg-medium-controls1.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/s100x60_big-green-egg-medium-controls1.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/big-green-egg-medium-controls1.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/f302758beac43165a29a3638d4cbdbb037f232ab/big-green-egg-medium-controls1.jpg","file_size":167315,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001360","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-controls2.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s50x50_big-green-egg-medium-controls2.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s150x150_big-green-egg-medium-controls2.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s250x250_big-green-egg-medium-controls2.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s500x500_big-green-egg-medium-controls2.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s600x400_big-green-egg-medium-controls2.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s940x400_big-green-egg-medium-controls2.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s940x110_big-green-egg-medium-controls2.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/s100x60_big-green-egg-medium-controls2.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/big-green-egg-medium-controls2.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/be9851ca5755e58ff40523575ab9aedca6669a69/big-green-egg-medium-controls2.jpg","file_size":115807,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001361","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-grilling-area.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s50x50_big-green-egg-medium-grilling-area.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s150x150_big-green-egg-medium-grilling-area.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s250x250_big-green-egg-medium-grilling-area.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s500x500_big-green-egg-medium-grilling-area.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s600x400_big-green-egg-medium-grilling-area.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s940x400_big-green-egg-medium-grilling-area.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s940x110_big-green-egg-medium-grilling-area.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/s100x60_big-green-egg-medium-grilling-area.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/big-green-egg-medium-grilling-area.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/0258bcb8e7d1916b519ecd48b79195170bc51e4f/big-green-egg-medium-grilling-area.jpg","file_size":158340,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001362","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-thermometer.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s50x50_big-green-egg-medium-thermometer.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s150x150_big-green-egg-medium-thermometer.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s250x250_big-green-egg-medium-thermometer.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s500x500_big-green-egg-medium-thermometer.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s600x400_big-green-egg-medium-thermometer.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s940x400_big-green-egg-medium-thermometer.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s940x110_big-green-egg-medium-thermometer.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/s100x60_big-green-egg-medium-thermometer.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/big-green-egg-medium-thermometer.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8a5b4deadd2f69b5fc3242b3f50df6a301d9235d/big-green-egg-medium-thermometer.jpg","file_size":188598,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001363","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"big-green-egg-medium-handle.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s50x50_big-green-egg-medium-handle.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s150x150_big-green-egg-medium-handle.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s250x250_big-green-egg-medium-handle.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s500x500_big-green-egg-medium-handle.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s600x400_big-green-egg-medium-handle.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s940x400_big-green-egg-medium-handle.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s940x110_big-green-egg-medium-handle.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/s100x60_big-green-egg-medium-handle.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/big-green-egg-medium-handle.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/50459259af75efcfcbfc1d0e7a490e771be5addd/big-green-egg-medium-handle.jpg","file_size":111104,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0dbd02862270001364","created_at":"2012-10-02T15:45:17Z","updated_at":"2012-10-02T15:45:17Z","name":"BGE-medium-low-temp-consist.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s50x50_BGE-medium-low-temp-consist.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s150x150_BGE-medium-low-temp-consist.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s250x250_BGE-medium-low-temp-consist.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s500x500_BGE-medium-low-temp-consist.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s600x400_BGE-medium-low-temp-consist.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s940x400_BGE-medium-low-temp-consist.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s940x110_BGE-medium-low-temp-consist.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/s100x60_BGE-medium-low-temp-consist.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/BGE-medium-low-temp-consist.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/8d0d238710df497afc839626cf54e6064220a4bc/BGE-medium-low-temp-consist.jpg","file_size":53574,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001365","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"BGE-medium-low-temp-unif.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s50x50_BGE-medium-low-temp-unif.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s150x150_BGE-medium-low-temp-unif.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s250x250_BGE-medium-low-temp-unif.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s500x500_BGE-medium-low-temp-unif.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s600x400_BGE-medium-low-temp-unif.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s940x400_BGE-medium-low-temp-unif.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s940x110_BGE-medium-low-temp-unif.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/s100x60_BGE-medium-low-temp-unif.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/BGE-medium-low-temp-unif.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/151bbfd90d0aa7ab3ef210e1f0dabf343278db1f/BGE-medium-low-temp-unif.jpg","file_size":67286,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001366","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"BGE-medium-high-temp-consist.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s50x50_BGE-medium-high-temp-consist.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s150x150_BGE-medium-high-temp-consist.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s250x250_BGE-medium-high-temp-consist.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s500x500_BGE-medium-high-temp-consist.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s600x400_BGE-medium-high-temp-consist.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s940x400_BGE-medium-high-temp-consist.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s940x110_BGE-medium-high-temp-consist.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/s100x60_BGE-medium-high-temp-consist.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/BGE-medium-high-temp-consist.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/213ad6205823f42b4222ecae9ac45b15ad6fc8fb/BGE-medium-high-temp-consist.jpg","file_size":54871,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001367","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"BGE-medium-high-temp-unif.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s50x50_BGE-medium-high-temp-unif.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s150x150_BGE-medium-high-temp-unif.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s250x250_BGE-medium-high-temp-unif.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s500x500_BGE-medium-high-temp-unif.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s600x400_BGE-medium-high-temp-unif.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s940x400_BGE-medium-high-temp-unif.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s940x110_BGE-medium-high-temp-unif.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/s100x60_BGE-medium-high-temp-unif.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/BGE-medium-high-temp-unif.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/6d11451c0df2edb1d3637b232205e2ee16744ead/BGE-medium-high-temp-unif.jpg","file_size":70516,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001368","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"big-green-egg-medium-open.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s50x50_big-green-egg-medium-open.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s150x150_big-green-egg-medium-open.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s250x250_big-green-egg-medium-open.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s500x500_big-green-egg-medium-open.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s600x400_big-green-egg-medium-open.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s940x400_big-green-egg-medium-open.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s940x110_big-green-egg-medium-open.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/s100x60_big-green-egg-medium-open.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/big-green-egg-medium-open.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/2d9504f4ac6f9f68cdc243e6cd1d388f6c997044/big-green-egg-medium-open.jpg","file_size":70486,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd02862270001369","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"big-green-egg-medium-cleaning.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s50x50_big-green-egg-medium-cleaning.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s150x150_big-green-egg-medium-cleaning.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s250x250_big-green-egg-medium-cleaning.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s500x500_big-green-egg-medium-cleaning.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s600x400_big-green-egg-medium-cleaning.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s940x400_big-green-egg-medium-cleaning.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s940x110_big-green-egg-medium-cleaning.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/s100x60_big-green-egg-medium-cleaning.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/big-green-egg-medium-cleaning.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/4fb2bc1ddeb700334a61b84b174db6d5ae3debd2/big-green-egg-medium-cleaning.jpg","file_size":180939,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}},{"id":"506b0c0ebd0286227000136a","created_at":"2012-10-02T15:45:18Z","updated_at":"2012-10-02T15:45:18Z","name":"big-green-egg-medium-IR.jpg","type":"file","tags":[],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s50x50_big-green-egg-medium-IR.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s150x150_big-green-egg-medium-IR.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s250x250_big-green-egg-medium-IR.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s500x500_big-green-egg-medium-IR.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s600x400_big-green-egg-medium-IR.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s940x400_big-green-egg-medium-IR.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s940x110_big-green-egg-medium-IR.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/s100x60_big-green-egg-medium-IR.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/big-green-egg-medium-IR.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/7b41418b0c8cb608c8fc628359db3a1623e051a6/big-green-egg-medium-IR.jpg","file_size":104199,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"brand":{"name":"Big
-        Green Egg","url":null,"logo_url":"https://s3.amazonaws.com/staging.reviewed.attachments/brand/c32bb02dc90868b3732566a0274ca535cc59c464/logo.png","slug":"big-green-egg"},"raw_scores":{"Heatup
-        Time Rating":{"value":15.0,"weight":10.0},"Low Temp Performance Rating":{"value":8.84,"weight":12.5},"Low
-        Temp Uniformity Rating":{"value":8.9,"weight":2.5},"Low Temp Consistency Rating":{"value":8.5,"weight":2.5},"High
-        Temp Performance Rating":{"value":12.19,"weight":12.5},"High Temp Uniformity
-        Rating":{"value":4.97,"weight":2.5},"High Temp Consistency Rating":{"value":1.63,"weight":2.5},"Warming
-        Performance Rating":{"value":0.0,"weight":5.0},"Construction Rating":{"value":7.95,"weight":2.5},"Controls
-        Rating":{"value":1.0,"weight":10.0},"Fuel Rating":{"value":4.0,"weight":5.0},"Lighter
-        Rating":{"value":0.0,"weight":5.0},"Cooking Area Rating":{"value":8.99,"weight":10.0},"Warming
-        Area Rating":{"value":0.0,"weight":2.5},"Cleanup Rating":{"value":7.0,"weight":5.0},"Case
-        Heat Rating":{"value":13.31,"weight":5.0},"Other Features Rating":{"value":0.0,"weight":5.0},"Other
-        Areas Rating":{"value":0.0,"weight":2.5}},"scaled_scores":{},"rateable":"rateable","rateable?":true,"permissions":{"read":true,"create":true,"update":true,"destroy":true}}'
-    http_version: 
-  recorded_at: Wed, 03 Oct 2012 22:13:04 GMT
-- request:
-    method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii
     body:
       encoding: US-ASCII
@@ -170,24 +33,28 @@ http_interactions:
       - '1000'
       Cache-Control:
       - no-cache, no-store
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 03 Oct 2012 22:14:50 GMT
+      - Tue, 06 Nov 2012 21:00:19 GMT
       Last-Modified:
-      - Tue, 02 Oct 2012 15:41:58 GMT
+      - Fri, 26 Oct 2012 03:42:08 GMT
       Server:
       - thin 1.5.0 codename Knife
       Strict-Transport-Security:
       - max-age=31536000
+      Vary:
+      - Accept-Encoding
       X-Rack-Cache:
       - miss
       X-Rate-Limit:
-      - '99926'
+      - '98972'
       X-Request-Id:
-      - c0c06591ad3db8c92714ba30869760b8
+      - 72e8352969d3e0665a7ce53f879a17a4
       X-Runtime:
-      - '0.091255'
+      - '0.198019'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -195,11 +62,28 @@ http_interactions:
       Connection:
       - keep-alive
     body:
-      encoding: US-ASCII
-      string: ! '{"id":"506b06c40494340f5180a155","created_at":"2012-05-15T21:12:15Z","updated_at":"2012-10-02T15:41:58Z","name":"Minden
-        Master II","slug":"minden-master-ii","_type":"Home::Grills::Gas","types":["Propane"],"product_rating":null,"ranking":{"total":null,"rank":null},"msrp":479.0,"manufacturer_specs":{"brand_name":"(Minden)","manufacturer_name":"Minden","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","Fuel":["LP
-        Gas"],"Install Type":"Freestanding","Finish or Color":"Green","Side Burner":"No","Rotisserie":"No","Original
-        Price":479.0},"article_ids":["506b0b46bd02862270000747"],"website_ids":["506b05a7bd02867160000012"],"publish_on":"2012-05-18T19:34:00+00:00","attachments":[{"id":"506b0c54bd028622700014c2","created_at":"2012-10-02T15:46:28Z","updated_at":"2012-10-02T15:46:28Z","name":"Minden-360MD-vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s50x50_Minden-360MD-vanity.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s150x150_Minden-360MD-vanity.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s250x250_Minden-360MD-vanity.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s500x500_Minden-360MD-vanity.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x400_Minden-360MD-vanity.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x400_Minden-360MD-vanity.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x110_Minden-360MD-vanity.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s100x60_Minden-360MD-vanity.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg","file_size":29538,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"brand":{"name":"Minden","url":null,"logo_url":null,"slug":"minden"},"raw_scores":{},"scaled_scores":{},"rateable":"unrateable","rateable?":true,"permissions":{"read":true,"create":true,"update":true,"destroy":true}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAJAGilAAA7yWS2/jNhDHv4qgU4v6Qb0tXQq0xW4DNG2w9alFIZDi2OGW
+        IgWSymODfPcO9UjsoPFeFvIhzsz8qflxOPLwKRQ8rMKM7MqioMmBs3LXACNA
+        G1oAC1dhY4A64DV1qItJFK9Jto6yfRxVUVxF2V+o6Tv+RhORdZzvSVKlcUV2
+        XqNoCxi9FoqDCq6pdWCCqyuMWNkfMdIOkXU7RNZCYKR2j51f9Ktuoao+GiGl
+        xW9qMeZDNqz+Dm+M7qiC8J9V2BnN+8bVhjqh8Jmql3IVGqr+Hcyn0GlH5al/
+        /P95FbbWdGGVFuWGoEFVf6CN6w2Y2nbQWL+Y4QJeT/v4btzI9+Eb9dk2pyCV
+        dW8wbfhqO3hwr46X1aN7xDsLvKy3YATYOQ06PvQgfRl+uwl8YbAKV8riLmWw
+        H4v3wQCgQ3FfA9QLJextoE3ws5baoOAjCjzqn4JD8FNvFHjv7xpdn7QTdkg5
+        e/4w4igUlcGNEQ1MFcP6UeNEI6EWfDgUbChK8pIwTuJdHhcpEJIXcPB898Cs
+        cKfSsiBxMkrLskgIflgxHGjPJNLWWp02324flVWSVoT8QAj+HTqwmevWebD6
+        aChjWLihvVFgeob+8SmRr1QwtFPwafTjBpyjzW0Lynmqp5f3gmUQ5yNbk+5i
+        Qjiw+H/fC9/zxZ4g164i+fvvxbnmrGHWSU6uf1nfUSXc4+Zzd5waHQUHIcFb
+        9DhUbZT4Gt2BsUKroUVtRh4ygupb57pqu8Vzx9M6bgzcCbgHvjnZ5cYmG9rS
+        L1rRe7tpdLt9DW4TFnMepRzyJmIlZQd6oIQfMsDzZlmKJ1k0BWN8O2as38e3
+        ESqihaGmnJewYpTEC2NNOS9hYfM/RFG8KNaU8xJWRvwxL91ZQ85LWDlK0oWx
+        ppyXsMp0eawp59ewkoVbfsr5NawoWh4Lc17A0tOgWxLrPRqcrxxsY0TnhB+F
+        46DD2UL9j/54N/CQ1lO+BbmE/U0pV8OMqq34gvMqLrNkh1NSK4cPny9yoqVH
+        2H7uYNhTB6bF68U8vHCg4sx1pod5us7WOEdnC0vhjH4czednHIHDzcw/4u3t
+        ayjNWC2pj7o+sc9unZ7G0PvaNtr4W+UT2rahEmf3qQvvlUCZ9Cl69WK8+n+c
+        Eb/Nzv4DAAD//wMAV/0JTZ0LAAA=
     http_version: 
-  recorded_at: Wed, 03 Oct 2012 22:14:50 GMT
+  recorded_at: Tue, 06 Nov 2012 21:00:15 GMT
 recorded_with: VCR 2.2.5

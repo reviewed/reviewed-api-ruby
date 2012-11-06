@@ -44,16 +44,19 @@ describe Reviewed::Base do
     context 'with a valid request' do
       use_vcr_cassette 'base/find_ok'
 
+      before(:each) do
+        @article = Reviewed::Article.find('big-green-egg-medium-charcoal-grill-review')
+      end
+
       it 'fetches content from the api' do
-        model = Reviewed::Example.find('506b0b46bd02862270000747')
+        model = Reviewed::Example.find(@article.id)
         model.raw_response.should_not be_nil
       end
 
       it 'parses response json and returns an object' do
-        model = Reviewed::Example.find('506b0b46bd02862270000747')
+        model = Reviewed::Example.find(@article.id)
         model.class.should == Reviewed::Example
-        model.id.should == '506b0b46bd02862270000747'
-        model.name.should == 'Minden Master II Grill Review'
+        model.name.should == 'Big Green Egg Medium Charcoal Grill Review'
       end
     end
 

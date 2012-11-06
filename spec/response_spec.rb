@@ -12,7 +12,7 @@ describe Reviewed::Response do
     describe "json" do
 
       it 'returns json' do
-        @response.json["pagination"]["total"].should eql(171)
+        @response.json["pagination"]["total"].should eql(172)
       end
     end
 

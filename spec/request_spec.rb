@@ -9,7 +9,7 @@ describe Reviewed::Request do
     end
 
     it 'returns a valid response' do
-      @response.json["pagination"]["total"].should eql(171)
+      @response.json["pagination"]["total"].should eql(172)
     end
   end
 end

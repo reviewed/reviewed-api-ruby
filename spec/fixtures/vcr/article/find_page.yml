@@ -18,187 +18,173 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 03 Oct 2012 22:04:46 GMT
-      Etag:
-      - ! '"aa98ef8ae37e036d96abb43fc1dd5e83"'
-      Server:
-      - thin 1.5.0 codename Knife
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Rack-Cache:
-      - miss
-      X-Rate-Limit:
-      - '99941'
-      X-Request-Id:
-      - 523bfec760ba727d50fd8eaba139eae3
-      X-Runtime:
-      - '0.122307'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAwNiBOb3YgMjAxMiAyMDo1OTo1NiBHTVQ=
+      !binary "RXRhZw==":
+      - !binary |-
+        IjVkYWM3NTY1MDY0NDA0ZWIyMzMwYmRkNWI0NmU3YWQzIg==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "WC1SYXRlLUxpbWl0":
+      - !binary |-
+        OTg5NjA=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        NDU2Zjg3MzA2MmQ1MmFlOTcxMGI0ZTdmMDhhYzI4MzY=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4yOTkzNDg=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
     body:
-      encoding: US-ASCII
-      string: ! '{"id":"506b0b46bd02862270000747","created_at":"2012-05-15T21:15:16Z","updated_at":"2012-10-02T15:42:02Z","name":"Minden
-        Master II Grill Review","summary":"","version":20,"website_ids":["506b05a7bd02867160000012"],"tags":["review"],"publish_on":"2012-05-18T19:34:00+00:00","attachment_ids":[],"primary_product_id":"506b06c40494340f5180a155","slug":"Minden-Master-II-Grill-Review","pages":[{"id":"506b0b46bd0286227000074a","name":"Introduction","summary":"Introduction","slug":"Minden-Master-II-Grill-Review","sections":[{"id":"506b0b46bd0286227000074c","name":"Introduction","notes":"","body":"Though
-        the <r:product:name /> ($479 MSRP) turned in solid performance numbers, it''s
-        missing features and controls that similar-priced grills include. This grill
-        actually had one of the fastest heatup times of the grills we''ve tested and
-        was consistent and efficient on its high-fire setting. "}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b46bd0286227000074e","name":"Design","summary":"The
-        <r:product:name /> is decent-sized grill with pretty normal design, with the
-        exception of its green coating.","slug":"Minden-Master-II-Grill-Review/Design","sections":[{"id":"506b0b46bd02862270000750","name":"Design
-        Summary","notes":"","body":"The <r:product:name /> is decent-sized grill with
-        pretty normal design, with the exception of its green coating."},{"id":"506b0b46bd02862270000751","name":"Controls
-        2","notes":"","body":""},{"id":"506b0b46bd02862270000752","name":"Controls
-        3","notes":"","body":""},{"id":"506b0b46bd02862270000753","name":"Main Grilling
-        Area 2","notes":"","body":""},{"id":"506b0b46bd02862270000754","name":"Warming
-        Area 2","notes":"","body":""},{"id":"506b0b46bd02862270000755","name":"Side
-        Area","notes":"","body":""},{"id":"506b0b46bd02862270000756","name":"Side
-        Area 2","notes":"","body":""},{"id":"506b0b46bd02862270000757","name":"Side
-        Area 3","notes":null,"body":""},{"id":"506b0b46bd02862270000758","name":"Thermometer
-        2","notes":"","body":""},{"id":"506b0b46bd02862270000759","name":"Product
-        Tour","notes":"","body":""},{"id":"506b0b46bd0286227000075a","name":"Controls","notes":"","body":""},{"id":"506b0b46bd0286227000075b","name":"Main
-        Grilling Area","notes":"","body":""},{"id":"506b0b46bd0286227000075c","name":"Warming
-        Area","notes":"","body":""},{"id":"506b0b46bd0286227000075d","name":"Side
-        Areas","notes":null,"body":""},{"id":"506b0b46bd0286227000075e","name":"Thermometer","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b47bd02862270000760","name":"Performance","summary":"You''ll
-        get superb heat-up time and good high and low temperature performance from
-        the <r:product:name />.","slug":"Minden-Master-II-Grill-Review/Performance","sections":[{"id":"506b0b47bd02862270000762","name":"Performance
-        Summary","notes":"","body":"You''ll get superb heat-up time and good high
-        and low temperature performance from the <r:product:name />."},{"id":"506b0b47bd02862270000763","name":"Heatup
-        Time Description","notes":"","body":""},{"id":"506b0b47bd02862270000764","name":"Low
-        Temperature Cooking Performance","notes":"","body":"At just less than 10 minutes
-        to cook our test patties, the <r:product:name /> performed capably on the
-        grill''s low-fire setting. It also achieved solid consistency across the three
-        burners as there wasn''t too much deviation in temperature."},{"id":"506b0b47bd02862270000765","name":"Low
-        Temperature Uniformity","notes":"","body":"With the exception of one thermocouple
-        on the left, there wasn''t too much deviation across the grill surface. Most
-        areas on the surface were from 615-650 degrees."},{"id":"506b0b47bd02862270000766","name":"Low
-        Temperature Consistency","notes":"","body":"Consistency on the \t<r:product:name
-        /> wasn''t great, as the middle of the grill reached a high of 708 and a low
-        of 539 degrees. This will affect users because they may have steaks that are
-        done on one part and others that need more time."},{"id":"506b0b47bd02862270000767","name":"High
-        Temperature Cooking Performance","notes":"","body":"You''ll need less than
-        8 minutes, which is well below average and a great time, to cook up hamburger
-        patties while cooking on high temperature."},{"id":"506b0b47bd02862270000768","name":"High
-        Temperature Uniformity","notes":"","body":"The <r:product:name /> cooks with
-        relative uniformity. We didn''t see too much of a variation in temperatures
-        on the cooking area."},{"id":"506b0b47bd02862270000769","name":"High Temperature
-        Consistency","notes":"","body":"One thing you won''t need to worry about with
-        the <r:product:name /> is burner consistency. Almost all thermocouples were
-        within 20 degrees of each other."},{"id":"506b0b47bd0286227000076a","name":"Warming
-        Tray","notes":null,"body":""},{"id":"506b0b47bd0286227000076b","name":"Lid
-        & Handle Temperature","notes":"","body":"The allowable temperature for the
-        outside of a grill is 131 degrees. Unfortunately for the <r:product:name />,
-        all of the thermocouples we placed on the outside were higher than that. Furthermore,
-        one of them reached a whopping 147 degrees. You may want to use gloves when
-        using this grill."},{"id":"506b0b47bd0286227000076c","name":"Output & Fuel
-        Life Description","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b47bd0286227000076e","name":"Features
-        & Usability","summary":"The <r:product:name /> is pretty intuitive, but cleaning
-        isn''t easy.","slug":"Minden-Master-II-Grill-Review/Features-and-Usability","sections":[{"id":"506b0b47bd02862270000770","name":"Features
-        & Usability Summary","notes":"","body":"The <r:product:name /> is pretty intuitive,
-        but cleaning isn''t easy."},{"id":"506b0b47bd02862270000771","name":"Controls
-        2","notes":"","body":""},{"id":"506b0b47bd02862270000772","name":"Controls
-        3","notes":"","body":""},{"id":"506b0b47bd02862270000773","name":"Controls
-        Description","notes":"","body":"There are three black plastic burner buttons
-        on the front of the <r:product:name /> and a red automatic ignition button
-        on the right. Don''t worry about turning these on by accident, because you
-        need to press down on the burner buttons to turn the gas on."},{"id":"506b0b47bd02862270000774","name":"Fuel
-        Description","notes":"","body":"The <r:product:name /> uses liquid propane
-        for fuel. The easy-to-use regulator is included and under the grilling area
-        is storage space where the 20-pound propane canister fits. You''ll need to
-        go through the back of the grill to remove the tank."},{"id":"506b0b47bd02862270000775","name":"Lighter
-        Description","notes":"","body":"The red ignition button on the right will
-        click loudly when you press it."},{"id":"506b0b47bd02862270000776","name":"Cooking
-        Area Description","notes":"","body":"The \t<r:product:name />''s primary cooking
-        surface is 365 square inches, which isn''t the biggest size we''ve seen but
-        it won''t prevent you from cooking a bunch of burgers at once either. There
-        is a single grate and it''s a bit heavy and not easy to remove for cleaning."},{"id":"506b0b47bd02862270000777","name":"Warming
-        Area Description","notes":"","body":"The warming tray is located at the back
-        of the grilling area and can''t be removed for cleaning."},{"id":"506b0b47bd02862270000778","name":"Other
-        Areas Description","notes":"","body":""},{"id":"506b0b47bd02862270000779","name":"Cleanup
-        Description","notes":"","body":"There''s just the single grate on top of the
-        burners that''s heavy and hard to remove. Once you do get it off the grill,
-        though, it''s easy to just wipe down the grease trays that cover the burners.
-        The grease funnels into a tray that you can pull out of the back by grabbing
-        the wooden handle that protrudes from the back of the grill."},{"id":"506b0b47bd0286227000077a","name":"Other
-        Features Description","notes":"","body":"You''ll have access to a food tray/chopping
-        block on the right and by lifting up the tray on the left, you''ll see the
-        tool storage compartment. Both sides also have hooks for tool storage. On
-        the top of the grill is a thermometer that reaches 600 degrees. If you''re
-        looking to move the grill, keep in mind that though it has solid wheels, it''s
-        somewhat heavy to wheel around.\n"},{"id":"506b0b47bd0286227000077b","name":"Construction
-        Description","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b48bd0286227000077d","name":"COMP
-        1","summary":"COMP 1","slug":"Minden-Master-II-Grill-Review/COMP-1","sections":[{"id":"506b0b48bd0286227000077f","name":"Comp
-        1 Description","notes":"","body":""},{"id":"506b0b48bd02862270000780","name":"unnamed
-        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b48bd02862270000782","name":"COMP
-        2","summary":"COMP 2","slug":"Minden-Master-II-Grill-Review/COMP-2","sections":[{"id":"506b0b48bd02862270000784","name":"Comp
-        2 Description","notes":"","body":""},{"id":"506b0b48bd02862270000785","name":"unnamed
-        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b48bd02862270000787","name":"COMP
-        3","summary":"COMP 3","slug":"Minden-Master-II-Grill-Review/COMP-3","sections":[{"id":"506b0b48bd02862270000789","name":"Comp
-        3 Description","notes":"","body":""},{"id":"506b0b48bd0286227000078a","name":"unnamed
-        section","notes":null,"body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b49bd0286227000078c","name":"Conclusion","summary":"Conclusion","slug":"Minden-Master-II-Grill-Review/Conclusion","sections":[{"id":"506b0b49bd0286227000078e","name":"Conclusion
-        Summary","notes":"","body":""},{"id":"506b0b49bd0286227000078f","name":"Conclusion
-        Performance","notes":"","body":"Overall, this is a decent grill, but you may
-        be able to get similarly-performing grills at a cheaper price."},{"id":"506b0b49bd02862270000790","name":"Conclusion
-        Usability","notes":"","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b49bd02862270000792","name":"Specs
-        & Ratings","summary":"Specs & Ratings","slug":"Minden-Master-II-Grill-Review/Specs-and-Ratings","sections":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"506b0b4abd02862270000795","name":"unclassified_sections","summary":"meta-data
-        and such","slug":"Minden-Master-II-Grill-Review/unclassified_sections","sections":[{"id":"506b0b4abd02862270000796","name":"Display
-        Title","notes":null,"body":""},{"id":"506b0b4abd02862270000797","name":"Browser
-        Title","notes":null,"body":""},{"id":"506b0b4abd02862270000798","name":"Description","notes":null,"body":""},{"id":"506b0b4abd02862270000799","name":"Keywords","notes":null,"body":""},{"id":"506b0b4abd0286227000079a","name":"Comp
-        1 ID","notes":"","body":""},{"id":"506b0b4abd0286227000079b","name":"Comp
-        2 ID","notes":"","body":""},{"id":"506b0b4abd0286227000079c","name":"Comp
-        3 ID","notes":"","body":""},{"id":"506b0b4abd0286227000079d","name":"Design","notes":"","body":""},{"id":"506b0b4abd0286227000079e","name":"Performance","notes":"","body":""},{"id":"506b0b4abd0286227000079f","name":"Features
-        & Usability","notes":"","body":""},{"id":"506b0b4abd028622700007a0","name":"COMP
-        1","notes":"","body":""},{"id":"506b0b4abd028622700007a1","name":"COMP 2","notes":"","body":""},{"id":"506b0b4abd028622700007a2","name":"COMP
-        3","notes":"","body":""},{"id":"506b0b4abd028622700007a3","name":"Conclusion","notes":"","body":""},{"id":"506b0b4abd028622700007a4","name":"Specs
-        & Ratings","notes":"","body":""},{"id":"506b0b4abd028622700007a5","name":"Warming
-        Tray Performance","notes":"","body":""},{"id":"506b0b4abd028622700007a6","name":"Assembly
-        Description","notes":"","body":""},{"id":"506b0b4abd028622700007a7","name":"Snippets","notes":"","body":""},{"id":"506b0b4abd028622700007a8","name":"Summary","notes":"","body":""},{"id":"506b0b4abd028622700007a9","name":"News
-        Box Excerpt","notes":"","body":""},{"id":"506b0b4abd028622700007aa","name":"Home
-        News Excerpt","notes":"","body":""},{"id":"506b0b4abd028622700007ab","name":"Home
-        Feature One-Liner","notes":"","body":""},{"id":"506b0b4abd028622700007ac","name":"Event
-        Page Feature Image","notes":"","body":""},{"id":"506b0b4abd028622700007ad","name":"Event
-        Page Feature Title","notes":"","body":""},{"id":"506b0b4abd028622700007ae","name":"IR
-        Photo","notes":"","body":""},{"id":"506b0b4abd028622700007af","name":"Low
-        Fire Cooking Comparison","notes":"","body":""},{"id":"506b0b4abd028622700007b0","name":"High
-        Fire Cooking Comparison","notes":"","body":""},{"id":"506b0b4abd028622700007b1","name":"One-Line
-        Summary","notes":"Appears in the hero at the top of the home page and at the
-        top of the first page of the review.","body":""},{"id":"506b0b4abd028622700007b2","name":"Pro
-        One","notes":"","body":"Lighting-quick heatup"},{"id":"506b0b4abd028622700007b3","name":"Pro
-        Two","notes":"","body":"Tool hooks and storage space"},{"id":"506b0b4abd028622700007b4","name":"Pro
-        Three","notes":"","body":""},{"id":"506b0b4abd028622700007b5","name":"Con
-        One","notes":"","body":"No side burners"},{"id":"506b0b4abd028622700007b6","name":"Con
-        Two","notes":"","body":"Inconsistent heating on low temp"},{"id":"506b0b4abd028622700007b7","name":"Con
-        Three","notes":"","body":""},{"id":"506b0b4abd028622700007b8","name":"Alternate
-        Hero Title","notes":"this defaults to the name of the article. Set this to
-        ''NOTEXT'' if you don''t want any text to overlay the hero image","body":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}}],"products":[{"id":"506b06c40494340f5180a155","created_at":"2012-05-15T21:12:15Z","updated_at":"2012-10-02T15:41:58Z","name":"Minden
-        Master II","slug":"minden-master-ii","_type":"Home::Grills::Gas","types":["Propane"],"product_rating":null,"ranking":{"total":null,"rank":null},"msrp":479.0,"manufacturer_specs":{"brand_name":"(Minden)","manufacturer_name":"Minden","manual_url":"","manual_text":"","manufacturer_text":null,"manufacturer_url":"","series_name":"","Fuel":["LP
-        Gas"],"Install Type":"Freestanding","Finish or Color":"Green","Side Burner":"No","Rotisserie":"No","Original
-        Price":479.0},"article_ids":["506b0b46bd02862270000747"],"website_ids":["506b05a7bd02867160000012"],"publish_on":"2012-05-18T19:34:00+00:00","attachments":[{"id":"506b0c54bd028622700014c2","created_at":"2012-10-02T15:46:28Z","updated_at":"2012-10-02T15:46:28Z","name":"Minden-360MD-vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s50x50_Minden-360MD-vanity.jpg","s150x150":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s150x150_Minden-360MD-vanity.jpg","s250x250":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s250x250_Minden-360MD-vanity.jpg","s500x500":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s500x500_Minden-360MD-vanity.jpg","s600x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x400_Minden-360MD-vanity.jpg","s940x400":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x400_Minden-360MD-vanity.jpg","s940x110":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x110_Minden-360MD-vanity.jpg","s100x60":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s100x60_Minden-360MD-vanity.jpg","original":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg"},"description":null,"data":{"url":"https://s3.amazonaws.com/staging.reviewed.attachments/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg","file_size":29538,"content_type":"image/jpeg"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"brand":{"name":"Minden","url":null,"logo_url":null,"slug":"minden"},"raw_scores":{},"scaled_scores":{},"rateable":"unrateable","rateable?":true,"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"authors":[{"id":"506b0bfcbd0286227000131e","created_at":"2012-10-02T15:45:00Z","updated_at":"2012-10-02T15:45:00Z","name":"Patrick
-        Ouellette","title":"Editor","short_bio":"This is the default bio for a author.
-        It can be edited in the defaults.rb configatron file.\n","long_bio":"This
-        is the default bio for a author. It can be edited in the defaults.rb configatron
-        file.\n","slug":"patrick-ouellette","social":{"email":"pouellette@reviewed.com"},"avatars":{"small":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?s=48&d=mm","medium":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?s=128&d=mm","normal":"http://www.gravatar.com/avatar/9e8667a1574b61a605bcae15b94f78b3?d=mm"},"permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"attachments":[],"websites":[{"id":"506b05a7bd02867160000012","created_at":"2012-10-02T15:17:59Z","updated_at":"2012-10-02T15:26:13Z","name":"GrillsInfo.com","url":"grillsinfo.com","code":"GRI","permissions":{"read":true,"create":true,"update":true,"destroy":true}}],"permissions":{"read":true,"create":true,"update":true,"destroy":true}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAEx6mVAAA+xdC4/bNrb+K4Rx0exixx5JtmzZuL172+mmHSDpDCYOir2b
+        hUFJlM1GFrV6jDM7yH/fc0g9PX7JUZziQkUfMUmRH8+L3zmi3eced3uznqlZ
+        VBtPNdvVDGtsTEZM08YT5vWuek7EaMLcBU1gnKHpRl8z+7o5N/SZbs708f/B
+        mDR0t8boel8bz/XpDP/WcUxA1wx63/LAZQF5S+OEReT2lvwccd8nD+yRsw0M
+        i9P1mkZPMBI+PLIo5iLozYyr3obZMU/Ygrtxb/YPRDydaMZQIZ5OJ0MN/rIn
+        vX9e9RK6lGMiNSm0OD6NY+5xhyYw31ZnmNo+j1cLXKjcoYXoh6OZpv1F0+Df
+        AIcmCXVWaxYkFRQ75OYxGLyzy9In+7us/V1O2aVvdbl7uwx9f5chNx5xlPUi
+        jISbOrgpZQrTyYQOPdeeWg6zNUYdOmE26sZPlzBiLVXYX0sV9jnvL1GF/ShX
+        IY8XCVuHPphEb+ZRP2awFF0ylNjzIXvzjNJOboNEoUL9V8wiSH3/ZCQxc3J9
+        H154tHdhW7hojPOVSJcrkqwYeX7O5DXAJz5/Jn/6r9FkSt6+e7j/M0nSKGAu
+        4QGJhc9dErLIE9GaBg4jQbq2waCvCE9exWTNwSKDJfHAvdKIxYQGLnEEru7H
+        sBBNSMzX3KdRH/TkwKRyczHM7fipywZkvuKxaiTUSVLq+09kRV0iAkaEJ7F6
+        KJk4IStcJCQJX8NCWV823Ya9emQER8ESiGFDY8QRc2gJEtnEPHAdjp9EAOhj
+        suLLVd/jESMxSxLYxoD8dzSLGKgjIiiW7z/0lEuTG7EOacRjePLHNElg4g+9
+        6//ZN3p+d/OhR+CBZAE+mUDH8/P9w91P72/m0Pf+4fPn2ewnFvNlcEXuS9le
+        kde5GMn7mNrc58nTFajq5u7tPdHxKfWnos0o2oyibVi0DVXbrzdv3r+7vftV
+        tguUO4Yj7Ht3/7ebd9j8LmQOLPpAUQpya2hKIkFrR1v9fNVZXmd538TyMMKz
+        SGpbxsBnOPMomGISpSw/14sArY7w4qMLWonEU/b58zErNksrVjI6L2Rfu8XD
+        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
+        OsdpuKMWOc7peOscpyni9jjO6YjrHKcp4vY4zumI6xynKeL2OE4TK65ynKaI
+        2+M4pyOuc5ymiNvjOKcjrnOccxC3w3GaIR6e7XntcZxmiEuO0xBxixznZMRn
+        AP3GHOdrbq3OccbWpTiO9bU4TpMrT5fmOKdiq3OchjtqkeOcjrfOcZoibo/j
+        nI64znGaIm6P45yOuM5xmiJuj+M0seIqx2mKuD2OczriOsdpirg9jnM64jrH
+        OQdxOxynGeLh2Z7XHsdphrjkOA0Rt8hxTkZ8BtBvzHG+5tbq76hHY/NSJMfp
+        CjldIacr5HSFnK6Q0xVyukJOV8j5f1DI2fWj8Uc4zvQEjjPtCjldIacr5HSF
+        nK6Q0xVyukJOV8j5poWcXf/7m69CcrpCTlfI6Qo5XSGnK+R0hZyukNMVcr5d
+        IcfY//sGXSGnK+R0hZyukNMVcrpCTlfI6Qo5f+RCTvkjVNu/gbbrd6j2MR5z
+        rk9mmjbTDzAeOcaczobDCuNRP2R2G3hC/lZArgz1U3+8bHaEK4c/4K+ktbbz
+        dib6jwAAAAD//wMAXqQF98l7AAA=
     http_version: 
-  recorded_at: Wed, 03 Oct 2012 22:04:46 GMT
+  recorded_at: Tue, 06 Nov 2012 20:59:53 GMT
 recorded_with: VCR 2.2.5

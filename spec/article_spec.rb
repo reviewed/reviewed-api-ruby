@@ -6,7 +6,7 @@ describe Reviewed::Article do
 
     it 'finds a page with a matching slug' do
       article = Reviewed::Article.find('minden-master-ii-grill-review')
-      article.pages.length.should == 10
+      article.pages.length.should == 9
       page = article.find_page('performance')
       page.should == article.pages[2]
       page.name.should == 'Performance'
@@ -37,7 +37,7 @@ describe Reviewed::Article do
     end
 
     it "returns the primary product" do
-      @product.id.should eql('506b06970494340f51809caf')
+      @product.name.should eql('Big Green Egg Medium')
     end
 
     it "returns a product of the correct class" do
