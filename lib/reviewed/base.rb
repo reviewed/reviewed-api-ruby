@@ -1,5 +1,7 @@
 module Reviewed
   class Base
+    extend ActiveModel::Naming
+
     attr_accessor :raw_response, :resource_url
 
     def initialize(attributes={}, raw_response=nil)

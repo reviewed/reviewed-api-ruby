@@ -15,6 +15,12 @@ describe Reviewed::Base do
     Reviewed.api_key = TEST_KEY
   end
 
+  describe 'Class' do
+    it 'responds to model_name' do
+      Reviewed::Example.model_name.should eql("Reviewed::Example")
+    end
+  end
+
   describe 'initialization' do
     it 'raises an error if a resource ID is not present' do
       expect {
