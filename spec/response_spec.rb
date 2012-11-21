@@ -6,7 +6,7 @@ describe Reviewed::Response do
     use_vcr_cassette 'response/authors'
 
     before(:each) do
-      @response = Reviewed::Request.get('authors')
+      @response = Reviewed::Resource.get('authors')
     end
 
     describe "json" do

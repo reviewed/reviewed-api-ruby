@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'activesupport', '>= 3.0'
   gem.add_dependency 'activemodel', '>=3.0'
-  gem.add_dependency 'rest-client', '>= 1.6'
+  gem.add_dependency 'faraday', '>= 0.8.4'
   gem.add_dependency 'hashie', '~> 1.2'
 
   gem.add_development_dependency 'rspec', '>= 2.10'
