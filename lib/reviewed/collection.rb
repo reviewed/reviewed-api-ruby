@@ -1,25 +1,26 @@
 module Reviewed
   class Collection
+    include Reviewed::Utils
     include Enumerable
+
     extend Forwardable
+
     def_delegators :@items, :<<, :[], :[]=, :each, :first, :last, :length, :concat, :map, :collect, :empty?
 
-    attr_accessor :raw_response
+    attr_accessor :raw_response, :page_attributes, :klass, :items, :params
 
-    def initialize(klass, json, options={})
-      json = json.symbolize_keys!
-      page_data = json[:pagination].symbolize_keys!
+    def initialize(klass, response, params={})
+      body = response.body
+      data = body.data
 
-      @items = []
-      items = json[:data]
-      items.each do |item|
-        @items << klass.new(item)
+      self.page_attributes = body.pagination
+      self.params = params
+      self.klass = klass
+      self.items = []
+
+      data.each do |obj|
+        self.items << klass.from_response(obj)
       end
-
-      @page_attributes = page_data
-      @raw_response = json
-      @request_options = options.symbolize_keys!
-      @klass = klass
     end
 
     def limit_value
@@ -44,10 +45,6 @@ module Reviewed
       fetch_page(@page_attributes[:previous_page])
     end
 
-    def ==(other)
-      @raw_response == other.raw_response
-    end
-
     def method_missing(sym, *args, &block)
       clean_sym = sym.to_s.gsub(/\?/, '').to_sym
       if @page_attributes.has_key?(clean_sym)
@@ -60,8 +57,8 @@ module Reviewed
     private
 
     def fetch_page(page=nil)
-      @request_options[:page] = page
-      @klass.where(@request_options)
+      self.params[:page] = page
+      @klass.where(self.params)
     end
   end
 end

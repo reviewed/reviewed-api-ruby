@@ -98,8 +98,11 @@ describe Reviewed::Embeddable do
     let(:data) { { "articles" => [{},{}] } }
     let(:mocked) { Reviewed::MockEmbeddable.new }
 
-    it 'objectifies' do
+    before(:each) do
       Reviewed::MockEmbeddable._embedded_many = [ { "articles" => Reviewed::Article } ]
+    end
+
+    it 'objectifies' do
       mocked.objectify_has_many(data)["articles"].each do |obj|
         obj.should be_an_instance_of Reviewed::Article
       end
@@ -108,12 +111,15 @@ describe Reviewed::Embeddable do
 
   describe 'objectify_has_one' do
 
-    let(:data) { { "articles" => {} } }
+    let(:data) { { "article" => {} } }
     let(:mocked) { Reviewed::MockEmbeddable.new }
 
+    before(:each) do
+      Reviewed::MockEmbeddable._embedded_one = [ { "article" => Reviewed::Article } ]
+    end
+
     it 'objectifies' do
-      Reviewed::MockEmbeddable._embedded_one = [ { "articles" => Reviewed::Article } ]
-      mocked.objectify_has_one(data)["articles"].should be_an_instance_of(Reviewed::Article)
+      mocked.objectify_has_one(data)["article"].should be_an_instance_of(Reviewed::Article)
     end
   end
 

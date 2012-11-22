@@ -18,9 +18,9 @@ module Reviewed
     end
 
     def objectify(data)
-      json = objectify_has_many(json)
-      json = objectify_has_one(json)
-      return json
+      data = objectify_has_many(data)
+      data = objectify_has_one(data)
+      return data
     end
 
     def objectify_has_many(json)
@@ -51,13 +51,13 @@ module Reviewed
       attr_accessor :_embedded_many, :_embedded_one
 
       def has_many(name, opts={})
-        klass = Reviewed::Embeddable.embedded_class(name, opts[:class_name])
+        klass = Reviewed::Embeddable.embedded_class(name.to_s, opts[:class_name])
         association = opts[:as] || name
         _embedded_many << { association.to_s => klass }
       end
 
       def has_one(name, opts={})
-        klass = Reviewed::Embeddable.embedded_class(name, opts[:class_name])
+        klass = Reviewed::Embeddable.embedded_class(name.to_s, opts[:class_name])
         association = opts[:as] || name
         _embedded_one << { association.to_s => klass }
       end

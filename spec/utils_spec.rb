@@ -4,19 +4,37 @@ describe Reviewed::Utils do
 
   class MockUtils < Reviewed::Base; end
 
-  #describe 'object_from_response' do
+  describe 'object_from_response' do
+    use_vcr_cassette "utils/object"
 
-    #it 'returns an object of the correct class' do
-      #MockClass.object_from_response(:get, "articles/509d166d60de7db97c05ce71")
-    #end
-  #end
+    let(:article_id) { '509d166d60de7db97c05ce71' }
 
-  #describe 'from_response' do
+    it 'returns an object of the correct class' do
+      response = MockUtils.object_from_response(:get, "articles/#{article_id}")
+      response.should be_an_instance_of(MockUtils)
+    end
+  end
 
-    #let(:response) { { body: { id: 123 } }
+  describe 'collection_from_response' do
+    use_vcr_cassette "utils/collection"
 
-    #it 'returns a new object from a response' do
+    it 'returns a collection object' do
+      collection = MockUtils.collection_from_response(:get, "articles")
+      collection.should be_an_instance_of(Reviewed::Collection)
+    end
 
-    #end
-  #end
+    it 'returns objects of the correct class' do
+      collection = MockUtils.collection_from_response(:get, "articles")
+      collection.items.each do |obj|
+        obj.should be_an_instance_of(MockUtils)
+      end
+    end
+  end
+
+  describe 'from_response' do
+
+    it 'returns a new object from a response' do
+      MockUtils.from_response({}).should be_an_instance_of(MockUtils) 
+    end
+  end
 end

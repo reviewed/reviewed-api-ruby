@@ -27,6 +27,8 @@ describe Reviewed::Configurable do
 
   describe '#verify_key' do
 
+    after(:each) { Reviewed.api_key = TEST_KEY }
+
     it 'allow when api_key is present' do
       client.base_uri.should_not be_nil
       client.verify_key!

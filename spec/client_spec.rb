@@ -76,6 +76,14 @@ describe Reviewed::Client do
       conn.builder.handlers.should include(Faraday::Request::UrlEncoded)
     end
 
+    it 'uses a Json middleware' do
+      conn.builder.handlers.should include(FaradayMiddleware::ParseJson)
+    end
+
+    it 'uses a Hashie middleware' do
+      conn.builder.handlers.should include(FaradayMiddleware::Mashify)
+    end
+
     it 'uses the NetHttp adapter' do
       conn.builder.handlers.should include(Faraday::Adapter::NetHttp)
     end
