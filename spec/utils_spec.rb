@@ -30,11 +30,4 @@ describe Reviewed::Utils do
       end
     end
   end
-
-  describe 'from_response' do
-
-    it 'returns a new object from a response' do
-      MockUtils.from_response({}).should be_an_instance_of(MockUtils) 
-    end
-  end
 end

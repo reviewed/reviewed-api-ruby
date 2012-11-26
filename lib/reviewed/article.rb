@@ -8,6 +8,10 @@ module Reviewed
     has_many :products
     has_many :attachments
 
+    class << self
+      attr_accessor :branch
+    end
+
     def find_page(slug)
       pages.find { |page| page.slug.match(/#{slug}/i) }
     end

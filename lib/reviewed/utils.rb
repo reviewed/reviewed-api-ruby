@@ -9,16 +9,12 @@ module Reviewed
 
       def object_from_response(method, url, params={})
         response = Reviewed.send(method, url, params)
-        self.from_response(response.body)
+        self.new(response.body)
       end
 
       def collection_from_response(method, url, params={})
         response = Reviewed.send(method, url, params)
         Reviewed::Collection.new(self, response, params)
-      end
-
-      def from_response(data)
-        self.new(data)
       end
     end
   end

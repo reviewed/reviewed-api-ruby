@@ -2,6 +2,7 @@ $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'faraday'
 require 'faraday_middleware'
+require 'faraday/branches'
 require 'active_support/inflector'
 require 'active_support/core_ext'
 require 'active_model'

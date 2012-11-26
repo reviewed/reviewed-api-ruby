@@ -19,7 +19,7 @@ module Reviewed
       self.items = []
 
       data.each do |obj|
-        self.items << klass.from_response(obj)
+        self.items << klass.new(obj)
       end
     end
 
