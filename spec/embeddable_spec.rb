@@ -95,18 +95,32 @@ describe Reviewed::Embeddable do
 
   describe 'objectify_has_many' do
 
-    let(:data) { { "articles" => [{},{}] } }
     let(:mocked) { Reviewed::MockEmbeddable.new }
 
     before(:each) do
       Reviewed::MockEmbeddable._embedded_many = [ { "articles" => Reviewed::Article } ]
     end
 
-    it 'objectifies' do
-      mocked.objectify_has_many(data)["articles"].each do |obj|
-        obj.should be_an_instance_of Reviewed::Article
+    context 'relationship exists in json' do
+
+      let(:data) { { "articles" => [{},{}] } }
+
+      it 'objectifies' do
+        mocked.objectify_has_many(data)["articles"].each do |obj|
+          obj.should be_an_instance_of Reviewed::Article
+        end
       end
     end
+
+    context 'relationship does not have json' do
+
+      let(:data) { { foo: 'bar' } }
+
+      it 'does not error' do
+        mocked.objectify_has_many(data).should eql( { foo: 'bar' } )
+      end
+    end
+
   end
 
   describe 'objectify_has_one' do
