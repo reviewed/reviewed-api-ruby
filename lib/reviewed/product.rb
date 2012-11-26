@@ -3,6 +3,7 @@ require 'reviewed/attachment'
 module Reviewed
   class Product < Base
     has_many :attachments
+    has_many :manufacturer_specs
 
     def attachments(tag=nil)
       if tag.present?

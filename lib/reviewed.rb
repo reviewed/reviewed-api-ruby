@@ -14,6 +14,7 @@ require 'reviewed/client'
 require 'reviewed/collection'
 require 'reviewed/base'
 
+require 'reviewed/manufacturer_spec'
 require 'reviewed/product'
 require 'reviewed/article'
 require 'reviewed/author'
