@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'faraday'
 require 'faraday_middleware'
-require 'faraday/branches'
+require 'faraday/global_params'
 require 'active_support/inflector'
 require 'active_support/core_ext'
 require 'active_model'
@@ -28,6 +28,8 @@ module Reviewed
   class ConfigurationError < StandardError; end
 
   class << self
+
+    attr_accessor :global_params
 
     def client
       @client ||= Reviewed::Client.new

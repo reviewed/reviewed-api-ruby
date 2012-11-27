@@ -2,6 +2,19 @@ require 'spec_helper.rb'
 
 describe Reviewed do
 
+  describe 'accessors' do
+
+    after(:each) do
+      Reviewed.global_params = nil
+    end
+
+    it 'global params' do
+      Reviewed.global_params = { foo: 'bar' }
+      Reviewed.global_params.should eql( { foo: 'bar' } )
+    end
+  end
+
+
   describe '.client' do
 
     it 'returns a Reviewed::Client' do

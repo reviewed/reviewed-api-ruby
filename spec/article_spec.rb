@@ -2,18 +2,6 @@ require 'spec_helper'
 
 describe Reviewed::Article do
 
-  describe 'accessors' do
-
-    after(:each) do
-      Reviewed::Article.branch = nil
-    end
-
-    it 'global params' do
-      Reviewed::Article.branch = 'test'
-      Reviewed::Article.branch.should eql('test')
-    end
-  end
-
   describe 'associations' do
 
     describe 'pages' do

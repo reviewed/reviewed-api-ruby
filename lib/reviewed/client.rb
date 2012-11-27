@@ -48,7 +48,7 @@ module Reviewed
       @connection ||= ::Faraday.new(url: url) do |faraday|
         faraday.response :mashify
         faraday.response :json
-        faraday.request  :branches
+        faraday.request  :global_params
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
       end
