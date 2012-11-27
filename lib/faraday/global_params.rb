@@ -6,8 +6,11 @@ module Faraday
 
       if params && params.is_a?(Hash)
         path = env[:url].path
-        query = env[:url].query || {}
-        env[:url].query = Faraday::Utils.build_query(query.merge(params))
+
+        query = ::Rack::Utils.parse_nested_query(env[:url].query) || {}
+        query = Faraday::Utils.build_query(query.merge(params))
+
+        env[:url].query = query unless query.blank?
       end
 
       @app.call(env)

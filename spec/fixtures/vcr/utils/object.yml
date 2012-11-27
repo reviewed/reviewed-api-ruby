@@ -7615,4 +7615,44 @@ http_interactions:
         +afv/vArxAcC54b+XwAAAAD//wMAdyi3hMKgQQA=
     http_version: 
   recorded_at: Wed, 21 Nov 2012 22:40:13 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/509d166d60de7db97c05ce71?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - '1234567890'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Date:
+      - Tue, 27 Nov 2012 17:37:24 GMT
+      Server:
+      - MochiWeb/1.0 (Any of you quaids got a smint?)
+      Content-Length:
+      - '601'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n    <html>\n
+        \   <head>\n      <meta http-equiv=\"content-type\" content=\"text/html; charset=ISO-8859-1\">\n
+        \     <style type=\"text/css\">\n        html, body, iframe { margin: 0; padding:
+        0; height: 100%; }\n        iframe { display: block; width: 100%; border:
+        none; }\n      </style>\n    <title>Application Error</title></head>\n    </head>\n
+        \   <body>\n      <iframe src=\"//s3.amazonaws.com/heroku_pages/error.html\">\n
+        \       <p>Application Error</p>\n      </iframe>\n    </body>\n    </html>"
+    http_version: 
+  recorded_at: Tue, 27 Nov 2012 17:37:26 GMT
 recorded_with: VCR 2.3.0

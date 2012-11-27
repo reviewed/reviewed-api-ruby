@@ -7,6 +7,7 @@ require 'active_support/inflector'
 require 'active_support/core_ext'
 require 'active_model'
 require 'hashie'
+require 'rack'
 
 require 'reviewed/configurable'
 require 'reviewed/embeddable'
