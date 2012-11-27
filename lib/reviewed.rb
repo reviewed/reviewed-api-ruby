@@ -31,6 +31,10 @@ module Reviewed
 
     attr_accessor :global_params
 
+    def global_params
+      @global_params ||= {}
+    end
+
     def client
       @client ||= Reviewed::Client.new
     end

@@ -14,6 +14,13 @@ describe Reviewed do
     end
   end
 
+  describe '.global_params' do
+
+    it 'returns a hash' do
+      Reviewed.global_params.should eql({})
+    end
+  end
+
 
   describe '.client' do
 
