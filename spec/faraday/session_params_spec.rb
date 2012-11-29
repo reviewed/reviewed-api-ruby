@@ -1,6 +1,6 @@
 require 'spec_helper.rb'
 
-describe Faraday::GlobalParams do
+describe Faraday::SessionParams do
 
   class FauxApp
     def call(env)
@@ -8,13 +8,13 @@ describe Faraday::GlobalParams do
     end
   end
 
-  let(:faraday) { Faraday::GlobalParams.new(FauxApp.new) }
+  let(:faraday) { Faraday::SessionParams.new(FauxApp.new) }
   let(:env) { { url: URI.parse("http://www.the-guide-staging.com/api/v1/articles") } }
 
   context 'branch present' do
 
     before(:each) do
-      Reviewed.stub!(:global_params).and_return( foo: "bar" )
+      Reviewed.stub!(:session_params).and_return( foo: "bar" )
     end
 
     it 'adds the branch to the query params' do

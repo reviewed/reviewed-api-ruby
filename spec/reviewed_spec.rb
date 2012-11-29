@@ -5,19 +5,19 @@ describe Reviewed do
   describe 'accessors' do
 
     after(:each) do
-      Reviewed.global_params = nil
+      Reviewed.session_params = nil
     end
 
-    it 'global params' do
-      Reviewed.global_params = { foo: 'bar' }
-      Reviewed.global_params.should eql( { foo: 'bar' } )
+    it 'session params' do
+      Reviewed.session_params = { foo: 'bar' }
+      Reviewed.session_params.should eql( { foo: 'bar' } )
     end
   end
 
-  describe '.global_params' do
+  describe '.session_params' do
 
     it 'returns a hash' do
-      Reviewed.global_params.should eql({})
+      Reviewed.session_params.should eql({})
     end
   end
 

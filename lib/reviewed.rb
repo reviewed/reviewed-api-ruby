@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'faraday'
 require 'faraday_middleware'
-require 'faraday/global_params'
+require 'faraday/session_params'
 require 'active_support/inflector'
 require 'active_support/core_ext'
 require 'active_model'
@@ -30,10 +30,10 @@ module Reviewed
 
   class << self
 
-    attr_accessor :global_params
+    attr_accessor :session_params
 
-    def global_params
-      @global_params ||= {}
+    def session_params
+      @session_params ||= {}
     end
 
     def client

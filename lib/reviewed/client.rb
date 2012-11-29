@@ -48,7 +48,7 @@ module Reviewed
       @connection ||= ::Faraday.new(url: url) do |faraday|
         faraday.response :mashify
         faraday.response :json
-        faraday.request  :global_params
+        faraday.request  :session_params if defined?(Rails)
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
       end
