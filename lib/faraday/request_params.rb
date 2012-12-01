@@ -1,10 +1,8 @@
 module Faraday
-  class SessionParams < Faraday::Middleware
+  class RequestParams < Faraday::Middleware
 
     def call(env)
-      # TODO: if defined?(Rails) then do -> add to middlware call
-      # Get params from cookie.
-      params = Reviewed.session_params
+      params = env[:request_params]
 
       if params && params.is_a?(Hash)
         path = env[:url].path
@@ -20,4 +18,4 @@ module Faraday
   end
 end
 
-Faraday.register_middleware :request, session_params: Faraday::SessionParams
+Faraday.register_middleware :request, request_params: Faraday::RequestParams

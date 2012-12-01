@@ -1,54 +1,48 @@
 module Reviewed
   class Client
-    include ::Reviewed::Configurable
-
     attr_accessor :api_key, :base_uri, :api_version
 
-    def initialize
-      Reviewed::Configurable.options.each do |key, value|
-        instance_variable_set(:"@#{key}", value)
+    BASE_URI = "http://localhost:3000/api/v1"
+
+    def initialize(opts={})
+      @api_key = opts[:api_key] || ENV['REVIEWED_API_KEY']
+      @base_uri = opts[:base_uri] || BASE_URI
+      @request_params = opts[:request_params] || {}
+    end
+
+    def configure
+      yield self
+      self
+    end
+
+    def resource(name)
+      klass_string = "Reviewed::#{name.singularize.classify}"
+
+      begin
+        klass = klass_string.constantize
+      rescue
+        raise "Resource: #{klass_string} not found"
       end
     end
 
-    # Perform an HTTP DELETE request
-    def delete(path, params={})
-      request(:delete, path, params)
+    def verify_key!
+      unless Reviewed.api_key
+        raise ConfigurationError.new("Please set Reviewed.api_key before making a request")
+      end
     end
 
-    # Perform an HTTP GET request
-    def get(path, params={})
-      request(:get, path, params)
-    end
-
-    # Perform an HTTP POST request
-    def post(path, params={})
-      request(:post, path, params)
-    end
-
-    # Perform an HTTP PUT request
-    def put(path, params={})
-      request(:put, path, params)
-    end
-
-    def url
-      [base_uri, api_version].join('/')
+    def method_missing(method, *args, &block)
+      Reviewed::Request.new(resource: resource(method), client: self)
     end
 
     private
 
-    def request(method, path, params={})
-      verify_key!
-
-      connection.send(method.to_sym, path, params) do |request|
-        request.headers['X-Reviewed-Authorization'] ||= Reviewed.api_key
-      end
-    end
-
     def connection
-      @connection ||= ::Faraday.new(url: url) do |faraday|
+      @connection ||= ::Faraday.new(url: BASE_URI, request_params: request_params) do |faraday|
         faraday.response :mashify
         faraday.response :json
-        faraday.request  :session_params if defined?(Rails)
+        faraday.request  :request_params
+        faraday.request  :api_key
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
       end

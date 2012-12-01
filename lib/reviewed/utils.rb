@@ -8,12 +8,12 @@ module Reviewed
     module ClassMethods
 
       def object_from_response(method, url, params={})
-        response = Reviewed.send(method, url, params)
-        self.new(response.body)
+        response = client.send(method, url, params)
+        resource.new(response.body)
       end
 
       def collection_from_response(method, url, params={})
-        response = Reviewed.send(method, url, params)
+        response = client.send(method, url, params)
         Reviewed::Collection.new(self, response, params)
       end
     end
