@@ -46,7 +46,7 @@ describe Reviewed::Client do
       it 'raises an error' do
         expect {
           client.resource("tester")
-        }.should raise_error
+        }.to raise_error
       end
     end
   end

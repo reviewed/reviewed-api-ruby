@@ -144,4 +144,29 @@ describe Reviewed::Request do
       end
     end
   end
+
+  describe '#perform' do
+
+    describe 'request_params' do
+
+      context 'set' do
+        use_vcr_cassette 'request/perform/params'
+
+        it 'merges quest params' do
+          request.client.request_params = { per_page: 1 }
+          collection = request.collection_from_response(:get, "articles")
+          collection.count.should eql(1)
+        end
+      end
+
+      context 'not set' do
+        use_vcr_cassette 'request/perform/no_params'
+
+        it 'has nil query params' do
+          collection = request.collection_from_response(:get, "articles")
+          collection.count.should eql(20)
+        end
+      end
+    end
+  end
 end

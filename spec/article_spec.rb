@@ -1,6 +1,15 @@
 require 'spec_helper'
 
 describe Reviewed::Article do
+  use_vcr_cassette 'article/grill'
+
+  let(:client) do
+    Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+  end
+
+  before(:each) do
+    @article = client.articles.find('big-green-egg-medium-charcoal-grill-review')
+  end
 
   describe 'associations' do
 
@@ -15,10 +24,6 @@ describe Reviewed::Article do
     describe 'products' do
       use_vcr_cassette 'article/products'
 
-      before(:each) do
-        @article = Reviewed::Article.find('big-green-egg-medium-charcoal-grill-review')
-      end
-
       it 'has_many :products' do
         Reviewed::Article._embedded_many.should include({"products"=>Reviewed::Product})
       end
@@ -32,10 +37,6 @@ describe Reviewed::Article do
 
     describe 'attachments' do
       use_vcr_cassette 'article/attachments'
-
-      before(:each) do
-        @article = Reviewed::Article.find('big-green-egg-medium-charcoal-grill-review')
-      end
 
       it 'has_many :attachments' do
         Reviewed::Article._embedded_many.should include({"attachments"=>Reviewed::Attachment})
@@ -70,7 +71,7 @@ describe Reviewed::Article do
     use_vcr_cassette 'article/find_page'
 
     it 'finds a page with a matching slug' do
-      article = Reviewed::Article.find('minden-master-ii-grill-review')
+      article = client.articles.find('minden-master-ii-grill-review')
       article.pages.length.should == 9
       page = article.find_page('performance')
       page.should == article.pages[2]
@@ -83,7 +84,7 @@ describe Reviewed::Article do
     use_vcr_cassette 'article/products'
 
     before(:each) do
-      @article = Reviewed::Article.find('big-green-egg-medium-charcoal-grill-review')
+      @article = client.articles.find('big-green-egg-medium-charcoal-grill-review')
       @product = @article.primary_product
     end
 

@@ -8,9 +8,12 @@ end
 describe Reviewed::Collection do
   use_vcr_cassette 'collection/products'
 
+  let(:client) do
+    Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+  end
+
   before(:each) do
-    Reviewed.api_key = TEST_KEY
-    @collection = Reviewed::Product.all # creates a collection
+    @collection = client.products.all # creates a collection
   end
 
   describe 'collection data' do

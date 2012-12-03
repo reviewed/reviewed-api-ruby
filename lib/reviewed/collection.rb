@@ -6,16 +6,17 @@ module Reviewed
 
     def_delegators :@items, :<<, :[], :[]=, :each, :first, :last, :length, :concat, :map, :collect, :empty?
 
-    attr_accessor :raw_response, :page_attributes, :klass, :items, :params
+    attr_accessor :raw_response, :page_attributes, :klass, :items, :params, :client
 
-    def initialize(klass, response, params={})
+    def initialize(client, klass, response, params={})
       body = response.body
       data = body.data
 
-      self.page_attributes = body.pagination
-      self.params = params
-      self.klass = klass
-      self.items = []
+      @client = client
+      @klass = klass
+      @params = params
+      @items = []
+      @page_attributes = body.pagination
 
       data.each do |obj|
         self.items << klass.new(obj)
@@ -57,7 +58,7 @@ module Reviewed
 
     def fetch_page(page=nil)
       self.params[:page] = page
-      @klass.where(self.params)
+      client.send(klass.association_name).where(self.params)
     end
   end
 end

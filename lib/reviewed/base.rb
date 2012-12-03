@@ -15,7 +15,11 @@ module Reviewed
     class << self
 
       def path
-        @resource_name ||= self.name.demodulize.downcase.pluralize
+        @resource_name ||= association_name
+      end
+
+      def association_name
+        self.name.demodulize.downcase.pluralize
       end
     end
 

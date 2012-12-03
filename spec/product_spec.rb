@@ -2,13 +2,17 @@ require 'spec_helper'
 
 describe Reviewed::Product do
 
+  let(:client) do
+    Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+  end
+
   describe 'associations' do
 
     describe 'attachments' do
       use_vcr_cassette 'product/attachments'
 
       before(:each) do
-        @product = Reviewed::Product.find('minden-master-ii')
+        @product = client.products.find('minden-master-ii')
       end
 
       it 'has_many :attachments' do
@@ -44,7 +48,7 @@ describe Reviewed::Product do
     use_vcr_cassette 'product/manufacturer_specs'
 
     before(:each) do
-      @product = Reviewed::Product.find('minden-master-ii')
+      @product = client.products.find('minden-master-ii')
     end
 
     it 'has_many :manufacturer_specs' do

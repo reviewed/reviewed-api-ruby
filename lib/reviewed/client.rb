@@ -30,10 +30,9 @@ module Reviewed
     end
 
     def connection
-      @connection ||= ::Faraday.new(url: BASE_URI, request_params: request_params) do |faraday|
+      @connection ||= ::Faraday.new(url: BASE_URI) do |faraday|
         faraday.response :mashify
         faraday.response :json
-        #faraday.request  :request_params
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
       end

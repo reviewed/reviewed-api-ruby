@@ -191,4 +191,99 @@ http_interactions:
         R7jqK+CVZ9o3Z+H1/M/T5e/D6RsAAAD//wMAIVflnjANAAA=
     http_version: 
   recorded_at: Tue, 27 Nov 2012 17:36:56 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/products/minden-master-ii
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - '1234567890'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "WC1SYXRlLUxpbWl0":
+      - !binary |-
+        OTk5OTM=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjBlZGVlYmNkYzEwMGFjZDRhNjE5ODg2OGZmZGFiOTY3Ig==
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        MjZlOWI1NGY1OTQzN2RlMGM0ZjM4MDUyMzA4MDhkYjQ=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4xNjcwMzI=
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIALnLvFAAA7RWS2/jNhD+K4au9YOkXhYvvSzQ5hCgWOTUohD4ksNdSRRI
+        KtlskP/eoWQ78u5aQQHLhzjD+TzfPMl5jbSMaJSiQsQFY4oIlqmsSFMhcCGy
+        aB0Jq5hXsmQecARhskHpBqcPBFNMKE7/BkzfyR8wGG9Q8UAQxRlNUMC0rFGg
+        vdetVO3qnjmv7OruDjSu7g+gaQbNphk0G61BU/qXLvzoT9MoSv+wuq4dfDMH
+        uqByEf0n+suajrUq+ncdddbIXvjSMq9bsNn2db2OLGu/DuJr5I1n9fR8/P9t
+        HTXOdhFN8mKL1hGzXotalVoODJAdiYuUZ0iqXPIiFyhLJOGB8llxp/0UKohS
+        eIRWIk4RfDgbvOt5rd1jadppJvcPuKBxQhH6DSH4O6RTnHzsrBaqPFjGubLl
+        UCsA2J7DeXkuHalQccGYJBXAOEQoJyhV5Rcoss/PxkJ2PrL3cyuEMu8fSOgD
+        GufXW+ESc2wF0OIVFHM1FHb1efQDYla20c5p07rgFZCCX9726uTBSRq5TpJU
+        zlvzMopvb+fShLpMY/tVdeZjS2g6H1tMSQGdPolt7NW7tjJbYZrwWwt9Fx2G
+        Y/1+LIwc4J/vbhY4dFrD2r5iwvcWmsZ1SoQcwDnznonHRrX+MikyS9h+TEou
+        cI5wtpfkalIu5/p/z/4mztD9p80Ta7V/2X7pDsdhBkClaxUkdhiGaYSE0XlS
+        9pwWl6JvKQL0o/cd3e1qI1j9aJynMRRz13e1YdLt3mPdxZxIiROpMoF5wXjF
+        KoZklSoYd54mOcyFyDmXu9F0ed1PhwGBl2I/Gp/jJwAhS/Efjc/xA8k3jMky
+        /Efjc/wwsFChxao/GJ/jzwCSLMV/ND7HXyQL8h+Nf8QfL9V/R+Mf8WO8ID8Y
+        n+E3Vh90G1aIBfiv0b4NV7ywuvM67A7jZgC3LgvX4fiwBG8cuOPg7oRdZ2vV
+        k1bPSm4nV/7WxVvWsO+mZc8uvD839XI93N6l09/hJidFGu/D69Z6MH5a43TD
+        Dmr3pVNDTDd77YY153J/+fWmM7fKYkquvPE/Yy6esx8X2NNbP1apNgdTTuRb
+        7TaWPZdOGBu2m1eQHXQheD09giVYMV4HT/v2LLyf/34yfhuf/gMAAP//AwC/
+        FTpcSgwAAA==
+    http_version: 
+  recorded_at: Mon, 03 Dec 2012 15:56:41 GMT
 recorded_with: VCR 2.3.0

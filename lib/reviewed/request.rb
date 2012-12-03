@@ -56,13 +56,14 @@ module Reviewed
 
     def collection_from_response(method, url, params={})
       response = self.send(method, url, params)
-      Reviewed::Collection.new(resource, response, params)
+      Reviewed::Collection.new(client, resource, response, params)
     end
 
     private
 
     def perform(method, path, params={})
       client.connection.send(method.to_sym, path, params) do |request|
+        request.params.merge!(client.request_params)
         request.headers['X-Reviewed-Authorization'] ||= client.api_key
       end
     end

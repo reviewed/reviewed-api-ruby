@@ -33,6 +33,13 @@ describe Reviewed::Base do
     end
   end
 
+  describe 'association_name' do
+
+    it 'returns the demodulized & pluralized version of itself' do
+      Reviewed::Article.association_name.should eql("articles")
+    end
+  end
+
   describe 'attributes' do
     it 'returns the named attribute (via method missing)' do
       model = Example.new(:id => 'id', :super_awesome => 'true')
