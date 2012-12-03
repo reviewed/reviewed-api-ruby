@@ -8,9 +8,13 @@ module Reviewed
 
     attr_accessor :attributes
 
+    def initialize(data)
+      self.attributes = objectify(data)
+    end
+
     class << self
 
-      def to_s
+      def path
         @resource_name ||= self.name.demodulize.downcase.pluralize
       end
     end

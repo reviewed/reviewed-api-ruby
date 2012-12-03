@@ -21,5 +21,5 @@ VCR.configure do |config|
   config.hook_into :webmock
 end
 
-TEST_URL = Reviewed.base_uri = 'https://the-guide-staging.herokuapp.com/api'
-TEST_KEY = Reviewed.api_key  = '1234567890'
+TEST_URL = 'https://localhost:3000/api/v1'
+TEST_KEY = '1234567890'

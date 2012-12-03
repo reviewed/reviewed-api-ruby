@@ -1,6 +1,5 @@
 module Reviewed
   class Collection
-    include Reviewed::Utils
     include Enumerable
 
     extend Forwardable

@@ -1,11 +1,16 @@
 module Reviewed
   class Request
-    include ::Reviewed::Utils
-
     attr_accessor :client, :resource
+    attr_reader :path
 
     def initialize(opts={})
-      @resource = opts[:resource]
+      if opts[:resource].kind_of?(String)
+        @path = opts[:resource]
+      else
+        @resource = opts[:resource]
+        @path = @resource.path
+      end
+
       @client = opts[:client] || Reviewed::Client.new
     end
 
@@ -20,18 +25,23 @@ module Reviewed
     end
 
     # Perform an HTTP DELETE request
+    def post(path, params={})
+      perform(:post, path, params)
+    end
+
+    # Perform an HTTP DELETE request
     def delete(path, params={})
       perform(:delete, path, params)
     end
 
     # Get request on resource#show
     def find(id, params={})
-      object_from_response(:get, "#{resource.to_s}/#{id}", params)
+      object_from_response(:get, "#{path}/#{id}", params)
     end
 
     # Get request on resource#index with query params
     def where(params={})
-      collection_from_response(:get, resource.to_s, params)
+      collection_from_response(:get, path, params)
     end
 
     # Convenience Method
@@ -39,11 +49,21 @@ module Reviewed
       where({})
     end
 
+    def object_from_response(method, url, params={})
+      response = self.send(method, url, params)
+      resource.new(response.body)
+    end
+
+    def collection_from_response(method, url, params={})
+      response = self.send(method, url, params)
+      Reviewed::Collection.new(resource, response, params)
+    end
+
     private
 
     def perform(method, path, params={})
       client.connection.send(method.to_sym, path, params) do |request|
-        request.headers['X-Reviewed-Authorization'] ||= Reviewed.api_key
+        request.headers['X-Reviewed-Authorization'] ||= client.api_key
       end
     end
   end

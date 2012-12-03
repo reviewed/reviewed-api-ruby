@@ -1,6 +1,6 @@
 module Reviewed
   class Client
-    attr_accessor :api_key, :base_uri, :api_version
+    attr_accessor :api_key, :base_uri, :api_version, :request_params
 
     BASE_URI = "http://localhost:3000/api/v1"
 
@@ -16,7 +16,7 @@ module Reviewed
     end
 
     def resource(name)
-      klass_string = "Reviewed::#{name.singularize.classify}"
+      klass_string = "Reviewed::#{name.to_s.singularize.classify}"
 
       begin
         klass = klass_string.constantize
@@ -25,24 +25,15 @@ module Reviewed
       end
     end
 
-    def verify_key!
-      unless Reviewed.api_key
-        raise ConfigurationError.new("Please set Reviewed.api_key before making a request")
-      end
-    end
-
     def method_missing(method, *args, &block)
       Reviewed::Request.new(resource: resource(method), client: self)
     end
-
-    private
 
     def connection
       @connection ||= ::Faraday.new(url: BASE_URI, request_params: request_params) do |faraday|
         faraday.response :mashify
         faraday.response :json
-        faraday.request  :request_params
-        faraday.request  :api_key
+        #faraday.request  :request_params
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
       end

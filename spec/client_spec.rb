@@ -2,11 +2,13 @@ require 'spec_helper.rb'
 
 describe Reviewed::Client do
 
-  let(:client) { Reviewed::Client.new }
+  let(:client) do
+    Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+  end
 
-  describe 'variables' do
+  describe 'accessors' do
 
-    [:api_key, :base_uri, :api_version].each do |var|
+    [:api_key, :base_uri, :request_params].each do |var|
       describe "#{var}" do
 
         it 'exists' do
@@ -16,51 +18,52 @@ describe Reviewed::Client do
     end
   end
 
-  describe '#delete' do
+  describe '#configure' do
 
-    it 'delegates to request' do
-      client.should_receive(:request).with(:delete, "path", kind_of(Hash))
-      client.delete("path", {})
+    it 'returns self' do
+      client.configure{}.should be_an_instance_of(Reviewed::Client)
+    end
+
+    it 'yields self' do
+      client.configure do |config|
+        config.api_key = 'test_key'
+      end
+      client.api_key.should eql('test_key')
     end
   end
 
-  describe '#get' do
+  describe '#resource' do
 
-    it 'delegates to request' do
-      client.should_receive(:request).with(:get, "path", kind_of(Hash))
-      client.get("path", {})
+    context 'constant exists' do
+
+      it 'returns the appropriate constant' do
+        client.resource("articles").should eql(Reviewed::Article)
+      end
+    end
+
+    context 'constant does not exist' do
+
+      it 'raises an error' do
+        expect {
+          client.resource("tester")
+        }.should raise_error
+      end
     end
   end
 
-  describe '#post' do
+  describe '#method_missing' do
 
-    it 'delegates to request' do
-      client.should_receive(:request).with(:post, "path", kind_of(Hash))
-      client.post("path", {})
+    before(:each) do
+      @request = client.articles
     end
-  end
 
-  describe '#put' do
-
-    it 'delegates to request' do
-      client.should_receive(:request).with(:put, "path", kind_of(Hash))
-      client.put("path", {})
+    it 'returns a Reviewed::Request instance' do
+      @request.should be_an_instance_of(Reviewed::Request)
     end
-  end
 
-  describe '#url' do
-
-    it 'returns a url' do
-      client.url.should eql('http://localhost:3000/api/v1')
-    end
-  end
-
-  describe '#request' do
-
-    it 'verifies the key' do
-      client.stub_chain(:connection, :send).and_return(nil)
-      client.should_receive(:verify_key!)
-      client.send(:request, :get, 'test')
+    it 'sets the correct instance variables' do
+      @request.resource.should eql(Reviewed::Article)
+      @request.client.should eql(client)
     end
   end
 
@@ -76,7 +79,7 @@ describe Reviewed::Client do
       conn.builder.handlers.should include(Faraday::Request::UrlEncoded)
     end
 
-    it 'uses a Json middleware' do
+    it 'uses a JSON middleware' do
       conn.builder.handlers.should include(FaradayMiddleware::ParseJson)
     end
 
