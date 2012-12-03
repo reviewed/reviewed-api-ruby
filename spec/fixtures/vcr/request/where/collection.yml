@@ -42,7 +42,7 @@ http_interactions:
         bm8tY2FjaGUsIG5vLXN0b3Jl
       !binary "WC1SYXRlLUxpbWl0":
       - !binary |-
-        OTk5OTc=
+        OTk5ODQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -57,13 +57,13 @@ http_interactions:
         SUU9RWRnZQ==
       !binary "RXRhZw==":
       - !binary |-
-        ImNkMzAyNDRhYmY3YmRhY2E3N2FhYzE0MmJlYjlmOTk2Ig==
+        ImViYTE4YjhjZGU0ZTI3OGEwOGM4YTBhMDI1ZjZiZDQ4Ig==
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        NzkyNjM2MWExYzJhOGE3M2ZhMWRkYTI2NDgwNjQ4ZTY=
+        ZmVmOWE0MGUyMWEzNzFmOTAxNDdjYjRlOGU3ZGRhZjc=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        Mi43OTY3ODA=
+        Mi41MjkxNzk=
       !binary "Q29ubmVjdGlvbg==":
       - !binary |-
         Y2xvc2U=
@@ -73,7 +73,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAPIJvFAAA+yd6ZPbRnbA/xXWfEhtKibc98EvKV32pmJnHWmy8mbLpcIp
+        H4sIAAfXvFAAA+yd6ZPbRnbA/xXWfEhtKibc98EvKV32pmJnHWmy8mbLpcIp
         cc0ZTkiORlqX//d0AwSJJhqN7uYhaSyva8tDAnivT/b74R2/Xd2lb+e36Wa+
         vL2a/Xa1WW7SxdWMM86+af54oy4o11czLMg3V9V8td7Un1zNNqv78purRbr7
         oEoXa/XJ3ap8P1/er7ef3t4vFt9c3ZYf2svQN1fL+82bZfUmW97fFuvdjcuq
@@ -286,7 +286,7 @@ http_interactions:
         cG0JUn8ZXmKR2LobD+e7xIf2vL0L65477CvY8znAj8nn4Jff/18AAAAA//8D
         AKcPfBh4TgEA
     http_version: 
-  recorded_at: Mon, 03 Dec 2012 02:09:54 GMT
+  recorded_at: Mon, 03 Dec 2012 16:44:55 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/articles?page=2
@@ -329,7 +329,7 @@ http_interactions:
         bm8tY2FjaGUsIG5vLXN0b3Jl
       !binary "WC1SYXRlLUxpbWl0":
       - !binary |-
-        OTk5OTY=
+        OTk5ODM=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -344,13 +344,13 @@ http_interactions:
         SUU9RWRnZQ==
       !binary "RXRhZw==":
       - !binary |-
-        ImQwNmZhOGViY2M1OWNiYzFhNjE5OGNiMWRhZTM3NDJlIg==
+        ImM0NTNiY2ZjN2UwZmI1YWMzZTEzODk3MzA3MTEzMjJiIg==
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        NGQyN2IxODAwOWExY2M1MjgzZjU2NDg0YTQ1YTEwNzg=
+        MDY0MGFlODcyNzYyNjM0ZjgwNmMzNTgxNTJiNzcyNTQ=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        Mi41NjczNjk=
+        Mi41NjYyNzM=
       !binary "Q29ubmVjdGlvbg==":
       - !binary |-
         Y2xvc2U=
@@ -360,7 +360,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAsKvFAAA+x9aZMbN7blX2HUh4mZGDGNfeGXF1rdfiO53Zae67154ajI
+        H4sIAArXvFAAA+x9aZMbN7blX2HUh4mZGDGNfeGXF1rdfiO53Zae67154ajI
         tcQ2i6zhorLa4f8+SCSTTDCRmQCSRS1WhztCRYK8N7ER59yLc/+4uo9v58t4
         O18tr2Z/XG1X23hxNeOMsyfVHzeqQb65mmFBnlwV8/Vmq1+5mhXxYpM/uVrE
         p6/cr/MP89Vus38VPrla5r/XbfCTq9Vue7MqbpLVbpltDp9aFcUm317NEHhy
@@ -573,7 +573,7 @@ http_interactions:
         fpjbCIswsm4YeuT3U15z7o0dgFeEs7nUib4mtV/Uei3Xq7eal6fLFOvfi+4F
         qR0wVp5+pWuJ7avRGEsJfE1M9q9//n8BAAAA//8DAAbks04RQwEA
     http_version: 
-  recorded_at: Mon, 03 Dec 2012 02:10:19 GMT
+  recorded_at: Mon, 03 Dec 2012 16:44:58 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/articles?keywords=minden
@@ -616,7 +616,7 @@ http_interactions:
         bm8tY2FjaGUsIG5vLXN0b3Jl
       !binary "WC1SYXRlLUxpbWl0":
       - !binary |-
-        OTk5OTU=
+        OTk5ODI=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -631,13 +631,13 @@ http_interactions:
         SUU9RWRnZQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjRhYjQwYjdjZjEyMmQ2MTcyMGUzMzA2Y2QxZTJkYzI1Ig==
+        IjQzOTRkMDBkODUxOWEwOTc2OTQwMDA1YzRkMDE4OTdmIg==
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        M2IwMzM1Yjg1NmQ5ZTVkZDUwODllNWZiNGJjODYxMDc=
+        MjA3OTFkZDI2Nzc0OTBmMTg1MDA1N2ExYzYyMDI2MmE=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4zNTgwNTU=
+        MC4zMDUzNTY=
       !binary "Q29ubmVjdGlvbg==":
       - !binary |-
         Y2xvc2U=
@@ -647,7 +647,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAwKvFAAA7RXS2/jNhD+KwGv9YPU09KllwLtHgIURU5dBAJFUja3kiiQ
+        H4sIAArXvFAAA7RXS2/jNhD+KwGv9YPU09KllwLtHgIURU5dBAJFUja3kiiQ
         VB5r+L93KEp2lK2cLhDn4IicT/MNZz4OqSPq6F621ErVovyIrLK0RjlZ+acC
         rMIM40pqY4cxyq3uxQrV9N1Ep8WTVL0ZJ9u+rleoFS92NqF6W6iqKFXfcnBd
         0drAu6qqjLAoxyvEeq1FO70E1J3Q4yAAM5i0FKZQ7YQ4rRCnlqL86xFJjnIU
@@ -671,7 +671,7 @@ http_interactions:
         xfZbJ4Y1fc5x9+juM8+FYUq7a9ERHBuoCBxIb6fgYiRoWbsg+vY8uMz/ev5u
         +qyg5kft46d5Pv0LAAD//wMAmtmVqScOAAA=
     http_version: 
-  recorded_at: Mon, 03 Dec 2012 02:10:20 GMT
+  recorded_at: Mon, 03 Dec 2012 16:44:58 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/articles?keywords=doesnotcompute
@@ -714,7 +714,7 @@ http_interactions:
         bm8tY2FjaGUsIG5vLXN0b3Jl
       !binary "WC1SYXRlLUxpbWl0":
       - !binary |-
-        OTk5OTQ=
+        OTk5ODE=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -729,13 +729,13 @@ http_interactions:
         SUU9RWRnZQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjY0OTg4NjQ5ZjVkOWIyOTkwMmIzODEyZTQzNmZmMzZiIg==
+        ImNiNmYwNWRiZWZhZGFhY2YzMTk2YTYxZTVmNjY0MTRjIg==
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ZjFhMDJhNmMxZjBmM2U1MWU3NjI5MGU5YzA2OWMzNjY=
+        ZWMwZGM3ZWE0N2JjMGU2ZDY3MTllOWZmMzc2M2UyYTE=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4xMDYxMzg=
+        MC4wNTkyNDI=
       !binary "Q29ubmVjdGlvbg==":
       - !binary |-
         Y2xvc2U=
@@ -745,10 +745,10 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAwKvFAAA1yNQQrDMAwE/6KzD2mP/kopRm3kYjBSkKVSCPl7jZMc2pt2
+        H4sIAArXvFAAA1yNQQrDMAwE/6KzD2mP/kopRm3kYjBSkKVSCPl7jZMc2pt2
         hl2tsOCrMFoRhriCiWGFOIX9St1SGzkXbTYyRFOnABX/wKL0LuLtgOy1BmD6
         2A8QtyQ5PcR5bmdVcm5k49HTVYnPzqXPkh7h2nVXWqgl4QNOW4AZDSHe7tsX
         AAD//wMAWfK2cdAAAAA=
     http_version: 
-  recorded_at: Mon, 03 Dec 2012 02:10:20 GMT
+  recorded_at: Mon, 03 Dec 2012 16:44:58 GMT
 recorded_with: VCR 2.3.0

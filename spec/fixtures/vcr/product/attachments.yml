@@ -2,224 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Reviewed-Authorization:
-      - '1234567890'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - ! '*/*'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        dHJ1ZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
-      - !binary |-
-        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
-        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
-      - !binary |-
-        MTAwMA==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGUsIG5vLXN0b3Jl
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VGh1LCAyMiBOb3YgMjAxMiAwMDoxMjowMiBHTVQ=
-      !binary "RXRhZw==":
-      - !binary |-
-        ImUwYWEwMjFlMjFkZGRiZDZkOGNlY2VjNzFlOWNmNTY0Ig==
-      !binary "TGFzdC1Nb2RpZmllZA==":
-      - !binary |-
-        RnJpLCAwOSBOb3YgMjAxMiAyMDoxNjo0MCBHTVQ=
-      !binary "U2VydmVy":
-      - !binary |-
-        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
-      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT0zMTUzNjAwMA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "WC1SYWNrLUNhY2hl":
-      - !binary |-
-        bWlzcw==
-      !binary "WC1SYXRlLUxpbWl0":
-      - !binary |-
-        OTk5NjM=
-      !binary "WC1SZXF1ZXN0LUlk":
-      - !binary |-
-        NDA4YWY1ZGMxNTIxMWI0MmNjNGQ4MTNkMDkyYTAxODM=
-      !binary "WC1SdW50aW1l":
-      - !binary |-
-        MC4wMDU3NTk=
-      !binary "WC1VYS1Db21wYXRpYmxl":
-      - !binary |-
-        SUU9RWRnZSxjaHJvbWU9MQ==
-      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAKhknVAAA8RX227jNhD9FUFPLeoLqaullwJtsVsDTTdI/dSiECiScriV
-        SIGkks0G+fcOdbGt3bWDAoGbhyQzc8Q5cxNHz75gfu7HKKNhRggPKEl4ksUx
-        pTijib/wqebEclYQC7gA4WCJ4iWOdwHOcZDj+E/AdC37AoPxEmW7AOU4ySPk
-        MJI0HKw3QjIuvRtiLNfedgsWU3d7sDS9Zdn0lqUQYCnsU+se+lU1PM/fa1HX
-        Bv4SAzZnMn7+l3+rVUsk9/9e+K1WrKO20MQKCWfKrq4Xvibyn1589q2ypD7V
-        D/+/LPzG6NbPozRbIRCI7CpCbae5LkzLqXEPz7SzcIBOCaexSfvdoP7eH44i
-        ddFpcOsfZcs/2aPicOqgHujNDIfnDdeCm8kRKN51vHZp+O3Wc4mBLGylgShr
-        bzck753mHBSSuRwAXkhh7j2lvZ9VrTQA3gPAhfCHYNz7qdOSO+3vClR3ygrT
-        u5w0H7TYC0lq71YLyseMQf6ItoLWvBCsLwo0FMNZXCaI8ZSVWUpRErGgdPwe
-        eWmEPYXSgHM8QCsaxgh+StIXtCtrYFsoedp8mx3O8jDKEfoBIfjddyCd8tY6
-        YsVek7KExPXtDQDdlaAvDt0eVCibeYyi6lDGI4pX6QwVbNLDYa4nXjvv6+lx
-        k7HZBW508jA9Pz1zzFhvsGJXZq+fBe9u4AExc91AoYSSfaeCU+BldccnBpM0
-        +JokBo2h1dMgvrwcSuPqchrbt6pzObYojy/HFuZBBi+Hk9iG8d7KSq2oatyz
-        fc/ve7U4qqliPfxu+2aBQ6cRawm9b7i08+BZEpHNEHxKcYpwsmHB2eDnr7z/
-        /Fpchgm6+WX5QKSwT6uP7X58zwGgEjV3Etn3QzNA3Ig8cH0I38ToU4wAfW9t
-        m6/XMPYwrPuV5g+CP3K2OolyZcIVachnJcmjcaldH43rsAwYwxHjCcVlRsqK
-        VASxKuYw7mUcpTAWNC1Lth48FufpGwwIfGVSo89LtAKABFemNfq8RCtEwBwH
-        V6U1+rxEC4Yeynztzup9XqKVACS6Mq3R5yVaWXR9WqPP12iFV2750edrtDC+
-        Pi3weYGWGveca9I6x+alv7CoFq0VbhMa9hy4W4h76Q/XpCNp/leWi/6OKoz4
-        DPdVkMXhxt3V0sLh0x4vGrLn648t72N6s7u7X9rm29i397ZL3zI4D85sLF9j
-        vlz+Z18w0+YyVKlWe1WcyG+1qWnyWBiqtNvVnkE2lNTA+lQFX0GclLVj2smD
-        cNT/OB3+Npz+BQAA//8DAAeHWYpLDgAA
-    http_version: 
-  recorded_at: Thu, 22 Nov 2012 00:12:10 GMT
-- request:
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii?
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Reviewed-Authorization:
-      - '1234567890'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - ! '*/*'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        dHJ1ZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
-      - !binary |-
-        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
-        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
-      - !binary |-
-        MTAwMA==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGUsIG5vLXN0b3Jl
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VHVlLCAyNyBOb3YgMjAxMiAxNzozNjo1MyBHTVQ=
-      !binary "TGFzdC1Nb2RpZmllZA==":
-      - !binary |-
-        RnJpLCAwOSBOb3YgMjAxMiAyMDoxNjo0MCBHTVQ=
-      !binary "U2VydmVy":
-      - !binary |-
-        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
-      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT0zMTUzNjAwMA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "WC1SYWNrLUNhY2hl":
-      - !binary |-
-        bWlzcw==
-      !binary "WC1SYXRlLUxpbWl0":
-      - !binary |-
-        OTk4ODU=
-      !binary "WC1SZXF1ZXN0LUlk":
-      - !binary |-
-        NjMwY2Y3YWE4OWM5ZWMwMjJjZGRiYTE1NWYyZGE2YjE=
-      !binary "WC1SdW50aW1l":
-      - !binary |-
-        MC4xNjg1ODA=
-      !binary "WC1VYS1Db21wYXRpYmxl":
-      - !binary |-
-        SUU9RWRnZSxjaHJvbWU9MQ==
-      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAKhknVAAA8RWS2/bOBD+K4au6wdJvSxd9rJAN4cAiyKnLRbC8CGHrV4g
-        qWTTIP+9Q8l25LZWUCBQfbA9nE+cb16aeQ60DPIgJpkIMwDFBCQqyeJYCJqJ
-        JFgHwihwShbgEMcIZRsSb2h8x2hOWU7jfxHTd/I7DKUbkt0xktMkj4jHNFAr
-        1N7qRqpmdQvWKbO6uUGNrfoDaupBs6kHzUZr1BTuqfMP/d3WKs8/GF1VFn/B
-        os6rbJB/Cv4xbQeNCv5bB51pZS9cYcDpBu9s+qpaBwaaL4P4HLjWQTU9H/+/
-        rIPami7IozTbknUAxmlRqULLwQJGR9Is5gmRKpU8SwVJIsm4N/mouNVuChVM
-        KTpCSxHGBD8cBnY9r7S9L9pmGsn9Hc3yMMoJ+YMQ/B7CKU4cO6OFKg4GOFem
-        GHKFANNzPC/OqWMlyS4sRlGJMI4eyglKlekFiu3T82U+Om/d92Mp+DTv75iv
-        gzxMr5fCJeZYCqilK0zmakjs6uPIA31WptbW6raxnhUaRV7O9OrE4CSNtk6S
-        VNaZ9mkUX17OqfF5mfr2s+zM+xbl8bxvYc4yrPSJb2Ot3jRluxVt7Z81WHfB
-        YTjWr8eilQP84827OY6VVkPTlyBcb7BobKeEjwGeg3Mg7mvVuMugyCSC/RiU
-        VNCU0GQv2dWgXPb1L/f+JkzI7V+bB2i0e9p+7g7HZkZAqSvlJTgMzTRCfOs8
-        KHMOi43J/zFB9L1zXb7bWYRje2+NetDqUcntxMutDbdQw9e2gUfrQ757Ve5C
-        zqSkkVSJoDwDXkIJRJaxwrcAj6MU20WknMvdaLG4Tt9SRNCFSR1tztFiCGEL
-        0zranKMVEmRO2aK0jjbnaOHLANO8dGUNNudoJQiJFqZ1tDlHK4uWp3W0+Rat
-        cOGSP9p8ixaly9NCmzO0WqORhN+IlqN1jc3LMMiE0Z3TfkMa9x+cLeBf+uP4
-        9CTtb2W5HmZUYfVXnFcsi8O9n+GNw8tPy6qu4aB2nzs1+PRuM31Y5i63tJ/v
-        c3MLO83ZlU3mR8zF0P5+TT9tNGOWqvbQFhP5vTY4A4+FFa3xO9wzylZAhayn
-        R7jqK+CVZ9o3Z+H1/M/T5e/D6RsAAAD//wMAIVflnjANAAA=
-    http_version: 
-  recorded_at: Tue, 27 Nov 2012 17:36:55 GMT
-- request:
-    method: get
     uri: http://localhost:3000/api/v1/products/minden-master-ii
     body:
       encoding: US-ASCII
@@ -260,7 +42,7 @@ http_interactions:
         bm8tY2FjaGUsIG5vLXN0b3Jl
       !binary "WC1SYXRlLUxpbWl0":
       - !binary |-
-        OTk5OTQ=
+        OTk5ODY=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -275,13 +57,13 @@ http_interactions:
         SUU9RWRnZQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjU1ODMyYzJkODM2MDkxMDZiZDgwNWE0M2ZlYzIzZWIyIg==
+        ImYzNzc2ZmM0OWFlOWRhZDlhNWUxMzk4MzAxNjVmN2JkIg==
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ZGViZDMwZmIzZmZkODg0ZjBjOGVjODgwYmIzYWM1MTA=
+        NzJmNDk0Y2UyNGQ3MjUxMTgxMzFlOWE0ZTk0M2NlNTk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC41NTM5ODc=
+        MC4zMzQyOTg=
       !binary "Q29ubmVjdGlvbg==":
       - !binary |-
         Y2xvc2U=
@@ -291,7 +73,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIALjLvFAAA7RWS2/jNhD+K4au9YOkXhYvvSzQ5hCgWOTUohD4ksNdSRRI
+        H4sIAATXvFAAA7RWS2/jNhD+K4au9YOkXhYvvSzQ5hCgWOTUohD4ksNdSRRI
         KtlskP/eoWQ78u5aQQHLhzjD+TzfPMl5jbSMaJSiQsQFY4oIlqmsSFMhcCGy
         aB0Jq5hXsmQecARhskHpBqcPBFNMKE7/BkzfyR8wGG9Q8UAQxRlNUMC0rFGg
         vdetVO3qnjmv7OruDjSu7g+gaQbNphk0G61BU/qXLvzoT9MoSv+wuq4dfDMH
@@ -312,5 +94,5 @@ http_interactions:
         7TaWPZdOGBu2m1eQHXQheD09giVYMV4HT/v2LLyf/34yfhuf/gMAAP//AwC/
         FTpcSgwAAA==
     http_version: 
-  recorded_at: Mon, 03 Dec 2012 15:56:40 GMT
+  recorded_at: Mon, 03 Dec 2012 16:44:52 GMT
 recorded_with: VCR 2.3.0
