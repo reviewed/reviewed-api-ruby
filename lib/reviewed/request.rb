@@ -4,11 +4,11 @@ module Reviewed
     attr_reader :path
 
     def initialize(opts={})
-      if opts[:resource].kind_of?(String)
-        @path = opts[:resource]
-      else
+      if opts[:resource].kind_of?(Class)
         @resource = opts[:resource]
         @path = @resource.path
+      else
+        @path = opts[:resource].to_s
       end
 
       @client = opts[:client] || Reviewed::Client.new
