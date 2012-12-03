@@ -18,14 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-First set your Reviewed.com API key:
+Create a client to use in your application and configure as needed:
 
-    Reviewed.api_key = 'my api key'
+    client = Reviewed::Client.new(
+      api_key: '0A0A1010202030',                    # required
+      base_uri: 'http://www.example.com/api/v1',    # defaults to localhost:3000
+      request_params: { per_page: 1 }               # query params applied to every request
+    )
 
-Now you should be able to query the service:
+Make a request via resources on your client:
 
-    site = Reviewed::Website.find('DCI')
-    puts site.name
+    client.articles.all
+    client.articles.find('123456')
+
+    client.products.all
+    client.products.find('123456')
 
 ## Contributing
 
