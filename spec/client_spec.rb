@@ -43,10 +43,8 @@ describe Reviewed::Client do
 
     context 'constant does not exist' do
 
-      it 'raises an error' do
-        expect {
-          client.resource("tester")
-        }.to raise_error
+      it 'returns the string' do
+        client.resource("foobar").should eql("foobar")
       end
     end
   end

@@ -17,12 +17,7 @@ module Reviewed
 
     def resource(name)
       klass_string = "Reviewed::#{name.to_s.singularize.classify}"
-
-      begin
-        klass = klass_string.constantize
-      rescue
-        raise "Resource: #{klass_string} not found"
-      end
+      klass_string.constantize rescue name
     end
 
     def method_missing(method, *args, &block)
