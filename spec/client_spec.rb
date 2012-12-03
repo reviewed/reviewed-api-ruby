@@ -65,6 +65,39 @@ describe Reviewed::Client do
     end
   end
 
+  describe '#get' do
+
+    it 'delegates to perform' do
+      client.should_receive(:perform).with(:get, "path", kind_of(Hash))
+      client.get("path", {})
+    end
+  end
+
+  describe '#put' do
+
+    it 'delegates to client' do
+      client.should_receive(:perform).with(:put, "path", kind_of(Hash))
+      client.put("path", {})
+    end
+  end
+
+  describe '#post' do
+
+    it 'delegates to client' do
+      client.should_receive(:perform).with(:post, "path", kind_of(Hash))
+      client.post("path", {})
+    end
+  end
+
+  describe '#delete' do
+
+    it 'delegates to request' do
+      client.should_receive(:perform).with(:delete, "path", kind_of(Hash))
+      client.delete("path", {})
+    end
+  end
+
+
   describe '#connnection' do
 
     let(:conn) { client.send(:connection) }
@@ -91,6 +124,31 @@ describe Reviewed::Client do
 
     it 'sets the url' do
       conn.url_prefix.to_s.should eql('http://localhost:3000/api/v1')
+    end
+  end
+
+  describe '#perform' do
+
+    describe 'request_params' do
+
+      context 'set' do
+        use_vcr_cassette 'client/perform/params'
+
+        it 'merges quest params' do
+          client.request_params = { per_page: 1 }
+          collection = client.articles.where({})
+          collection.count.should eql(1)
+        end
+      end
+
+      context 'not set' do
+        use_vcr_cassette 'client/perform/no_params'
+
+        it 'has nil query params' do
+          collection = client.articles.where({})
+          collection.count.should eql(20)
+        end
+      end
     end
   end
 end

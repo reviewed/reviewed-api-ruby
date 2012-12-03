@@ -37,38 +37,6 @@ describe Reviewed::Request do
     end
   end
 
-  describe '#get' do
-
-    it 'delegates to perform' do
-      request.should_receive(:perform).with(:get, "path", kind_of(Hash))
-      request.get("path", {})
-    end
-  end
-
-  describe '#put' do
-
-    it 'delegates to request' do
-      request.should_receive(:perform).with(:put, "path", kind_of(Hash))
-      request.put("path", {})
-    end
-  end
-
-  describe '#post' do
-
-    it 'delegates to request' do
-      request.should_receive(:perform).with(:post, "path", kind_of(Hash))
-      request.post("path", {})
-    end
-  end
-
-  describe '#delete' do
-
-    it 'delegates to request' do
-      request.should_receive(:perform).with(:delete, "path", kind_of(Hash))
-      request.delete("path", {})
-    end
-  end
-
   describe '#find' do
 
     it 'delegates to object_from_response' do
@@ -141,31 +109,6 @@ describe Reviewed::Request do
       collection = request.collection_from_response(:get, "articles")
       collection.items.each do |obj|
         obj.should be_an_instance_of(request.resource)
-      end
-    end
-  end
-
-  describe '#perform' do
-
-    describe 'request_params' do
-
-      context 'set' do
-        use_vcr_cassette 'request/perform/params'
-
-        it 'merges quest params' do
-          request.client.request_params = { per_page: 1 }
-          collection = request.collection_from_response(:get, "articles")
-          collection.count.should eql(1)
-        end
-      end
-
-      context 'not set' do
-        use_vcr_cassette 'request/perform/no_params'
-
-        it 'has nil query params' do
-          collection = request.collection_from_response(:get, "articles")
-          collection.count.should eql(20)
-        end
       end
     end
   end

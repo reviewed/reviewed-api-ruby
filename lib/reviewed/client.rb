@@ -15,6 +15,26 @@ module Reviewed
       self
     end
 
+    # Perform an HTTP GET request
+    def get(path, params={})
+      perform(:get, path, params)
+    end
+
+    # Perform an HTTP PUT request
+    def put(path, params={})
+      perform(:put, path, params)
+    end
+
+    # Perform an HTTP DELETE request
+    def post(path, params={})
+      perform(:post, path, params)
+    end
+
+    # Perform an HTTP DELETE request
+    def delete(path, params={})
+      perform(:delete, path, params)
+    end
+
     def resource(name)
       klass_string = "Reviewed::#{name.to_s.singularize.classify}"
       klass_string.constantize rescue name
@@ -30,6 +50,15 @@ module Reviewed
         faraday.response :json
         faraday.request  :url_encoded
         faraday.adapter  Faraday.default_adapter
+      end
+    end
+
+    private
+
+    def perform(method, path, params={})
+      self.connection.send(method.to_sym, path, params) do |request|
+        request.params.merge!(self.request_params)
+        request.headers['X-Reviewed-Authorization'] ||= self.api_key
       end
     end
   end
