@@ -1,37 +1,35 @@
 require 'spec_helper.rb'
 
-describe Faraday::ApiKey do
+describe Faraday::Errors do
 
   describe 'error' do
-
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get('/products/123') {[ 200, {foo: 'hi'}, '']}
+      stub.get('/products/123') {[ 404, {}, { message: 'Record Not Found' } ]}
     end
 
     test = Faraday.new do |builder|
-      builder.request :api_key
+      builder.response :errors
+      builder.response :json
       builder.adapter :test, stubs
     end
 
-    it 'should raise a configuration error' do
+    it 'should raise a routing error' do
       expect {
         test.get('/products/123')
-      }.to raise_error(Reviewed::ConfigurationError)
+      }.to raise_error(Reviewed::ResourceNotFound)
     end
   end
 
   describe 'no error' do
-
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get('/products/123') {[ 200, {foo: 'hi'}, '']}
+      stub.get('/products/123') {[ 200, {}, { message: 'Record Not Found' } ]}
     end
 
     test = Faraday.new do |builder|
-      builder.request :api_key
+      builder.response :errors
+      builder.response :json
       builder.adapter :test, stubs
     end
-
-    test.headers = { "X-Reviewed-Authorization" => '123' }
 
     it 'should not raise an error' do
       expect {
