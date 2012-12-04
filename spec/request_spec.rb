@@ -89,7 +89,7 @@ describe Reviewed::Request do
   describe 'object_from_response' do
     use_vcr_cassette "request/object"
 
-    let(:article_id) { '509d166d60de7db97c05ce71' }
+    let(:article_id) { 'big-green-egg-medium-charcoal-grill-review' }
 
     it 'returns an object of the correct class' do
       response = request.object_from_response(:get, "articles/#{article_id}")

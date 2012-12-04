@@ -5,6 +5,8 @@ module Faraday
       unless env[:request_headers]['X-Reviewed-Authorization']
         raise ::Reviewed::ConfigurationError.new("Please set the API key for your Reviewed::Client instance before making a request")
       end
+
+      @app.call(env)
     end
   end
 end

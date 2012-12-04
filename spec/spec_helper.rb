@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
-require 'reviewed'
 require 'vcr'
+require 'reviewed'
 
 Dir['spec/support/*'].each { |f| require f }
 
@@ -21,5 +21,7 @@ VCR.configure do |config|
   config.hook_into :webmock
 end
 
-TEST_URL = 'https://localhost:3000/api/v1'
-TEST_KEY = '1234567890'
+
+TEST_URL = 'https://the-guide-staging.herokuapp.com/api/v1'
+TEST_KEY = ENV['REVIEWED_TEST_KEY']
+

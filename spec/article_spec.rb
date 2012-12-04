@@ -8,7 +8,7 @@ describe Reviewed::Article do
   end
 
   before(:each) do
-    @article = client.articles.find('big-green-egg-medium-charcoal-grill-review')
+    @article = client.articles.find('big-green-egg-medium-charcoal-grill-review', { with_attachments: true })
   end
 
   describe 'associations' do
@@ -53,7 +53,7 @@ describe Reviewed::Article do
       end
 
       it 'finds attachments by tag' do
-        attachments = @article.attachments('hero')
+        attachments = @article.attachments('old-hero')
         attachments.length.should == 1
         attachments.each do |attachment|
           attachment.tags.join(',').should match(/hero/i)

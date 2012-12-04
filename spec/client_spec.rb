@@ -123,7 +123,7 @@ describe Reviewed::Client do
     end
 
     it 'sets the url' do
-      conn.url_prefix.to_s.should eql('http://localhost:3000/api/v1')
+      conn.url_prefix.to_s.should match('https://')
     end
   end
 
