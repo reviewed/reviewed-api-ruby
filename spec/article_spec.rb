@@ -72,7 +72,7 @@ describe Reviewed::Article do
 
     it 'finds a page with a matching slug' do
       article = client.articles.find('minden-master-ii-grill-review')
-      article.pages.length.should == 9
+      article.pages.length.should == 5
       page = article.find_page('performance')
       page.should == article.pages[2]
       page.name.should == 'Performance'
