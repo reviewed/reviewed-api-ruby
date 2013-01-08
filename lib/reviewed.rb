@@ -17,6 +17,7 @@ require 'reviewed/collection'
 require 'reviewed/base'
 
 require 'reviewed/manufacturer_spec'
+require 'reviewed/award'
 require 'reviewed/brand'
 require 'reviewed/product'
 require 'reviewed/article'

@@ -4,6 +4,7 @@ module Reviewed
   class Product < Base
     has_many :attachments
     has_many :manufacturer_specs
+    has_many :awards
     has_one  :brand
 
     def attachments(tag=nil)
