@@ -41,9 +41,21 @@ describe Reviewed::Base do
   end
 
   describe 'attributes' do
+    before(:each) do
+      @timestamp = Time.parse("01/01/2013 10:00:00 GMT")
+      @model = Example.new(id: 'id', super_awesome: 'true', created_at: @timestamp.to_s, updated_at: @timestamp.to_s)
+    end
+
     it 'returns the named attribute (via method missing)' do
-      model = Example.new(id: 'id', super_awesome: 'true')
-      model.super_awesome.should == 'true'
+      @model.super_awesome.should == 'true'
+    end
+
+    it 'has a created at timestamp' do
+      @model.created_at.should == @timestamp
+    end
+
+    it 'has an updated at timestamp' do
+      @model.updated_at.should == @timestamp
     end
   end
 

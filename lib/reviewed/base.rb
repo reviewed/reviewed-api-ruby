@@ -12,6 +12,22 @@ module Reviewed
       self.attributes = objectify(data)
     end
 
+    def created_at
+      if @attributes.has_key?(:created_at)
+        Time.parse(@attributes[:created_at])
+      else
+        nil
+      end
+    end
+
+    def updated_at
+      if @attributes.has_key?(:updated_at)
+        Time.parse(@attributes[:updated_at])
+      else
+        nil
+      end
+    end
+
     class << self
 
       def path
