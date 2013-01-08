@@ -42,8 +42,22 @@ describe Reviewed::Base do
 
   describe 'attributes' do
     it 'returns the named attribute (via method missing)' do
-      model = Example.new(:id => 'id', :super_awesome => 'true')
+      model = Example.new(id: 'id', super_awesome: 'true')
       model.super_awesome.should == 'true'
+    end
+  end
+
+  describe 'respond_to?' do
+    before(:each) do
+      @model = Example.new(id: 'id', super_awesome: 'true')
+    end
+
+    it 'takes attributes into consideration' do
+      @model.respond_to?(:super_awesome).should be_true
+    end
+
+    it 'preserves the original behavior' do
+      @model.respond_to?(:fafafa).should be_false
     end
   end
 end

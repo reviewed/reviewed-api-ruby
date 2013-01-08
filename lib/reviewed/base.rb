@@ -23,8 +23,9 @@ module Reviewed
       end
     end
 
-    def initialize(data)
-      self.attributes = objectify(data)
+    def respond_to?(sym, include_private=false)
+      return true if super
+      @attributes.has_key?(sym)
     end
 
     def method_missing(sym, *args, &block)
