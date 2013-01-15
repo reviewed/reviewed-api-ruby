@@ -30,7 +30,7 @@ module Reviewed
   class BaseError < StandardError
     attr_accessor :url
 
-    def initialize(opts)
+    def initialize(opts={})
       @url = opts[:url]
       super(opts[:msg])
     end
