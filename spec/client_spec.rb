@@ -129,10 +129,9 @@ describe Reviewed::Client do
 
   describe '#perform' do
 
-    describe 'request_params' do
+    describe 'request_params', vcr: true do
 
       context 'set' do
-        use_vcr_cassette 'client/perform/params'
 
         it 'merges quest params' do
           client.request_params = { per_page: 1 }
@@ -142,7 +141,6 @@ describe Reviewed::Client do
       end
 
       context 'not set' do
-        use_vcr_cassette 'client/perform/no_params'
 
         it 'has nil query params' do
           collection = client.articles.where({})

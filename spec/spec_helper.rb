@@ -11,14 +11,13 @@ RSpec.configure do |config|
   config.alias_example_to :fit, :focused => true
   config.alias_example_to :pit, :pending => true
   config.run_all_when_everything_filtered = true
-
-  config.extend VCR::RSpec::Macros
 end
 
 VCR.configure do |config|
   config.default_cassette_options = { record: :new_episodes }
   config.cassette_library_dir = 'spec/fixtures/vcr'
   config.hook_into :webmock
+  config.configure_rspec_metadata!
 end
 
 

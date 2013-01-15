@@ -45,8 +45,7 @@ describe Reviewed::Request do
     end
   end
 
-  describe '#where' do
-    use_vcr_cassette 'request/where/collection'
+  describe '#where', vcr: true do
 
     it 'delegates to object_from_response' do
       request.should_receive(:collection_from_response).with(:get, "articles", {})
@@ -86,8 +85,7 @@ describe Reviewed::Request do
     end
   end
 
-  describe 'object_from_response' do
-    use_vcr_cassette "request/object"
+  describe 'object_from_response', vcr: true do
 
     let(:article_id) { 'big-green-egg-medium-charcoal-grill-review' }
 
@@ -97,8 +95,7 @@ describe Reviewed::Request do
     end
   end
 
-  describe 'collection_from_response' do
-    use_vcr_cassette "request/collection"
+  describe 'collection_from_response', vcr: true do
 
     it 'returns a collection object' do
       collection = request.collection_from_response(:get, "articles")

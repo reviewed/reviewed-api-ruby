@@ -1,0 +1,389 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - '1234567890'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNSBKYW4gMjAxMyAxODoxMjo1MCBHTVQ=
+      !binary "RXRhZw==":
+      - !binary |-
+        ImUwYWEwMjFlMjFkZGRiZDZkOGNlY2VjNzFlOWNmNTY0Ig==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "WC1SYXRlLUxpbWl0":
+      - !binary |-
+        OTk5Mjk=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        MjdhZjdiMGUwMzA1YzExNzNmNDU4NjUxYjZlYjZiM2U=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMDQ5NDc=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Tue, 15 Jan 2013 18:12:46 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products?page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - '1234567890'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNSBKYW4gMjAxMyAxODoxMjo1MSBHTVQ=
+      !binary "RXRhZw==":
+      - !binary |-
+        ImUwYWEwMjFlMjFkZGRiZDZkOGNlY2VjNzFlOWNmNTY0Ig==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "WC1SYXRlLUxpbWl0":
+      - !binary |-
+        OTk5Mjg=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        YTE0NzU2MGRlZjU5ZjZiNWEzNjY3ZDkxZTg5YjhhN2U=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMDMwNjI=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIACOc9VAAA+yc63ObSBLA/xWKryfi4f34spXY3nNdORuvrcumsrWlGmCQ
+        SHgdA4m9qfzv1wiw0IOHZGHLd+NyuUzT6kHdw296pgd+8Ame+xHO/DjirR98
+        Fmc44C1RV0R1Uh7NQINQ3jJ0ccJ7fkqzpYS3PBxQMuEDvClJUvLNj3NaSeFj
+        EbmvdeQJH+fZLPZmdpxHLn38VOx5lGS8JaEJ7+RpSqL6IxKYJGl9AKfhVOoT
+        OoujR+HPCe/iDPPWnz943+UtXkVER7rk2BJ2NBmJhiTpmoYlHqynBGfEnWFo
+        jZeQKAtIFJA8lZClapZsfgadPHF36OhTUbUU3VKVQifCIbTNfwgewiSn3N1n
+        QdRATIN8DuK4FAv071I8yx6SQv0yIE6WxpHvUMs6BxMphn8u7q5vQanQAZf8
+        +VfhxdjNnWyWQnAiMBjlQTDhUxx9XR4+xmolL/8HT4Q0TcApkvnGNCc8TjPf
+        CcjMdyvL34lN/awhSHI78OliVvSB1Zc1pki2EILffyz/Lr3i1A0mqe+Q2TzF
+        tg2xKVxeXUhuw5mGwIZLc2d1TDTPJp7tIsnQiKNoCH7sIiZh7BL4MnztxJTQ
+        OE+hhTz1QXxWeYOebbq1bK/wRxUOftlbQp9S6NO0OAHhhtazNCd17OujMsr1
+        kUsoBOah6pHgR5z4s8CPvi6tOHFQRK66UdLl1Z6Bxtk38ay8CApNL1LiwYlF
+        liXUOjvLFkSY575LBJoVN9r8zYKk8dccJ8kbJw43P/9z9cVHbORn8dWyDDuL
+        EO6kqg+k+PuMOnFadL8foEAdHED/b4qgJxJsB4WT8+jxYCX/pXbkU/1fHO7j
+        /rpzHOyaRwOdAXjsgyryVNORJINosuEZnuMU/djUntx+u+UiaN1kE3vIplrI
+        eALZ1N1kU1+CbKL5SsmmDiWbysjGyHY6ZNNHI5s+gGyoh2yKJSldZIObXdUt
+        RWqQ7Q6HNI/m3F0IDOGmOJrH3HmcRiTlzgOCoxXsaKkp0EJTyApNwVlqCk6l
+        WfPvbZIEPo4cAtQDw0HQFHzETp6HS+MkbfCQv43tGDDGHwOM5YkeLC5hpZmu
+        XsJKMUgRCSS6fCswSz/LhwOzBKRD9DVAynD3DMGo2cRoe8RayToghivY9l3u
+        7p6oTEXNQqKlyO09cV2n6olwVuTKzsFVvYO7LS/m+XHznLQ/6/Dxk1pvN8zG
+        h5HGB2O08cHoHx9Mr2d8AG5ph2a+V4KKdmS+i1L8/HP6V5n5Vk7sz3wrt7LM
+        l2W+J0I2czSymQPIRrrJpiBLHJD5liuaG5nvp2vubZ7FIZDI4e4g2CF3kT4s
+        U9ONzPc+EHCtCV8ZNAW30tyV+b7HX+K0KajNPma8SwF9+YTX7kl4ZXN8TjZT
+        246Q9Ka2HUFiNGU0PRGa4tFoigfQtH32Vt7ukiXuW/v5Nf/ie34QctyvfkRu
+        /Hvu6k5F3OWn2xVHvUpH8EAl8e+FBVWRQO7Tl0ggVQUSSPXwBFKfSuIYCaS3
+        PlsTbaMBxoZPW0HY5WVGQEbAEyGgPRoB7QEEdLoJCL/dBCzySc1CaoOA1//k
+        NHTzm6aixjw5mAsaSqJKuBNyUxKQb34R/2ZqeBNgGuIXTw2R15MaisdPDT20
+        nhq6zdSw4eJWAq47nTGPMe+FmCdvkMk5GvO2Lfczz+5nXu8cGpinrDNPkW5+
+        UzaZp0hJpDDmHYl5DRd3Ma/hdMY8xrwTYd7hVax+y/3Mw/3M66hTPjJPXmee
+        inYwT0WMecdjXsPFXcxrOJ0xjzHvRJhHRmMeGcA8czTmbc1tVTa3PTLzBsxt
+        VTa3Zcw7OeZ5ozHPG8A8o5t5otSz86WqD8u768PnOMGOnz00qpJ/YLpoqRE7
+        lXajDvm91h5UJy5sg7feQx/1I3LkusdYheLlnj5FtSTjyDsji2WLvcvHXREb
+        UkLuiuGwHZLtqy0H75Cs+gVXdQx6BNi/xn2Rh1cOeg2z0WGc0WG5c32U0QEs
+        948OesfoAEle8UTQkN1DGxnx1Yf3wrsPU+7u93+/vb1cy4sXcSjYcSbQ/+Q4
+        JS3c/9/aGT8a/3fujO/Mo7cC05VNb4WKbYA/FdCzDfCvD/TiaKAXB4Be6wa9
+        DBDX+0Cvrm9sKpY+1Mv3pr659KGSsBLusfRxfXnx4hTvXvco3fS86x4r/3au
+        e6w8ztY92LrHiQBPGg140gDgqd3AE/XONKQNeBq6udI2gaehZKHtDbxqrXfC
+        y68AfOIzg6/h557NTLXnGfgY+E4EfPJo4JMHgE/pAZ8CM/Z+8CnaOvgk6Xq7
+        sC9JwQGF/VeR6YGbnhV4Df92Aa/hcQY8BrwTAZ4yGvCUAcCT+4HXW+HaATxt
+        F/A0BrxjAU8bBjyNAY8B79SAp44GPHUA8LpeUFnszDEsUeoH3voj33H0wHFX
+        cAM/ODjkri5uhZt/6Sb62Kjjg4qwqDSEhZsKyRfQ+NbGwnMcQo9y1+s1N2lM
+        8xBkL85DtZ2HxhQ97QHGltLIcqTqL9ivPdbYDER7eb49NINqNh1D6BNqNsgU
+        QAX9X1dqzMPngr2GGd1HovvxXtK5bbmf7l0v6Szorlgy6qe7pPTRXVP76A4a
+        jO7j070KxF50r0LD6M7ozui+H92P96LSbcv9dO96UWlBd9GSB+TuktxO9+mF
+        3A72zJUZ00dleu3+gTivA8JIzkjOSL4fyY/3StFty70kN7peKSoalmoMeLAC
+        SC715elKB87LZFDZl+nvMPUd7l3uzknGuL5Prq7sBfe18DDCM8Izwu9H+OO9
+        WnXbMgTtr5//FQAAAP//AwAEo84p3WoAAA==
+    http_version: 
+  recorded_at: Tue, 15 Jan 2013 18:12:48 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - '1234567890'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCBDb250ZW50LVR5cGU=
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNSBKYW4gMjAxMyAxODoxMjo1MiBHTVQ=
+      !binary "RXRhZw==":
+      - !binary |-
+        ImUwYWEwMjFlMjFkZGRiZDZkOGNlY2VjNzFlOWNmNTY0Ig==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjUuMCBjb2RlbmFtZSBLbmlmZQ==
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "WC1SYXRlLUxpbWl0":
+      - !binary |-
+        OTk5Mjc=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ZTBkYzVjM2U4Yjc3ZmFiNTU1NTAxYjMwMDI0NmJhMDE=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMDkzNzU=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIACSc9VAAA+zcbXObNgAH8K/i4+3iWhLPvNmta9O92G1d42299Xo+AcJm
+        xcAQNOnl8t0nHu0kPMhxsfGd8spI4iF/id8BNrqXYrz2Q5z6UShZ91IapTiQ
+        LKgrUL0ql1asBaGSZejwSvL8hKZFiWSlSUaupAA3BR4OKCuJE/LVjzJalYZZ
+        EFxJIbmrm6ErKcrSVeSt7CgLXdqsGHkeJalkgSvJyZKEhPUabMcxSerVWTWr
+        SnxCV1HYFD5cSS5OsWR9upd8V7IkFRAd6MixEXY0GUADIV3TbE1iW08ITom7
+        wmxnEgJQngM4B/ISyRYElqr/w9pksdvSRl8CxQLAAjBvE+It27f0U+JsIjp7
+        x5beY3fGKmiQrVkFLirma1YRY5eVr9Jvcb7G24A4aRKFvkMt6+doG2cpSdjH
+        JbYDlgBLnrVjwXz6nMcZuZmTrhLWSeG6zjPB4ZdisekzUBayDyyKLU3iuilO
+        Ut8JyMp3qy3eEpv6aV2QB6VppqvbLkCGphgE5H9Ql/KdZ3bg080qHx27FJQl
+        1CxFtWT4Q54FKOJy6v3Fie+Q1TrBts06regL1iDJbFZeLJbNbHa07qruKs2z
+        PaU8AuIoWn4ACmarbSOXsH9OqsLNN0RolCVsD1nis4pFlQ9dPEu73GUeUdVR
+        UjGOtj6lbLjTvIINBLceyeWoqJfK/q+XXEJZf32rhioLGMf+KvDDL8VWnCjI
+        O7Q6h5LigBesxeIrXJQHQdmuNwnxWMUmTWNqLRbphszXme+SOU3zc3D9akOS
+        6EuG4/iVE22frv+w+89H3MlD/q+lKXY2W3aOVeMlwbcr6kRJPiLvWQPq4ICd
+        GftFbHCSfOyyXWdhs7Ar/7EO8tj888VD4q9Hx4ujaTbQ2wHNIFSBp5oOkjVi
+        yhDYCsyHMrDlo/ffveW80/rNU/vMQxbS2TncZx5ULUW3VGXPvOvsX3927Yfk
+        vX83W6oq2Knnsaq5x6pi/26ellXt8LFNJZh9eHPz64eXobcrLz839EHVfGWq
+        g/h1EqcvESygB3zEVQcyiBzxHiEHbLiHXJVjp3BtyQrkBHJnQk55QpHy3ZB7
+        vuVh5JQB5DR2uXIMch/fa13I3cXaeZAzLxC5Kkc+5KpkBXICuYkgp46GnMqB
+        nDyAnMqBHLt107qQuzFk0KUcrepOzpwMLpC5Okk+5+psBXQCuolAp40GncYB
+        HeqHDnBCt381d4O3NAvXs98+PjKOlsXz8O5MvHE9pevETV5CgwnJjRvfs7hn
+        tJl7tNUBdtL2NFKhmlBtIqrpo6mmc6gGB1VDxoH3qLVqf7+WwfVz1W5tGXiX
+        p5pexHFS1eoAB1WrIxWqCdUmopoxmmoGh2pgTNUM0M4aKxeu8blWRcgBWxWq
+        kE3INhHZzNFkM4dlw954sr35C6ptsrlfWbmQjUe2JsJB2ZpQhWxCtonIhkeT
+        DXPIRsa8ZkOw7QHbrV2VC9mGr9mqqDiu2eqWQjYh2zRks0eTzeaQzR2WTRuQ
+        TYUWkttla71mYyfhma7ZkGK+Ms1Ls43zqq2JVdgmbJuIbc5otjkctjnH29Z1
+        1XazbL8fpem57kchujjbmhAHbWtiFbYJ2yZimzuabS6HbfawbeqLbdNRm2xF
+        6eldgxfoWhEVh2plO2GaMG0appHRTCMcpuEjTQOypRoWBC2mXZstj9g8s+/5
+        Ghs2Lkn2NJP+DNIEz/IXULGTv3Yqv5FO9ryt471ToHa/d3qkfKV0DtEfSSeb
+        +Y+qD/OwDH+Qw7I7dhoOHUT7UCnetgXQUuTuofK4TTVUEADmnDUBsw/lIZxe
+        gVMivOhJ9qi9d29YsD0S295obHscbJvDbCsvZPuPa7nF7f88+TC4X2PqO7PX
+        mbsmwm1+t6v0B+Gu+kPILeQWch8ktwPGkptteVhuo09udpKZltI7u8vQS8A3
+        Bup5Pw6d5+ttdOLXgF/4QOHx23HooLfjkPiOWzxXmBJzcDTmIAdzej9zMmPu
+        0F/vPGbuVwi6nQuqytO/CHyJ8x00WXJaV6crsBPYTQQ7NBp2iAO73hn72Pms
+        WQo6Zs6DX25k9e3HDx3abaiskrtEcMfJ3S5NPu92+QrwBHgTAe/7Tdf3fMvD
+        4PVO1wfzh0Xw0JvY34Nv2zijs+W7ubH/ADIqy+fpuio//c2rfty34Ub+tPUU
+        yKE95JoYO417FqzQTeg2Ed1Gm6fP4ZinD/fO0wcs1WQkvFw3rUM37Ty6FTP0
+        XaBuGrdumtBN6DYl3UaboM/hmKAP907QB/KvhdGhs5Du6YZabTvLrxjlC71u
+        6/0d45NQhWpCtYmoNtpsfE4xG9/nh/8FAAAA//8DAIVGLawKZAAA
+    http_version: 
+  recorded_at: Tue, 15 Jan 2013 18:12:49 GMT
+recorded_with: VCR 2.4.0

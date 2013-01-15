@@ -8,8 +8,7 @@ describe Reviewed::Product do
 
   describe 'associations' do
 
-    describe 'attachments' do
-      use_vcr_cassette 'product/attachments'
+    describe 'attachments', vcr: true do
 
       before(:each) do
         @product = client.products.find('minden-master-ii')
@@ -44,8 +43,7 @@ describe Reviewed::Product do
     end
   end
 
-  describe 'manufacturer_specs' do
-    use_vcr_cassette 'product/manufacturer_specs'
+  describe 'manufacturer_specs', vcr: true do
 
     before(:each) do
       @product = client.products.find('minden-master-ii')

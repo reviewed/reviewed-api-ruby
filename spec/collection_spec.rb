@@ -5,8 +5,7 @@ module Reviewed
   end
 end
 
-describe Reviewed::Collection do
-  use_vcr_cassette 'collection/products'
+describe Reviewed::Collection, vcr: true do
 
   let(:client) do
     Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
