@@ -27,7 +27,15 @@ require 'reviewed/website'
 
 
 module Reviewed
-  class ConfigurationError < StandardError; end
-  class ResourceNotFound < StandardError; end
+  class BaseError < StandardError
+    attr_accessor :url
+
+    def initialize(opts)
+      @url = opts[:url]
+      super(opts[:msg])
+    end
+  end
+  class ConfigurationError < Reviewed::BaseError; end
+  class ResourceNotFound < Reviewed::BaseError; end
 end
 

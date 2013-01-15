@@ -13,10 +13,14 @@ describe Faraday::Errors do
       builder.adapter :test, stubs
     end
 
-    it 'should raise a routing error' do
+    it 'should raise a ResourceNotFound error' do
       expect {
         test.get('/products/123')
-      }.to raise_error(Reviewed::ResourceNotFound)
+      }.to raise_error(Reviewed::ResourceNotFound) { |e|
+        e.url.should be_an_instance_of(URI::HTTP)
+        e.url.to_s.should eql('http:/products/123')
+        e.message.should eql('Not Found')
+      }
     end
   end
 
