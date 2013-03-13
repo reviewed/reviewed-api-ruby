@@ -1,12 +1,14 @@
 require 'reviewed/page'
 require 'reviewed/product'
 require 'reviewed/attachment'
+require 'reviewed/deal'
 
 module Reviewed
   class Article < Base
     has_many :pages
     has_many :products
     has_many :attachments
+    has_many :deals
 
     def find_page(slug)
       pages.find { |page| page.slug.match(/#{slug}/i) }

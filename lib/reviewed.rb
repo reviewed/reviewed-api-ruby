@@ -20,11 +20,11 @@ require 'reviewed/manufacturer_spec'
 require 'reviewed/award'
 require 'reviewed/brand'
 require 'reviewed/product'
+require 'reviewed/deal'
 require 'reviewed/article'
 require 'reviewed/author'
 require 'reviewed/page'
 require 'reviewed/website'
-
 
 module Reviewed
   class BaseError < StandardError

@@ -19,6 +19,13 @@ describe Reviewed::Article, vcr: true do
       end
     end
 
+    describe 'deals' do
+
+      it 'has_many :deals' do
+        Reviewed::Article._embedded_many.should include({"deals"=>Reviewed::Deal})
+      end
+    end
+
     describe 'products' do
 
       it 'has_many :products' do
