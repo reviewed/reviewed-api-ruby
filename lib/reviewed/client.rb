@@ -59,25 +59,20 @@ module Reviewed
 
     def perform(method, path, params={})
       begin
-        response = self.connection.send(method.to_sym, path, params) do |request|
+        self.connection.send(method.to_sym, path, params) do |request|
           request.params.merge!(self.request_params)
           request.headers['X-Reviewed-Authorization'] ||= self.api_key
         end
-      rescue => e
-        if e.class < Faraday::Error::ClientError
-          message = <<-EOS.gsub(/^[ ]*/, '')
-            API Error. method: #{method}. path: #{path}. params: #{params.to_s}. api_key: #{self.api_key}
-            Original exception message:
-            #{e.message}
-          EOS
-          new_exception = Reviewed::ApiError.new(msg: message)
-          new_exception.set_backtrace(e.backtrace)
-          raise new_exception
-        else
-          raise
-        end
+      rescue Faraday::Error::ClientError => e
+        message = <<-EOS.gsub(/^[ ]*/, '')
+          API Error. method: #{method}. path: #{path}. params: #{params.to_s}. api_key: #{self.api_key}
+          Original exception message:
+          #{e.message}
+        EOS
+        new_exception = Reviewed::ApiError.new(msg: message)
+        new_exception.set_backtrace(e.backtrace) # TODO not seeing in Airbrake
+        raise new_exception
       end
-      response
     end
   end
 end
