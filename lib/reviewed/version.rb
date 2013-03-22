@@ -1,4 +1,4 @@
 module Reviewed
-  VERSION = "0.1.32"
+  VERSION = "0.1.4"
   API_VERSION = 'v1'
 end
