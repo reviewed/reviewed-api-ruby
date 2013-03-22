@@ -22,5 +22,5 @@ end
 
 
 TEST_URL = 'https://the-guide-staging.herokuapp.com/api/v1'
-TEST_KEY = ENV['REVIEWED_TEST_KEY']
+TEST_KEY = ENV['REVIEWED_API_KEY']
 

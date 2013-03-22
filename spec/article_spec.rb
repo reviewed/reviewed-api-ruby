@@ -67,7 +67,7 @@ describe Reviewed::Article, vcr: true do
 
     it 'finds a page with a matching slug' do
       article = client.articles.find('minden-master-ii-grill-review')
-      article.pages.length.should == 5
+      article.pages.length.should == 4
       page = article.find_page('performance')
       page.should == article.pages[2]
       page.name.should == 'Performance'
@@ -88,6 +88,11 @@ describe Reviewed::Article, vcr: true do
 
     it "returns a product of the correct class" do
       @product.class.should == Reviewed::Product
+    end
+
+    it 'returns nil if does not respond to products' do
+      @article.attributes.delete(:products)
+      @article.primary_product.should be_nil
     end
   end
 end
