@@ -16,7 +16,8 @@ module Reviewed
 
     # Get request on resource#show
     def find(id, params={})
-      object_from_response(:get, "#{path}/#{id}", params)
+      url_path = [path, CGI::escape(id.to_s)]
+      object_from_response(:get, url_path.join('/'), params)
     end
 
     # Get request on resource#index with query params
