@@ -15,7 +15,9 @@ module Reviewed
     end
 
     def primary_product
-      products.select { |p| p.id == primary_product_id }.first
+      if respond_to?(:products)
+        products.select { |p| p.id == primary_product_id }.first
+      end
     end
 
     def attachments(tag=nil)

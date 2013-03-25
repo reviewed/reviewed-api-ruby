@@ -147,6 +147,19 @@ describe Reviewed::Client do
           collection.count.should eql(20)
         end
       end
+
+
     end
+  end
+
+  context 'with error' do
+
+    context 'bad response' do
+      it 'should raise a Reviewed::ApiError' do
+        client.connection.stub(:send).and_raise Faraday::Error::ClientError.new(true)
+        lambda { client.get('something that times out') }.should raise_error(Reviewed::ApiError)
+      end
+    end
+
   end
 end

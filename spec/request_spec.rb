@@ -43,6 +43,11 @@ describe Reviewed::Request do
       request.should_receive(:object_from_response).with(:get, "articles/123", {})
       request.find(123)
     end
+
+    it 'cgi escapes id params' do
+      request.should_receive(:object_from_response).with(:get, "articles/Smith+%26+Wesson+v%2Fs+Colt%3A+Which+Makes+you+Manlier%3F", {})
+      request.find('Smith & Wesson v/s Colt: Which Makes you Manlier?')
+    end
   end
 
   describe '#where', vcr: true do
