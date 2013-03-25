@@ -37,5 +37,6 @@ module Reviewed
   end
   class ConfigurationError < Reviewed::BaseError; end
   class ResourceNotFound < Reviewed::BaseError; end
+  class ApiError < Reviewed::BaseError; end
 end
 
