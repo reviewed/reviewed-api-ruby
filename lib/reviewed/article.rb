@@ -9,6 +9,7 @@ module Reviewed
     has_many :products
     has_many :attachments
     has_many :deals
+    has_many :related_articles, class_name: "Reviewed::Article"
 
     def find_page(slug)
       pages.find { |page| page.slug.match(/#{slug}/i) }

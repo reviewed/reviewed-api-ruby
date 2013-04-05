@@ -26,6 +26,12 @@ describe Reviewed::Article, vcr: true do
       end
     end
 
+    describe 'related_articles' do
+      it 'has_many :related_articles' do
+        Reviewed::Article._embedded_many.should include({"related_articles"=>Reviewed::Article})
+      end
+    end
+
     describe 'products' do
 
       it 'has_many :products' do
