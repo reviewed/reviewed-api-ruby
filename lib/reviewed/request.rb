@@ -6,7 +6,7 @@ module Reviewed
     def initialize(opts={})
       if opts[:resource].kind_of?(Class)
         @resource = opts[:resource]
-        @path = @resource.path
+        @path = opts[:path] || @resource.path
       else
         @path = opts[:resource].to_s
       end
