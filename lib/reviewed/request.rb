@@ -1,17 +1,19 @@
 module Reviewed
   class Request
     attr_accessor :client, :resource
-    attr_reader :path
 
     def initialize(opts={})
-      if opts[:resource].kind_of?(Class)
-        @resource = opts[:resource]
-        @path = opts[:path] || @resource.path
-      else
-        @path = opts[:resource].to_s
-      end
-
+      @resource = opts[:resource]
+      @scope = opts[:scope]
       @client = opts[:client] || Reviewed::Client.new
+    end
+
+    def path
+      if @resource.respond_to? :to_path
+        @resource.to_path(@scope)
+      else
+        @resource.to_s
+      end
     end
 
     # Get request on resource#show

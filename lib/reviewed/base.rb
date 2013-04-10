@@ -30,18 +30,29 @@ module Reviewed
 
     class << self
 
-      def path
-        @resource_name ||= association_name
+      # poor man's polymorphic_url
+      def to_path parent_scope=nil
+        if parent_scope && parent_scope.respond_to?(:to_param)
+          [association_name(parent_scope.class), parent_scope.to_param, association_name].join('/')
+        else
+          association_name
+        end
       end
 
-      def association_name
-        self.name.demodulize.downcase.pluralize
+      def association_name klass=nil
+        klass ||= self
+        klass.name.demodulize.downcase.pluralize
       end
+
+    end
+
+
+    def to_param
+      id
     end
 
     def respond_to?(sym, include_private=false)
-      return true if super
-      @attributes.has_key?(sym)
+      super || @attributes.has_key?(sym)
     end
 
     def method_missing(sym, *args, &block)

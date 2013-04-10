@@ -5,9 +5,11 @@ require 'reviewed/deal'
 
 module Reviewed
   class Article < Base
+
+    has_attachments
+
     has_many :pages
     has_many :products
-    has_many :attachments
     has_many :deals
     has_many :related_articles, class_name: "Reviewed::Article"
 
@@ -21,15 +23,5 @@ module Reviewed
       end
     end
 
-    def attachments(tag=nil)
-      if tag.present?
-        @attributes.attachments.select do |attachment|
-          attachment_tags = attachment.tags || []
-          attachment_tags.map(&:downcase).include?(tag.downcase)
-        end
-      else
-        @attributes.attachments
-      end
-    end
   end
 end

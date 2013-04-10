@@ -50,6 +50,10 @@ module Reviewed
     module ClassMethods
       attr_accessor :_embedded_many, :_embedded_one
 
+      def has_attachments
+        include Attachable
+      end
+
       def has_many(name, opts={})
         klass = Reviewed::Embeddable.embedded_class(name.to_s, opts[:class_name])
         association = opts[:as] || name

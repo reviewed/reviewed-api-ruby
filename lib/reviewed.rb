@@ -15,6 +15,7 @@ require 'reviewed/request'
 require 'reviewed/client'
 require 'reviewed/collection'
 require 'reviewed/base'
+require 'reviewed/attachable'
 
 require 'reviewed/manufacturer_spec'
 require 'reviewed/award'
