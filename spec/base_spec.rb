@@ -26,11 +26,24 @@ describe Reviewed::Base do
     end
   end
 
-  describe 'path' do
+  describe 'to_path' do
 
-    it 'should the demodulized resource name' do
-      Reviewed::Article.path.should eql("articles")
+    it 'results in class demodulized resource name' do
+      Reviewed::Article.to_path.should eql("articles")
     end
+
+    it 'scoped within to_param of parent_scope' do
+      example = Example.new({})
+      example.stub :to_param => 'hoopy-frood'
+      Reviewed::Attachment.to_path(example).should eql("examples/hoopy-frood/attachments")
+    end
+
+    it 'builds instance url from an instance' do
+      example = Example.new({})
+      example.stub :to_param => 'hoopy-frood'
+      example.to_path.should == 'examples/hoopy-frood'
+    end
+
   end
 
   describe 'association_name' do

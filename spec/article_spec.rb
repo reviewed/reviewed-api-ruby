@@ -45,7 +45,7 @@ describe Reviewed::Article, vcr: true do
       end
     end
 
-    describe 'attachments:' do
+    describe 'attachments' do
 
       it 'does not has_many :attachments' do
         Reviewed::Article._embedded_many.should_not include({"attachments"=>Reviewed::Attachment})
