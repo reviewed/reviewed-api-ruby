@@ -46,6 +46,9 @@ module Reviewed
 
     end
 
+    def to_path
+      [self.class.to_path, self.to_param].join('/')
+    end
 
     def to_param
       id
