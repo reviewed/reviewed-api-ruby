@@ -11,40 +11,67 @@ http_interactions:
       - Faraday v0.8.6
       X-Reviewed-Authorization: 
       - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
-      message: 
+      message: OK
     headers: 
-      access-control-allow-origin: 
+      Access-Control-Allow-Origin: 
       - "*"
-      access-control-allow-methods: 
+      Access-Control-Allow-Methods: 
       - OPTIONS, GET, POST, PUT, DELETE
-      access-control-max-age: 
+      Access-Control-Max-Age: 
       - "1000"
-      access-control-allow-credentials: 
+      Access-Control-Allow-Credentials: 
       - "true"
-      access-control-allow-headers: 
+      Access-Control-Allow-Headers: 
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      cache-control: 
+      Cache-Control: 
       - no-cache, no-store
-      content-type: 
+      Content-Type: 
       - application/json; charset=utf-8
-      vary: 
+      Vary: 
       - Accept-Encoding
-      x-ua-compatible: 
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
       - IE=Edge
-      x-request-id: 
-      - fad0f29e99d7a15e4802d6b7711ee332
-      x-runtime: 
-      - "0.163120"
-      connection: 
+      X-Request-Id: 
+      - 353081ec90fd48e5e8b818ee37007f1d
+      X-Runtime: 
+      - "0.115509"
+      Connection: 
       - close
-      server: 
+      Server: 
       - thin 1.5.1 codename Straight Razor
     body: 
       encoding: ASCII-8BIT
-      string: "{\"pagination\":{\"total\":1,\"total_pages\":1,\"first_page\":true,\"last_page\":true,\"previous_page\":null,\"next_page\":null,\"out_of_bounds\":false,\"offset\":0,\"current_page\":1,\"per_page\":20,\"entries_on_page\":1},\"data\":[{\"id\":\"50fb2e7bbd0286d555013653\",\"created_at\":\"2012-05-15T21:15:16Z\",\"updated_at\":\"2013-01-31T21:11:23Z\",\"name\":\"Minden Master II Grill Review\",\"branch_name\":\"master\",\"summary\":\"\",\"meta_description\":null,\"website_ids\":[\"50e669d7bd028648e0000023\"],\"author_ids\":[\"50fc4eaebd0286d5550b4c93\"],\"tags\":[],\"classifications\":[\"review\"],\"publish_on\":\"2012-05-18T19:34:00+00:00\",\"attachment_ids\":[\"50fb2e7cbd0286d555013664\",\"50fb2e7cbd0286d555013682\"],\"primary_product_id\":\"50fa307696ab5860160c7a7e\",\"resource_uri\":\"/content/minden-master-ii-grill-review.htm\",\"disqus_uri\":\"Minden-Master-II-Grill-Review\",\"product_ids\":[\"50fa307696ab5860160c7a7e\"],\"related_article_ids\":[],\"slug\":\"minden-master-ii-grill-review.htm\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa307696ab5860160c7a7e\",\"created_at\":\"2012-05-15T21:12:15Z\",\"updated_at\":\"2013-03-11T21:05:24Z\",\"name\":\"Minden Master II\",\"slug\":\"minden-master-ii\",\"_type\":\"Home::Grills::Gas\",\"types\":[\"Propane\"],\"msrp\":479.0,\"article_ids\":[\"50fb2e7bbd0286d555013653\"],\"website_ids\":[\"50e669d7bd028648e0000023\"],\"publish_on\":\"2012-05-18T19:34:00+00:00\",\"upc\":null,\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"50f9ed7cbd0286638e000272\",\"model\":\"Master II\",\"resource_uri\":\"/products/minden-master-ii\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516da455561ee3f80800058d\",\"href\":\"http://localhost:3000/api/v1/products/516da455561ee3f80800058d\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/50fb2e7bbd0286d555013653\",\"href\":\"http://localhost:3000/api/v1/articles/50fb2e7bbd0286d555013653\"}}}]}"
+      string: !binary |
+        H4sIAFa4bVEAA8RW227jNhD9lYCvtda6WLKtH2jzsEBR7FMXAUGRI5tYSlRJ
+        Ktsg8L93SEpy7F0bCVC0fojNmcPhzJnDYV7JwA6yZ07qntSvxGnHFKmzVfxF
+        0Qs2rFtprAtrUjszwooodmUYDDxLPdrJ2I9KrUgPf7sLgx4d1S1t9NgLDN0y
+        ZXGvblsLjtTpivDRGOjnTXj0AGZa5OhGl5Fgqe5nxGlFBHOM1F9fiRSkJmXa
+        Njlsm0ak+a4SZVmmWVGVBcHgBpgDQRmeRfI0y5O0TLLyS57VWVln1Z+IGQdx
+        gSmSNEuKLGCyOi88pmcdHk0+y15A//AZqQDz8Pj48KuRSj38gUTAd4Q1hvX8
+        SCd0F2BotmPXMfOCJlx04BgVYLmRQ+xDJOo7NFY6oNLT9BWLgqrai20sarOD
+        1H/ygjytCBvdUZszsuUbYPCm/GbD9wHp2MFj8BfH/lnZSh6aHzaamDY6h7FR
+        0h6pz+ZM0+5Ltq+LTZ2mv6Qp/sXkmXOMHzvfr/Ppnnx+SX61QfDPXbs8nGik
+        p4QORouR+2ixkaxIt9W+Yk25q9KsSvmWbQFjGbB6NBzoaCQi11z3DrNYd6Ej
+        SaQ6kTI5+I4ksbRPR9fhXiHtXyjTuDO2MIktTB4fk9DCZGnhOaG5vJ+n9ORz
+        UlE4xkmu5s6hw6rx4Pv/jtykpQ66wQdaLgfaopAWy5SUvdD8LaruaT5H2d/Q
+        fJFkQfNpWeebO5onN+tDD3Uvg9/0m+6grgO1Fr+ZRZ93BU5/N3pgfaCws2Yg
+        9Wa7/4RX/ZLH29f66UOX5d3aHgc+30VUJ0rtYFjTgIna9BocG7SHZYT5LolF
+        unsQs9arIqSQb3N/4bUA5Yl8w+C1nOcG/6Bnf+cMP8pnoNYFkZDmhfrmRfFY
+        ro3sD7RhFpTszyKadolrDVGDA6A/zCVgBd/CcnkMzvaFDcBMeyfVNNRPMxV+
+        16QSEmCdxBkTpssrlsjE/FRESS6pRPUtSxyGzuiXaY3R2SApFvMtxOFaKeDz
+        i2UClWtErJ+zdUzDi+tooEXH0bmhXq+V5kwdtXV1gW24Rp/O/P9rIU+n0I6r
+        sbY8lf89NcvIeF8hC/wuOYtMy6wSza6syioDKPZ4OTFWtmcfPO12HCT06e1z
+        M03W/4HIaSq9l8gFfpfIGbW+87/LR067HccTefoHAAD//wMAGM1I7/gJAAA=
+
     http_version: 
-  recorded_at: Tue, 16 Apr 2013 19:19:49 GMT
+  recorded_at: Tue, 16 Apr 2013 20:45:10 GMT
 recorded_with: VCR 2.4.0

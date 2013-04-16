@@ -11,40 +11,136 @@ http_interactions:
       - Faraday v0.8.6
       X-Reviewed-Authorization: 
       - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
-      message: 
+      message: OK
     headers: 
-      access-control-allow-origin: 
+      Access-Control-Allow-Origin: 
       - "*"
-      access-control-allow-methods: 
+      Access-Control-Allow-Methods: 
       - OPTIONS, GET, POST, PUT, DELETE
-      access-control-max-age: 
+      Access-Control-Max-Age: 
       - "1000"
-      access-control-allow-credentials: 
+      Access-Control-Allow-Credentials: 
       - "true"
-      access-control-allow-headers: 
+      Access-Control-Allow-Headers: 
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      cache-control: 
+      Cache-Control: 
       - no-cache, no-store
-      content-type: 
+      Content-Type: 
       - application/json; charset=utf-8
-      vary: 
+      Vary: 
       - Accept-Encoding
-      x-ua-compatible: 
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
       - IE=Edge
-      x-request-id: 
-      - 472cd2f87d7c4721cc0f8b48946c1efc
-      x-runtime: 
-      - "0.253099"
-      connection: 
+      X-Request-Id: 
+      - f6c51573c5c7b56fb9e3d7099369fc64
+      X-Runtime: 
+      - "0.157435"
+      Connection: 
       - close
-      server: 
+      Server: 
       - thin 1.5.1 codename Straight Razor
     body: 
       encoding: ASCII-8BIT
-      string: "{\"id\":\"50fa307696ab5860160c7a7e\",\"created_at\":\"2012-05-15T21:12:15Z\",\"updated_at\":\"2013-03-11T21:05:24Z\",\"name\":\"Minden Master II\",\"slug\":\"minden-master-ii\",\"_type\":\"Home::Grills::Gas\",\"types\":[\"Propane\"],\"msrp\":479.0,\"article_ids\":[\"50fb2e7bbd0286d555013653\"],\"website_ids\":[\"50e669d7bd028648e0000023\"],\"publish_on\":\"2012-05-18T19:34:00+00:00\",\"upc\":null,\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"50f9ed7cbd0286638e000272\",\"model\":\"Master II\",\"resource_uri\":\"/products/minden-master-ii\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"websites\":[{\"id\":\"50e669d7bd028648e0000023\",\"created_at\":\"2013-01-04T05:34:15Z\",\"updated_at\":\"2013-01-19T06:42:05Z\",\"name\":\"Grills\",\"url\":\"grillsinfo.com\",\"code\":\"GRI\",\"ad_campaign_group\":{\"id\":\"51377ab09f5e85f5a3000484\",\"created_at\":\"2013-03-06T17:19:44Z\",\"updated_at\":\"2013-03-06T17:19:44Z\",\"website_id\":\"50e669d7bd028648e0000023\",\"ad_campaigns\":[],\"permissions\":{\"read\":false,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/ad_campaign_groups\",\"href\":\"http://localhost:3000/api/v1/ad_campaign_groups\"},\"resource\":{\"rel\":\"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484\",\"href\":\"http://localhost:3000/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/websites\",\"href\":\"http://localhost:3000/api/v1/websites\"},\"resource\":{\"rel\":\"/api/v1/websites/50e669d7bd028648e0000023\",\"href\":\"http://localhost:3000/api/v1/websites/50e669d7bd028648e0000023\"}}}],\"manufacturer_specs\":[{\"id\":\"50fa369fbd0286ee4a03a536\",\"name\":\"brand_name\",\"value\":\"(Minden)\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a537\",\"name\":\"manufacturer_name\",\"value\":\"Minden\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a538\",\"name\":\"manual_url\",\"value\":\"\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a539\",\"name\":\"manual_text\",\"value\":\"\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a53a\",\"name\":\"manufacturer_text\",\"value\":null,\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a53b\",\"name\":\"manufacturer_url\",\"value\":\"\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a53c\",\"name\":\"series_name\",\"value\":\"\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[]},{\"id\":\"50fa369fbd0286ee4a03a53d\",\"name\":\"Fuel\",\"value\":[\"LP Gas\"],\"value_units\":\"\",\"value_type\":\"MultiListItem\",\"order\":0,\"options\":[\"LP Gas\",\"Natural Gas\",\"Charcoal\",\"Electricity\",\"Natural Gas (adaptor sold separately)\",\"Propane (adaptor sold separately)\"]},{\"id\":\"50fa369fbd0286ee4a03a53e\",\"name\":\"Install Type\",\"value\":\"Freestanding\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[\"Freestanding\",\"Portable\",\"Install\"]},{\"id\":\"50fa369fbd0286ee4a03a53f\",\"name\":\"Finish or Color\",\"value\":\"Green\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[\"Electricity\"]},{\"id\":\"50fa369fbd0286ee4a03a540\",\"name\":\"Side Burner\",\"value\":\"No\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[\"Yes\",\"No\"]},{\"id\":\"50fa369fbd0286ee4a03a541\",\"name\":\"Rotisserie\",\"value\":\"No\",\"value_units\":\"\",\"value_type\":\"String\",\"order\":0,\"options\":[\"Yes\",\"No\"]},{\"id\":\"50fa369fbd0286ee4a03a542\",\"name\":\"Original Price\",\"value\":479.0,\"value_units\":\"\",\"value_type\":\"Decimal\",\"order\":0,\"options\":[]}],\"attachments\":[{\"id\":\"50fca08abd02862d77009628\",\"created_at\":\"2013-01-21T01:57:30Z\",\"updated_at\":\"2013-01-21T01:57:30Z\",\"name\":\"Minden-360MD-vanity.jpg\",\"type\":\"file\",\"tags\":[\"vanity\"],\"versions\":{\"s50x50\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s50x50_Minden-360MD-vanity.jpg\",\"s150x150\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s150x150_Minden-360MD-vanity.jpg\",\"s250x250\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s250x250_Minden-360MD-vanity.jpg\",\"s300x150\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s300x150_Minden-360MD-vanity.jpg\",\"s300x112\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s300x112_Minden-360MD-vanity.jpg\",\"s500x500\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s500x500_Minden-360MD-vanity.jpg\",\"s600x400\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x400_Minden-360MD-vanity.jpg\",\"s600x600\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x600_Minden-360MD-vanity.jpg\",\"s940x400\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x400_Minden-360MD-vanity.jpg\",\"s940x350\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x350_Minden-360MD-vanity.jpg\",\"s940x110\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x110_Minden-360MD-vanity.jpg\",\"original\":\"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg\"},\"caption\":null,\"alt_text\":null,\"data\":{\"url\":\"http://reviewed-production.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg\",\"file_size\":29538,\"content_type\":\"image/jpeg\"},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/attachments\",\"href\":\"http://localhost:3000/api/v1/attachments\"},\"resource\":{\"rel\":\"/api/v1/attachments/50fca08abd02862d77009628\",\"href\":\"http://localhost:3000/api/v1/attachments/50fca08abd02862d77009628\"}}}],\"brand\":{\"id\":\"50f9ed7cbd0286638e000272\",\"created_at\":\"2012-05-15T21:11:27Z\",\"updated_at\":\"2012-05-15T21:11:27Z\",\"name\":\"Minden\",\"slug\":\"minden\",\"url\":null,\"resource_uri\":\"/products?brand=minden\",\"logo_url\":null,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/brands\",\"href\":\"http://localhost:3000/api/v1/brands\"},\"resource\":{\"rel\":\"/api/v1/brands/50f9ed7cbd0286638e000272\",\"href\":\"http://localhost:3000/api/v1/brands/50f9ed7cbd0286638e000272\"}}},\"awards\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516da450561ee3f808000573\",\"href\":\"http://localhost:3000/api/v1/products/516da450561ee3f808000573\"}}}"
+      string: !binary |
+        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
+        0A9K618HVPivAAAAAP//AwDQAWFOyxsAAA==
+
     http_version: 
-  recorded_at: Tue, 16 Apr 2013 19:19:44 GMT
+  recorded_at: Tue, 16 Apr 2013 20:45:06 GMT
+- request: 
+    method: get
+    uri: http://localhost:3000/api/v1/products/50fa307696ab5860160c7a7e/attachments?tags=gallery
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      User-Agent: 
+      - Faraday v0.8.6
+      X-Reviewed-Authorization: 
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age: 
+      - "1000"
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Type: 
+      - application/json; charset=utf-8
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
+      - IE=Edge
+      X-Request-Id: 
+      - 5480e5cb8f29912747cef20e6dea69b0
+      X-Runtime: 
+      - "0.021589"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAFK4bVEAA6pWSkksSVSyio6tBQAAAP//AwCUZLJeCwAAAA==
+
+    http_version: 
+  recorded_at: Tue, 16 Apr 2013 20:45:06 GMT
 recorded_with: VCR 2.4.0

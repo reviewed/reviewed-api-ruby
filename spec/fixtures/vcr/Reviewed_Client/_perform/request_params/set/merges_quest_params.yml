@@ -11,40 +11,71 @@ http_interactions:
       - Faraday v0.8.6
       X-Reviewed-Authorization: 
       - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
-      message: 
+      message: OK
     headers: 
-      access-control-allow-origin: 
+      Access-Control-Allow-Origin: 
       - "*"
-      access-control-allow-methods: 
+      Access-Control-Allow-Methods: 
       - OPTIONS, GET, POST, PUT, DELETE
-      access-control-max-age: 
+      Access-Control-Max-Age: 
       - "1000"
-      access-control-allow-credentials: 
+      Access-Control-Allow-Credentials: 
       - "true"
-      access-control-allow-headers: 
+      Access-Control-Allow-Headers: 
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      cache-control: 
+      Cache-Control: 
       - no-cache, no-store
-      content-type: 
+      Content-Type: 
       - application/json; charset=utf-8
-      vary: 
+      Vary: 
       - Accept-Encoding
-      x-ua-compatible: 
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
       - IE=Edge
-      x-request-id: 
-      - dad1706fc75bc5f196fad3391465ba27
-      x-runtime: 
-      - "0.126977"
-      connection: 
+      X-Request-Id: 
+      - c7e4bbc62dd7c5f59e3e9bfd3fc2a018
+      X-Runtime: 
+      - "0.775519"
+      Connection: 
       - close
-      server: 
+      Server: 
       - thin 1.5.1 codename Straight Razor
     body: 
       encoding: ASCII-8BIT
-      string: "{\"pagination\":{\"total\":13045,\"total_pages\":13045,\"first_page\":true,\"last_page\":false,\"previous_page\":null,\"next_page\":2,\"out_of_bounds\":false,\"offset\":0,\"current_page\":1,\"per_page\":1,\"entries_on_page\":1},\"data\":[{\"id\":\"50fb3190bd0286d555016853\",\"created_at\":\"2012-08-21T17:08:55Z\",\"updated_at\":\"2013-02-22T14:06:50Z\",\"name\":\"2012 Nissan Versa SV Sedan Review\",\"branch_name\":\"master\",\"summary\":\"The redesigned 2012 Versa sedan is almost charmingly simple, meeting and even exceeding basic transportation needs. Just don't expect to pay $10,990 and be done with it.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e0000033\"],\"author_ids\":[\"50fc4eacbd0286d5550b4c8c\"],\"tags\":[],\"classifications\":[\"review\"],\"publish_on\":\"2013-04-10T16:00:00+00:00\",\"attachment_ids\":[\"50fb3190bd0286d55501685c\",\"50fb3191bd0286d55501686b\"],\"primary_product_id\":\"50fa320796ab5860160c821f\",\"resource_uri\":\"/content/2012-nissan-versa-sv-sedan-review.htm\",\"disqus_uri\":\"2012-Nissan-Versa-SV-Sedan-Review\",\"product_ids\":[\"50fa320796ab5860160c821f\"],\"related_article_ids\":[],\"slug\":\"2012-nissan-versa-sv-sedan-review.htm\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa320796ab5860160c821f\",\"created_at\":\"2012-07-09T16:35:20Z\",\"updated_at\":\"2013-03-11T21:07:01Z\",\"name\":\"Nissan 2012 Versa Sedan 1.6 SV\",\"slug\":\"nissan-2012-versa-sedan-1-6-sv\",\"_type\":\"Automobiles::Sedan\",\"types\":[\"Sedan\"],\"msrp\":14980.0,\"article_ids\":[\"50fb3190bd0286d555016853\"],\"website_ids\":[\"50e669d7bd028648e0000033\"],\"publish_on\":\"2012-08-22T20:30:00+00:00\",\"upc\":null,\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"50f9ed71bd0286638e0000f6\",\"model\":\"2012 Versa\",\"resource_uri\":\"/products/nissan-2012-versa-sedan-1-6-sv\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516da435561ee3f808000439\",\"href\":\"http://localhost:3000/api/v1/products/516da435561ee3f808000439\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/50fb3190bd0286d555016853\",\"href\":\"http://localhost:3000/api/v1/articles/50fb3190bd0286d555016853\"}}}]}"
+      string: !binary |
+        H4sIADm4bVEAA8RWwW7jNhD9FYEo0EOtmJIsxdat1x56aIwcuggEihxbxEqi
+        SlLOGoH/vUNSkpMgSROgwBqBYQ4fhzNv3gzzRAZ2lD2zUvWkfCJWWdaSMsno
+        Jl+FVYUIMIvtILWx3kZKq0dYkZYthgNrDVoGDSepRjNZ+7FtV6SHHzMsXRE1
+        2kodqlqNvTDLQXU4GLCkpCvCR62hn08k6BT0dYE7WoKpVD/bLisimGWk/PZE
+        pCAlyemhzpIdrQVNt4XI85wmxTbPCPrWwCyIiuFVJKVJGtNtnCb75Lak2zLP
+        /0bMOIgXmCymaZym+2RT0qLMqcP0rIPJQ/SnNIb10T1ow6K7++gOBC7/QiLg
+        EaG1Zj1vqulEh5SBRrMZu47pM5r2DUQaBBh57EFE3mdwZrwnaSLWdsrYiDdM
+        d7I/tufIyG5oYRV1ABYtEetFBCfoI/jBAYQz1cxIHlm83gxKW1/pqMdNcxP9
+        MaI7ofpfLR4YgNvIqmhg5+iXhK52O+r91eAgED1K20TS3mDUHVhWYahcyyEo
+        h6D1EWojLVTSFfQb8g9FsRO3gf/NFqj7ZBl5WBE22kbpK/LAN8D4s0rVG77l
+        DmnZ0WHwF0edGXmQ3KfgD+rALm4OY91K01Q+llCtTZzQfVKUlOLfb/4bg2TW
+        Mt50TlnX29/SCUfwtJW83Cpqf6OWrnLVoJUYufMWNMeylN7uClbn2wLRlG/T
+        5IC+NBg1ag7VqCUi11z1FqNYe/n1XjzxydU7NqfYlzwO6d00tsPzQpp/sKPC
+        aX8oKC72Ionv7mOvuHhR3DWwOc23Q3twsbVB69pK3s4VxA3Tjsf5uk/EKE1l
+        ARWJzpaWRlvQ/rPp4AMzL1r1PdreaNXbmO5cYbO8TOk7rZrFSbJPk5JiRyfP
+        WnXq0mfdFfo0uSmwacmS8ZSsv3DK2KebxAXmjrjKngfn8PfRqk7VsgVTlt4X
+        bro9T3owIJGd0QMOqc1uS29wuL0k+v1R9fClrnrdBGGspfuUltmLJhgHPk9l
+        lDFq8qhZXYMOInZiHWu0+2WAuRKKReM7ELdTUxRZCOFQuLmgBLTzQPT0viH8
+        ufzr/+SYad7IE1TGekGR+ly5QgehGa40zrcK5xu0sr8KbjolXuut0szNyDkj
+        TOi7Xy6P3tW+kAMYd2+xuMFymZlxpyZFEQ/rMJcwlZ4wYSbmtzHIdwklKHVZ
+        4gi1Wp2nNXpng6wwme/eD1dtizN5epm1Z3aNiPUpWYcwDF7eaDjgRmPtUK7X
+        reKsbfCVwIpT+hp9uVbjf3N5ufhyvBqHc/4/gZplvHwukQX+ITmLaPOkEPU2
+        2+VFApDtsFed+jfFF2973w8S+vD8mZom8U8gchpSnyVygX9I5Ixaf/Dv2Vdu
+        e9+PI/LyrwAAAAD//wMA1TcNt+AKAAA=
+
     http_version: 
-  recorded_at: Tue, 16 Apr 2013 19:19:17 GMT
+  recorded_at: Tue, 16 Apr 2013 20:44:41 GMT
 recorded_with: VCR 2.4.0

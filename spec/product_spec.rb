@@ -14,23 +14,22 @@ describe Reviewed::Product do
         @product = client.products.find('minden-master-ii')
       end
 
-      it 'has_many :attachments' do
-        Reviewed::Product._embedded_many.should include({"attachments"=>Reviewed::Attachment})
+      it 'no longer has_many :attachments' do
+        Reviewed::Product._embedded_many.should_not include({"attachments"=>Reviewed::Attachment})
       end
 
       it 'returns attachments of the correct class' do
-        @product.attachments.each do |attachment|
+        @product.attachments(:gallery).each do |attachment|
           attachment.should be_an_instance_of(Reviewed::Attachment)
         end
       end
 
-      it 'returns all attachments' do
-        @product.attachments.length.should == 1
+      it 'returns attachments by tag' do
+        @product.attachments(:vanity).length.should == 1
       end
 
-      it 'finds attachments by tag' do
+      it 'matches attachments by tag properly' do
         attachments = @product.attachments('vanity')
-        attachments.length.should == 1
         attachments.each do |attachment|
           attachment.tags.join(',').should match(/vanity/i)
         end

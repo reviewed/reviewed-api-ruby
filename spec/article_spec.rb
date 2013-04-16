@@ -52,8 +52,14 @@ describe Reviewed::Article, vcr: true do
       end
 
       it 'gets gallery attachments' do
-        attachments = @article.attachments(:gallery)
-        puts attachments.inspect
+        attachments = @article.gallery(7)
+        attachments.length.should == 7
+      end
+
+      it 'assigns attachments to the correct class' do
+        @article.attachments(:gallery).each do |attachment|
+          attachment.should be_an_instance_of(Reviewed::Attachment)
+        end
       end
 
       it 'finds attachments by tag' do
@@ -68,6 +74,7 @@ describe Reviewed::Article, vcr: true do
         attachments = @article.attachments('doesnotcompute')
         attachments.length.should == 0
       end
+
     end
   end
 

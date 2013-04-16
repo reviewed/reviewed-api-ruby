@@ -11,40 +11,51 @@ http_interactions:
       - Faraday v0.8.6
       X-Reviewed-Authorization: 
       - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
-      message: 
+      message: OK
     headers: 
-      access-control-allow-origin: 
+      Access-Control-Allow-Origin: 
       - "*"
-      access-control-allow-methods: 
+      Access-Control-Allow-Methods: 
       - OPTIONS, GET, POST, PUT, DELETE
-      access-control-max-age: 
+      Access-Control-Max-Age: 
       - "1000"
-      access-control-allow-credentials: 
+      Access-Control-Allow-Credentials: 
       - "true"
-      access-control-allow-headers: 
+      Access-Control-Allow-Headers: 
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      cache-control: 
+      Cache-Control: 
       - no-cache, no-store
-      content-type: 
+      Content-Type: 
       - application/json; charset=utf-8
-      vary: 
+      Vary: 
       - Accept-Encoding
-      x-ua-compatible: 
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
       - IE=Edge
-      x-request-id: 
-      - de813cb659d0bc20a6fb5a54984fb521
-      x-runtime: 
-      - "0.027459"
-      connection: 
+      X-Request-Id: 
+      - 9a2a8288dc0047a04c53c43f3de6bcc4
+      X-Runtime: 
+      - "0.024373"
+      Connection: 
       - close
-      server: 
+      Server: 
       - thin 1.5.1 codename Straight Razor
     body: 
       encoding: ASCII-8BIT
-      string: "{\"pagination\":{\"total\":0,\"total_pages\":0,\"first_page\":true,\"last_page\":true,\"previous_page\":null,\"next_page\":null,\"out_of_bounds\":true,\"offset\":0,\"current_page\":1,\"per_page\":20,\"entries_on_page\":0},\"data\":[]}"
+      string: !binary |
+        H4sIAFa4bVEAA1yNQQrDMAwE/6KzD2mP/kopRm3kYjBSkKVSCPl7jZMc2pt2
+        hl2tsOCrMFoRhriCiWGFOIX9St1SGzkXbTYyRFOnABX/wKL0LuLtgOy1BmD6
+        2A8QtyQ5PcR5bmdVcm5k49HTVYnPzqXPkh7h2nVXWqgl4QNOW4AZDSHe7tsX
+        AAD//wMAWfK2cdAAAAA=
+
     http_version: 
-  recorded_at: Tue, 16 Apr 2013 19:19:49 GMT
+  recorded_at: Tue, 16 Apr 2013 20:45:10 GMT
 recorded_with: VCR 2.4.0

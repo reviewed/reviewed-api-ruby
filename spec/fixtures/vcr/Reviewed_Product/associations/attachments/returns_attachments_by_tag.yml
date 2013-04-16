@@ -41,9 +41,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - 05729ed3a693b83eb72b398802f5ee98
+      - f4b62dae4593f2cb2fa23ae844f0ff24
       X-Runtime: 
-      - "0.219648"
+      - "0.215716"
       Connection: 
       - close
       Server: 
@@ -51,7 +51,7 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIAFO4bVEAA8RZbW/bNhD+K4Y+dVgckXq1BQwD1q5dgKYNWn/ZikCgRNpm
+        H4sIAFK4bVEAA8RZbW/bNhD+K4Y+dVgckXq1BQwD1q5dgKYNWn/ZikCgRNpm
         S4sCSSVNi/z3HSXZsp1ITtfZCYIEJB/yHh7veMfTd4dTJ3FCNCc+iqNpRLJw
         EiEcoTwmMXPOnFwxYhhNiQGch7A3RuEYhzMPJ9hLcPgPYKqS7mD8MfLHGFsM
         ChMvsJiCrBiMXvKCsmJ0SbRhanRxASNaVAsYWdUj41U9MuYcRlJzV9pJf8kV
@@ -83,9 +83,75 @@ http_interactions:
         ChIbnpqa0z7JtuAI84/L86yOoanm3yCeelN4SdpyV2Fg8XWeAEnCgrmfS1bv
         6hnqHNtZyBOrN1szhgtHHdAdyGt+UGb/Uk3No65adGXD/ur30NcInHjxY/nU
         Y5idfGr/G8S67tnWrnuK67/XpH/bTBFyIdOtec9gFzWjp5pECx60hgbjDhzI
-        0yX1r1KXC8ktUXSoNHtc1a1P9Ylb2sAH1bf5DhPiiGaT0A8jzJg/pSGkGAhP
-        wh+U1r8OqPBfAQAAAP//AwDXOCU4yxsAAA==
+        0yX1r1KXC8ktUXSoNHtc1a1P9Ylb2sAH1bf5DhPiiGaT0AsjzJg/pSGkGAhP
+        8A9K618HVPivAAAAAP//AwB6d+6yyxsAAA==
 
     http_version: 
-  recorded_at: Tue, 16 Apr 2013 20:45:07 GMT
+  recorded_at: Tue, 16 Apr 2013 20:45:06 GMT
+- request: 
+    method: get
+    uri: http://localhost:3000/api/v1/products/50fa307696ab5860160c7a7e/attachments?tags=vanity
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      User-Agent: 
+      - Faraday v0.8.6
+      X-Reviewed-Authorization: 
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age: 
+      - "1000"
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Type: 
+      - application/json; charset=utf-8
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
+      - IE=Edge
+      X-Request-Id: 
+      - f9502177e86ef1191e16d0dc359a6545
+      X-Runtime: 
+      - "0.029603"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAFK4bVEAA7yWQXObMBCF/4vOtpHAgM2519x6aifDLNJiKwWJkYQTx+P/
+        3sXGaQ8xnhzCccXTvk87Yp5OTEEAVvw+Ma1YwVJeS+AbqBSPN1ms8pzzbRZv
+        2IJJhxBQlRBIF3ORLLlYxuInF0WaFwn/RZq+Uw81Blqkr0/aKDTLJONPP5YH
+        MDocVy/djgTh2A2CWjc4VLDzxMeuEva8YAd0XltDqyfmU/6WclLvQ+iKKHJ4
+        0PiKaulpnza7lU9W0MK7NfDqV9K2EYQAct+iCVFSxUqJtcJMimoLVQ01cFWn
+        uM63VbrOsc5lXlUqurqU95G9IIWYAWT0mUKJSRLPgDL6TKEkfJ6pjD4PUUQ8
+        D4qIp1BSPtymOS7txWcKJSPJegaU0ecRSjYTSjaNsl3PM5XR5xFKMsMfNPo8
+        QhFiHhTymUCxTpMfNN+Nco/gTGEIXaAMYoXpm2bBoAllwLdwq6+hemK9+wyy
+        c1b1ctj/vZyLS4aWXr9TnsbbNNkQuDWBmpdjyOoWdhi9dHg5VYeu1f4jXCnw
+        6U0QXI+39GdFDY3HW9B/lAp9cPY41tQJOl022vy59JG2aVBe5zV0HWYSkSI6
+        iP/O64l377D+N7DGSmj21gd6OXD+2Q5ycuht7yROto4m3jVf9Lzf6nw+P5//
+        AgAA//8DANr1oLFRCQAA
+
+    http_version: 
+  recorded_at: Tue, 16 Apr 2013 20:45:06 GMT
 recorded_with: VCR 2.4.0

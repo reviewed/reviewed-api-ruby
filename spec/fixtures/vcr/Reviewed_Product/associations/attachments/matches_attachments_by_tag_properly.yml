@@ -41,9 +41,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - 5044f759eb0599617babee27e58048dc
+      - 3d05f09e0d4fc7e4dbea532b19a29fdd
       X-Runtime: 
-      - "0.162348"
+      - "0.216688"
       Connection: 
       - close
       Server: 
@@ -84,13 +84,13 @@ http_interactions:
         XT1DnWM7CzmyerM1Y7hw1AHtgbzmB2X2L9XUPOqqRVc27K9+D32NwLETPpVP
         PYXZyaf2v0Gs655t7bqnuP57Tfq3zZRcLESyNe8Z7KJmdKxJtOBBa2gw9sCB
         HC+pf5W6XEjuiKRDpdnTqm59qkduaQMfVN/mO4yPA5pOfccPMGNuRH1IMRCe
-        Hls6PLwOqPBfAQAAAP//AwBvnIGQyxsAAA==
+        HqvAw+uACv8VAAAA//8DAMXqDmzLGwAA
 
     http_version: 
   recorded_at: Tue, 16 Apr 2013 20:45:06 GMT
 - request: 
     method: get
-    uri: http://localhost:3000/api/v1/products/50fa307696ab5860160c7a7e/attachments?tags=doesnotcompute
+    uri: http://localhost:3000/api/v1/products/50fa307696ab5860160c7a7e/attachments?tags=vanity
     body: 
       encoding: US-ASCII
       string: ""
@@ -129,9 +129,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - 1fe6d7674156962e611098147359e007
+      - 8eb2f7c6ac87d2586908f3ab510778a5
       X-Runtime: 
-      - "0.088219"
+      - "0.030060"
       Connection: 
       - close
       Server: 
@@ -139,7 +139,18 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIAFK4bVEAA6pWSkksSVSyio6tBQAAAP//AwCUZLJeCwAAAA==
+        H4sIAFK4bVEAA7yWQXObMBCF/4vOtpHAgM2519x6aifDLNJiKwWJkYQTx+P/
+        3sXGaQ8xnhzCccXTvk87Yp5OTEEAVvw+Ma1YwVJeS+AbqBSPN1ms8pzzbRZv
+        2IJJhxBQlRBIF3ORLLlYxuInF0WaFwn/RZq+Uw81Blqkr0/aKDTLJONPP5YH
+        MDocVy/djgTh2A2CWjc4VLDzxMeuEva8YAd0XltDqyfmU/6WclLvQ+iKKHJ4
+        0PiKaulpnza7lU9W0MK7NfDqV9K2EYQAct+iCVFSxUqJtcJMimoLVQ01cFWn
+        uM63VbrOsc5lXlUqurqU95G9IIWYAWT0mUKJSRLPgDL6TKEkfJ6pjD4PUUQ8
+        D4qIp1BSPtymOS7txWcKJSPJegaU0ecRSjYTSjaNsl3PM5XR5xFKMsMfNPo8
+        QhFiHhTymUCxTpMfNN+Nco/gTGEIXaAMYoXpm2bBoAllwLdwq6+hemK9+wyy
+        c1b1ctj/vZyLS4aWXr9TnsbbNNkQuDWBmpdjyOoWdhi9dHg5VYeu1f4jXCnw
+        6U0QXI+39GdFDY3HW9B/lAp9cPY41tQJOl022vy59JG2aVBe5zV0HWYSkSI6
+        iP/O64l377D+N7DGSmj21gd6OXD+2Q5ycuht7yROto4m3jVf9Lzf6nw+P5//
+        AgAA//8DANr1oLFRCQAA
 
     http_version: 
   recorded_at: Tue, 16 Apr 2013 20:45:06 GMT
