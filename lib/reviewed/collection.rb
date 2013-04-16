@@ -16,7 +16,7 @@ module Reviewed
       @klass = klass
       @params = params
       @items = []
-      @page_attributes = body.pagination
+      @page_attributes = body.pagination || {}
 
       data.each do |obj|
         self.items << klass.new(obj)
