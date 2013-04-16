@@ -22,17 +22,28 @@ describe Reviewed::Request do
       end
     end
 
-    context 'string' do
+    context 'resource' do
 
-      let(:request) { Reviewed::Request.new(resource: 'test') }
-
-      it 'sets the path' do
+      it 'with resource as string, sets the path to the resource' do
         request = Reviewed::Request.new(resource: 'test')
         request.path.should eql('test')
       end
 
-      it 'does not set the resource' do
-        request.resource.should be_nil
+      it 'with resource as an object, calls :to_path on it' do
+        article_class = mock
+        article_class.should_receive(:to_path).and_return('article')
+        request = Reviewed::Request.new(resource: article_class)
+        request.path.should eql('article')
+      end
+    end
+
+    context 'scoped resource' do
+      it 'calls to path with the given scope param' do
+        article_class = mock
+        scope = mock
+        article_class.should_receive(:to_path).with(scope)
+        request = Reviewed::Request.new(resource: article_class, scope: scope)
+        request.path
       end
     end
   end
