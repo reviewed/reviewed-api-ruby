@@ -45,20 +45,15 @@ describe Reviewed::Article, vcr: true do
       end
     end
 
-    describe 'attachments' do
+    describe 'attachments:' do
 
-      it 'has_many :attachments' do
-        Reviewed::Article._embedded_many.should include({"attachments"=>Reviewed::Attachment})
+      it 'does not has_many :attachments' do
+        Reviewed::Article._embedded_many.should_not include({"attachments"=>Reviewed::Attachment})
       end
 
-      it 'returns all attachments' do
-        @article.attachments.length.should >= 1
-      end
-
-      it 'returns attachments of the correct class' do
-        @article.attachments.each do |attachment|
-          attachment.should be_an_instance_of(Reviewed::Attachment)
-        end
+      it 'gets gallery attachments' do
+        attachments = @article.attachments(:gallery)
+        puts attachments.inspect
       end
 
       it 'finds attachments by tag' do
