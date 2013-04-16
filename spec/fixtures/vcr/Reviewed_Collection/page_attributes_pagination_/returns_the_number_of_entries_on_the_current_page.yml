@@ -1,183 +1,50 @@
----
-http_interactions:
-- request:
+--- 
+http_interactions: 
+- request: 
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products
-    body:
+    uri: http://localhost:3000/api/v1/products
+    body: 
       encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
+      string: ""
+    headers: 
+      User-Agent: 
       - Faraday v0.8.6
-      X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - ! '*/*'
-  response:
-    status:
+      X-Reviewed-Authorization: 
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
+  response: 
+    status: 
       code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        dHJ1ZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
-      - !binary |-
-        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
-        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCB4LXNraXAtY2FjaGUsIENv
-        bnRlbnQtVHlwZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
-      - !binary |-
-        MTAwMA==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGUsIG5vLXN0b3Jl
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        RnJpLCAyMiBNYXIgMjAxMyAxOTo0MToxMyBHTVQ=
-      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT0zMTUzNjAwMA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "WC1SYWNrLUNhY2hl":
-      - !binary |-
-        bWlzcw==
-      !binary "WC1SZXF1ZXN0LUlk":
-      - !binary |-
-        N2ExNDJkMDY3OWE0Y2E5MTRhYzg2MjgwZTAzYmE1YWU=
-      !binary "WC1SdW50aW1l":
-      - !binary |-
-        MC4wNDU3ODM=
-      !binary "WC1VYS1Db21wYXRpYmxl":
-      - !binary |-
-        SUU9RWRnZSxjaHJvbWU9MQ==
-      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
+      message: 
+    headers: 
+      access-control-allow-origin: 
+      - "*"
+      access-control-allow-methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      access-control-max-age: 
+      - "1000"
+      access-control-allow-credentials: 
+      - "true"
+      access-control-allow-headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      cache-control: 
+      - no-cache, no-store
+      content-type: 
+      - application/json; charset=utf-8
+      vary: 
+      - Accept-Encoding
+      x-ua-compatible: 
+      - IE=Edge
+      x-request-id: 
+      - 10b705eb90fde3b8a1a46e39d39461e0
+      x-runtime: 
+      - "1.620958"
+      connection: 
+      - close
+      server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
       encoding: ASCII-8BIT
-      string: !binary |-
-        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
-        0J8J6rmToZ5bQz2EJcOxQ1Yl2FJ/mBBilaiHWF5VhOHvwJ06FhXpvwVvl/Zz
-        W5RCfwscDuh5YJ9StbblqCwVygcJA0VvqVRoq43Cmhi3OcIXmLvA3JnA3PF7
-        iu/veQXm/PYMPoVSU05jnJ+ZhsLKl6uE5ucOk+qXqwuYE8XmHMUauHXDYefv
-        w2yqP93r6aTzdxJi+v7jM+DBgh0GM98g9Q2CmW9w/1AJfOOHySxz04/wORuf
-        /ijnsMlrfqL2bNSG2iufBIMmXLAkiUPGaOwzMBHmNTGx2ggXbLxg43lgI23v
-        UPvNnpexESWasjBWQsdcCoQFMtJxVxl4Yn5bX0wjXFXXBPiJeyjfSmKF+N5q
-        WD+d29svhC2Vk1t/NbD2ibD6x9oDvjzB2n2Bs+2b8GCCK/FwMYrreFios4GI
-        hcq7MDEPPoVuJfhEzDImLsa+GhlXrXGBwwscngkctnfI/WbP++GwIh5bLmRw
-        bFjVgTNLcLhSVF7A4a8U3W6g4ZQiWxcM/+fRLed+dH/W3lRzL3Lg82RuZ3oY
-        vJvBaJ8hRFaderU0snUhcq/TWAMgC2vsw8fCPhd4vMDjmcBje8fJb/bsQ1A/
-        /k8AAAAA//8DAMR6FeMIpgAA
+      string: "{\"pagination\":{\"total\":17661,\"total_pages\":884,\"first_page\":true,\"last_page\":false,\"previous_page\":null,\"next_page\":2,\"out_of_bounds\":false,\"offset\":0,\"current_page\":1,\"per_page\":20,\"entries_on_page\":20},\"data\":[{\"id\":\"5139fc6e095ca50e890005f3\",\"created_at\":\"2013-03-08T14:57:50Z\",\"updated_at\":\"2013-03-11T21:04:39Z\",\"name\":\"Panasonic Viera TC-L47E5\",\"slug\":\"panasonic-viera-tc-l47e5-2\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":799.0,\"article_ids\":[\"51389dc50ac94eacc70003f3\"],\"website_ids\":[],\"publish_on\":\"2013-03-08T14:04:53+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"513a0a39095ca5e0ee000560\",\"model\":\"\",\"resource_uri\":\"/products/panasonic-viera-tc-l47e5-2\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9088561ee3f80800039a\",\"href\":\"http://localhost:3000/api/v1/products/516d9088561ee3f80800039a\"}}},{\"id\":\"5138d3ec90a1bfbef20005ab\",\"created_at\":\"2013-03-07T17:52:44Z\",\"updated_at\":\"2013-03-08T01:46:10Z\",\"name\":\"Ariston TVF63X\",\"slug\":\"tvf63x\",\"_type\":\"Appliances::MajorAppliances::Dryer\",\"types\":[],\"msrp\":799.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000001b\"],\"publish_on\":\"2013-03-07T17:36:10+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003b0\",\"brand_id\":\"51390ce25693113d8c00010c\",\"model\":\"\",\"resource_uri\":\"/products/tvf63x\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":2.9,\"ranking\":{\"total\":50,\"rank\":48,\"percentile\":4},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003b0\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"Dryers\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003b0\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003b0\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f80800039b\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f80800039b\"}}},{\"id\":\"5138cff9de88c3180e0006a0\",\"created_at\":\"2013-03-07T17:35:53Z\",\"updated_at\":\"2013-03-11T21:04:39Z\",\"name\":\"GTDS820EDWS\",\"slug\":\"gtds820edws\",\"_type\":\"Appliances::MajorAppliances::Dryer\",\"types\":[],\"msrp\":1099.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000001b\"],\"publish_on\":\"2013-03-07T17:15:50+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"5138d10d12494f43310004ae\",\"model\":\"\",\"resource_uri\":\"/products/gtds820edws\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f80800039c\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f80800039c\"}}},{\"id\":\"5138b9f4cb4ae870aa000522\",\"created_at\":\"2013-03-07T16:01:56Z\",\"updated_at\":\"2013-03-08T02:20:05Z\",\"name\":\"Frigidaire FAHE4044MW \",\"slug\":\"frigidaire-fahe4044mw\",\"_type\":\"Appliances::MajorAppliances::WashingMachine\",\"types\":[\"Top-Loading\"],\"msrp\":649.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000001b\"],\"publish_on\":\"2013-04-06T14:20:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003af\",\"brand_id\":\"51394ad545ba4bfa85000100\",\"model\":\"\",\"resource_uri\":\"/products/frigidaire-fahe4044mw\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":50,\"rank\":47,\"percentile\":6},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003af\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"Washing Machines\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003af\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003af\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f80800039d\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f80800039d\"}}},{\"id\":\"513639647226fa851900061f\",\"created_at\":\"2013-03-05T18:28:53Z\",\"updated_at\":\"2013-03-31T14:38:12Z\",\"name\":\"ELEFT325\",\"slug\":\"eleft325\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":290.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-03-08T08:00:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003a6\",\"brand_id\":\"513a47f29da86c965800080b\",\"model\":\"\",\"resource_uri\":\"/products/eleft325\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":5.94,\"ranking\":{\"total\":262,\"rank\":163,\"percentile\":38},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003a6\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"TV Ratings (rating-specs group)\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003a6\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003a6\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f80800039e\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f80800039e\"}}},{\"id\":\"51362cdf9e4e47720b0004d2\",\"created_at\":\"2013-03-05T17:35:27Z\",\"updated_at\":\"2013-03-31T14:38:11Z\",\"name\":\"Magnavox 32MD301B\",\"slug\":\"magnavox-32md301b\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":499.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-03-05T04:00:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003a6\",\"brand_id\":\"51377ceffcc113c3fc000490\",\"model\":\"\",\"resource_uri\":\"/products/magnavox-32md301b\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":4.24,\"ranking\":{\"total\":262,\"rank\":254,\"percentile\":4},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003a6\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"TV Ratings (rating-specs group)\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003a6\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003a6\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f80800039f\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f80800039f\"}}},{\"id\":\"5134bf84f7fb8dc21b000223\",\"created_at\":\"2013-03-04T15:36:36Z\",\"updated_at\":\"2013-03-14T14:12:53Z\",\"name\":\"LG WT1101CW\",\"slug\":\"lg-wt1101cw\",\"_type\":\"Appliances::MajorAppliances::WashingMachine\",\"types\":[\"Top-Loading\"],\"msrp\":699.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000001b\"],\"publish_on\":\"2013-03-04T15:14:13+00:00\",\"upc\":\"\",\"price_grabber_id\":\"1080763319\",\"rubric_id\":\"50f9ed93bd0286638e0003af\",\"brand_id\":\"513a04289da86c69df000691\",\"model\":\"\",\"resource_uri\":\"/products/lg-wt1101cw\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":4.23,\"ranking\":{\"total\":50,\"rank\":42,\"percentile\":16},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003af\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"Washing Machines\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003af\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003af\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a0\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a0\"}}},{\"id\":\"512cfd37ba5f4c688e000099\",\"created_at\":\"2013-02-26T18:21:43Z\",\"updated_at\":\"2013-03-11T21:05:28Z\",\"name\":\"Nikon Coolpix S31\",\"slug\":\"nikon-coolpix-s31\",\"_type\":\"Electronics::Cameras::PointAndShoot\",\"types\":[],\"msrp\":119.95,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-02-03T13:01:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"512cff109ca88f193b0001aa\",\"model\":\"\",\"resource_uri\":\"/products/nikon-coolpix-s31\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a1\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a1\"}}},{\"id\":\"512cf3e000a2d9744d000091\",\"created_at\":\"2013-02-26T17:41:53Z\",\"updated_at\":\"2013-03-11T21:05:06Z\",\"name\":\"Nikon Coolpix AW110\",\"slug\":\"nikon-coolpix-aw110\",\"_type\":\"Electronics::Cameras::PointAndShoot\",\"types\":[],\"msrp\":349.95,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-01-31T12:48:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"512e3e1c9c4005ed4e000024\",\"model\":\"\",\"resource_uri\":\"/products/nikon-coolpix-aw110\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a2\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a2\"}}},{\"id\":\"512ce285ebb3185cc600066a\",\"created_at\":\"2013-02-26T16:27:49Z\",\"updated_at\":\"2013-03-11T21:04:00Z\",\"name\":\"Nikon Coolpix S9500\",\"slug\":\"nikon-coolpix-s9500\",\"_type\":\"Electronics::Cameras::PointAndShoot\",\"types\":[],\"msrp\":349.95,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-02-02T11:23:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"512e3a3bb4ea102fca00002c\",\"model\":\"\",\"resource_uri\":\"/products/nikon-coolpix-s9500\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a3\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a3\"}}},{\"id\":\"512cd7548087b2a042000821\",\"created_at\":\"2013-02-26T15:40:04Z\",\"updated_at\":\"2013-03-11T21:04:15Z\",\"name\":\"Fujifilm F900EXR\",\"slug\":\"fujifilm-f900exr\",\"_type\":\"Electronics::Cameras::PointAndShoot\",\"types\":[],\"msrp\":null,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-02-01T10:26:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"512ce232184a8a15e800019b\",\"model\":\"\",\"resource_uri\":\"/products/fujifilm-f900exr\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a4\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a4\"}}},{\"id\":\"512be11481470fe1c10001a6\",\"created_at\":\"2013-02-25T22:09:24Z\",\"updated_at\":\"2013-03-11T21:05:26Z\",\"name\":\"Canon PowerShot ELPH 115 IS\",\"slug\":\"canon-powershot-elph-115-is\",\"_type\":\"Electronics::Cameras::PointAndShoot\",\"types\":[],\"msrp\":169.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-02-05T17:43:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"512be189a8758504860001e9\",\"model\":\"\",\"resource_uri\":\"/products/canon-powershot-elph-115-is\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a5\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a5\"}}},{\"id\":\"512bc7f34b8e6d1129000109\",\"created_at\":\"2013-02-25T20:22:11Z\",\"updated_at\":\"2013-03-11T21:03:58Z\",\"name\":\"Canon PowerShot 330 HS\",\"slug\":\"powershot-330-hs\",\"_type\":\"Electronics::Cameras::PointAndShoot\",\"types\":[],\"msrp\":null,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-02-01T13:55:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"512bcc738f5db50843000114\",\"model\":\"\",\"resource_uri\":\"/products/powershot-330-hs\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a6\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a6\"}}},{\"id\":\"51278bac6143ac867900023c\",\"created_at\":\"2013-02-22T15:15:56Z\",\"updated_at\":\"2013-03-31T14:38:13Z\",\"name\":\"Hisense 55XT710\",\"slug\":\"hisense-55xt710\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":1099.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-02-19T09:09:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003a6\",\"brand_id\":\"5139d7a59da86c69df000506\",\"model\":\"\",\"resource_uri\":\"/products/hisense-55xt710\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":5.69,\"ranking\":{\"total\":262,\"rank\":200,\"percentile\":24},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003a6\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"TV Ratings (rating-specs group)\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003a6\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003a6\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a7\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a7\"}}},{\"id\":\"5124f2fad7ee352066000492\",\"created_at\":\"2013-02-20T15:59:54Z\",\"updated_at\":\"2013-03-31T14:38:13Z\",\"name\":\"Sceptre E325BV-HDH\",\"slug\":\"sceptre-e325bv-hdh\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":599.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-02-20T15:17:23+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003a6\",\"brand_id\":\"5138f58e1eb889ace70006ec\",\"model\":\"\",\"resource_uri\":\"/products/sceptre-e325bv-hdh\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":6.53,\"ranking\":{\"total\":262,\"rank\":68,\"percentile\":75},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003a6\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"TV Ratings (rating-specs group)\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003a6\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003a6\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9089561ee3f8080003a8\",\"href\":\"http://localhost:3000/api/v1/products/516d9089561ee3f8080003a8\"}}},{\"id\":\"5123ba2a6c477e686e000811\",\"created_at\":\"2013-02-19T17:45:14Z\",\"updated_at\":\"2013-03-31T14:38:13Z\",\"name\":\"LG 47LM8600\",\"slug\":\"lg-47lm8600\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":2299.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-02-15T12:59:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003a6\",\"brand_id\":\"5138f6a4e2289ec912000723\",\"model\":\"\",\"resource_uri\":\"/products/lg-47lm8600\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":6.1,\"ranking\":{\"total\":262,\"rank\":130,\"percentile\":51},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003a6\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"TV Ratings (rating-specs group)\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003a6\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003a6\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908a561ee3f8080003a9\",\"href\":\"http://localhost:3000/api/v1/products/516d908a561ee3f8080003a9\"}}},{\"id\":\"511e5a198021d5fed7000425\",\"created_at\":\"2013-02-15T15:54:01Z\",\"updated_at\":\"2013-03-11T21:03:59Z\",\"name\":\"Nikon 1 V2\",\"slug\":\"nikon-1-v2-2\",\"_type\":\"Electronics::Cameras::DSLR\",\"types\":[],\"msrp\":null,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000d\"],\"publish_on\":\"2013-02-15T15:50:06+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"511e8fe3a82eb136f1000028\",\"model\":\"\",\"resource_uri\":\"/products/nikon-1-v2-2\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908a561ee3f8080003aa\",\"href\":\"http://localhost:3000/api/v1/products/516d908a561ee3f8080003aa\"}}},{\"id\":\"51101841be0d9f1d3c000045\",\"created_at\":\"2013-02-04T20:21:21Z\",\"updated_at\":\"2013-03-11T21:04:00Z\",\"name\":\"Fujifilm X-E1\",\"slug\":\"fujifilm-x-e1-3\",\"_type\":\"Electronics::Cameras::DSLR\",\"types\":[],\"msrp\":999.95,\"article_ids\":[],\"website_ids\":[],\"publish_on\":\"2013-02-04T20:16:10+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"51101841be0d9f1d3c000047\",\"model\":\"\",\"resource_uri\":\"/products/fujifilm-x-e1-3\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908a561ee3f8080003ab\",\"href\":\"http://localhost:3000/api/v1/products/516d908a561ee3f8080003ab\"}}},{\"id\":\"510019f7a0a353b1fc000076\",\"created_at\":\"2013-01-23T17:12:23Z\",\"updated_at\":\"2013-03-11T21:06:04Z\",\"name\":\"Dell UltraSharp U2713HM\",\"slug\":\"dell-ultrasharp-u2713hm\",\"_type\":\"Electronics::ComputerMonitor\",\"types\":[],\"msrp\":799.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e0000029\"],\"publish_on\":\"2013-01-31T12:05:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"51001f564ffb7443bf000015\",\"model\":\"\",\"resource_uri\":\"/products/dell-ultrasharp-u2713hm\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908a561ee3f8080003ac\",\"href\":\"http://localhost:3000/api/v1/products/516d908a561ee3f8080003ac\"}}},{\"id\":\"50fa347b96ab5860160c8e5e\",\"created_at\":\"2013-01-14T18:13:17Z\",\"updated_at\":\"2013-01-21T07:43:59Z\",\"name\":\"Dacor DDW24S\",\"slug\":\"dacor-ddw24s\",\"_type\":\"Appliances::MajorAppliances::Dishwasher\",\"types\":[],\"msrp\":null,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e0000021\"],\"publish_on\":\"2013-01-14T18:13:00+00:00\",\"upc\":null,\"price_grabber_id\":null,\"rubric_id\":null,\"brand_id\":\"50f9ed7ebd0286638e0002c5\",\"model\":\"DDW24S\",\"resource_uri\":\"/products/dacor-ddw24s\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908a561ee3f8080003ad\",\"href\":\"http://localhost:3000/api/v1/products/516d908a561ee3f8080003ad\"}}}]}"
     http_version: 
-  recorded_at: Fri, 22 Mar 2013 19:41:13 GMT
+  recorded_at: Tue, 16 Apr 2013 17:55:22 GMT
 recorded_with: VCR 2.4.0

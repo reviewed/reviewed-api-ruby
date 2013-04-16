@@ -1,288 +1,50 @@
----
-http_interactions:
-- request:
+--- 
+http_interactions: 
+- request: 
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/articles?page=2
-    body:
+    uri: http://localhost:3000/api/v1/articles?page=2
+    body: 
       encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
+      string: ""
+    headers: 
+      User-Agent: 
       - Faraday v0.8.6
-      X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - ! '*/*'
-  response:
-    status:
+      X-Reviewed-Authorization: 
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
+  response: 
+    status: 
       code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        dHJ1ZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
-      - !binary |-
-        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
-        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCB4LXNraXAtY2FjaGUsIENv
-        bnRlbnQtVHlwZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
-      - !binary |-
-        MTAwMA==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGUsIG5vLXN0b3Jl
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        RnJpLCAyMiBNYXIgMjAxMyAxOTo0MToyOCBHTVQ=
-      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT0zMTUzNjAwMA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "WC1SYWNrLUNhY2hl":
-      - !binary |-
-        bWlzcw==
-      !binary "WC1SZXF1ZXN0LUlk":
-      - !binary |-
-        Mjk4OTk5YzEyZTcxNDVlYTQ4OTI4ODY2NjNjN2RlNjY=
-      !binary "WC1SdW50aW1l":
-      - !binary |-
-        MS44MDQyMzA=
-      !binary "WC1VYS1Db21wYXRpYmxl":
-      - !binary |-
-        SUU9RWRnZSxjaHJvbWU9MQ==
-      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
+      message: 
+    headers: 
+      access-control-allow-origin: 
+      - "*"
+      access-control-allow-methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      access-control-max-age: 
+      - "1000"
+      access-control-allow-credentials: 
+      - "true"
+      access-control-allow-headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      cache-control: 
+      - no-cache, no-store
+      content-type: 
+      - application/json; charset=utf-8
+      vary: 
+      - Accept-Encoding
+      x-ua-compatible: 
+      - IE=Edge
+      x-request-id: 
+      - f55169b362fb4e625398e3669ddd6644
+      x-runtime: 
+      - "1.504782"
+      connection: 
+      - close
+      server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAOizTFEAA+x9W5PbNrLwX2HpJQ87sok7oZctx05if1+S44pnvee2NQXi
-        MmKsEXVIacberfz30wAvI2lIiRLH9u7xbKXWIzbZaACN7kZfgH9MVuo6W6p1
-        li8ns39M1vlaLSYzRGIiL6pfV/CGLSczzvDFxGVFuQ5PJjOnFqW9mCzU/pNV
-        YW+zfFPWT9HFZGk/Nu+Qi0m+WV/l7irNN0tTtl/lzpV2PZnh+GKiN0Vhl80n
-        0O7KFs0PAAOoyGx5lS/bh39cTIxaq8nsv/4xycxkNmGIcISlQUQ5aw3WOI5j
-        KvgEsBdWra25UtDaBMeITGP4j10iNqNkhtl/wjublTn6zlLdQNuT11lpl6X9
-        rozgPRy9u1HFOrp8H71dqLXLi5tZ9MPH1UJlS2vgo7RQSz2/qr+9gcGzBTwu
-        Nzfw3Sd4BD9u7FpdGVvqIltVM+Of3tm0zNb2KvOD9l9/u5iozXqeF/e/1+q6
-        /kvDpJSZy3SY2PrhapMusnJ+FfA96FIs/hTHsziGhtR6rfT8xk9Ai3tVZJ6+
-        q1WRm432gMlsuVksLiaFLfNNoe3VpsgA8XOdL9fw6fN5NSzTcuqHZVr6YZmu
-        b6erelimdmtUTFb+DzDMGBT3lNUkl4vNNWA7CUlWXq3tjQfdszM8qyatfXI/
-        QM3o2OImgxEPY/0PGBIFw7MuNrZhtvbTiq/anzDJ6yL/VP8GJlar7GqRLT8E
-        PDpfLKxu1mZhF35w4I3nt+g59CLTC1iYF5N5YZ3v6Hq9KmfPn6/ndnq9yQx0
-        ee0X9/WzuS3yDxu1Wj3T+c0DBH/cz2F/M88PrKdx7fdj/uOPPy7uVzNzlriU
-        KcmNo5LAOyR1h1YznSE+I6h/NYtLeAGRGRNbq/mtWqoyX2Y6ep/ZQkWXL6dv
-        efyOx9FvINXs3WdcwhMWO02tsqmJccINYyxOqZZsMmJxwyjgGUInL25PjCKU
-        Y8lVyhIeIx7rxGi/SvqW/KoZu+mtH7vpWk9XPC55PC2asete6AM+3F3e/dTd
-        L/wBSIct97rpcku59I9NBzuiaZxcIjFjdMZkLzsidInRLGYgiTvZcZ8fJ8c7
-        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
-        AAA=
+      string: "{\"pagination\":{\"total\":13045,\"total_pages\":653,\"first_page\":false,\"last_page\":false,\"previous_page\":1,\"next_page\":3,\"out_of_bounds\":false,\"offset\":20,\"current_page\":2,\"per_page\":20,\"entries_on_page\":20},\"data\":[{\"id\":\"5138ab8dc3fe935586000459\",\"created_at\":\"2013-03-07T15:00:29Z\",\"updated_at\":\"2013-03-07T20:35:31Z\",\"name\":\"Reviewed.com March Headphones Deals Roundup\",\"branch_name\":\"master\",\"summary\":\"Check out these great deals on some of our highest-rated headphones.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000000d\"],\"author_ids\":[\"513608d6182c5fb1b10003e5\"],\"tags\":[],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-07T05:00:00+00:00\",\"attachment_ids\":[\"5138f4fbc2b02eef0600078c\",\"5138f51c0a66a400e300069b\",\"5138f539cb4ae8dfb300063b\",\"5138f556de88c37957000694\",\"5138f56b12614a951d0006ba\",\"5138f58af0804716180006de\",\"5138f5b9c3fe935586000769\"],\"primary_product_id\":null,\"resource_uri\":\"/features/reviewed-com-march-headphones-deals-roundup\",\"disqus_uri\":\"/features/reviewed-com-march-headphones-deals-roundup\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"reviewed-com-march-headphones-deals-roundup\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5138ab8dc3fe935586000459\",\"href\":\"http://localhost:3000/api/v1/articles/5138ab8dc3fe935586000459\"}}},{\"id\":\"5136348d5e71b4b40e000583\",\"created_at\":\"2013-03-05T18:08:13Z\",\"updated_at\":\"2013-03-07T19:55:01Z\",\"name\":\"Magnavox 32MD301B Review\",\"branch_name\":\"master\",\"summary\":\"An old-school TV that manages to impress with solid picture quality.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000000f\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c98\"],\"tags\":[],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-07T03:00:00+00:00\",\"attachment_ids\":[\"51376c5d561e649638000441\"],\"primary_product_id\":\"51362cdf9e4e47720b0004d2\",\"resource_uri\":\"/content/magnavox-32md301b-review\",\"disqus_uri\":\"/content/magnavox-32md301b-review\",\"product_ids\":[\"51362cdf9e4e47720b0004d2\"],\"related_article_ids\":[],\"slug\":\"magnavox-32md301b-review\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"51362cdf9e4e47720b0004d2\",\"created_at\":\"2013-03-05T17:35:27Z\",\"updated_at\":\"2013-03-31T14:38:11Z\",\"name\":\"Magnavox 32MD301B\",\"slug\":\"magnavox-32md301b\",\"_type\":\"Electronics::Television\",\"types\":[],\"msrp\":499.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-03-05T04:00:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e0003a6\",\"brand_id\":\"51377ceffcc113c3fc000490\",\"model\":\"\",\"resource_uri\":\"/products/magnavox-32md301b\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":4.24,\"ranking\":{\"total\":262,\"rank\":254,\"percentile\":4},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003a6\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"TV Ratings (rating-specs group)\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003a6\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003a6\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908e561ee3f8080003c1\",\"href\":\"http://localhost:3000/api/v1/products/516d908e561ee3f8080003c1\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5136348d5e71b4b40e000583\",\"href\":\"http://localhost:3000/api/v1/articles/5136348d5e71b4b40e000583\"}}},{\"id\":\"5137b70c3f0c86b2fe000265\",\"created_at\":\"2013-03-06T21:37:16Z\",\"updated_at\":\"2013-03-07T15:16:36Z\",\"name\":\"Mighty Mug is The Best Thing for Coffee Since Milk (video)\",\"branch_name\":\"master\",\"summary\":\"A mug that can't tip over? We see if that claim holds any water\\u2014or coffee, for that matter.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000001b\",\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c9a\"],\"tags\":[],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-06T21:33:26+00:00\",\"attachment_ids\":[\"5137b6fd602f9136e80006aa\"],\"primary_product_id\":null,\"resource_uri\":\"/features/mighty-mug-is-the-best-thing-for-coffee-since-milk\",\"disqus_uri\":\"/features/mighty-mug-is-the-best-thing-for-coffee-since-milk\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"mighty-mug-is-the-best-thing-for-coffee-since-milk\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5137b70c3f0c86b2fe000265\",\"href\":\"http://localhost:3000/api/v1/articles/5137b70c3f0c86b2fe000265\"}}},{\"id\":\"51375a213f0c861fc9000331\",\"created_at\":\"2013-03-06T15:00:50Z\",\"updated_at\":\"2013-03-08T15:05:12Z\",\"name\":\"Ariston ARWL129NA Review\",\"branch_name\":\"master\",\"summary\":\"If your home's proportions are more suited to Milan than Minnesota, this might be the washer for you.\",\"meta_description\":\"If your home's proportions are more suited to Milan than Minnesota, this might be the washer for you.\",\"website_ids\":[\"50e669d7bd028648e000001b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c97\"],\"tags\":[\"washer\",\"review\",\"compact\"],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-06T07:00:00+00:00\",\"attachment_ids\":[\"5138faf660714fc7c1000011\"],\"primary_product_id\":\"50fa317696ab5860160c7f43\",\"resource_uri\":\"/content/ariston-arwl129na-review.htm\",\"disqus_uri\":\"/content/ariston-arwl129na-review.htm\",\"product_ids\":[\"50fa317696ab5860160c7f43\"],\"related_article_ids\":[],\"slug\":\"ariston-arwl129na-review.htm\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa317696ab5860160c7f43\",\"created_at\":\"2012-06-13T22:03:23Z\",\"updated_at\":\"2013-03-14T14:13:03Z\",\"name\":\"Ariston ARWL129NA\",\"slug\":\"ariston-arwl129na\",\"_type\":\"Appliances::MajorAppliances::WashingMachine\",\"types\":[\"Front-Loading\",\"Compact\"],\"msrp\":899.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000001b\"],\"publish_on\":\"2012-09-05T18:00:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"815974602\",\"rubric_id\":\"50f9ed93bd0286638e0003af\",\"brand_id\":\"50f9ed7cbd0286638e000280\",\"model\":\"ARWL129NA\",\"resource_uri\":\"/products/ariston-arwl129na\",\"archive_state\":\"manually_current\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":7.77,\"ranking\":{\"total\":50,\"rank\":8,\"percentile\":84},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003af\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"Washing Machines\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003af\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003af\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908e561ee3f8080003c2\",\"href\":\"http://localhost:3000/api/v1/products/516d908e561ee3f8080003c2\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/51375a213f0c861fc9000331\",\"href\":\"http://localhost:3000/api/v1/articles/51375a213f0c861fc9000331\"}}},{\"id\":\"513634a0237bfc429700055d\",\"created_at\":\"2013-03-05T18:08:32Z\",\"updated_at\":\"2013-03-06T21:14:24Z\",\"name\":\"Induction Cookers Heat Up IHHS\",\"branch_name\":\"master\",\"summary\":\"Induction technology is finally beginning to take off. Here we take a look at a few of the products on display at IHHS.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c99\"],\"tags\":[],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-06T06:30:00+00:00\",\"attachment_ids\":[\"513635c084e29ff614000583\",\"513635ff13afee75d80005ca\",\"5136362b84e29ff614000585\",\"513636b2542c9272da0005c7\",\"513636da13afee1406000522\",\"513636f64505ea90160004f6\",\"5136370f13afee75d80005d8\",\"5136374263387518f70004e8\",\"513637682e24e90ecf00053d\",\"51363794182c5f63d7000572\",\"5136381c2e24e9c1e000078f\",\"51363b2d182c5f63d7000596\",\"51363c969e4e4764e800053d\",\"5137b0150d385e262e00051c\"],\"primary_product_id\":null,\"resource_uri\":\"/features/induction-cookers-heat-up-at-ihhs\",\"disqus_uri\":\"/features/induction-cookers-heat-up-at-ihhs\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"induction-cookers-heat-up-at-ihhs\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/513634a0237bfc429700055d\",\"href\":\"http://localhost:3000/api/v1/articles/513634a0237bfc429700055d\"}}},{\"id\":\"5136288c13afee1406000477\",\"created_at\":\"2013-03-05T17:17:00Z\",\"updated_at\":\"2013-03-07T15:24:18Z\",\"name\":\"Whirlpool WFE720H0AS Electric Range Review\",\"branch_name\":\"master\",\"summary\":\"Whirlpool gets it right with the WFE720H0AS.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eb0bd0286d5550b4c9c\"],\"tags\":[\"oven\",\"range\",\"review\",\"gas\",\"electric\",\"stove\"],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-06T04:30:00+00:00\",\"attachment_ids\":[\"51363146b8e9b4cd4d000072\"],\"primary_product_id\":\"50fa342096ab5860160c8c5f\",\"resource_uri\":\"/content/whirlpool-wfe720h0as-electric-range-review.htm\",\"disqus_uri\":\"/content/whirlpool-wfe720h0as-electric-range-review.htm\",\"product_ids\":[\"50fa342096ab5860160c8c5f\"],\"related_article_ids\":[],\"slug\":\"whirlpool-wfe720h0as-electric-range-review.htm\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa342096ab5860160c8c5f\",\"created_at\":\"2012-11-21T16:36:26Z\",\"updated_at\":\"2013-03-14T14:11:57Z\",\"name\":\"Whirlpool WFE720H0AS\",\"slug\":\"whirlpool-wfe720h0as\",\"_type\":\"Appliances::MajorAppliances::Oven\",\"types\":[\"Electric\"],\"msrp\":1249.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000002b\"],\"publish_on\":\"2012-11-21T16:02:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"956620824\",\"rubric_id\":\"50f9ed93bd0286638e0003b9\",\"brand_id\":\"50f9ed77bd0286638e0001c5\",\"model\":\"WFE720H0AS\",\"resource_uri\":\"/products/whirlpool-wfe720h0as\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":8.01,\"ranking\":{\"total\":30,\"rank\":11,\"percentile\":64},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003b9\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"2012 Oven Rubric\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003b9\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003b9\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908e561ee3f8080003c3\",\"href\":\"http://localhost:3000/api/v1/products/516d908e561ee3f8080003c3\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5136288c13afee1406000477\",\"href\":\"http://localhost:3000/api/v1/articles/5136288c13afee1406000477\"}}},{\"id\":\"5136129d13afeed2c2000476\",\"created_at\":\"2013-03-05T15:43:25Z\",\"updated_at\":\"2013-03-05T15:43:25Z\",\"name\":\"Hisense's 2012 Smart TV Platform: Explained\",\"branch_name\":\"master\",\"summary\":\"\",\"meta_description\":\"\",\"website_ids\":[],\"author_ids\":[],\"tags\":[],\"classifications\":[],\"publish_on\":\"2013-03-05T15:43:07+00:00\",\"attachment_ids\":[],\"primary_product_id\":null,\"resource_uri\":\"/content/hisense-s-2012-smart-tv-platform-explained\",\"disqus_uri\":\"/content/hisense-s-2012-smart-tv-platform-explained\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"hisense-s-2012-smart-tv-platform-explained\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5136129d13afeed2c2000476\",\"href\":\"http://localhost:3000/api/v1/articles/5136129d13afeed2c2000476\"}}},{\"id\":\"5135fe3fb5a96df4930003bf\",\"created_at\":\"2013-03-05T14:16:31Z\",\"updated_at\":\"2013-03-07T16:13:57Z\",\"name\":\"Panasonic Viera TC-P60S60 Review\",\"branch_name\":\"master\",\"summary\":\"\",\"meta_description\":\"\",\"website_ids\":[],\"author_ids\":[\"50fc4eaebd0286d5550b4c95\"],\"tags\":[],\"classifications\":[],\"publish_on\":\"2013-03-05T14:12:11+00:00\",\"attachment_ids\":[],\"primary_product_id\":\"50fa346296ab5860160c8dcd\",\"resource_uri\":\"/content/panasonic-viera-tc-p60s60-review\",\"disqus_uri\":\"/content/panasonic-viera-tc-p60s60-review\",\"product_ids\":[\"50fa346296ab5860160c8dcd\"],\"related_article_ids\":[],\"slug\":\"panasonic-viera-tc-p60s60-review\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa346296ab5860160c8dcd\",\"created_at\":\"2013-01-08T17:54:59Z\",\"updated_at\":\"2013-03-11T21:05:07Z\",\"name\":\"Panasonic  Viera TC-P60S60\",\"slug\":\"panasonic-viera-tc-p60s60\",\"_type\":\"Electronics::Television\",\"types\":[\"Plasma\"],\"msrp\":null,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000000f\"],\"publish_on\":\"2013-01-08T17:54:00+00:00\",\"upc\":null,\"price_grabber_id\":null,\"rubric_id\":null,\"brand_id\":\"50f9ed6fbd0286638e0000b5\",\"model\":\"TC-P60S60\",\"resource_uri\":\"/products/panasonic-viera-tc-p60s60\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908e561ee3f8080003c4\",\"href\":\"http://localhost:3000/api/v1/products/516d908e561ee3f8080003c4\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5135fe3fb5a96df4930003bf\",\"href\":\"http://localhost:3000/api/v1/articles/5135fe3fb5a96df4930003bf\"}}},{\"id\":\"5134b8d0a31cd2555300020a\",\"created_at\":\"2013-03-04T15:08:00Z\",\"updated_at\":\"2013-03-08T15:28:02Z\",\"name\":\"LG WT1101CW Review\",\"branch_name\":\"master\",\"summary\":\"The LG WT1101CW with its Smart Drum technology may be too smart for its own good\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000001b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c97\"],\"tags\":[],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-05T07:00:00+00:00\",\"attachment_ids\":[\"51362df3459c3b307b0005a7\"],\"primary_product_id\":\"5134bf84f7fb8dc21b000223\",\"resource_uri\":\"/content/lg-wt1101cw-review\",\"disqus_uri\":\"/content/lg-wt1101cw-review\",\"product_ids\":[\"5134bf84f7fb8dc21b000223\"],\"related_article_ids\":[],\"slug\":\"lg-wt1101cw-review\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"5134bf84f7fb8dc21b000223\",\"created_at\":\"2013-03-04T15:36:36Z\",\"updated_at\":\"2013-03-14T14:12:53Z\",\"name\":\"LG WT1101CW\",\"slug\":\"lg-wt1101cw\",\"_type\":\"Appliances::MajorAppliances::WashingMachine\",\"types\":[\"Top-Loading\"],\"msrp\":699.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e000001b\"],\"publish_on\":\"2013-03-04T15:14:13+00:00\",\"upc\":\"\",\"price_grabber_id\":\"1080763319\",\"rubric_id\":\"50f9ed93bd0286638e0003af\",\"brand_id\":\"513a04289da86c69df000691\",\"model\":\"\",\"resource_uri\":\"/products/lg-wt1101cw\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":4.23,\"ranking\":{\"total\":50,\"rank\":42,\"percentile\":16},\"rubric\":{\"id\":\"50f9ed93bd0286638e0003af\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"Washing Machines\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e0003af\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e0003af\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908e561ee3f8080003c5\",\"href\":\"http://localhost:3000/api/v1/products/516d908e561ee3f8080003c5\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5134b8d0a31cd2555300020a\",\"href\":\"http://localhost:3000/api/v1/articles/5134b8d0a31cd2555300020a\"}}},{\"id\":\"51311a1697b7460ad7000489\",\"created_at\":\"2013-03-01T21:13:58Z\",\"updated_at\":\"2013-03-08T15:17:37Z\",\"name\":\"Smart Appliances: Your Home, Connected\",\"branch_name\":\"master\",\"summary\":\"A five-part series about smart appliances and connected homes.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e0000021\",\"50e669d7bd028648e000002b\",\"50e669d7bd028648e0000019\",\"50e669d7bd028648e000001b\"],\"author_ids\":[\"50fc4e99bd0286d5550b4c17\"],\"tags\":[\"home-hero1\"],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-04T11:14:00+00:00\",\"attachment_ids\":[\"51311b94fbeae35ded00046c\",\"5134d40f9dfd86f345000314\",\"5134fb296d5bf2390a0003b8\"],\"primary_product_id\":null,\"resource_uri\":\"/features/smart-appliances-your-home-connected\",\"disqus_uri\":\"/features/smart-appliances-your-home-connected\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"smart-appliances-your-home-connected\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/51311a1697b7460ad7000489\",\"href\":\"http://localhost:3000/api/v1/articles/51311a1697b7460ad7000489\"}}},{\"id\":\"512fd30d56fe2f59ff000993\",\"created_at\":\"2013-02-28T21:58:37Z\",\"updated_at\":\"2013-03-05T19:15:19Z\",\"name\":\"What is a Smart Appliance?\",\"branch_name\":\"master\",\"summary\":\"Appliances aren't just big boxes sitting in the corner anymore. Part one in our series about smart appliances.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eacbd0286d5550b4c8c\"],\"tags\":[],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-04T11:00:00+00:00\",\"attachment_ids\":[\"5130d9e4ee7b68dbb70003bf\",\"5130de5815c1a6fd6600039a\",\"5134dcb6f8f167a52b000348\"],\"primary_product_id\":null,\"resource_uri\":\"/features/what-is-a-smart-appliance\",\"disqus_uri\":\"/features/what-is-a-smart-appliance\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"what-is-a-smart-appliance\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/512fd30d56fe2f59ff000993\",\"href\":\"http://localhost:3000/api/v1/articles/512fd30d56fe2f59ff000993\"}}},{\"id\":\"512392739d8349df9f0006f2\",\"created_at\":\"2013-02-19T14:55:51Z\",\"updated_at\":\"2013-03-08T15:18:42Z\",\"name\":\"Hotpoint HDA3640DSA Review\",\"branch_name\":\"master\",\"summary\":\"The Hotpoint HDA3640DSA proved to be the triumvirate of low quality\\u2014performance, design, and features were all deplorable.\",\"meta_description\":\"The Hotpoint HDA3640DSA proved to be the triumvirate of low quality\\u2014performance, design, and features were all deplorable.\",\"website_ids\":[\"50e669d7bd028648e0000021\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c99\"],\"tags\":[\"dishwasher\",\"review\",\"appliance\",\"hotpoint\",\"home-hero4\"],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-04T08:00:00+00:00\",\"attachment_ids\":[\"5134c26257d86bec8f00036e\"],\"primary_product_id\":\"50fa334a96ab5860160c884e\",\"resource_uri\":\"/content/hotpoint-hda3640dsa-2.htm\",\"disqus_uri\":\"/content/hotpoint-hda3640dsa-2.htm\",\"product_ids\":[\"50fa334a96ab5860160c884e\"],\"related_article_ids\":[],\"slug\":\"hotpoint-hda3640dsa-2.htm\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa334a96ab5860160c884e\",\"created_at\":\"2012-08-28T22:04:36Z\",\"updated_at\":\"2013-03-11T21:14:00Z\",\"name\":\"Hotpoint HDA3640DSA \\u00a0\",\"slug\":\"hotpoint-hda3640dsa\",\"_type\":\"Appliances::MajorAppliances::Dishwasher\",\"types\":[],\"msrp\":459.0,\"article_ids\":[],\"website_ids\":[\"50e669d7bd028648e0000021\"],\"publish_on\":\"2012-08-28T22:04:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"961340156\",\"rubric_id\":\"51239194ca3ad4c88b00069e\",\"brand_id\":\"50f9ed77bd0286638e0001d3\",\"model\":\"HDA3640DSA \\u00a0\",\"resource_uri\":\"/products/hotpoint-hda3640dsa\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":0.0,\"ranking\":{\"total\":1,\"rank\":1,\"percentile\":0},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908f561ee3f8080003c6\",\"href\":\"http://localhost:3000/api/v1/products/516d908f561ee3f8080003c6\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/512392739d8349df9f0006f2\",\"href\":\"http://localhost:3000/api/v1/articles/512392739d8349df9f0006f2\"}}},{\"id\":\"512cdba792a20bc417000a7e\",\"created_at\":\"2013-02-26T15:58:31Z\",\"updated_at\":\"2013-03-08T21:36:59Z\",\"name\":\"Canon Vixia HF G20 Review\",\"branch_name\":\"master\",\"summary\":\"Canon's refreshed top-of-the-line consumer camcorder brings a few improvements and a sense of d\\u00e9j\\u00e0 vu. \",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e0000005\"],\"author_ids\":[\"511d598e4fb5ad962100011c\"],\"tags\":[\"home-hero4\"],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-04T04:00:00+00:00\",\"attachment_ids\":[\"5138c4bbde88c379570004fa\",\"5138c526a8e30b0a640004e3\",\"5138c559c2b02ef991000511\",\"5138c57b942a81a33e0001bb\",\"5138c5a76dc8c2d224000489\",\"5138c5d6a8e30b5d7b00055f\",\"5138c5f40e56d3ba31000236\",\"5138c667c2b02ef991000519\",\"5138c67a8df361aaa900053a\",\"5138c68d8df36153cd0004c2\",\"5138c722942a816ee5000177\",\"513a1493084c0bf4fb000554\",\"513a14b76bab2032a9000402\",\"513a14ca4279b15e8b000603\",\"513a14e5b55586660b000782\",\"513a1506d8ddd3cce4000711\",\"513a153745ba4bfacb0006b0\",\"513a1ff7569311cc180006f9\",\"513a20b007989e314800061a\",\"513a20e4917d591bc500079d\",\"513a2103bd289888da0005a8\",\"513a2120b976b85ec40006c0\",\"513a52d33628e3836f00000b\",\"513a593200e9b1c20b000038\"],\"primary_product_id\":\"50fa344096ab5860160c8d15\",\"resource_uri\":\"/content/canon-hf-g20-review-3\",\"disqus_uri\":\"/content/canon-hf-g20-review-3\",\"product_ids\":[\"50fa344096ab5860160c8d15\"],\"related_article_ids\":[],\"slug\":\"canon-hf-g20-review-3\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa344096ab5860160c8d15\",\"created_at\":\"2013-01-03T14:38:12Z\",\"updated_at\":\"2013-03-08T21:28:37Z\",\"name\":\"Canon Vixia HF G20\",\"slug\":\"canon-vixia-hf-g20\",\"_type\":\"Electronics::Camcorder\",\"types\":[\"Prosumer\",\"3D\"],\"msrp\":null,\"article_ids\":[\"50fc16bcbd0286d55509c609\",\"512e7a69ae6462a7eb000370\",\"512e8108cdfbb71c0c0001f1\"],\"website_ids\":[\"50e669d7bd028648e0000005\"],\"publish_on\":\"2013-01-07T14:00:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e000397\",\"brand_id\":\"50f9ed6fbd0286638e0000b3\",\"model\":\"HF G20\",\"resource_uri\":\"/products/canon-vixia-hf-g20\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":9.5,\"ranking\":{\"total\":108,\"rank\":9,\"percentile\":92},\"rubric\":{\"id\":\"50f9ed93bd0286638e000397\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"2009-2010 Rubric\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e000397\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e000397\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908f561ee3f8080003c7\",\"href\":\"http://localhost:3000/api/v1/products/516d908f561ee3f8080003c7\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/512cdba792a20bc417000a7e\",\"href\":\"http://localhost:3000/api/v1/articles/512cdba792a20bc417000a7e\"}}},{\"id\":\"5135143963e27c8ca90003ec\",\"created_at\":\"2013-03-04T21:38:01Z\",\"updated_at\":\"2013-03-08T15:41:52Z\",\"name\":\"Reviewed.com March Camera Deals Roundup \",\"branch_name\":\"master\",\"summary\":\"A roundup of great camera deals this month. \",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000000d\"],\"author_ids\":[\"513608d6182c5fb1b10003e5\"],\"tags\":[],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-03T12:00:00+00:00\",\"attachment_ids\":[\"51351b1b30ece70c480001f6\",\"513619990c5ce480a1000574\",\"51361a01633875c799000478\",\"51361a4bb5a96da6b000045c\",\"51361ad7262dad9de500047f\",\"51361b377226fa93670004bf\",\"51361ba1e6a89c0b7a00053f\",\"51361be8182c5f63d70004bf\"],\"primary_product_id\":null,\"resource_uri\":\"/features/reviewed-com-march-camera-deals-roundup\",\"disqus_uri\":\"/features/reviewed-com-march-camera-deals-roundup\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"reviewed-com-march-camera-deals-roundup\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5135143963e27c8ca90003ec\",\"href\":\"http://localhost:3000/api/v1/articles/5135143963e27c8ca90003ec\"}}},{\"id\":\"5133792fa53ec33fe400053b\",\"created_at\":\"2013-03-03T16:24:15Z\",\"updated_at\":\"2013-03-04T17:33:33Z\",\"name\":\"Nifty, Impressive, Expensive: A Tour of the High-End Products at IHHS 2013\",\"branch_name\":\"master\",\"summary\":\"From vacuum cookers to hand-crafted samurai blades, some of the most interesting products at IHHS are high-end.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c99\"],\"tags\":[\"home-hero2\"],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-03T09:00:00+00:00\",\"attachment_ids\":[\"51337e230e76053324000530\",\"51337e4e1741c7cc9d0000e9\",\"51337ea03cd032026b00066a\",\"51337f046f4157716a000581\",\"51337f359efef6115e0004ab\",\"51337f69ae6134e0bf000567\",\"51337fd1a53ec33a0d0005a3\",\"51337ffb5b1c628c80000871\",\"5133802fd96a558228000663\",\"513380615b1c628c80000873\",\"5133807fae6134e044000598\",\"513380a6ae6134e04400059a\",\"51338116d7144640c4000553\",\"5133821653c3efbdd8000692\"],\"primary_product_id\":null,\"resource_uri\":\"/features/a-tour-of-the-high-end-products-at-ihhs-2013\",\"disqus_uri\":\"/features/a-tour-of-the-high-end-products-at-ihhs-2013\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"a-tour-of-the-high-end-products-at-ihhs-2013\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5133792fa53ec33fe400053b\",\"href\":\"http://localhost:3000/api/v1/articles/5133792fa53ec33fe400053b\"}}},{\"id\":\"513397476f4157a7b4000660\",\"created_at\":\"2013-03-03T18:32:39Z\",\"updated_at\":\"2013-03-04T19:55:44Z\",\"name\":\"IHHS Discover Design: A Brief Tour of the GIA Design Finalists\",\"branch_name\":\"master\",\"summary\":\"The 100+ nominees for IHA's Global Innovation Award for Design were housed in the Discover Design gallery at IHHS. Here we take a look at some of those products.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c99\"],\"tags\":[\"home-hero3\"],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-03T06:00:00+00:00\",\"attachment_ids\":[\"51339797cc389ee582000175\",\"513397cd1741c7cc9d000164\",\"5133980d7a5719afd1000546\",\"5133983e085efb3eca00069e\",\"513399050e7605137a000602\",\"5133997a31b7938d330004f3\",\"513399ac31b79328d2000744\",\"513399ce02544dabf6000518\",\"51339b6612327229fc000799\"],\"primary_product_id\":null,\"resource_uri\":\"/features/a-brief-tour-of-the-gia-design-finalists\",\"disqus_uri\":\"/features/a-brief-tour-of-the-gia-design-finalists\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"a-brief-tour-of-the-gia-design-finalists\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/513397476f4157a7b4000660\",\"href\":\"http://localhost:3000/api/v1/articles/513397476f4157a7b4000660\"}}},{\"id\":\"5132737d997d179990000482\",\"created_at\":\"2013-03-02T21:47:41Z\",\"updated_at\":\"2013-03-04T15:07:12Z\",\"name\":\"Home + Housewares 2013: A Photographic Tour\",\"branch_name\":\"master\",\"summary\":\"The International Home + Housewares Show is a visual cornucopia of nifty kitchen doodads and groundbreaking culinary inventions. Check out our photo gallery to get an idea of what's here.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eafbd0286d5550b4c99\"],\"tags\":[\"home-hero4\"],\"classifications\":[\"feature\"],\"publish_on\":\"2013-03-02T08:00:00+00:00\",\"attachment_ids\":[\"513271b2bfb5449b390004da\",\"513271f463cbf640a400023b\",\"5132723e149b98a76f000554\",\"513272743fbbd729db00048d\",\"513272a83fbbd720960004cc\",\"513272dbdb81c6468500049b\",\"5132733553ca4a2a73000558\",\"5132736e0d3c6193040004fa\",\"513273be149b98a76f00055b\",\"5132741063cbf640a400023f\",\"513274902bd991e388000505\",\"513274c23fbbd729db0004a6\",\"51327518997d179990000487\",\"51327551eeb2830dc1000561\",\"5132757c34500067ae0004f6\",\"513275a879128dc47a000241\",\"513275fc2bd9915f2d0004f5\",\"51327639d6e0c345ca000532\",\"513276ca8e4409e722000522\",\"513277618e440958ad000498\",\"513277996b69213aa80003ef\",\"513277d1d6e0c3aecb000576\",\"51327806c220db43c2000553\",\"5133656b9efef6b9bf0004b3\",\"5133659c03302a3f800004c4\"],\"primary_product_id\":null,\"resource_uri\":\"/features/home-housewares-2013-a-photographic-tour\",\"disqus_uri\":\"/features/home-housewares-2013-a-photographic-tour\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"home-housewares-2013-a-photographic-tour\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/5132737d997d179990000482\",\"href\":\"http://localhost:3000/api/v1/articles/5132737d997d179990000482\"}}},{\"id\":\"510031e75bc3bca74a0000dc\",\"created_at\":\"2013-01-23T18:54:31Z\",\"updated_at\":\"2013-02-26T17:21:40Z\",\"name\":\"Understanding the Science Behind Your Hearing\",\"branch_name\":\"master\",\"summary\":\"The first part in our three-part series detailing the science and cutting through the garbage associated with headphone reviews.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e0000011\"],\"author_ids\":[\"50fc4eacbd0286d5550b4c8b\"],\"tags\":[],\"classifications\":[],\"publish_on\":\"2013-03-01T12:11:00+00:00\",\"attachment_ids\":[\"51015dccce65f9a8640004a3\",\"51015e46629727f8cf000316\",\"51015e67891914ffe000045f\"],\"primary_product_id\":null,\"resource_uri\":\"/content/understanding-the-science-behind-your-hearing\",\"disqus_uri\":\"/content/understanding-the-science-behind-your-hearing\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"understanding-the-science-behind-your-hearing\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/510031e75bc3bca74a0000dc\",\"href\":\"http://localhost:3000/api/v1/articles/510031e75bc3bca74a0000dc\"}}},{\"id\":\"512d13342d980b15dc000042\",\"created_at\":\"2013-02-26T19:55:33Z\",\"updated_at\":\"2013-03-08T19:56:20Z\",\"name\":\"Panasonic HC-X920 Camcorder Review\",\"branch_name\":\"master\",\"summary\":\"Panasonic's new flagship has the same look of its predecessors, but it's got a few new tricks under the hood.\",\"meta_description\":\"Panasonic's new flagship has the same look of its predecessors, but it's got a few new tricks under the hood.\",\"website_ids\":[\"50e669d7bd028648e0000005\"],\"author_ids\":[\"50fc4e96bd0286d5550b4bfa\"],\"tags\":[\"home-hero1\"],\"classifications\":[\"review\"],\"publish_on\":\"2013-03-01T08:00:00+00:00\",\"attachment_ids\":[\"5138dc144ca34ed192000587\",\"5138dc992c402876f60005e2\",\"513912317a0082bae70000b9\",\"51391247b976b85ec400014a\",\"5139126c6bab207b820001c1\",\"5139127fb976b85ec400014c\",\"513912902a7089cb1f00017c\",\"513912c8917d591bc50001b8\",\"513912d9b555864fef00017f\",\"513912e9095ca5e0ee00013d\",\"513912f944a8b42d9400015b\",\"5139130aab18d6c4ca000147\",\"513919426bab200ea7000214\",\"513a1bcce18ebbba290006e4\",\"513a20e6d81dcb57db0007ae\",\"513a23777a0082ebca00068b\",\"513a2428a2ff75e5b20007b9\"],\"primary_product_id\":\"50fa345396ab5860160c8d7d\",\"resource_uri\":\"/content/panasonic-hc-x920-camcorder-review-2\",\"disqus_uri\":\"/content/panasonic-hc-x920-camcorder-review-2\",\"product_ids\":[\"50fa345396ab5860160c8d7d\"],\"related_article_ids\":[],\"slug\":\"panasonic-hc-x920-camcorder-review-2\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa345396ab5860160c8d7d\",\"created_at\":\"2013-01-04T19:45:49Z\",\"updated_at\":\"2013-03-14T14:14:37Z\",\"name\":\"Panasonic HC-X920\",\"slug\":\"panasonic-hc-x920\",\"_type\":\"Electronics::Camcorder\",\"types\":[\"Prosumer\",\"3D\"],\"msrp\":null,\"article_ids\":[\"50fc16c4bd0286d55509c62e\"],\"website_ids\":[\"50e669d7bd028648e0000005\"],\"publish_on\":\"2013-01-07T18:45:00+00:00\",\"upc\":\"\",\"price_grabber_id\":\"\",\"rubric_id\":\"50f9ed93bd0286638e000397\",\"brand_id\":\"50f9ed6fbd0286638e0000b5\",\"model\":\"HC-X920\",\"resource_uri\":\"/products/panasonic-hc-x920\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":9.06,\"ranking\":{\"total\":108,\"rank\":12,\"percentile\":89},\"rubric\":{\"id\":\"50f9ed93bd0286638e000397\",\"created_at\":\"2013-01-19T00:49:23Z\",\"updated_at\":\"2013-01-19T00:49:23Z\",\"name\":\"2009-2010 Rubric\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics/50f9ed93bd0286638e000397\",\"href\":\"http://localhost:3000/api/v1/rubrics/50f9ed93bd0286638e000397\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d908f561ee3f8080003c8\",\"href\":\"http://localhost:3000/api/v1/products/516d908f561ee3f8080003c8\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/512d13342d980b15dc000042\",\"href\":\"http://localhost:3000/api/v1/articles/512d13342d980b15dc000042\"}}},{\"id\":\"512e769410b2c4cc5a0001d7\",\"created_at\":\"2013-02-27T21:11:48Z\",\"updated_at\":\"2013-02-28T16:24:09Z\",\"name\":\"Try to Spot Frecan's New Ventilation System\",\"branch_name\":\"master\",\"summary\":\"The Paradigma system is an array of ventilation modules disguised as lights.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e000002b\"],\"author_ids\":[\"50fc4eb0bd0286d5550b4c9c\"],\"tags\":[\"Frecan\",\"Faber\",\"Modular\",\"Ventilation\",\"Range\",\"Oven\",\"Hood\",\"LIght\"],\"classifications\":[\"feature\"],\"publish_on\":\"2013-02-28T06:15:00+00:00\",\"attachment_ids\":[\"512e73d1e1d70aa65d0001eb\",\"512e73facdfbb7c45500021c\",\"512e7411b4ea102fca000266\",\"512e7426bff1f8a255000211\"],\"primary_product_id\":null,\"resource_uri\":\"/features/try-to-spot-frecan-s-new-ventilation-system\",\"disqus_uri\":\"/features/try-to-spot-frecan-s-new-ventilation-system\",\"product_ids\":[],\"related_article_ids\":[],\"slug\":\"try-to-spot-frecan-s-new-ventilation-system\",\"is_template\":false,\"is_branch\":false,\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/512e769410b2c4cc5a0001d7\",\"href\":\"http://localhost:3000/api/v1/articles/512e769410b2c4cc5a0001d7\"}}}]}"
     http_version: 
-  recorded_at: Fri, 22 Mar 2013 19:41:28 GMT
+  recorded_at: Tue, 16 Apr 2013 17:55:27 GMT
 recorded_with: VCR 2.4.0

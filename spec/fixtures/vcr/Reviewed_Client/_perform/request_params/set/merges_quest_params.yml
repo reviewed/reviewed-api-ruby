@@ -1,98 +1,50 @@
----
-http_interactions:
-- request:
+--- 
+http_interactions: 
+- request: 
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/articles?per_page=1
-    body:
+    uri: http://localhost:3000/api/v1/articles?per_page=1
+    body: 
       encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
+      string: ""
+    headers: 
+      User-Agent: 
       - Faraday v0.8.6
-      X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - ! '*/*'
-  response:
-    status:
+      X-Reviewed-Authorization: 
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
+  response: 
+    status: 
       code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        dHJ1ZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
-      - !binary |-
-        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
-        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCB4LXNraXAtY2FjaGUsIENv
-        bnRlbnQtVHlwZQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
-      - !binary |-
-        MTAwMA==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGUsIG5vLXN0b3Jl
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        RnJpLCAyMiBNYXIgMjAxMyAxOTo0MDo1OCBHTVQ=
-      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT0zMTUzNjAwMA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "WC1SYWNrLUNhY2hl":
-      - !binary |-
-        bWlzcw==
-      !binary "WC1SZXF1ZXN0LUlk":
-      - !binary |-
-        NmE3YTE1OTMxZjMxMzM0MTM3ODczNGRmN2VjYmFiNzc=
-      !binary "WC1SdW50aW1l":
-      - !binary |-
-        MC4yMjYxMjM=
-      !binary "WC1VYS1Db21wYXRpYmxl":
-      - !binary |-
-        SUU9RWRnZSxjaHJvbWU9MQ==
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        NzE5
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
+      message: 
+    headers: 
+      access-control-allow-origin: 
+      - "*"
+      access-control-allow-methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      access-control-max-age: 
+      - "1000"
+      access-control-allow-credentials: 
+      - "true"
+      access-control-allow-headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      cache-control: 
+      - no-cache, no-store
+      content-type: 
+      - application/json; charset=utf-8
+      vary: 
+      - Accept-Encoding
+      x-ua-compatible: 
+      - IE=Edge
+      x-request-id: 
+      - 26a8ff4212dc96c5ab31bdd7d43978a8
+      x-runtime: 
+      - "0.126793"
+      connection: 
+      - close
+      server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAMqzTFEAA6RUyW7bMBD9FYHXSjG1Wta1vfYSGD00CASKHFpEJFHlkjQw
-        /O8dypZSoE2BIoZhmG/eLJx5wzOZ2UlNzCk9keZMnHZsIE2a0/wQX08tMsBu
-        mFTGugUjjTMeYjKwDZBssIjMBp6V9vaGTn4YYjLBz5WWxUR712rZdtpPwm6O
-        WkoLjjQ0JtwbA9PqkWJQMG8HtBgFttXTil1iIphjpHk4EyVIQ8o0r6pc1LUs
-        oKvqQkhKaSprgrENMAeiZZiKZDTNE4rf8pilTU4bSr8jx8/iL5wqcGigBc7E
-        RkxN7vG28ALijusx+soM76MjDAha7Gr0BfBu0X24qJ/RqTNs4n178x2xeWAQ
-        tn4cmXlF6HMP/CnCBkWnUGcklgAYyeoRIi3RZKJenXqwLjGhyOj4zd5FGGQE
-        x1oBlhs1X0dKEH2BzioHrQqdfiAlhao6iH0naFZXRQ10+UjyGBPmXa/NxsQW
-        0lpUaZ3xUnZplyIvhzIwHTsFDv7jKACrpOKLihZHiXV7A4E3+25Qtm+XYtY+
-        ZtkxzbHR+P20/GKVzDnG+zHM/Lf01T6TJWQc6rpjodKSMSRfTQUri4wfsn0m
-        GJr2tNpM+5LWRdHxLi1yNFX7dDMx0ZXsUAlZHBaTEJtJdEVJS2AHmlbBVMBq
-        qmmeVZhGHASUixdfbmdUmFo7Gy08D5WvcjdgcU4cWm8U3nx3a4ndmZtaElRL
-        Mga1JG5TS7IMOzGbWoSyP3CRPhbkrbrbyOzgTxjv/6Io2zoY5wEVty0sYlc9
-        b8jbGG+5cG9HZe1VGmfMycT6clz3cHO9rtx2RB07o19vZ9xvNqt2UNPTEofr
-        YQC+vlsGhtAfZOye0x0zTvEBH62Y9AYkWnrnZtvsdq6H5OSVgMS68PCd7now
-        +smzeQ7b+0eAy9sg30+z+8dT87H870e+XC6Pl18AAAD//wMA+T1oKr4FAAA=
+      string: "{\"pagination\":{\"total\":13045,\"total_pages\":13045,\"first_page\":true,\"last_page\":false,\"previous_page\":null,\"next_page\":2,\"out_of_bounds\":false,\"offset\":0,\"current_page\":1,\"per_page\":1,\"entries_on_page\":1},\"data\":[{\"id\":\"50fb3190bd0286d555016853\",\"created_at\":\"2012-08-21T17:08:55Z\",\"updated_at\":\"2013-02-22T14:06:50Z\",\"name\":\"2012 Nissan Versa SV Sedan Review\",\"branch_name\":\"master\",\"summary\":\"The redesigned 2012 Versa sedan is almost charmingly simple, meeting and even exceeding basic transportation needs. Just don't expect to pay $10,990 and be done with it.\",\"meta_description\":\"\",\"website_ids\":[\"50e669d7bd028648e0000033\"],\"author_ids\":[\"50fc4eacbd0286d5550b4c8c\"],\"tags\":[],\"classifications\":[\"review\"],\"publish_on\":\"2013-04-10T16:00:00+00:00\",\"attachment_ids\":[\"50fb3190bd0286d55501685c\",\"50fb3191bd0286d55501686b\"],\"primary_product_id\":\"50fa320796ab5860160c821f\",\"resource_uri\":\"/content/2012-nissan-versa-sv-sedan-review.htm\",\"disqus_uri\":\"2012-Nissan-Versa-SV-Sedan-Review\",\"product_ids\":[\"50fa320796ab5860160c821f\"],\"related_article_ids\":[],\"slug\":\"2012-nissan-versa-sv-sedan-review.htm\",\"is_template\":false,\"is_branch\":false,\"products\":[{\"id\":\"50fa320796ab5860160c821f\",\"created_at\":\"2012-07-09T16:35:20Z\",\"updated_at\":\"2013-03-11T21:07:01Z\",\"name\":\"Nissan 2012 Versa Sedan 1.6 SV\",\"slug\":\"nissan-2012-versa-sedan-1-6-sv\",\"_type\":\"Automobiles::Sedan\",\"types\":[\"Sedan\"],\"msrp\":14980.0,\"article_ids\":[\"50fb3190bd0286d555016853\"],\"website_ids\":[\"50e669d7bd028648e0000033\"],\"publish_on\":\"2012-08-22T20:30:00+00:00\",\"upc\":null,\"price_grabber_id\":\"\",\"rubric_id\":null,\"brand_id\":\"50f9ed71bd0286638e0000f6\",\"model\":\"2012 Versa\",\"resource_uri\":\"/products/nissan-2012-versa-sedan-1-6-sv\",\"archive_state\":\"by_date\",\"is_scoring_baseline\":false,\"archived\":false,\"product_rating\":null,\"ranking\":{\"total\":null,\"rank\":null,\"percentile\":null},\"rubric\":{\"name\":\"\",\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"},\"resource\":{\"rel\":\"/api/v1/rubrics\",\"href\":\"http://localhost:3000/api/v1/rubrics\"}}},\"is_primary_product\":true,\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/products\",\"href\":\"http://localhost:3000/api/v1/products\"},\"resource\":{\"rel\":\"/api/v1/products/516d9071561ee3f808000275\",\"href\":\"http://localhost:3000/api/v1/products/516d9071561ee3f808000275\"}}}],\"attachments\":[],\"permissions\":{\"read\":true,\"create\":false,\"update\":false,\"destroy\":false},\"api_links\":{\"collection\":{\"rel\":\"/api/v1/articles\",\"href\":\"http://localhost:3000/api/v1/articles\"},\"resource\":{\"rel\":\"/api/v1/articles/50fb3190bd0286d555016853\",\"href\":\"http://localhost:3000/api/v1/articles/50fb3190bd0286d555016853\"}}}]}"
     http_version: 
-  recorded_at: Fri, 22 Mar 2013 19:40:58 GMT
+  recorded_at: Tue, 16 Apr 2013 17:54:57 GMT
 recorded_with: VCR 2.4.0
