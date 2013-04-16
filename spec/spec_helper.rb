@@ -17,7 +17,7 @@ VCR.configure do |config|
   config.ignore_localhost = false
   config.default_cassette_options = { :record => :new_episodes, :serialize_with => :syck }
   config.cassette_library_dir = 'spec/fixtures/vcr'
-  config.hook_into :faraday
+  config.hook_into :webmock
   config.configure_rspec_metadata!
 end
 
