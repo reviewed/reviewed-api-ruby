@@ -1,8 +1,8 @@
 module Reviewed
   module Attachable
 
-    def attachments tag
-      (@attachments ||= {})[tag] ||= fetch_attachments tag
+    def attachments tag, opts={}
+      (@attachments ||= {})[tag] ||= fetch_attachments tag, opts
     end
 
     def gallery num=8, page=1
