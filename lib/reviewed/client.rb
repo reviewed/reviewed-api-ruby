@@ -59,11 +59,12 @@ module Reviewed
 
     def perform(method, path, params={})
       begin
-        self.connection.send(method.to_sym, path, params) do |request|
+        res = self.connection.send(method.to_sym, path, params) do |request|
           request.params.merge!(self.request_params)
           request.headers['X-Reviewed-Authorization'] ||= self.api_key
         end
         raise Reviewed::ApiError.new(msg: "API connection returned redirect or error") if res.status > 204 and res.status != 404
+        res
       rescue Faraday::Error::ClientError => e
         message = <<-EOS.gsub(/^[ ]*/, '')
           API Error. method: #{method}. path: #{path}. params: #{params.to_s}. api_key: #{self.api_key}
