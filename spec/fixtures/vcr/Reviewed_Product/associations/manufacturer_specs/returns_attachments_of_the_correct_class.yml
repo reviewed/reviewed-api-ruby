@@ -1,0 +1,193 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      X-Reviewed-Authorization: 
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1000"
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Encoding: 
+      - gzip
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Mon, 06 May 2013 14:29:34 GMT
+      Status: 
+      - 200 OK
+      Strict-Transport-Security: 
+      - max-age=31536000
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 955cf5272492804ff52e19cf37291bf5
+      X-Runtime: 
+      - "0.297905"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAE6+h1EAA8RZbW/bNhD+K4Y+bZgdk7JebAHDgLVrF6DpgtZftiIQKOls
+        s5FFgaSSpkX++46SLNlOJANx7QRBApLHu4f3wjueflg8sQLLJQs2Ib4381jk
+        Tj1CPRL7zAdraMUSmIYkZBrpbELtEXFH1J3bNKB2QN3/kKbIkx2ayYhMRpQa
+        GuIGtmNoMrYGXL3iWQLZ4IopDXJweYkrKi2WuLIuV0brcmXEOa6E+iE3m/4W
+        awiC95KnqcL/TOGaWVJW8MW6liJnGVg3Q2utZG4Fjj+7IEOLSc3jFEKelGR4
+        xMgGP4oSYk+9xHVdxOm5E7PvHiLF9RYpeN4s8StSZwrE/NglaV5EKVerUGTb
+        6pjO6SyYOAEhvxGCf0udxFaQFWmKeySPIVxKFkUgw1LhSCCLCOfLYUUWSZYl
+        4cYeM0j8uELgTUoItm/jtrVIIDWK3NKgBCUKiTIKyXFpnEuRFLFW42d0ymS8
+        4ncQKo0mQ+LoITTGwxWuQhULybNlGDEFKUelBguWKmh2Jc1ELSKUTOOGzRHw
+        BLfl8IelhWbp9nyjDUCkmeYpVDOPG1WYXbWXWCXZmivFRabMAnohCteygI1L
+        NlAq72uGCSgtxUM9Ru4s5yEe5rbkE4s0hVhzYz/D1ahyjBTjOzquYBjnWklY
+        4MJK61wF47FewWhZ8ARGqLUlHvBiBVLcFizPL2Kx3t//2FrkhEIeHxvHNV77
+        YxPJHb77NJIxSumIOHMMUXTdzkimIzqbEy9wbAzmrUiuwtHskeZ8y3LIs4Uw
+        aI04dFRD9sl4KEvCmK1zxpcZBoIocqOYCjCd+D6LyGzhwtRduHgPEeJMnecB
+        4683p36A4eY4nVfPHk0b3v0K2gJpNHrT4YS1n53KC5+o6uW+8gyrXt98Sj/u
+        Mc/PwtQto/TxV7gImrB66SEbBr3q3lCNe3zyOPndnFG1JmGyrFiwWBcSE5PK
+        Id65SbAm8GaLaiuAw8iEuROvvQGqhFUOhtYdSwsz+UuV4X/dTIVFxrWq7vRq
+        ok7qn7VJNTgrZALSCjBli1xXZv5y8zjsh+G3MHYOsYemAnNiLNNdLCwNzZXY
+        gjix+NkT8Rq+6fPJZx2m2EVRJf9T4og6cJzVGHELQoHkoPY98sTyk1b+uwK2
+        Dv7F+nA9MKXzzSEAV0Wq+Qeu9KWGdQeODbOh9ZGhlllaj96ssFIUzMj9y1yv
+        WKpw/bBLNviFJSzXQg6USJOBgpxhFQnpg7kz6mq+h+agCqBVwWWG12SaDubm
+        ZK0N3knA3ICXV6XoI+yxz+paSM2i1AirZR/Gu9gyGc/wcTHAY78RqZBbkN+j
+        nCPvsR2LHELlkBbVZ8w3gz8LmcE2oo/iSDj/lgkW2RzEQlssn4TGYsBE1utA
+        sVso/0iOGRh9+tq871o49fuzH89biPm6jJPnwxyjlGnN4tUa30q7WTlmZMoq
+        WHbi+4TMPHvaVd/bdE5o4PrBhHTW93s0Oy/10cQjV29HdwzP8XDxNV/WT28k
+        WPDSz7EOKXVYkZTXC8imXFMu+eaSuoLBAkbCHYd7SJr6RU0u2Jp9Fxm7V1UJ
+        0xx7PInsJKFOAl5MoxmLFmzBSIJVIqo4ch0fFn5sXvTjSkrYDVlRpKBnAFLL
+        6YNiI4l9Bii1nD4oWGifRSu1nINQqH0eKNTug+IS403ncNpSTh8UD0mcM0Cp
+        5RyC4p0JitcPZeacRyu1nENQJmeIoFrOISiUngcKyumBIurMeGooXQjw1R2z
+        vHrbV+8OlurqPVKPMQsyk56q3tU+yLq5iftPi3NY5tBQ8e+YT+0ZviRN2yzT
+        yHxTJ2CRsITx1xzKUyGwGJTa6ri+Qndkuy55cRdoi0d/S6olHPfUPkej6GZe
+        dUrKXkfbtOzuz/d9L6GB7T9XhT1Hs1OF7X8l2XRd6+56R/v/jxL0782W3c8c
+        NzvtYxylYinCLbav4Fol4Jd7Vb2916EqmnGPBY+R3c237GWyeyY3yo+K9DYs
+        8lSwzcxPUnjZ1sNbo/mKE24c4gUWaba+VC8Ng16rNF+sXDr1I3DAthfUjp3Y
+        d0zD0qVHy+/mjJb5XwAAAAD//wMAS9aN1gcdAAA=
+
+    http_version: 
+  recorded_at: Mon, 06 May 2013 14:29:33 GMT
+- request: 
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      X-Reviewed-Authorization: 
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1000"
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Encoding: 
+      - gzip
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Mon, 06 May 2013 14:29:34 GMT
+      Status: 
+      - 200 OK
+      Strict-Transport-Security: 
+      - max-age=31536000
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 4fbffd8c38c027fd69679d0d7d0b9bdd
+      X-Runtime: 
+      - "0.216368"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        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
+        e8HES4+W388ZLfO/AAAAAP//AwDqXPjLBx0AAA==
+
+    http_version: 
+  recorded_at: Mon, 06 May 2013 14:29:34 GMT
+recorded_with: VCR 2.3.0

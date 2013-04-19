@@ -37,7 +37,7 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Sat, 27 Apr 2013 01:46:46 GMT
+      - Mon, 06 May 2013 14:29:31 GMT
       Status: 
       - 200 OK
       Strict-Transport-Security: 
@@ -45,9 +45,9 @@ http_interactions:
       Vary: 
       - Accept-Encoding
       X-Request-Id: 
-      - 1ed5fe8c441f8c8b90ad742c3360c88e
+      - 065d1ccf6755c0ebed2d1b6b55cf9e47
       X-Runtime: 
-      - "0.266423"
+      - "0.265565"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Transfer-Encoding: 
@@ -57,103 +57,42 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        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
-        qoalftMfJ3+YM1jmfwEAAAD//wMAi3R3oAcdAAA=
+        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
+        TGoFBkfLH+YMlvlfAAAAAP//AwBYeQujBx0AAA==
 
     http_version: 
-  recorded_at: Sat, 27 Apr 2013 01:46:46 GMT
-- request: 
-    method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products/50fa307696ab5860160c7a7e/attachments?tags=gallery
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      X-Reviewed-Authorization: 
-      - 38e397252ec670ec441733a95204f141
-      Accept-Encoding: 
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept: 
-      - "*/*"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Access-Control-Allow-Credentials: 
-      - "true"
-      Access-Control-Allow-Headers: 
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      Access-Control-Allow-Methods: 
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin: 
-      - "*"
-      Access-Control-Max-Age: 
-      - "1000"
-      Cache-Control: 
-      - no-cache, no-store
-      Content-Encoding: 
-      - gzip
-      Content-Type: 
-      - application/json; charset=utf-8
-      Date: 
-      - Sat, 27 Apr 2013 01:46:46 GMT
-      Status: 
-      - 200 OK
-      Strict-Transport-Security: 
-      - max-age=31536000
-      Vary: 
-      - Accept-Encoding
-      X-Request-Id: 
-      - 15c3cb19cf595ac80c7e2081f745a605
-      X-Runtime: 
-      - "0.024017"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Transfer-Encoding: 
-      - chunked
-      Connection: 
-      - keep-alive
-    body: 
-      encoding: ASCII-8BIT
-      string: !binary |
-        H4sIAAYue1EAA6pWSkksSVSyio6tBQAAAP//AwCUZLJeCwAAAA==
-
-    http_version: 
-  recorded_at: Sat, 27 Apr 2013 01:46:46 GMT
+  recorded_at: Mon, 06 May 2013 14:29:31 GMT
 recorded_with: VCR 2.3.0

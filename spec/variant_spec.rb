@@ -6,7 +6,9 @@ describe Reviewed::Variant do
   let(:variant) { product.primary_variant }
 
   describe 'associations' do
-  
-    
+
+    it 'has_many :manufacturer_specs' do
+      Reviewed::Variant._embedded_many.should include({"manufacturer_specs"=>Reviewed::ManufacturerSpec})
+    end
   end
 end

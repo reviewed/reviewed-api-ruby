@@ -49,10 +49,6 @@ describe Reviewed::Product do
         product = client.products.find('minden-master-ii')
       end
 
-      it 'has_many :manufacturer_specs' do
-        Reviewed::Product._embedded_many.should include({"manufacturer_specs"=>Reviewed::ManufacturerSpec})
-      end
-
       it 'returns attachments of the correct class' do
         product.manufacturer_specs.each do |ms|
           ms.should be_an_instance_of(Reviewed::ManufacturerSpec)
