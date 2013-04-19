@@ -4,8 +4,7 @@ describe Reviewed::Request do
 
   let(:request) do
     Reviewed::Request.new(
-      resource: Reviewed::Article,
-      client: Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+      resource: Reviewed::Article
     )
   end
 

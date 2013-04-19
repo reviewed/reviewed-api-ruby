@@ -25,3 +25,8 @@ end
 TEST_URL = 'http://localhost:3000/api/v1'
 TEST_KEY = ENV['REVIEWED_API_KEY']
 
+Reviewed::Client.configure do |client|
+  client.api_key = TEST_KEY
+  client.api_base_uri = TEST_URL
+end
+

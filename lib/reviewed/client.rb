@@ -1,21 +1,31 @@
 module Reviewed
   class Client
-    attr_accessor :api_key, :api_version, :request_params
+    attr_accessor :request_params
 
-    DEFAULT_BASE_URI = "https://the-guide-staging.herokuapp.com/api/v1"
+    DEFAULT_BASE_URI = "http://localhost:3000/api/v1"
+
+    class << self
+      attr_accessor :api_key, :api_base_uri, :api_version
+
+      def configure
+        yield self
+        self
+      end
+
+    end
 
     def initialize(opts={})
-      @api_key = opts[:api_key] || ENV['REVIEWED_API_KEY']
+      @base_uri = opts[:base_uri] || base_uri
+      @api_key = opts[:api_key]
       @request_params = opts[:request_params] || {}
     end
 
-    def configure
-      yield self
-      self
+    def base_uri
+      self.class.api_base_uri || DEFAULT_BASE_URI
     end
 
-    def base_uri
-      configatron.api.url || DEFAULT_BASE_URI
+    def api_key
+      self.class.api_key || ENV['REVIEWED_API_KEY']
     end
 
     # Perform an HTTP GET request

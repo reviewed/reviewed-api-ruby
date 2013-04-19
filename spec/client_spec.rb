@@ -2,33 +2,36 @@ require 'spec_helper.rb'
 
 describe Reviewed::Client do
 
-  let(:client) do
-    Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+  let(:client) { Reviewed::Client.new }
+
+  describe 'config' do
+
+    it 'should have api_key set' do
+      Reviewed::Client.api_key.should == TEST_KEY
+    end
+
+    it 'should have api_base_uri set' do
+      Reviewed::Client.api_base_uri.should == TEST_URL
+    end
+
+    # redundant
+    [:api_key, :api_base_uri, :api_version].each do |var|
+      describe "#{var}" do
+        it 'is readable' do
+          lambda { client.send(var) }.should_not raise_error
+        end
+      end
+    end
+
   end
 
-  describe 'accessors' do
-
-    [:api_key, :base_uri, :request_params].each do |var|
-      describe "#{var}" do
-
+  describe "accessor vars" do
+    [:request_params].each do |var|
+      describe var do
         it 'exists' do
           client.instance_variables.should include(:"@#{var}")
         end
       end
-    end
-  end
-
-  describe '#configure' do
-
-    it 'returns self' do
-      client.configure{}.should be_an_instance_of(Reviewed::Client)
-    end
-
-    it 'yields self' do
-      client.configure do |config|
-        config.api_key = 'test_key'
-      end
-      client.api_key.should eql('test_key')
     end
   end
 
