@@ -18,6 +18,7 @@ require 'reviewed/base'
 require 'reviewed/attachable'
 
 require 'reviewed/manufacturer_spec'
+require 'reviewed/variant'
 require 'reviewed/award'
 require 'reviewed/brand'
 require 'reviewed/product'
@@ -26,6 +27,7 @@ require 'reviewed/article'
 require 'reviewed/author'
 require 'reviewed/page'
 require 'reviewed/website'
+require 'reviewed/variant'
 
 module Reviewed
   class BaseError < StandardError
