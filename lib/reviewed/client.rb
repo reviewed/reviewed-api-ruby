@@ -1,18 +1,21 @@
 module Reviewed
   class Client
-    attr_accessor :api_key, :base_uri, :api_version, :request_params
+    attr_accessor :api_key, :api_version, :request_params
 
-    BASE_URI = "http://localhost:3000/api/v1"
+    DEFAULT_BASE_URI = "https://the-guide-staging.herokuapp.com/api/v1"
 
     def initialize(opts={})
       @api_key = opts[:api_key] || ENV['REVIEWED_API_KEY']
-      @base_uri = opts[:base_uri] || BASE_URI
       @request_params = opts[:request_params] || {}
     end
 
     def configure
       yield self
       self
+    end
+
+    def base_uri
+      configatron.api.url || DEFAULT_BASE_URI
     end
 
     # Perform an HTTP GET request
@@ -67,7 +70,7 @@ module Reviewed
         res
       rescue Faraday::Error::ClientError => e
         message = <<-EOS.gsub(/^[ ]*/, '')
-          API Error. method: #{method}. path: #{path}. params: #{params.to_s}. api_key: #{self.api_key}
+          API Error. method: #{method} url: #{base_uri} path: #{path} params: #{params.to_s} api_key: #{self.api_key}
           Original exception message:
           #{e.message}
         EOS
