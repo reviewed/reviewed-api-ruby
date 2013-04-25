@@ -7,7 +7,7 @@ describe Reviewed::Article, vcr: true do
   end
 
   before(:each) do
-    @article = client.articles.find('big-green-egg-medium-charcoal-grill-review', { with_attachments: true })
+    @article = client.articles.find('big-green-egg-medium-charcoal-grill-review.htm', { with_attachments: true })
   end
 
   describe 'associations', vcr: true do
@@ -57,13 +57,14 @@ describe Reviewed::Article, vcr: true do
       end
 
       it 'assigns attachments to the correct class' do
+        
         @article.attachments(:gallery).each do |attachment|
           attachment.should be_an_instance_of(Reviewed::Attachment)
         end
       end
 
       it 'finds attachments by tag' do
-        attachments = @article.attachments('old-hero')
+        attachments = @article.attachments('hero')
         attachments.length.should == 1
         attachments.each do |attachment|
           attachment.tags.join(',').should match(/hero/i)

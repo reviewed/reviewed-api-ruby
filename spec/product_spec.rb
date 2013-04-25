@@ -2,46 +2,15 @@ require 'spec_helper'
 
 describe Reviewed::Product do
 
-  let(:product) { client.products.find('minden-master-ii') }
+  let(:product) do
+    client.products.find('mark-of-the-ninja')
+  end
 
   let(:client) do
     Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
   end
 
   describe 'associations' do
-
-    describe 'attachments', vcr: true do
-
-      before(:each) do
-        @product = client.products.find('minden-master-ii')
-      end
-
-      it 'no longer has_many :attachments' do
-        Reviewed::Product._embedded_many.should_not include({"attachments"=>Reviewed::Attachment})
-      end
-
-      it 'returns attachments of the correct class' do
-        @product.attachments(:gallery).each do |attachment|
-          attachment.should be_an_instance_of(Reviewed::Attachment)
-        end
-      end
-
-      it 'returns attachments by tag' do
-        @product.attachments(:vanity).length.should == 1
-      end
-
-      it 'matches attachments by tag properly' do
-        attachments = @product.attachments('vanity')
-        attachments.each do |attachment|
-          attachment.tags.join(',').should match(/vanity/i)
-        end
-      end
-
-      it 'does not have any matching attachments' do
-        attachments = product.attachments('doesnotcompute')
-        attachments.length.should == 0
-      end
-    end
 
     describe 'manufacturer_specs', vcr: true do
 
@@ -69,14 +38,25 @@ describe Reviewed::Product do
   end
 
   describe 'delegations', vcr: true do
+    let(:variant) { {} }
+    before(:each) { product.stub!(:primary_variant).and_return(variant) }
 
-    [:manufacturer_specs].each do |method|
-      describe method do
-        it 'delegates to the primary variant' do
-          product.primary_variant.should_receive(method)
-          product.send(method)
-        end
-      end
+    it "delegates :manufacturer_specs" do
+      variant.should_receive(:manufacturer_specs)
+      product.manufacturer_specs
+    end
+
+    it "delegates :attachments" do
+      product.primary_variant.should_receive(:attachments).with('hero')
+      product.send(:attachments, 'hero')
+    end
+  end
+
+  describe 'fetch_variant', vcr: true do
+    it "fetches a variant" do
+      v = product.variant_ids.first
+      p = product.fetch_variant(v)
+      p.should be_an_instance_of(Reviewed::Variant)
     end
   end
 end

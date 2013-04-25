@@ -4,28 +4,20 @@ module Reviewed
   class Product < Base
 
     extend Forwardable
-      def_delegator :primary_variant, :manufacturer_specs
+      def_delegators :primary_variant, :manufacturer_specs, :attachments
 
-    has_many :attachments
     has_many :awards
     has_one  :brand
     has_many :variants
 
-    def attachments(tag=nil)
-      if tag.present?
-        @attributes.attachments.select do |attachment|
-          attachment_tags = attachment.tags || []
-          attachment_tags.map(&:downcase).include?(tag.downcase)
-        end
-      else
-        @attributes.attachments
+    def primary_variant
+      if primary_variant_id
+        fetch_variant(primary_variant_id)
       end
     end
 
-    def primary_variant
-      if respond_to?(:variants)
-        variants.select { |v| v.id == primary_variant_id }.first
-      end
+    def fetch_variant(id, params={})
+      Request.new(resource: Variant).find(id, params)
     end
   end
 end
