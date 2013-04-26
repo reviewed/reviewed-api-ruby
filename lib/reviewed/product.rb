@@ -4,7 +4,7 @@ module Reviewed
   class Product < Base
 
     extend Forwardable
-      def_delegators :primary_variant, :manufacturer_specs, :attachments
+      def_delegators :primary_variant, :manufacturer_specs, :attachments, :gallery
 
     has_many :awards
     has_one  :brand

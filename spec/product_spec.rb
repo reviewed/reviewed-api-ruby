@@ -48,7 +48,12 @@ describe Reviewed::Product do
 
     it "delegates :attachments" do
       product.primary_variant.should_receive(:attachments).with('hero')
-      product.send(:attachments, 'hero')
+      product.attachments('hero')
+    end
+
+    it "delegates :attachments" do
+      product.primary_variant.should_receive(:gallery)
+      product.gallery
     end
   end
 
