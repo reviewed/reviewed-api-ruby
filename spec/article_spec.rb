@@ -52,7 +52,7 @@ describe Reviewed::Article, vcr: true do
       end
 
       it 'gets gallery attachments' do
-        attachments = @article.gallery(7)
+        attachments = @article.gallery('all', 7)
         attachments.length.should == 7
       end
 

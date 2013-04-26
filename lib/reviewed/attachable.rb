@@ -5,8 +5,8 @@ module Reviewed
       (@attachments ||= {})[tag] ||= fetch_attachments tag, opts
     end
 
-    def gallery num=8, page=1
-      fetch_attachments 'gallery', :per_page => num, :page => page, :order => 'priority'
+    def gallery tags=nil, num=8, page=1
+      fetch_attachments tags, :gallery => true, :per_page => num, :page => page, :order => 'priority'
     end
 
     private
