@@ -28,6 +28,10 @@ module Reviewed
       end
     end
 
+    def to_s
+      "\#<#{self.class.name}:#{self.id}>"
+    end
+
     class << self
 
       # poor man's polymorphic_url
