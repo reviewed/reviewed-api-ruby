@@ -22,7 +22,7 @@ VCR.configure do |config|
 end
 
 
-TEST_URL = 'http://localhost:3000/api/v1'
+TEST_URL = 'https://the-guide-staging.herokuapp.com/api/v1'
 TEST_KEY = ENV['REVIEWED_API_KEY']
 
 Reviewed::Client.configure do |client|
