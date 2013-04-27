@@ -1,6 +1,6 @@
 module Reviewed
   class Client
-    attr_accessor :request_params
+    attr_accessor :request_params, :base_uri, :api_key
 
     DEFAULT_BASE_URI = "http://localhost:3000/api/v1"
 
@@ -15,16 +15,16 @@ module Reviewed
     end
 
     def initialize(opts={})
-      @base_uri = opts[:base_uri] || base_uri
-      @api_key = opts[:api_key]
+      @base_uri = opts[:base_uri] || config_base_uri
+      @api_key = opts[:api_key] || config_api_key
       @request_params = opts[:request_params] || {}
     end
 
-    def base_uri
+    def config_base_uri
       self.class.api_base_uri || DEFAULT_BASE_URI
     end
 
-    def api_key
+    def config_api_key
       self.class.api_key || ENV['REVIEWED_API_KEY']
     end
 
