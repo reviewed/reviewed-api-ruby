@@ -76,7 +76,7 @@ module Reviewed
           request.params.merge!(self.request_params)
           request.headers['X-Reviewed-Authorization'] ||= self.api_key
         end
-        raise Reviewed::ApiError.new(msg: "API connection returned redirect or error") if res.status > 204 and res.status != 404
+        raise Reviewed::ApiError.new(msg: "API connection returned redirect or error: status=#{res.status}") if res.status > 204 and res.status != 404
         res
       rescue Faraday::Error::ClientError => e
         message = <<-EOS.gsub(/^[ ]*/, '')
