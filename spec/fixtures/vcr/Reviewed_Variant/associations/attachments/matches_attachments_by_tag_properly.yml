@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja?reset-cache=true
+    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja
     body: 
       encoding: US-ASCII
       string: ""
@@ -41,9 +41,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - 72985819d4644436d79d0b7360a37dd4
+      - d547a8b854925472799e751e30fa5d47
       X-Runtime: 
-      - "0.412182"
+      - "0.014232"
       Connection: 
       - close
       Server: 
@@ -51,82 +51,7 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIABz0h1EAA8RWTY/bNhD9K4auXUfUFyURCHoMckgPrdFDi4VAipTNriwK
-        JOVgEfi/dyjJsnbXUrwBgvhgQJzHmeGbN+R88yT3iJegioaViHNMWZJhFGBU
-        pimn3oNXakGt4AW1gAtREG5RvA3yXZCTICQx+gcwXctfYKItSrYI74KEJDmJ
-        Uodp6FGA9QvVTxtVbXYHsflDNv/RDdhM3e3BdgTbVlVbexDbxtnAVNjn1u37
-        S1X2K9WCkE/O0YPn1o1H/n188I5Gtx5purp+8Ki2sqxFIbkzuoOxUDDMOAoz
-        zJMkgew45h5s+yqYkXYGFRjnPB2gcSaQ+4U9tO1YLc2hUM2chMyREGcEod8Q
-        gv+eifKSSatlKYq9powJXTiah3XdMbAUF95zwfNoiImjPmjE3MGZpg2fo1L2
-        AhXiElBHxUV9i1awaWFUpyGHTkuA+K1WvCut8W/xTHV5kCdRGAuVBDR7LlxN
-        vf4csOG5OFEtaWPHlIIs5RHOMxxgkZVZGA1sAf6KG2hdQgKt0hSmVFo2+4JR
-        I2rZQOiK1kZMCfFpYUy/0NTCBo9kH5IQDkmbp/7zm2eVpcBFjIdVjwQR7BLA
-        QGNlDZ7T8Hyh3+G/V4HXygdVB075UOs4J2G0oPw3mFH5TjabvyUXauMkvPlz
-        SKRP8SiNkaoxLi2IColZ3YlLChMFQ7TpkwtjtXoev+FstJUFkPjU+ylVXYvS
-        SqdZ59XJxAeEfwr8gQQDwQ9aVGA4WNsS369VSeuDMpa4Kr1Gn6+aWnTprxD6
-        jljLbs7n89S6TmBTHRe6d6GOKN6hhEQxCZLVOmIShwQlszpeS+j467Qj4eTW
-        9rAkm0p9KNXRhYXWdPBPn1178aKkx5bKfQNXguraqwCDKE1ZyEQcophVGOWQ
-        dxyz24lH/bWakjAgcbqQ+BvM9aJbJ2qW5Hiz3pTmqL6fpc03VN0r0xsbVxX7
-        Fu+vFOPHMlj22Ov4F7T+1Dr3HWmCr1J5Qfkr6npPtGU/QNvj+Di+usNvvo+3
-        p5d0F2ASJiTMbrXQLcy89/fDADIOLafZUn8ZjK/8wuP7e5/6x/mul3PI44vb
-        Db5qtVfFzPMv0Eyf872KGcGrehkw/krh7o+07KVvMQpT44VY1tVPRdfWivK1
-        C+79ZMIgRhu6F9MYU1zq/QNsT1vvY2GCrzI+DX9uHqvioBzmsTwPqr61ondG
-        W/YDrP8PAAD//wMAegJt8lYMAAA=
-
-    http_version: 
-  recorded_at: Mon, 06 May 2013 18:19:08 GMT
-- request: 
-    method: get
-    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja?reset-cache=true
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      X-Reviewed-Authorization: 
-      - 38e397252ec670ec441733a95204f141
-      Accept-Encoding: 
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept: 
-      - "*/*"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Access-Control-Allow-Origin: 
-      - "*"
-      Access-Control-Allow-Methods: 
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Max-Age: 
-      - "1000"
-      Access-Control-Allow-Credentials: 
-      - "true"
-      Access-Control-Allow-Headers: 
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      Cache-Control: 
-      - no-cache, no-store
-      Content-Type: 
-      - application/json; charset=utf-8
-      Vary: 
-      - Accept-Encoding
-      Content-Encoding: 
-      - gzip
-      X-Ua-Compatible: 
-      - IE=Edge
-      X-Request-Id: 
-      - a5af00241958c8055b4ba45132d96aff
-      X-Runtime: 
-      - "0.489787"
-      Connection: 
-      - close
-      Server: 
-      - thin 1.5.1 codename Straight Razor
-    body: 
-      encoding: ASCII-8BIT
-      string: !binary |
-        H4sIACL0h1EAA8RWTY/bNhD9K4auXUcU9U0g6DHIIT20Rg8tFgQpUja7sihQ
+        H4sIAIP1h1EAA8RWTY/bNhD9K4auXUcU9U0g6DHIIT20Rg8tFgQpUja7sihQ
         lINF4P/eoSTL2l1L8QYI4oMBcR5nhm/ekPPNU8IjXoxKhksZ5QnjcZagIEFF
         mgrmPXiFkcxKQZkFHEYB3qJoG+S7ICcBJhH6BzBdI15gwi2KtyjZBTGJcxKm
         DlOzowTrF2aeNrrc7A5y84eq/2MbsLVVtwfbEWxbXW7tQW5rZwMTtc+N2/eX
@@ -145,11 +70,11 @@ http_interactions:
         xfsrxfixDJY99jr+Ba0/tc59R5rgq1ReUP6Kut4TbdkP0PY4Po6v7vCb7+Pt
         6SXdBQnBMcHZrRa6hZn3/n4YQMah5TRb6i+D8ZVfeHx/71P/ON/1cg55fHG7
         wVel95rOPP8CzfQ536uYEbyqlwHjrxTu/kjLXvoWYzA1XojlXfVEu6bSTKxd
-        cO8nEwYxVrO9nMYYeqn3D7A9bb2PhQm+yvg0/Ll5rIwwHuaxPA/KvrXid0Zb
-        9gOs/w8AAP//AwD6hJYeVgwAAA==
+        cO8nEwYxVrO9nMYYeqn3D7A9bb2PhQm+yvg0/Ll5rIyzcJjH8jwoXWel4Tuj
+        LfsB1v8HAAD//wMA3IuKA1YMAAA=
 
     http_version: 
-  recorded_at: Mon, 06 May 2013 18:19:14 GMT
+  recorded_at: Mon, 06 May 2013 18:25:07 GMT
 - request: 
     method: get
     uri: http://localhost:3000/api/v1/variants/5187d3698616e8c823000002
@@ -191,9 +116,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - e5c19448f59910118a977b32a8d27726
+      - 4f8e101c946cf6cae82cf6bb7a44a05c
       X-Runtime: 
-      - "0.199350"
+      - "0.012094"
       Connection: 
       - close
       Server: 
@@ -201,16 +126,16 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIACL0h1EAA4TNUQrDIBAE0LvstwGNaIzn6FdLkUUtFRIrm7VQSu/epBfo
+        H4sIAIT1h1EAA4TNUQrDIBAE0LvstwGNaIzn6FdLkUUtFRIrm7VQSu/epBfo
         fA5vmDeUBB6MclPSdnZW2eyiG7U8MoKASBk5p4C8u1EqPUgzSHtSxpvZ6+m8
         m97SX9PokXrkcPzVviwCyhYalRXpFZ5IBeu+ZupZwIq13zByp0xhazlu4C9X
         AciM8b7myr/i8wUAAP//AwDnuw7KvgAAAA==
 
     http_version: 
-  recorded_at: Mon, 06 May 2013 18:19:14 GMT
+  recorded_at: Mon, 06 May 2013 18:25:08 GMT
 - request: 
     method: get
-    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja?skip-cache=true
+    uri: http://localhost:3000/api/v1/variants/5187d3698616e8c823000002/attachments?tags=vanity
     body: 
       encoding: US-ASCII
       string: ""
@@ -249,9 +174,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - d86be8968fcc133d9984b239c66e3867
+      - a9b991af3f1d4d235502c7c0eee1284e
       X-Runtime: 
-      - "0.366292"
+      - "0.100007"
       Connection: 
       - close
       Server: 
@@ -259,28 +184,8 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIADL0h1EAA8RWTY/bNhD9K4auXUcU9U2g6DHIIT20Rg8pFgQpUja7sihQ
-        lINF4P+eoSTL2l1L8QYo4oMBcR5nhm/ekPPNU8IjXoxKhksZ5QnjcZagIEFF
-        mgrmPXiFkcxKQZkFHEYB3qJoG+S7ICcBJhH6ApiuES8w4RbFW5TsgpjEOQlT
-        h6nZUYL1MzNPG11udge5+VPV/7EN2Nqq24PtCLatLrf2ILe1s4GJ2ufG7ftb
-        l/YrM5KQj87Rg+fWW4/8+/jgHVvTeKTuqurBY8aqopJUCWd0B+NY8oQLhLNE
-        xHEM2YlEeLDtq+StsjOoTJJcpAM0yiRyP9xDm45Xqj1QXc9JyBwJUUYQ+g0h
-        +O+ZKC6ZNEYVku4N41wa6mge1k3HwUIvvOdS5OEQMwn7oCF3B+eG1WKOSvkL
-        FE4KQB21kNUtWsFmZKs7Azl0RgHEb4wWXWFb/xbPzBQHdZK0tVBJQPNn6mrq
-        9eeADc/0xIxitR1TCrJUhEmeJUEisyLD4cAW4K+4gdYlJNCqWtoW2qh6Tzlr
-        ZaVqCF2yqpVTQmJaGNOnhlnY4JHsQ4zhkKx+6j+/eVZbBlxEybDqkSCEXRIY
-        qK2qwHOKzxf6Hf5HFXitfFB14JQPtY5ygsMF5b/BjMp3stn8o4TUGyfhzV9D
-        In2KR9W2StetSwuiQmLWdPKSwkTBEG36FLK1Rj+P33A21igKJD71fgpdVbKw
-        ymnWeXUy8QHhnwJ/IKGF4AcjSzAcrG2I71e6YNVBt5a4Kr1Gn6+aWnTprxD6
-        jljLbs7n89S6TmBTHRe6d6GOKNqhmIQRCeLVOiYkwgTFszpeS+j464wj4eTW
-        9rCk6lJ/KPTRhYXWdPCPn1x7CVqwY8PUvoYrQXfNVYBBmKYccxlhFPEyQTnk
-        HUX8duJhf62mBAckShcSf4O5XnTrRM2SHG/Wm9Ic1fd/afMNVffK9MbGVcW+
-        xfsrxfi5DJY99jr+Ba0/tc59R5rgq1ReUP6Kut4TbdkP0PY4Po6v7vCb7+Pt
-        6SXdBQnBMcHZrRa6hZn3/n4YQMah5TRb6i+D8ZVfeHz/6FP/fb7r5Rzy+OJ2
-        g69K7zWdef4FmulzvlcxI3hVLwPGXync/ZGWvfQtxmBqvBDLu+qJdk2lmVi7
-        4N5PJgxirGZ7OY0x9FLvn2B72nofCxN8lfFp+HPzWBmFeJjH8jwo+9a6l/Mf
-        +wHWvwMAAP//AwAQkuFVVgwAAA==
+        H4sIAIT1h1EAA6pWSkksSVSyio6tBQAAAP//AwCUZLJeCwAAAA==
 
     http_version: 
-  recorded_at: Mon, 06 May 2013 18:19:30 GMT
+  recorded_at: Mon, 06 May 2013 18:25:08 GMT
 recorded_with: VCR 2.3.0

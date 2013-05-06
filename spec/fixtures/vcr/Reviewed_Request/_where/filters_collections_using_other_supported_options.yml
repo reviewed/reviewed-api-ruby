@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/articles?keywords=minden
+    uri: http://localhost:3000/api/v1/articles?keywords=minden
     body: 
       encoding: US-ASCII
       string: ""
@@ -20,65 +20,60 @@ http_interactions:
       code: 200
       message: OK
     headers: 
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age: 
+      - "1000"
       Access-Control-Allow-Credentials: 
       - "true"
       Access-Control-Allow-Headers: 
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      Access-Control-Allow-Methods: 
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin: 
-      - "*"
-      Access-Control-Max-Age: 
-      - "1000"
       Cache-Control: 
       - no-cache, no-store
-      Content-Encoding: 
-      - gzip
       Content-Type: 
       - application/json; charset=utf-8
-      Date: 
-      - Mon, 06 May 2013 14:32:21 GMT
-      Status: 
-      - 200 OK
-      Strict-Transport-Security: 
-      - max-age=31536000
       Vary: 
       - Accept-Encoding
-      X-Request-Id: 
-      - 8e4a86c69e2c40c4c5e3aa4ef4e9239a
-      X-Runtime: 
-      - "0.155202"
+      Content-Encoding: 
+      - gzip
       X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Transfer-Encoding: 
-      - chunked
+      - IE=Edge
+      X-Request-Id: 
+      - 017e4265d21bd349767a0f9c48606c6e
+      X-Runtime: 
+      - "0.215725"
       Connection: 
-      - keep-alive
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        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
+        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
+        Rq1v/NN1z2nX9/HUHv8DAAD//wMAEt47ALEKAAA=
 
     http_version: 
-  recorded_at: Mon, 06 May 2013 14:32:21 GMT
+  recorded_at: Mon, 06 May 2013 18:25:07 GMT
 recorded_with: VCR 2.3.0

@@ -7,16 +7,14 @@ describe Reviewed::Product do
   end
 
   let(:client) do
-    Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+    client = Reviewed::Client.new(api_key: TEST_KEY, base_uri: TEST_URL)
+    client.request_params.merge!({ "skip-cache" => true })
+    client
   end
 
   describe 'associations' do
 
     describe 'manufacturer_specs', vcr: true do
-
-      before(:each) do
-        product = client.products.find('minden-master-ii')
-      end
 
       it 'returns attachments of the correct class' do
         product.manufacturer_specs.each do |ms|

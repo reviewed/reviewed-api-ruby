@@ -57,7 +57,6 @@ describe Reviewed::Article, vcr: true do
       end
 
       it 'assigns attachments to the correct class' do
-        
         @article.attachments(:gallery).each do |attachment|
           attachment.should be_an_instance_of(Reviewed::Attachment)
         end

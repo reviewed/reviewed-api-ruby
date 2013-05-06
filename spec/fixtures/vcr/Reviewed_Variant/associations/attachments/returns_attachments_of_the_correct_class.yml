@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products/mark-of-the-ninja
+    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja
     body: 
       encoding: US-ASCII
       string: ""
@@ -20,144 +20,172 @@ http_interactions:
       code: 200
       message: OK
     headers: 
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age: 
+      - "1000"
       Access-Control-Allow-Credentials: 
       - "true"
       Access-Control-Allow-Headers: 
       - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      Access-Control-Allow-Methods: 
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin: 
-      - "*"
-      Access-Control-Max-Age: 
-      - "1000"
       Cache-Control: 
       - no-cache, no-store
-      Content-Encoding: 
-      - gzip
       Content-Type: 
       - application/json; charset=utf-8
-      Date: 
-      - Mon, 06 May 2013 14:32:31 GMT
-      Status: 
-      - 200 OK
-      Strict-Transport-Security: 
-      - max-age=31536000
       Vary: 
       - Accept-Encoding
-      X-Request-Id: 
-      - 22972c1c2f68b22506379bba3ea3e232
-      X-Runtime: 
-      - "0.425778"
+      Content-Encoding: 
+      - gzip
       X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Transfer-Encoding: 
-      - chunked
+      - IE=Edge
+      X-Request-Id: 
+      - bd1c2c3328930c96b567acbcf282e921
+      X-Runtime: 
+      - "0.383186"
       Connection: 
-      - keep-alive
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        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
+        H4sIAIP1h1EAA8RWTY/bNhD9K4auXUcU9U0g6DHIIT20Rg8tFgQpUja7sihQ
+        lINF4P/eoSTL2l1L8QYI4oMBcR5nhm/ekPPNU8IjXoxKhksZ5QnjcZagIEFF
+        mgrmPXiFkcxKQZkFHEYB3qJoG+S7ICcBJhH6BzBdI15gwi2KtyjZBTGJcxKm
+        DlOzowTrF2aeNrrc7A5y84eq/2MbsLVVtwfbEWxbXW7tQW5rZwMTtc+N2/eX
+        Lu1XZiQhn5yjB8+ttx759/HBO7am8UjdVdWDx4xVRSWpEs7oDsax5AkXCGeJ
+        iOMYshOJ8GDbV8lbZWdQmSS5SAdolEnkfriHNh2vVHugup6TkDkSoowg9BtC
+        8N8zUVwyaYwqJN0bxrk01NE8rJuOg4VeeM+lyMMhZhL2QUPuDs4Nq8UclfIX
+        KJwUgDpqIatbtILNyFZ3BnLojAKI3xgtusK2/i2emSkO6iRpa6GSgObP1NXU
+        688BG57piRnFajumFGSpCJM8S4JEZkWGw4EtwF9xA61LSKBVtbQttFH1nnLW
+        ykrVELpkVSunhMS0MKZPDbOwwSPZhxjDIVn91H9+86y2DLiIkmHVI0EIuyQw
+        UFtVgecUny/0O/z3KvBa+aDqwCkfah3lBIcLyn+DGZXvZLP5WwmpN07Cmz+H
+        RPoUj6ptla5blxZEhcSs6eQlhYmCIdr0KWRrjX4ev+FsrFEUSHzq/RS6qmRh
+        ldOs8+pk4gPCPwX+QEILwQ9GlmA4WNsQ3690waqDbi1xVXqNPl81tejSXyH0
+        HbGW3ZzP56l1ncCmOi5070IdUbRDMQkjEsSrdUxIhAmKZ3W8ltDx1xlHwsmt
+        7WFJ1aX+UOijCwut6eCfPrv2ErRgx4apfQ1Xgu6aqwCDME055jLCKOJlgnLI
+        O4r47cTD/lpNCQ5IlC4k/gZzvejWiZolOd6sN6U5qu9nafMNVffK9MbGVcW+
+        xfsrxfixDJY99jr+Ba0/tc59R5rgq1ReUP6Kut4TbdkP0PY4Po6v7vCb7+Pt
+        6SXdBQnBMcHZrRa6hZn3/n4YQMah5TRb6i+D8ZVfeHx/71P/ON/1cg55fHG7
+        wVel95rOPP8CzfQ536uYEbyqlwHjrxTu/kjLXvoWYzA1XojlXfVEu6bSTKxd
+        cO8nEwYxVrO9nMYYeqn3D7A9bb2PhQm+yvg0/Ll5rIyzcJjH8jwoXWel4Tuj
+        LfsB1v8HAAD//wMA3IuKA1YMAAA=
 
     http_version: 
-  recorded_at: Mon, 06 May 2013 14:32:31 GMT
+  recorded_at: Mon, 06 May 2013 18:25:07 GMT
+- request: 
+    method: get
+    uri: http://localhost:3000/api/v1/variants/5187d3698616e8c823000002
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      X-Reviewed-Authorization: 
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age: 
+      - "1000"
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Type: 
+      - application/json; charset=utf-8
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
+      - IE=Edge
+      X-Request-Id: 
+      - fc23b742205a5590990807a6b7249c81
+      X-Runtime: 
+      - "0.012591"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAIP1h1EAA4TNUQrDIBAE0LvstwGNaIzn6FdLkUUtFRIrm7VQSu/epBfo
+        fA5vmDeUBB6MclPSdnZW2eyiG7U8MoKASBk5p4C8u1EqPUgzSHtSxpvZ6+m8
+        m97SX9PokXrkcPzVviwCyhYalRXpFZ5IBeu+ZupZwIq13zByp0xhazlu4C9X
+        AciM8b7myr/i8wUAAP//AwDnuw7KvgAAAA==
+
+    http_version: 
+  recorded_at: Mon, 06 May 2013 18:25:07 GMT
+- request: 
+    method: get
+    uri: http://localhost:3000/api/v1/variants/5187d3698616e8c823000002/attachments?tags=gallery
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      X-Reviewed-Authorization: 
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Max-Age: 
+      - "1000"
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Type: 
+      - application/json; charset=utf-8
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
+      X-Ua-Compatible: 
+      - IE=Edge
+      X-Request-Id: 
+      - 56c3bb62d9bb41bf4cf6f2031f558d4a
+      X-Runtime: 
+      - "0.051089"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAIP1h1EAA6pWSkksSVSyio6tBQAAAP//AwCUZLJeCwAAAA==
+
+    http_version: 
+  recorded_at: Mon, 06 May 2013 18:25:07 GMT
 recorded_with: VCR 2.3.0
