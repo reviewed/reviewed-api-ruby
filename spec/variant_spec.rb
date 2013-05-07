@@ -19,23 +19,9 @@ describe Reviewed::Variant do
 
     describe 'attachments', vcr: true do
 
-      it 'returns attachments of the correct class' do
-        product.attachments(:gallery).each do |attachment|
-          attachment.should be_an_instance_of(Reviewed::Attachment)
-        end
-      end
-
-      it 'matches attachments by tag properly' do
-        attachments = product.attachments('vanity')
-        attachments.length.should == 1
-        attachments.each do |attachment|
-          attachment.tags.join(',').should match(/vanity/i)
-        end
-      end
-
-      it 'does not have any matching attachments' do
-        attachments = product.attachments('doesnotcompute')
-        attachments.length.should == 0
+      it 'images of the propery tag type' do
+        Reviewed::Request.any_instance.should_receive(:where).with(tags: :gallery)
+        attachments = variant.attachments(:gallery, {})
       end
     end
   end

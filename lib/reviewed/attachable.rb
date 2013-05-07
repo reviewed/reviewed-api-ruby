@@ -14,6 +14,7 @@ module Reviewed
     def fetch_attachments tag, opts={}
       params = opts.merge :tags => tag
       req = Request.new :resource => Attachment, :scope => self
+
       req.where params
     end
 

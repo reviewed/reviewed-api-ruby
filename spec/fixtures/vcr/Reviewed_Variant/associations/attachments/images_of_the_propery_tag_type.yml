@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja?skip-cache=true
+    uri: http://localhost:3000/api/v1/products/mark-of-the-ninja
     body: 
       encoding: US-ASCII
       string: ""
@@ -41,9 +41,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - f2d6211d52f7cf9b4173bc451f5000a1
+      - 817ecae0788ea4edec9a4c2da38b68b0
       X-Runtime: 
-      - "0.334022"
+      - "0.751648"
       Connection: 
       - close
       Server: 
@@ -51,30 +51,30 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIAA1wiVEAA8RWwY6jOBD9lYjrdgZjwICl0R5Hc5g97EZ72FUL2dhJvE0w
-        Miaj1ij/vmUghO4GJj3SaHKIhOu5qvzqlV3fPCU86sVoz/BeRhlhPE4JCggq
-        kkQw78ErjGRWipxZwGEU4C2KtkG2CzIaYBqhfwDT1uIFJtyieIvILohpnNEw
-        cZiKnSRYvzDztNH7ze4oN3+o6j+2AVtTtgewncC21futPcpt5Wxgyu1z7fb9
-        pff2KzOS0k/O0YPn1huP/vv44J0aU3u0asvywWPGqqKUuRLO6A7GseSEC4RT
-        IuI4huwEER5s+yp5o+wEKgnJRNJDo1Qi98MdtG55qZpjrqspCakjIUopQr8h
-        BP8dE8U1k9qoQuYHwziXJnc09+um5WDJr7xnUmRhH5OEXdCQu4NzwyoxRSX8
-        BQqTAlAnLWQ5RyvYjGx0ayCH1iiA+LXRoi1s48/xzExxVGeZNxYqCWj+nLua
-        et05YMNzfmZGscoOKQVpIkKSpSQgMi1SHPZsAf6G62ldQgKtqsmbQhtVHXLO
-        GlmqCkLvWdnIMSExLgzp54ZZ2ODR9EOM4ZCseuo+v3lWWwZcRKRf9WgQwi4J
-        DFRWleA5wZcr/Q7/vQq8Vj6oOnDKh1pHGcXhgvLfYAblO9ls/lZC6o2T8ObP
-        PpEuxZNqGqWrxqUFUSExa1p5TWGkoI82fgrZWKOfh284G6tVDiQ+dX4KXZay
-        sMpp1nl1MvEB4Z8DvyehgeBHI/dgOFpbU98vdcHKo24sdVV6jb7cNLXo0l8h
-        9B2xlt1cLpexdZ3AxjoudO9CHVG0QzENIxrEq3UkNMIUxZM63kro+GuNI+Hs
-        1g6wpKq9/lDokwsLrengnz679hJ5wU41U4cKrgTd1jcBBmGScMxlhFHE9wRl
-        kHcU8fnEw+5aTSgOaJQsJP4Gc7vo1omaJDncrLPSHNT3s7T5hqp7ZTqzcVWx
-        b/H+SjF+LINlj52Of0Hrj61z35FG+CqVV5S/oq73RFv2A7Q9Do/jqzt89n2c
-        n16SXUAojilO51poDjPt/UM/gAxDy3my1F0Gwyu/8Pj+3qX+cbrr5Rzy+OJ2
-        g69SH3Q+8fwLNNPlfK9iBvCqXnqMv1K4+yMte+lajMHUeCWWt+VT3talZmLt
-        gns/mTCIsYod5DjG5Nd6/wDb49b7WBjhq4yPwx/MY1mCkOjnsTBEgessgt8Z
-        bdkPsP4/AAAA//8DAEb5KlRWDAAA
+        H4sIAMxviVEAA8RWwY6jOBD9lYjrdgZjwICl0R5Hc5g97EZ72FUL2dgk3iYY
+        GZNRa5R/3zIQQncHJj3SaHKIhOu5qvzqlV3fPCU86sWoZLiUUUYYj1OCAoKK
+        JBHMe/AKI5mVImcWcBgFeIuibZDtgowGmEboH8B0jXiBCbco3iKyC2IaZzRM
+        HKZmRwnWL8w8bXS52R3k5g9V/8c2YGurbg+2I9i2utzag9zWzgam3D43bt9f
+        urRfmZGUfnKOHjy33nr038cH79iaxqN1V1UPHjNWFZXMlXBGdzCOJSdcIJwS
+        EccxZCeI8GDbV8lbZWdQSUgmkgEapRK5H+6hTccr1R5yXc9JSB0JUUoR+g0h
+        +O+ZKC6ZNEYVMt8bxrk0uaN5WDcdB0t+4T2TIguHmCTsg4bcHZwbVos5KuEv
+        UJgUgDpqIatbtILNyFZ3BnLojAKI3xgtusK2/i2emSkO6iTz1kIlAc2fc1dT
+        rz8HbHjOT8woVtsxpSBNREiylAREpkWKw4EtwF9xA61LSKBVtXlbaKPqfc5Z
+        KytVQ+iSVa2cEhLTwph+bpiFDR5NP8QYDsnqp/7zm2e1ZcBFRIZVjwYh7JLA
+        QG1VBZ4TfL7Q7/Dfq8Br5YOqA6d8qHWUURwuKP8NZlS+k83mbyWk3jgJb/4c
+        EulTPKq2VbpuXVoQFRKzppOXFCYKhmjTp5CtNfp5/IazsUblQOJT76fQVSUL
+        q5xmnVcnEx8Q/inwBxJaCH4wsgTDwdqG+n6lC1YddGupq9Jr9PmqqUWX/gqh
+        74i17OZ8Pk+t6wQ21XGhexfqiKIdimkY0SBerSOhEaYontXxWkLHX2ccCSe3
+        toclVZf6Q6GPLiy0poN/+uzaS+QFOzZM7Wu4EnTXXAUYhEnCMZcRRhEvCcog
+        7yjitxMP+2s1oTigUbKQ+BvM9aJbJ2qW5Hiz3pTmqL6fpc03VN0r0xsbVxX7
+        Fu+vFOPHMlj22Ov4F7T+1Dr3HWmCr1J5Qfkr6npPtGU/QNvj+Di+usNvvo+3
+        p5dkFxCKY4rTWy10CzPv/f0wgIxDy2m21F8G4yu/8Pj+3qf+cb7r5Rzy+OJ2
+        g69K73U+8/wLNNPnfK9iRvCqXgaMv1K4+yMte+lbjMHUeCGWd9VT3jWVZmLt
+        gns/mTCIsZrt5TTG5Jd6/wDb09b7WJjgq4xPwx/MYxkpi2KYx8IQBX1rBe+M
+        tuwHWP8fAAD//wMArfxKR1YMAAA=
 
     http_version: 
-  recorded_at: Tue, 07 May 2013 21:20:13 GMT
+  recorded_at: Tue, 07 May 2013 21:19:08 GMT
 - request: 
     method: get
     uri: http://localhost:3000/api/v1/variants/5187d3698616e8c823000002
@@ -116,9 +116,9 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge
       X-Request-Id: 
-      - 964aa73d1d577e9cb4d9df2597df5dcd
+      - 76b9b4d30c2e9cc0ba30caaadaa35f15
       X-Runtime: 
-      - "0.013133"
+      - "0.195661"
       Connection: 
       - close
       Server: 
@@ -126,11 +126,11 @@ http_interactions:
     body: 
       encoding: ASCII-8BIT
       string: !binary |
-        H4sIAA5wiVEAA4TNUQrDIBAE0LvstwGNaIzn6FdLkUUtFRIrm7VQSu/epBfo
+        H4sIAM1viVEAA4TNUQrDIBAE0LvstwGNaIzn6FdLkUUtFRIrm7VQSu/epBfo
         fA5vmDeUBB6MclPSdnZW2eyiG7U8MoKASBk5p4C8u1EqPUgzSHtSxpvZ6+m8
         m97SX9PokXrkcPzVviwCyhYalRXpFZ5IBeu+ZupZwIq13zByp0xhazlu4C9X
         AciM8b7myr/i8wUAAP//AwDnuw7KvgAAAA==
 
     http_version: 
-  recorded_at: Tue, 07 May 2013 21:20:14 GMT
+  recorded_at: Tue, 07 May 2013 21:19:09 GMT
 recorded_with: VCR 2.3.0
