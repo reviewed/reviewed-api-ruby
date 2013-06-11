@@ -2,6 +2,7 @@ require 'active_model'
 
 module Reviewed
   class Base
+
     include ::Reviewed::Embeddable
 
     extend ::ActiveModel::Naming
