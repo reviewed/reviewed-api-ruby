@@ -15,12 +15,9 @@ module Reviewed
 
     def call(env)
       if @store.read(env[:url])
-        puts "ZOMG... I HAVE A CACHED VERSION of #{env[:url]}"
         if skip_caches?(env[:url])
-          puts "but you don't want me to USE them? :("
           @app.call(env)
         elsif nuke_caches?(env[:url])
-          puts "but you want me to NUKE them? >:("
           resp = @app.call(env)
           @store.write(env[:url], Marshal.dump(resp))
           #@store[env[:url]] = Marshal.dump(resp)
@@ -29,7 +26,6 @@ module Reviewed
           Marshal.load(@store.read(env[:url]))
         end
       else
-        puts "bawww... no cache :("
         resp = @app.call(env)
         @store.write(env[:url], Marshal.dump(resp))
         #@store[env[:url]] = Marshal.dump(resp)
