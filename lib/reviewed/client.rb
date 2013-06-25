@@ -54,11 +54,20 @@ module Reviewed
     end
 
     def method_missing(method, *args, &block)
-      Reviewed::Request.new(resource: resource(method), client: self)
+      @args = args[0] || {}
+
+      if @args["skip-cache"] && @args["skip-cache"] == true
+        Reviewed::Request.new(resource: resource(method), cache: "skip", client: self)
+      elsif @args["reset-cache"] && @args["reset-cache"] == true
+        Reviewed::Request.new(resource: resource(method), cache: "reset", client: self)
+      else
+        Reviewed::Request.new(resource: resource(method), client: self)
+      end
     end
 
     def connection
       @connection ||= ::Faraday.new(url: base_uri) do |faraday|
+        faraday.use Reviewed::Cachetacular
         faraday.response :mashify
         faraday.response :errors
         faraday.response :json
