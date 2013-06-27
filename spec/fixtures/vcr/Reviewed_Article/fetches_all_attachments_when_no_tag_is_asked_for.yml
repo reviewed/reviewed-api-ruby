@@ -134,4 +134,62 @@ http_interactions:
       string: '{"data":[{"id":"512be2bd42abf1467600021f","created_at":"2013-02-25T22:16:29Z","updated_at":"2013-02-28T06:15:49Z","name":"rfiDCI-940x110.jpg","type":"file","tags":["hero"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s50x50_rfiDCI-940x110.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s150x150_rfiDCI-940x110.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s250x250_rfiDCI-940x110.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s300x150_rfiDCI-940x110.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s300x112_rfiDCI-940x110.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s500x500_rfiDCI-940x110.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s600x400_rfiDCI-940x110.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s600x600_rfiDCI-940x110.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s940x400_rfiDCI-940x110.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s940x350_rfiDCI-940x110.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s940x110_rfiDCI-940x110.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/rfiDCI-940x110.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/rfiDCI-940x110.jpg","file_size":31286},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/512be2bd42abf1467600021f","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/512be2bd42abf1467600021f"}}}]}'
     http_version: 
   recorded_at: Thu, 27 Jun 2013 21:50:16 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50fb9a81bd0286d55504b952/attachments?tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      X-Reviewed-Authorization:
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 27 Jun 2013 23:29:13 GMT
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 7a13a1d5315b44e664f3838acbd98a1c
+      X-Runtime:
+      - '0.416380'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"512be2bd42abf1467600021f","created_at":"2013-02-25T22:16:29Z","updated_at":"2013-02-28T06:15:49Z","name":"rfiDCI-940x110.jpg","type":"file","tags":["hero"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s50x50_rfiDCI-940x110.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s150x150_rfiDCI-940x110.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s250x250_rfiDCI-940x110.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s300x150_rfiDCI-940x110.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s300x112_rfiDCI-940x110.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s500x500_rfiDCI-940x110.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s600x400_rfiDCI-940x110.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s600x600_rfiDCI-940x110.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s940x400_rfiDCI-940x110.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s940x350_rfiDCI-940x110.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/s940x110_rfiDCI-940x110.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/rfiDCI-940x110.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/492f392eab69240aede3fd2425a9c2326092c763/rfiDCI-940x110.jpg","file_size":31286},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/512be2bd42abf1467600021f","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/512be2bd42abf1467600021f"}}}]}'
+    http_version: 
+  recorded_at: Thu, 27 Jun 2013 23:29:13 GMT
 recorded_with: VCR 2.5.0
