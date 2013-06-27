@@ -15,6 +15,11 @@ describe Reviewed::Article, vcr: true do
     @article.attachments('hero')
   end
 
+  it 'fetches when an tag is not in pre-loaded set', focused: true do
+    @article.should_receive(:fetch_attachments).with({tags: 'foobar'})
+    @article.attachments('foobar')
+  end
+
   it 'returns local attachments when available' do
     @article.attachments('hero').count.should eql(1)
   end

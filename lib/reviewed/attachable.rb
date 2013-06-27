@@ -2,7 +2,7 @@ module Reviewed
   module Attachable
 
     def attachments tag=nil, opts={}
-      if ['hero', 'vanity'].include?(tag.to_s)
+      if self.class::DEFAULT_ATTACHMENTS.include?(tag.to_s)
         return attributes['attachments'].select { |x| x.tags.include?(tag.to_s) }
       else
         fetch_attachments(opts.merge!(tags: tag))

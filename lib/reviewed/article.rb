@@ -5,6 +5,7 @@ require 'reviewed/deal'
 
 module Reviewed
   class Article < Base
+    DEFAULT_ATTACHMENTS = ['hero']
 
     has_attachments
 
