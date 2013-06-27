@@ -17,6 +17,6 @@ describe Reviewed::Article, vcr: true do
 
   it 'fetches when an tag is not in pre-loaded set' do
     @article.should_receive(:fetch_attachments).with({tags: 'foobar'})
-    @article.attachments('foobar')
+    @article.attachments('foobar').should eql([])
   end
 end
