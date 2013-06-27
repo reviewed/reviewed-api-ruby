@@ -18,4 +18,14 @@ describe Reviewed::Article, vcr: true do
   it 'returns local attachments when available' do
     @article.attachments('hero').count.should eql(1)
   end
+
+  it 'fetches attachments when non-existent' do
+    @article.attributes['attachments'] = []
+    @article.attachments('hero').count.should eql(1)
+  end
+
+  it 'fetches all attachments when no tag is asked for' do
+    @article.attributes['attachments'] = []
+    @article.attachments.count > 1
+  end
 end
