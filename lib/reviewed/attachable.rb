@@ -1,6 +1,10 @@
 module Reviewed
   module Attachable
 
+    def self.included(base)
+      base.const_set(:DEFAULT_ATTACHMENTS, []) unless defined?(base::DEFAULT_ATTACHMENTS)
+    end
+
     def attachments tag=nil, opts={}
       if self.class::DEFAULT_ATTACHMENTS.include?(tag.to_s) && attributes['attachments'].is_a?(Array)
         return attributes['attachments'].select { |x| x.tags.include?(tag.to_s) }
