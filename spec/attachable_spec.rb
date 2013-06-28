@@ -19,11 +19,4 @@ describe Reviewed::Article, vcr: true do
     @article.should_receive(:fetch_attachments).with({tags: 'foobar'})
     @article.attachments('foobar').should eql([])
   end
-
-  it 'sets DEFAULT_ATTACHMENTS' do
-    class Foo
-      include Reviewed::Attachable
-    end
-    Foo::DEFAULT_ATTACHMENTS.should eql([])
-  end
 end
