@@ -14,6 +14,7 @@ require 'reviewed/embeddable'
 require 'reviewed/request'
 require 'reviewed/client'
 require 'reviewed/collection'
+require 'reviewed/cache'
 require 'reviewed/base'
 require 'reviewed/attachable'
 

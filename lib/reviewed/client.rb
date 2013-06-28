@@ -59,6 +59,7 @@ module Reviewed
 
     def connection
       @connection ||= ::Faraday.new(url: base_uri) do |faraday|
+        faraday.use Reviewed::Cache
         faraday.response :mashify
         faraday.response :errors
         faraday.response :json

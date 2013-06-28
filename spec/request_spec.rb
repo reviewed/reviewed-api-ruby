@@ -1,6 +1,9 @@
 require 'spec_helper.rb'
 
 describe Reviewed::Request do
+  before do
+    Reviewed::Cache.store.clear
+  end
 
   let(:request) do
     Reviewed::Request.new(

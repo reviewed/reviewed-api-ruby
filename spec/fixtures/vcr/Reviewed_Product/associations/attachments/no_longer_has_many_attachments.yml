@@ -95,4 +95,100 @@ http_interactions:
 
     http_version: 
   recorded_at: Sat, 27 Apr 2013 01:46:45 GMT
-recorded_with: VCR 2.3.0
+- request: 
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii?skip-cache=true
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      User-Agent: 
+      - Faraday v0.8.6
+      X-Reviewed-Authorization: 
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Credentials: 
+      - "true"
+      Access-Control-Allow-Headers: 
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
+      Access-Control-Allow-Methods: 
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1000"
+      Cache-Control: 
+      - no-cache, no-store
+      Content-Encoding: 
+      - gzip
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Fri, 28 Jun 2013 13:38:18 GMT
+      Status: 
+      - 200 OK
+      Strict-Transport-Security: 
+      - max-age=31536000
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 4b3f7d13b1dd55e45d5e9eae5401e9e9
+      X-Runtime: 
+      - "1.144044"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: ASCII-8BIT
+      string: !binary |
+        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
+        AGMA5Zg9HQAA
+
+    http_version: 
+  recorded_at: Fri, 28 Jun 2013 13:38:19 GMT
+recorded_with: VCR 2.4.0
