@@ -15,7 +15,7 @@ describe Reviewed::Article, vcr: true do
     @article.attachments('hero').first.tags.should eql(['hero'])
   end
 
-  it 'fetches when an tag is not in pre-loaded set' do
+  it 'fetches when a tag is not in pre-loaded set' do
     @article.should_receive(:fetch_attachments).with({tags: 'foobar'})
     @article.attachments('foobar').should eql([])
   end
