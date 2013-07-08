@@ -1,159 +1,132 @@
---- 
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/products/minden-master-ii
-    body: 
+    body:
       encoding: US-ASCII
-      string: ""
-    headers: 
-      X-Reviewed-Authorization: 
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      X-Reviewed-Authorization:
       - 38e397252ec670ec441733a95204f141
-      Accept-Encoding: 
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept: 
-      - "*/*"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
+      Accept:
+      - '*/*'
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Access-Control-Allow-Credentials: 
-      - "true"
-      Access-Control-Allow-Headers: 
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      Access-Control-Allow-Methods: 
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
       - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin: 
-      - "*"
-      Access-Control-Max-Age: 
-      - "1000"
-      Cache-Control: 
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
       - no-cache, no-store
-      Content-Encoding: 
-      - gzip
-      Content-Type: 
+      Content-Type:
       - application/json; charset=utf-8
-      Date: 
-      - Sat, 27 Apr 2013 01:46:49 GMT
-      Status: 
+      Date:
+      - Thu, 27 Jun 2013 15:42:51 GMT
+      Etag:
+      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      Status:
       - 200 OK
-      Strict-Transport-Security: 
+      Strict-Transport-Security:
       - max-age=31536000
-      Vary: 
+      Vary:
       - Accept-Encoding
-      X-Request-Id: 
-      - 8a17a907e6addb8e8e289a8b23a94e99
-      X-Runtime: 
-      - "0.216941"
-      X-Ua-Compatible: 
+      X-Request-Id:
+      - ca529ecde8cf84554463598a845caa0b
+      X-Runtime:
+      - '0.000803'
+      X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Transfer-Encoding: 
+      Transfer-Encoding:
       - chunked
-      Connection: 
+      Connection:
       - keep-alive
-    body: 
-      encoding: ASCII-8BIT
-      string: !binary |
-        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
-        blh6wdHy+zmjZf4XAAAA//8DAL3JtPEHHQAA
-
+    body:
+      encoding: UTF-8
+      string: '{"id":"50fa307696ab5860160c7a7e","created_at":"2012-05-15T21:12:15Z","updated_at":"2013-03-11T21:05:24Z","name":"Minden
+        Master II","slug":"minden-master-ii","_type":"Home::Grills::Gas","types":["Propane"],"msrp":479.0,"article_ids":["50fb2e7bbd0286d555013653"],"website_ids":["50e669d7bd028648e0000023"],"publish_on":"2012-05-18T19:34:00+00:00","upc":null,"price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed7cbd0286638e000272","model":"Master
+        II","resource_uri":"/products/minden-master-ii","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"websites":[{"id":"50e669d7bd028648e0000023","created_at":"2013-01-04T05:34:15Z","updated_at":"2013-01-19T06:42:05Z","name":"Grills","url":"grillsinfo.com","code":"GRI","category":null,"featured_video_id":null,"ad_campaign_group":{"id":"51377ab09f5e85f5a3000484","created_at":"2013-03-06T17:19:44Z","updated_at":"2013-03-06T17:19:44Z","website_id":"50e669d7bd028648e0000023","ad_campaigns":[],"permissions":{"read":false,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/ad_campaign_groups","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups"},"resource":{"rel":"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484"}}},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/websites","href":"https://the-guide-staging.herokuapp.com/api/v1/websites"},"resource":{"rel":"/api/v1/websites/50e669d7bd028648e0000023","href":"https://the-guide-staging.herokuapp.com/api/v1/websites/50e669d7bd028648e0000023"}}}],"manufacturer_specs":[{"id":"50fa369fbd0286ee4a03a536","name":"brand_name","value":"(Minden)","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a537","name":"manufacturer_name","value":"Minden","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a538","name":"manual_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a539","name":"manual_text","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a53a","name":"manufacturer_text","value":null,"value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a53b","name":"manufacturer_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a53c","name":"series_name","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369fbd0286ee4a03a53d","name":"Fuel","value":["LP
+        Gas"],"value_units":"","value_type":"MultiListItem","order":0,"options":["LP
+        Gas","Natural Gas","Charcoal","Electricity","Natural Gas (adaptor sold separately)","Propane
+        (adaptor sold separately)"]},{"id":"50fa369fbd0286ee4a03a53e","name":"Install
+        Type","value":"Freestanding","value_units":"","value_type":"String","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369fbd0286ee4a03a53f","name":"Finish
+        or Color","value":"Green","value_units":"","value_type":"String","order":0,"options":["Electricity"]},{"id":"50fa369fbd0286ee4a03a540","name":"Side
+        Burner","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa369fbd0286ee4a03a541","name":"Rotisserie","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa369fbd0286ee4a03a542","name":"Original
+        Price","value":479.0,"value_units":"","value_type":"Decimal","order":0,"options":[]}],"attachments":[{"id":"50fca08abd02862d77009628","created_at":"2013-01-21T01:57:30Z","updated_at":"2013-01-21T01:57:30Z","name":"Minden-360MD-vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s50x50_Minden-360MD-vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s150x150_Minden-360MD-vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s250x250_Minden-360MD-vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s300x150_Minden-360MD-vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s300x112_Minden-360MD-vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s500x500_Minden-360MD-vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x400_Minden-360MD-vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s600x600_Minden-360MD-vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x400_Minden-360MD-vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x350_Minden-360MD-vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/s940x110_Minden-360MD-vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/3b2dd14de6c1b9abfafa0df5e479b547ef7c7bbd/Minden-360MD-vanity.jpg","file_size":29538,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fca08abd02862d77009628","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fca08abd02862d77009628"}}}],"brand":{"id":"50f9ed7cbd0286638e000272","created_at":"2012-05-15T21:11:27Z","updated_at":"2012-05-15T21:11:27Z","name":"Minden","slug":"minden","url":null,"resource_uri":"/products?brand=minden","website_ids":[],"websites":[],"logo_url":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/brands","href":"https://the-guide-staging.herokuapp.com/api/v1/brands"},"resource":{"rel":"/api/v1/brands/50f9ed7cbd0286638e000272","href":"https://the-guide-staging.herokuapp.com/api/v1/brands/50f9ed7cbd0286638e000272"}}},"awards":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d7b9156bd99c3000063","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d7b9156bd99c3000063"}}}'
     http_version: 
-  recorded_at: Sat, 27 Apr 2013 01:46:49 GMT
-- request: 
+  recorded_at: Thu, 27 Jun 2013 15:42:52 GMT
+- request:
     method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/products/50fa307696ab5860160c7a7e/attachments?tags=doesnotcompute
-    body: 
+    body:
       encoding: US-ASCII
-      string: ""
-    headers: 
-      X-Reviewed-Authorization: 
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      X-Reviewed-Authorization:
       - 38e397252ec670ec441733a95204f141
-      Accept-Encoding: 
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept: 
-      - "*/*"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
+      Accept:
+      - '*/*'
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Access-Control-Allow-Credentials: 
-      - "true"
-      Access-Control-Allow-Headers: 
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization, x-skip-cache, Content-Type
-      Access-Control-Allow-Methods: 
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
       - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin: 
-      - "*"
-      Access-Control-Max-Age: 
-      - "1000"
-      Cache-Control: 
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
       - no-cache, no-store
-      Content-Encoding: 
-      - gzip
-      Content-Type: 
+      Content-Type:
       - application/json; charset=utf-8
-      Date: 
-      - Sat, 27 Apr 2013 01:46:49 GMT
-      Status: 
+      Date:
+      - Thu, 27 Jun 2013 15:42:51 GMT
+      Etag:
+      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      Status:
       - 200 OK
-      Strict-Transport-Security: 
+      Strict-Transport-Security:
       - max-age=31536000
-      Vary: 
+      Vary:
       - Accept-Encoding
-      X-Request-Id: 
-      - 025de5bb529ef0c640653b8474b61a7f
-      X-Runtime: 
-      - "0.022606"
-      X-Ua-Compatible: 
+      X-Request-Id:
+      - 00f667ae0358ab5fcf245f64d1419b8b
+      X-Runtime:
+      - '0.025699'
+      X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Transfer-Encoding: 
+      Transfer-Encoding:
       - chunked
-      Connection: 
+      Connection:
       - keep-alive
-    body: 
-      encoding: ASCII-8BIT
-      string: !binary |
-        H4sIAAkue1EAA6pWSkksSVSyio6tBQAAAP//AwCUZLJeCwAAAA==
-
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
     http_version: 
-  recorded_at: Sat, 27 Apr 2013 01:46:50 GMT
-recorded_with: VCR 2.3.0
+  recorded_at: Thu, 27 Jun 2013 15:42:52 GMT
+recorded_with: VCR 2.5.0

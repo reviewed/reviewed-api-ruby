@@ -5,7 +5,6 @@ require 'reviewed/deal'
 
 module Reviewed
   class Article < Base
-
     has_attachments
 
     has_many :pages
