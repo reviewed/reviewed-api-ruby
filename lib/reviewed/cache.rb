@@ -8,7 +8,7 @@ module Reviewed
       end
 
       def store
-        @store ||= ActiveSupport::Cache.lookup_store(:redis_store, "http://localhost:6379", {expires_in: 90.minutes})
+        @store ||= ActiveSupport::Cache.lookup_store(:redis_store, ENV["REDISCLOUD_URL"], {expires_in: 90.minutes})
       end
     end
 
