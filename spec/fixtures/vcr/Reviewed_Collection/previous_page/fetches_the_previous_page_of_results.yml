@@ -2,91 +2,221 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/products
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products?skip-cache=true
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.7
+      - Faraday v0.8.6
       X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - ! '*/*'
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        x-skip-cache, Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 27 Jun 2013 15:42:18 GMT
-      Etag:
-      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
-      Status:
-      - 200 OK
-      Strict-Transport-Security:
-      - max-age=31536000
-      Vary:
-      - Accept-Encoding
-      X-Request-Id:
-      - f8324104d6ab1c70ca2beea8bf0a0827
-      X-Runtime:
-      - '0.000519'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCB4LXNraXAtY2FjaGUsIENv
+        bnRlbnQtVHlwZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyNCBKdWwgMjAxMyAyMTowMjo1MSBHTVQ=
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        Y2Y1NjM1MGZlMzI1ZmJlNjg3OTA4ZmI4N2ViMzZlYTM=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        Mi41MjYzMzM=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
     body:
-      encoding: UTF-8
-      string: '{"pagination":{"total":17660,"total_pages":883,"first_page":true,"last_page":false,"previous_page":null,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1,"per_page":20,"entries_on_page":20},"data":[{"id":"5139fc6e095ca50e890005f3","created_at":"2013-03-08T14:57:50Z","updated_at":"2013-04-23T17:24:07Z","name":"Panasonic
-        Viera TC-L47E5","slug":"panasonic-viera-tc-l47e5-2","_type":"Electronics::Television","types":[],"msrp":799.0,"article_ids":["51389dc50ac94eacc70003f3"],"website_ids":[],"publish_on":"2013-03-08T14:04:53+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"513a0a39095ca5e0ee000560","model":"","resource_uri":"/products/panasonic-viera-tc-l47e5-2","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[{"id":"5139febd07989eb5fc0004cc","created_at":"2013-03-08T15:07:41Z","updated_at":"2013-03-08T15:07:41Z","name":"Front-Vanity.jpg","type":"file","tags":["design","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s50x50_Front-Vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s150x150_Front-Vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s250x250_Front-Vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s300x150_Front-Vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s300x112_Front-Vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s500x500_Front-Vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s600x400_Front-Vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s600x600_Front-Vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s940x400_Front-Vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s940x350_Front-Vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s940x110_Front-Vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/Front-Vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/uploads/tmp/20130308-1507-41-8884/Front-Vanity.jpg","file_size":113973},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5139febd07989eb5fc0004cc","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5139febd07989eb5fc0004cc"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e700001f","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e700001f"}}},{"id":"5138d3ec90a1bfbef20005ab","created_at":"2013-03-07T17:52:44Z","updated_at":"2013-03-08T01:46:10Z","name":"Ariston
-        TVF63X","slug":"tvf63x","_type":"Appliances::MajorAppliances::Dryer","types":[],"msrp":799.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-03-07T17:36:10+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003b0","brand_id":"51390ce25693113d8c00010c","model":"","resource_uri":"/products/tvf63x","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":2.9,"ranking":{"total":50,"rank":48,"percentile":4},"rubric":{"id":"50f9ed93bd0286638e0003b0","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"Dryers","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003b0","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003b0"}}},"attachments":[{"id":"5139011c9da86c5336000023","created_at":"2013-03-07T21:05:32Z","updated_at":"2013-03-07T21:17:18Z","name":"Ariston-TVF63X-vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s50x50_Ariston-TVF63X-vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s150x150_Ariston-TVF63X-vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s250x250_Ariston-TVF63X-vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s300x150_Ariston-TVF63X-vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s300x112_Ariston-TVF63X-vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s500x500_Ariston-TVF63X-vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s600x400_Ariston-TVF63X-vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s600x600_Ariston-TVF63X-vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s940x400_Ariston-TVF63X-vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s940x350_Ariston-TVF63X-vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s940x110_Ariston-TVF63X-vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/Ariston-TVF63X-vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/Ariston-TVF63X-vanity.jpg","file_size":74734},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5139011c9da86c5336000023","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5139011c9da86c5336000023"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000020","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000020"}}},{"id":"5138cff9de88c3180e0006a0","created_at":"2013-03-07T17:35:53Z","updated_at":"2013-03-11T21:04:39Z","name":"GTDS820EDWS","slug":"gtds820edws","_type":"Appliances::MajorAppliances::Dryer","types":[],"msrp":1099.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-03-07T17:15:50+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"5138d10d12494f43310004ae","model":"","resource_uri":"/products/gtds820edws","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000021","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000021"}}},{"id":"5138b9f4cb4ae870aa000522","created_at":"2013-03-07T16:01:56Z","updated_at":"2013-03-08T02:20:05Z","name":"Frigidaire
-        FAHE4044MW ","slug":"frigidaire-fahe4044mw","_type":"Appliances::MajorAppliances::WashingMachine","types":["Top-Loading"],"msrp":649.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-04-06T14:20:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003af","brand_id":"51394ad545ba4bfa85000100","model":"","resource_uri":"/products/frigidaire-fahe4044mw","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":50,"rank":47,"percentile":6},"rubric":{"id":"50f9ed93bd0286638e0003af","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:55:46Z","name":"Washing
-        Machines","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003af","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003af"}}},"attachments":[{"id":"513900c17a0082ebca000031","created_at":"2013-03-07T21:04:01Z","updated_at":"2013-03-10T02:33:58Z","name":"Front.jpg","type":"file","tags":["Front.jpg","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s50x50_Front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s150x150_Front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s250x250_Front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s300x150_Front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s300x112_Front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s500x500_Front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s600x400_Front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s600x600_Front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s940x400_Front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s940x350_Front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s940x110_Front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/Front.jpg"},"caption":"The
-        front of the washer","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/Front.jpg","file_size":126981},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/513900c17a0082ebca000031","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/513900c17a0082ebca000031"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000022","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000022"}}},{"id":"513639647226fa851900061f","created_at":"2013-03-05T18:28:53Z","updated_at":"2013-03-31T14:38:12Z","name":"ELEFT325","slug":"eleft325","_type":"Electronics::Television","types":[],"msrp":290.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-03-08T08:00:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"513a47f29da86c965800080b","model":"","resource_uri":"/products/eleft325","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":5.94,"ranking":{"total":262,"rank":163,"percentile":38},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000023","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000023"}}},{"id":"51362cdf9e4e47720b0004d2","created_at":"2013-03-05T17:35:27Z","updated_at":"2013-03-31T14:38:11Z","name":"Magnavox
-        32MD301B","slug":"magnavox-32md301b","_type":"Electronics::Television","types":[],"msrp":499.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-03-05T04:00:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"51377ceffcc113c3fc000490","model":"","resource_uri":"/products/magnavox-32md301b","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":4.24,"ranking":{"total":262,"rank":254,"percentile":4},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"51362fe2f15f513c230006d6","created_at":"2013-03-05T17:48:18Z","updated_at":"2013-03-10T02:30:07Z","name":"front.jpg","type":"file","tags":["vanity","design"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s50x50_front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s150x150_front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s250x250_front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s300x150_front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s300x112_front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s500x500_front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s600x400_front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s600x600_front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s940x400_front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s940x350_front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s940x110_front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/front.jpg"},"caption":"Maybe
-        it''s just us, but that red stripe below the logo is kind of ugly.","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/front.jpg","file_size":64804},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/51362fe2f15f513c230006d6","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/51362fe2f15f513c230006d6"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000024","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000024"}}},{"id":"5134bf84f7fb8dc21b000223","created_at":"2013-03-04T15:36:36Z","updated_at":"2013-03-14T14:12:53Z","name":"LG
-        WT1101CW","slug":"lg-wt1101cw","_type":"Appliances::MajorAppliances::WashingMachine","types":["Top-Loading"],"msrp":699.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-03-04T15:14:13+00:00","upc":"","price_grabber_id":"1080763319","rubric_id":"50f9ed93bd0286638e0003af","brand_id":"513a04289da86c69df000691","model":"","resource_uri":"/products/lg-wt1101cw","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":4.23,"ranking":{"total":50,"rank":42,"percentile":16},"rubric":{"id":"50f9ed93bd0286638e0003af","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:55:46Z","name":"Washing
-        Machines","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003af","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003af"}}},"attachments":[{"id":"5134be6bf83e98e0f200029b","created_at":"2013-03-04T15:31:55Z","updated_at":"2013-03-10T02:28:50Z","name":"Vanity","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s50x50_vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s150x150_vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s250x250_vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s300x150_vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s300x112_vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s500x500_vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s600x400_vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s600x600_vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s940x400_vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s940x350_vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s940x110_vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/vanity.jpg","file_size":11636},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5134be6bf83e98e0f200029b","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5134be6bf83e98e0f200029b"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000025","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000025"}}},{"id":"512cfd37ba5f4c688e000099","created_at":"2013-02-26T18:21:43Z","updated_at":"2013-03-11T21:05:28Z","name":"Nikon
-        Coolpix S31","slug":"nikon-coolpix-s31","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":119.95,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-03T13:01:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512cff109ca88f193b0001aa","model":"","resource_uri":"/products/nikon-coolpix-s31","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d589156bdb6e7000026","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d589156bdb6e7000026"}}},{"id":"512cf3e000a2d9744d000091","created_at":"2013-02-26T17:41:53Z","updated_at":"2013-03-11T21:05:06Z","name":"Nikon
-        Coolpix AW110","slug":"nikon-coolpix-aw110","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":349.95,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-01-31T12:48:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512e3e1c9c4005ed4e000024","model":"","resource_uri":"/products/nikon-coolpix-aw110","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e7000027","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e7000027"}}},{"id":"512ce285ebb3185cc600066a","created_at":"2013-02-26T16:27:49Z","updated_at":"2013-03-11T21:04:00Z","name":"Nikon
-        Coolpix S9500","slug":"nikon-coolpix-s9500","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":349.95,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-02T11:23:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512e3a3bb4ea102fca00002c","model":"","resource_uri":"/products/nikon-coolpix-s9500","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e7000028","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e7000028"}}},{"id":"512cd7548087b2a042000821","created_at":"2013-02-26T15:40:04Z","updated_at":"2013-03-11T21:04:15Z","name":"Fujifilm
-        F900EXR","slug":"fujifilm-f900exr","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-01T10:26:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512ce232184a8a15e800019b","model":"","resource_uri":"/products/fujifilm-f900exr","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e7000029","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e7000029"}}},{"id":"512be11481470fe1c10001a6","created_at":"2013-02-25T22:09:24Z","updated_at":"2013-03-11T21:05:26Z","name":"Canon
-        PowerShot ELPH 115 IS","slug":"canon-powershot-elph-115-is","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":169.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-05T17:43:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512be189a8758504860001e9","model":"","resource_uri":"/products/canon-powershot-elph-115-is","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e700002a","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e700002a"}}},{"id":"512bc7f34b8e6d1129000109","created_at":"2013-02-25T20:22:11Z","updated_at":"2013-03-11T21:03:58Z","name":"Canon
-        PowerShot 330 HS","slug":"powershot-330-hs","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-01T13:55:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512bcc738f5db50843000114","model":"","resource_uri":"/products/powershot-330-hs","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e700002b","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e700002b"}}},{"id":"51278bac6143ac867900023c","created_at":"2013-02-22T15:15:56Z","updated_at":"2013-03-31T14:38:13Z","name":"Hisense
-        55XT710","slug":"hisense-55xt710","_type":"Electronics::Television","types":[],"msrp":1099.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-02-19T09:09:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"5139d7a59da86c69df000506","model":"","resource_uri":"/products/hisense-55xt710","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":5.69,"ranking":{"total":262,"rank":200,"percentile":24},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"512f6e1375dec71baf0003ec","created_at":"2013-02-28T14:47:47Z","updated_at":"2013-03-07T21:38:33Z","name":"Front.jpg","type":"file","tags":["design","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s50x50_Front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s150x150_Front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s250x250_Front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s300x150_Front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s300x112_Front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s500x500_Front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s600x400_Front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s600x600_Front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s940x400_Front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s940x350_Front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s940x110_Front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/Front.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/Front.jpg","file_size":52258},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/512f6e1375dec71baf0003ec","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/512f6e1375dec71baf0003ec"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e700002c","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e700002c"}}},{"id":"5124f2fad7ee352066000492","created_at":"2013-02-20T15:59:54Z","updated_at":"2013-03-31T14:38:13Z","name":"Sceptre
-        E325BV-HDH","slug":"sceptre-e325bv-hdh","_type":"Electronics::Television","types":[],"msrp":599.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-02-20T15:17:23+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"5138f58e1eb889ace70006ec","model":"","resource_uri":"/products/sceptre-e325bv-hdh","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":6.53,"ranking":{"total":262,"rank":68,"percentile":75},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"5124f32449a663e0a4000078","created_at":"2013-02-20T16:00:36Z","updated_at":"2013-02-28T04:50:10Z","name":"Vanity","type":"file","tags":["design","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s50x50_Sceptre-vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s150x150_Sceptre-vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s250x250_Sceptre-vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s300x150_Sceptre-vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s300x112_Sceptre-vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s500x500_Sceptre-vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s600x400_Sceptre-vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s600x600_Sceptre-vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s940x400_Sceptre-vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s940x350_Sceptre-vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s940x110_Sceptre-vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/Sceptre-vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/Sceptre-vanity.jpg","file_size":102514},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5124f32449a663e0a4000078","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5124f32449a663e0a4000078"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e700002d","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e700002d"}}},{"id":"5123ba2a6c477e686e000811","created_at":"2013-02-19T17:45:14Z","updated_at":"2013-03-31T14:38:13Z","name":"LG
-        47LM8600","slug":"lg-47lm8600","_type":"Electronics::Television","types":[],"msrp":2299.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-02-15T12:59:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"5138f6a4e2289ec912000723","model":"","resource_uri":"/products/lg-47lm8600","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":6.1,"ranking":{"total":262,"rank":130,"percentile":51},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"5124dd0bd7ee35a84e00049d","created_at":"2013-02-20T14:26:19Z","updated_at":"2013-02-28T04:50:05Z","name":"Vanity","type":"file","tags":["vanity","design"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s50x50_Front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s150x150_Front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s250x250_Front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s300x150_Front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s300x112_Front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s500x500_Front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s600x400_Front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s600x600_Front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s940x400_Front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s940x350_Front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s940x110_Front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/Front.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/Front.jpg","file_size":41661},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5124dd0bd7ee35a84e00049d","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5124dd0bd7ee35a84e00049d"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e700002e","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e700002e"}}},{"id":"511e5a198021d5fed7000425","created_at":"2013-02-15T15:54:01Z","updated_at":"2013-03-11T21:03:59Z","name":"Nikon
-        1 V2","slug":"nikon-1-v2-2","_type":"Electronics::Cameras::DSLR","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-15T15:50:06+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"511e8fe3a82eb136f1000028","model":"","resource_uri":"/products/nikon-1-v2-2","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d599156bdb6e700002f","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d599156bdb6e700002f"}}},{"id":"51101841be0d9f1d3c000045","created_at":"2013-02-04T20:21:21Z","updated_at":"2013-03-11T21:04:00Z","name":"Fujifilm
-        X-E1","slug":"fujifilm-x-e1-3","_type":"Electronics::Cameras::DSLR","types":[],"msrp":999.95,"article_ids":[],"website_ids":[],"publish_on":"2013-02-04T20:16:10+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"51101841be0d9f1d3c000047","model":"","resource_uri":"/products/fujifilm-x-e1-3","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5a9156bdb6e7000030","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5a9156bdb6e7000030"}}},{"id":"510019f7a0a353b1fc000076","created_at":"2013-01-23T17:12:23Z","updated_at":"2013-03-11T21:06:04Z","name":"Dell
-        UltraSharp U2713HM","slug":"dell-ultrasharp-u2713hm","_type":"Electronics::ComputerMonitor","types":[],"msrp":799.0,"article_ids":[],"website_ids":["50e669d7bd028648e0000029"],"publish_on":"2013-01-31T12:05:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"51001f564ffb7443bf000015","model":"","resource_uri":"/products/dell-ultrasharp-u2713hm","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5a9156bdb6e7000031","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5a9156bdb6e7000031"}}},{"id":"50fa347b96ab5860160c8e5e","created_at":"2013-01-14T18:13:17Z","updated_at":"2013-01-21T07:43:59Z","name":"Dacor
-        DDW24S","slug":"dacor-ddw24s","_type":"Appliances::MajorAppliances::Dishwasher","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e0000021"],"publish_on":"2013-01-14T18:13:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"DDW24S","resource_uri":"/products/dacor-ddw24s","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5a9156bdb6e7000032","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5a9156bdb6e7000032"}}}]}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAPtA8FEAA+yd74/bNpqA/xXDHw53uCjDn6Lkb71sFwtcuxdsAtyii8OA
+        kqjEzYxt2J40adH//ShL8tgWab4UZXUaqECRxJSlx6RI8338ivxtvpEfliu5
+        X65X88Vv8/16Lx/mCywSwV/V/7rXR6jdfJGk7NW8XG53+8Mr88V++6RezR/k
+        8YVSPuz0K5ut+rxcP+2aV1dPDw+v5iv1pT2MvJqvn/b36/I+Wz+tit3xjeuy
+        3Kn9fIFezfOn7Vat2ndgfVK1bd+ui3XRdql29+vV8cXfX80LuZfzxb9+my+L
+        +WLOUSkJS0Uay4wnMcIxyjkWYq7PvlVyr4p7qS82JwijCCURwe+xWGCyoMlP
+        +pinTXF2DI0Qr45BeIHSBUPVMSv5qK89/9vb2duP6/169yi3+9mPjFXX2D08
+        fdBlHzfR5lgWPdZl9/uvm+qN3z+ofL9dr5b5brF4o0+2lfovb9fL1f67VfHu
+        43q910dXB+tK+tf/vZo/7rab+SJNX6fpq7k+4TJ/UPfLoin9RWW75b59QVeA
+        iuO0EFmBSBKzRKHDf8VcH7p5yh6Wu4/3VavXNYBJhPl7RHTbLxD/T4QWCB2q
+        IddHzKtWXebq/sNWZpluikMNM8ooxyjRpdunTJcfXq7bO9vKVXHfNkSqiris
+        OWJag+SpftvjulD6dpt3q2+rduunrb7i03apD7jbbNfFU77f3RkrVG7zj8vP
+        6n63122mD8++3letp0uWu/tdvt4uVx/uM7lTD8vV843avKtob+X6Q1TdoGnY
+        +eG+e1zudrp77KoCfeMcD6/vouPZ6hvm+M9C7XTTfm3+re9OuVne68t/Opwn
+        Xz9Ubd/0uu2hEu70EXef8V2NsdMX/7hVZXUP7feb3eLubv9RRR+eloWK9OfU
+        vfbD649qu/70JDeb1/n68fL9vz/X4g0v8nv10fZ7mX981L1yd9b/8pgLXjd7
+        ypREiMo0MfQ/3bdwRNB7gheMLwi39L/OMcf+Fz3fQFF1A0VYXytGr3/efGg6
+        kD6sXD5Ud4T+VIfu8VmulvuvVWf4rLbHBt5x9IWjpj50dVRjmfpFFcfa2NHX
+        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
+        lPcoAQA=
     http_version: 
-  recorded_at: Thu, 27 Jun 2013 15:42:19 GMT
+  recorded_at: Wed, 24 Jul 2013 21:02:51 GMT
 - request:
     method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/products?page=2
@@ -95,82 +225,227 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.7
+      - Faraday v0.8.6
       X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - ! '*/*'
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
-        x-skip-cache, Content-Type
-      Access-Control-Allow-Methods:
-      - OPTIONS, GET, POST, PUT, DELETE
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '1000'
-      Cache-Control:
-      - no-cache, no-store
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 27 Jun 2013 15:42:21 GMT
-      Etag:
-      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
-      Status:
-      - 200 OK
-      Strict-Transport-Security:
-      - max-age=31536000
-      Vary:
-      - Accept-Encoding
-      X-Request-Id:
-      - 1677317d06d66f9da865017162d409b4
-      X-Runtime:
-      - '0.019178'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        dHJ1ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        eC1wYWdpbmF0aW9uLCB4LXJlcXVlc3RlZC13aXRoLCB4LXJlcXVlc3RlZC1i
+        eSwgeC1yZXZpZXdlZC1hdXRob3JpemF0aW9uLCB4LXNraXAtY2FjaGUsIENv
+        bnRlbnQtVHlwZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        T1BUSU9OUywgR0VULCBQT1NULCBQVVQsIERFTEVURQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTAwMA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3Jl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyNCBKdWwgMjAxMyAyMTowMjo1MiBHTVQ=
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0zMTUzNjAwMA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ODM3ODIyMTA5NjgxYmY4Mzc5ZTdhZjcyYTc0NGQ1ZDg=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4yMTY1MDc=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
     body:
-      encoding: UTF-8
-      string: '{"pagination":{"total":17660,"total_pages":883,"first_page":false,"last_page":false,"previous_page":1,"next_page":3,"out_of_bounds":false,"offset":20,"current_page":2,"per_page":20,"entries_on_page":20},"data":[{"id":"50fa347b96ab5860160c8e5d","created_at":"2013-01-14T18:05:45Z","updated_at":"2013-01-21T07:43:43Z","name":"Dacor
-        DR30D","slug":"dacor-dr30d","_type":"Appliances::MajorAppliances::Oven","types":["Gas","Electric","Dual-Fuel"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-14T18:05:00+00:00","upc":null,"price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"DR30D","resource_uri":"/products/dacor-dr30d","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5bf82dc772ea000041","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5bf82dc772ea000041"}}},{"id":"50fa347b96ab5860160c8e5c","created_at":"2013-01-14T18:05:41Z","updated_at":"2013-01-21T17:34:01Z","name":"Dacor
-        DR30DI","slug":"dacor-dr30di","_type":"Appliances::MajorAppliances::Oven","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-14T18:05:00+00:00","upc":null,"price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"DR30DI","resource_uri":"/products/dacor-dr30di","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5bf82dc772ea000042","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5bf82dc772ea000042"}}},{"id":"50fa347b96ab5860160c8e5b","created_at":"2013-01-14T18:00:09Z","updated_at":"2013-01-21T07:43:28Z","name":"Dacor
-        EF36IWF","slug":"dacor-ef36iwf","_type":"Appliances::MajorAppliances::Refrigerator","types":["French
-        Door","French Door"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e0000019"],"publish_on":"2013-01-14T18:00:00+00:00","upc":null,"price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"EF36IWF","resource_uri":"/products/dacor-ef36iwf","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5bf82dc772ea000043","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5bf82dc772ea000043"}}},{"id":"50fa347b96ab5860160c8e5a","created_at":"2013-01-14T17:51:01Z","updated_at":"2013-02-27T18:17:12Z","name":"Dacor
-        IF36BNNFSF","slug":"dacor-if36bnnfsf","_type":"Appliances::MajorAppliances::Refrigerator","types":["French
-        Door"],"msrp":2999.0,"article_ids":[],"website_ids":["50e669d7bd028648e0000019"],"publish_on":"2013-01-14T17:50:00+00:00","upc":null,"price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"IF36BNNFSF","resource_uri":"/products/dacor-if36bnnfsf","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[{"id":"50fcf4f0bd028662a701385c","created_at":"2013-01-21T07:57:36Z","updated_at":"2013-01-21T07:57:36Z","name":"Dacor-EF36BNNFSS-front.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s50x50_Dacor-EF36BNNFSS-front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s150x150_Dacor-EF36BNNFSS-front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s250x250_Dacor-EF36BNNFSS-front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s300x150_Dacor-EF36BNNFSS-front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s300x112_Dacor-EF36BNNFSS-front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s500x500_Dacor-EF36BNNFSS-front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s600x400_Dacor-EF36BNNFSS-front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s600x600_Dacor-EF36BNNFSS-front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s940x400_Dacor-EF36BNNFSS-front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s940x350_Dacor-EF36BNNFSS-front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/s940x110_Dacor-EF36BNNFSS-front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/Dacor-EF36BNNFSS-front.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/553a3264d0a2d9e82735a9ad9a8171fe8b2279bc/Dacor-EF36BNNFSS-front.jpg","file_size":13867,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fcf4f0bd028662a701385c","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fcf4f0bd028662a701385c"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5bf82dc772ea000044","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5bf82dc772ea000044"}}},{"id":"50fa347a96ab5860160c8e59","created_at":"2013-01-14T17:46:33Z","updated_at":"2013-01-21T07:43:28Z","name":"Dacor
-        EF36BNNFSS ","slug":"dacor-ef36bnnfss","_type":"Appliances::MajorAppliances::Refrigerator","types":["French
-        Door","French Door"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e0000019"],"publish_on":"2013-01-14T17:46:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"EF36BNNFSS","resource_uri":"/products/dacor-ef36bnnfss","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5bf82dc772ea000045","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5bf82dc772ea000045"}}},{"id":"50fa347a96ab5860160c8e58","created_at":"2013-01-14T17:31:36Z","updated_at":"2013-01-21T07:43:27Z","name":"Dacor
-        RDW24I ","slug":"dacor-rdw24i","_type":"Appliances::MajorAppliances::Dishwasher","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e0000021"],"publish_on":"2013-01-14T17:31:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"RDW24I","resource_uri":"/products/dacor-rdw24i","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea000046","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea000046"}}},{"id":"50fa347a96ab5860160c8e57","created_at":"2013-01-14T17:31:02Z","updated_at":"2013-01-21T07:43:23Z","name":"Dacor
-        RDW24S","slug":"dacor-rdw24s","_type":"Appliances::MajorAppliances::Dishwasher","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e0000021"],"publish_on":"2013-01-14T17:31:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"RDW24S","resource_uri":"/products/dacor-rdw24s","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea000047","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea000047"}}},{"id":"50fa347a96ab5860160c8e56","created_at":"2013-01-11T23:32:19Z","updated_at":"2013-03-11T21:05:10Z","name":"Moneual
-        TV700 OS","slug":"moneual-tv700-os","_type":"Electronics::Television","types":["LED"],"msrp":null,"article_ids":["50fc385fbd0286d5550ab62d"],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T23:32:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed7fbd0286638e0002f2","model":"TV700
-        OS","resource_uri":"/products/moneual-tv700-os","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea000048","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea000048"}}},{"id":"50fa347a96ab5860160c8e55","created_at":"2013-01-11T23:11:06Z","updated_at":"2013-01-21T07:43:21Z","name":"Dacor
-        MRES30S ","slug":"dacor-mres30s","_type":"Appliances::MajorAppliances::Oven","types":["Electric"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-11T23:10:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"MRES30S","resource_uri":"/products/dacor-mres30s","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea000049","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea000049"}}},{"id":"50fa347a96ab5860160c8e54","created_at":"2013-01-11T23:10:26Z","updated_at":"2013-01-21T07:43:09Z","name":"Dacor
-        ER30GI ","slug":"dacor-er30gi","_type":"Appliances::MajorAppliances::Oven","types":["Gas"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-11T23:10:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"ER30GI","resource_uri":"/products/dacor-er30gi","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea00004a","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea00004a"}}},{"id":"50fa347996ab5860160c8e53","created_at":"2013-01-11T23:10:22Z","updated_at":"2013-01-21T07:43:04Z","name":"Dacor
-        ER36GI","slug":"dacor-er36gi","_type":"Appliances::MajorAppliances::Oven","types":["Gas"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-11T23:10:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"ER36GI","resource_uri":"/products/dacor-er36gi","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea00004b","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea00004b"}}},{"id":"50fa347996ab5860160c8e52","created_at":"2013-01-11T23:10:17Z","updated_at":"2013-01-21T07:43:00Z","name":"Dacor
-        ER30G","slug":"dacor-er30g","_type":"Appliances::MajorAppliances::Oven","types":["Gas"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-11T23:10:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"ER30G","resource_uri":"/products/dacor-er30g","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea00004c","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea00004c"}}},{"id":"50fa347996ab5860160c8e51","created_at":"2013-01-11T23:10:15Z","updated_at":"2013-01-21T07:42:48Z","name":"Dacor
-        ER36G","slug":"dacor-er36g","_type":"Appliances::MajorAppliances::Oven","types":["Gas"],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000002b"],"publish_on":"2013-01-11T23:10:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"ER36G","resource_uri":"/products/dacor-er36g","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea00004d","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea00004d"}}},{"id":"50fa347996ab5860160c8e50","created_at":"2013-01-11T20:10:10Z","updated_at":"2013-01-21T07:42:28Z","name":"VIZIO
-        E500d","slug":"vizio-e500d","_type":"Electronics::Television","types":["LED","3D"],"msrp":729.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:10:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E500d","resource_uri":"/products/vizio-e500d","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea00004e","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea00004e"}}},{"id":"50fa347996ab5860160c8e4f","created_at":"2013-01-11T20:09:10Z","updated_at":"2013-01-21T07:42:24Z","name":"VIZIO
-        E420d","slug":"vizio-e420d","_type":"Electronics::Television","types":["LED","3D"],"msrp":529.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:09:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E420d","resource_uri":"/products/vizio-e420d","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5cf82dc772ea00004f","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5cf82dc772ea00004f"}}},{"id":"50fa347996ab5860160c8e4e","created_at":"2013-01-11T20:08:34Z","updated_at":"2013-01-21T07:42:22Z","name":"VIZIO
-        E650i","slug":"vizio-e650i","_type":"Electronics::Television","types":["LED"],"msrp":1299.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:08:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E650i","resource_uri":"/products/vizio-e650i","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5df82dc772ea000050","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5df82dc772ea000050"}}},{"id":"50fa347896ab5860160c8e4d","created_at":"2013-01-11T20:08:06Z","updated_at":"2013-01-21T07:42:21Z","name":"VIZIO
-        E500i","slug":"vizio-e500i","_type":"Electronics::Television","types":["LCD"],"msrp":699.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:08:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E500i","resource_uri":"/products/vizio-e500i","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5df82dc772ea000051","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5df82dc772ea000051"}}},{"id":"50fa347896ab5860160c8e4c","created_at":"2013-01-11T20:07:42Z","updated_at":"2013-01-21T07:42:04Z","name":"VIZIO
-        E470i","slug":"vizio-e470i","_type":"Electronics::Television","types":["LED"],"msrp":599.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:07:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E470i","resource_uri":"/products/vizio-e470i","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5df82dc772ea000052","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5df82dc772ea000052"}}},{"id":"50fa347896ab5860160c8e4b","created_at":"2013-01-11T20:07:12Z","updated_at":"2013-01-21T07:42:02Z","name":"VIZIO
-        E420i","slug":"vizio-e420i","_type":"Electronics::Television","types":["LED"],"msrp":499.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:07:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E420i","resource_uri":"/products/vizio-e420i","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5df82dc772ea000053","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5df82dc772ea000053"}}},{"id":"50fa347896ab5860160c8e4a","created_at":"2013-01-11T20:06:45Z","updated_at":"2013-01-21T07:41:41Z","name":"VIZIO
-        E390i","slug":"vizio-e390i","_type":"Electronics::Television","types":[],"msrp":399.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-01-11T20:06:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed75bd0286638e00018b","model":"E390i","resource_uri":"/products/vizio-e390i","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5df82dc772ea000054","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5df82dc772ea000054"}}}]}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAPxA8FEAA+ydWY/jNrqG/4rhi8EMTivFRaQk32XpwRnM1pgOgiDBQUFr
+        t5Mq27BcnU6C/PdDbS5LIs2P+mx3TUO5mOkqqeTHlEjpfcTl9+UufrfexIf1
+        drNc/b48bA/xw3JFgzAQr5qf7tUeeblchZH/alms9+Wh/s1yVcQPZf5q+RAP
+        f7Pb5x/W26ey/S19tdzkH7t9+Kvl9ulwvy3uk+3TJiuPf7UtijI/LFeMvFqm
+        T/t9vun+hKlD5vvuB7VZbdqv8/J+uzn+8o9Xyyw+xMvVj78v19lytRSkiJkf
+        k0jGiQgloZKkgobpUh19n8eHPLuP1actGaHEI6HH6Lc0WFF/5csf1D5Pu6y3
+        D/eIqPYhdEWilc+qfTbxo/rs5ddxud4uXn9cP6wfF6+/936gRBC1uXx4eqc2
+        p9VmL683q//zfms33x9+3VV//vohTw/77WadlqvV1+qQ+1j94812vTl8ucne
+        vt9uD2rvamdVVj/+36vlY7nfLVebp4eHV8t4f1inD/n9uirIH6svnUge0CQj
+        LJSZEIJwGhfZUv3ZL3lSrg8nu+ZSRlnQ7OqHOan/q3fdPSUP6/L9fXVNNAVE
+        mUfFt4SpK2NFxP8QsiKkLqW0+gbf11/5q79/89WyOvvrNL9/t4+TRJ20+lxw
+        ztQpCCO1df+UqO333SmK8iziDYLkNQOPmdot2ceb7HQvWfT2IqlUez1us/yh
+        AhiV/T4vt097xfG0X6sd7nb7bfaUHso709mI9+n79Yf8vjyo067+Ivn1vroA
+        1JZ1eV+m2/168+4+icv8Yb15vtLbv1KYh/1T3n27qiLZvuDwGlTXF/Vo9K0q
+        WT9aMW64Bkf7tNcgIyRYqCJbqH+Ei/riWfxpUV88i/+o2r15Vy7+vK//4ZW7
+        PC0X7/bbp91flnXVelyXqlQ2ZQWuuI5fp4E8ftuG5/hjlpfquv21/VlVwHi3
+        vlfF83N9nHT7UF3Ybbuyr8/Tndrj7gO9a4qpVB/+fp8XasP7w2FXru7uDu9z
+        793TOss9dR5Uu/Tui/f5fvvzU7zbfZFuH4d//8fziTZ+yN2Zk4D6dPOB//ij
+        KozDIU7fP6qmquw1ShkRNG7+hCSUE6paKd90QVQNTrQicsV94wUx2Oe0UfKa
+        iuF1FcOjhEY8/OKn3bu2SVF7FuuH6jJX37huFz7Em/Xh16oV+JDvj1dFKchH
+        VU+aslJFVbXw+S95diypkn8RP8a/bTfxL2VTWMfvfycyJvLcj+IsyJNUJESo
+        lomwVAqfS+6LuOBBzHh613zKPYC9pGpXegOi9nNATKrufQzE1ZGaj4ERKXp2
+        g1JqPwfExMltzlz7OXAmym7DRBmISZCqMtyiztWfA2KSal//Bkzt54CZ5I2Y
+        JJSJq/rAr98UtJ8DYor825y79nPATPwGbUH7OWAmSm/DpD4HwqSePquQ9nBt
+        JiuKeq5J413zUNcGkIfD/UGlu+7nJoT9vnza62jbx3D19zcCflU/3tyX69+q
+        IMolkeobbDeHKly2zz/rRxUh737a5fXX221VSKq/H6mizDbN1aPx5l339T7B
+        w/Lpg+TUR9bTY5x9aD7Z8e7Mwyqawnxw9fCsnj2Tp4ef7592D9s4a1PvhUpe
+        hcZ4o074Mcvdd9Fwwqk5/unUEjke4OxJOYZXQQvik0LEJIuiMEvSos7sAv35
+        5iNXWea8UcmsRkWY0uzRqIgVC0/Cy1+fflqrevu4WPxVnaE364+LtwE5USpF
+        u90r1Obd+qNXNpunKZXl64+qPcjybPHDdvu4PGtYrupRDPLED0LBItaXJw3c
+        SJMEspdGaXKqSdpCNLoRU7Fe2o20Z/nzdw/4DzlnEtTtMGzbz5xHeeUezGqJ
+        kW8ZXfnCrDdH+5xURq+th151CXnNDTa6tUZQVSySSZ7HjCZhQLKCkizJKQ/C
+        NAt8PytyXz0lhKLTCDZwpEOA43QOwQqEEghwnlYg2HFQ9sCBp7UHViCcOoAD
+        deoABjTZGzgCUWYHwkkDlxrWSAMrEM4YwIE6YwACmq4L3IAkCAjlChyAWldg
+        BcKJAjhQJwpAQNMtgRsQh1R7nCJwA6oUgQ0I6QfAQOc5biQHLkTbMwOSMzaL
+        AQcxYHr2vIgY0B98FgNWMSAH8V1eTAyMjzwWA3QgBnK7GAgdu1q8jR/Lp827
+        xdvwtIdF2fzWK8OrdqwIcz886Vjh8zgNr9ux4kxvioDBhMCw30QSngqB8Hxn
+        iUHBzh7ghXqAJGp7/Ijq1kd85pNzHkBdbHTForMe4GSfft3zqoumvpH65NYG
+        IFQPQ5IEBc/jOOckSEI/CCPBaSbTPMrSOA2CPGO8MwBmZGT2h4N02f8MCir1
+        w0na1H8OBJX3HUjavH8GBZf04Shd0rehTM74jigq459BwaV7l9rTpPszKLhc
+        D0fpcr0FZXqid0ORFhRUlndAabP8GRRcioejdCnegjI9v7uh8POVGZfc3VCq
+        5G5GQWZ2MIqJ4EZpHc3Zy+ki8sM5pzvldP2z4YVyuu7gc053zunB1XJ6AMjp
+        hSWnixWZmtP/9V2w+Pebt+OovvkQeNtdecW0rtoPcZrWpaD+p0jrzA8i1ZxJ
+        fFp/LkxrYH8u3jmzv9DMLvK8OddRKDJCeMLPZna68oMVs7677/YZZHZ16Xjq
+        0mnuq+zWsT1ieai+nl/wjMkwFLm6caialidMcuoLnmepargKOYztWmpkcoez
+        DJO7ngYV3uEwg/BuYEHldweYQX7X0+AiPJxmGOHP0ExO8Y40JyleT4ML8i71
+        qR/k9TS4LA+nGWZ5M830OO9GI+00qETvQDNI9HoaXKiH0wxDvZlmeq53o+HW
+        Go6L9m40p9FeS4NM92CaMxA3CviXQO2/iycimjO+27t47bPkpd7Faw4+Z3zn
+        jB9eLeOH9owf6bJFP+NT0whjU8b/3zeLN++3h+3bR5W+F//0efAc89/vvF21
+        ray2eY/Ntisk/U/x9l34fhTUBeqe59PoJM+PS8+Y67XlOUf7lxrtw7bFZHHe
+        9F7i1m75gti75Tf7HKuf93wBedUF1NxR+c3TfSojGWZBzlOSZDIimQj9nPhJ
+        wqM0kep2ztNcBqxL9zZwbMAH43QB3wqEy/hgnjbj23FwMR/O08Z8KxAy6YOB
+        uqQPA5oe9t2AVNi3AiHzvkMNa/K+FQgZ+cFAXeQHASFSvxOQBAHhgj8cqA3+
+        ViBk9gcDddkfBISI/05AHFLtkQbACagyADYgrASAAp3nuJUHuAxt/3W/oP6s
+        Ahy75euePS/WLX988FkFOKuA6GoqIAKoAGpXAaauwY0KICsRtvsMXvf/I+Tf
+        jt/1P4T88NnEf/xr/LaQrO/w22KbU/6LTfntWaZCpnVjaJ7G75jgKSDlU80L
+        /OqiaW6T/q3zfSYCRkkSSBbmoYJlhU9VHRMkjjLqqwJgNIvSnAzf3o+Rkcke
+        DjJ8da9BQWV6OMngvb0OBJXmHUgGL+01KLgcD0cZvrE3oUxO8I4oJ6/rNSi4
+        7O5Se/rv6jUouNQORxm+qDegTM/rbijSgoJK6g4og1f0GhRcRoejDN/PG1Cm
+        p3M3FH6+MuNyuRvK6Zv5MQoykYNRTAQ3yuJozl4K9znncwp3TOG6Z8OLpfDx
+        wecU7pzC46ul8FiTwtkghesm6uqncCYmdrpXlVkzOP6h+e3nkcIlZURGcrCg
+        wMQ0DhoC3xbfnMZfahqPSHOW4zQQdaMo7GmcAdK4poZVt8t2jJq4dRqnRIZh
+        FIRhmMSCRIL6sUzSKI1zkTCfhgkLYs7SQJPGB8jINA4H0aTxIQoqjcNJxml8
+        BIJK4w4k4zQ+RMGlcTiKJo1rUSancUeUfhofouDSuEvtGaXxIQoujcNRNGlc
+        hzI9jbuhSAsKKo07oIzT+BAFl8bhKJo0rkOZnsbdUPj5yoxL424ogzQ+QEGm
+        cTCKieBGaRzN2X8nLsN5DnvHNK59NrxUGtccfE7j1jQeDDJzcrE0Pj6yPY3r
+        +uf20zg3vbkDTFU3DuNl/cvPJIsTHrFouLjfxOnoIFG8Kbw5ib/YJM7aa40U
+        9YJ4sbQn8TPL2/X3GU9G19wp5a2DOE/zkOdBkEl1EZNMUllkfuSHIot46odM
+        hFkm/CzUzEXXJ0bmcDiHZiq6AQkqhsNBxjPRDTlQKdwBZDwR3YAEF8LhJJp5
+        6HQkkzO4I0l/GroBCS6Cu9Sb0Sx0AxJcAoeTaCah05BMD+BuJPI8CSp/O5CM
+        p6AbkODiN5xEMwOdhmR6+nYj4WdrMS58u5EM5p/rkyCzN5jEAHCj6I3F7L8H
+        V6liTt6OyVv3LHix5D0++Jy8nZN3erXknQKSt67P7CB5B46rx9WLQi6e14T/
+        7mRg+nD59w9XGpjeThjP/N6E8VH2Saag45wy4tNgUkJPT1eQGxSqMapri3lO
+        7C8ysWckCNtVA1kWBITGnCXGxF4vNk/l2cTe32ejX5D+u6BZjsUPbp3cC1XJ
+        IsZIFqQBCUkScz/OoqIQcZELUcSy4FRVgsy0HP2IHJng4TymxejHRKgkDwcy
+        LEWv4UElegcgw0L0YyJcsocTmZahNxBNTviORJpF6MdEuKTvUs/0S9CPiXCJ
+        H05kWoBeTzQ9+bsR6Zaf1xChDIADkWHx+TERzgTAiUxLz+uJphsBNyLdwvN6
+        oulmwI1It+z8iAhpCMBEFpAbmYJL4faNQShnY+C23rz+WfRC683rDj4bA2dj
+        kF3NGGQaY8AHxkDXr7dvDASk5zw/ySZv1Ckqq9y/+MfT4/rj4pt/fu39gz5b
+        g1233XuotnvZo/oX/S98g6++WP29dPPUs4hGkk2TBIk47VLfL0OjJDCW6iwK
+        XpAomBtHt8Yxv1rjmAMaR11Xi9PGUa4IpCNTr3FUF0L8cfHv6hls8SU7GVq0
+        q7d422qLFzPisf/CJtHQGkrBpB8IWGuY91vDuDhpDU/LzdwU6kpybgZfUDPY
+        7+HEmxNOOJf1i6fA3sPJ9Ewy2qdX7bz68vHU5VOHDHHzJTdFETI/KyIZCRnw
+        qIhEFgd+IdQtP+WMc1H9Tx6lnSw9j400pXCYzpRacFCaFE7TalIbDMqROtC0
+        jtSCgxOkcJxOkEJwJttRRxzKbDg4NepSqxo1asHBeVE4TudFATjTpagbjgTg
+        oIyoA05rRC04OB0Kx+l0KABnugt1w+H2io4ToW44lQg9j4O0oGCccxQ3UqAX
+        Ye2PVQoEnf2nY48p3bPlxXpMjQ8++0/niF9cLeIXgIivyxr9iE+tEX/QY+rv
+        2yz+efE6Ln99+z7e54uvw+Bk0NLP1VYvV1vLaquXNls/k6Dv+yJkBKY9AzLo
+        G3Ua9EfFZ0z7hgKd8/6Lzfvta6MsD5K62Qzted+0ZO5on9M66B0vIq+6iJob
+        K7115o+JjPwgJYHkuchV7SBJQkM/Ue1QmvsxyyJRZKmMu8xvR0fmfjhQl/sB
+        SKjsDydqsz8ECJX/HYja/A9AwjkAOFLnAKBIkz2AIxJlECScC3CpbY0LACDh
+        fAAcqfMBQKTpTsANSQKRUF7AAan1AgAknBuAI3VuAIg03Q+4IXFYI4BzBG5I
+        lSOwIyE9ARjJRnIjV3Ax3oEvIPPSn66+QPdsejFfMD747AtcfQGdvhir/chj
+        X+APfIEuq/R9AbMu/SlWLOqN5dhsN4s321/yvcr3h8XbbyJy0i8grTZ7u2pz
+        qTZ7ZdZs/kyMgVRlKn02raMUPzEG4wI8M6BKX6SzM3ixziBqzrzwRTMtVGRx
+        Bme65oz2Oa2H3vEy8urLqLm73nwZ0JDlIQlFkIgoY4wnfp75ie9nlBZpEYcs
+        oznhXMjnUVVWdqQ1gBM9j6uyM6G0ARzpOLIKQITyBg5Ix7FVdiacOIAzPY+u
+        AjJNNgeOTPX4KjsTTh241LluhJWdCecO4EzPY6xgTNPlgRuThDKh7IED03Gc
+        lZ0Jpw/gTM8jrWBM0/2BGxMHtgU4geDG1Iy2sjIhDQKYyYpyI4VwOeDBmqFy
+        XjPU1SHonlUv5hDGB58dgtUhhIOkTy/mEMZHtjsEXXbpOwRuWksB7hBCQhZ/
+        e3tOI6g9vHV5HZNQz9gS+UlxOmOLDFXO/3SOgV/WMRwL2EEzHIt8Ng0v0jRk
+        JORxc/7DIqTVoNZAN5vx6cwsEWD2lmg4e8vwHlxdGH9729yGb74mqciSPCGJ
+        DLgIqJDMFyxN/CyJkigvUhGrNiyIWZCbZYMOHzs6AQxl9g1aLNwoBTCVUTno
+        oXCjFeBURuugxUKOWgBjmcWDGWv66AU3LK170GIhRzE41EKTftBiIUczgLHM
+        BsKIhRjV4ISllxB6LNzoBjiW0UNosZCjHMBYZhVhxEKMdnDC0tsIIxZi1IMT
+        ll5I6LCwox+gWBCaW42CuCRz30yEwbyOqttsMPpn2wvNBqM7+GwmnM0Eu5qZ
+        YAAzEdvNRIQ0E19K/0znhrjZei0jIQVJTowEZ36WXddIUBYGX6nSN42XCEQQ
+        +WHfTLQmohte1JoIXq96PNVXtMUOdhXtibi0p7B9PW3QptG3qlD9aMW4MWgP
+        9mkvPhXC5KK+XBZ/WtSXy+I/8UExl4s/7+t/eOUuT8vFu/32afeXz1+f3J0p
+        e9Snmw9sES4iDNv1t5NCtUMxE+bpH2qZQkJzF6vRPgbhUtWG5sni5kvOhn5G
+        pPBTmRJOWBZSlkZFmJCIqDunag8yTkIRZ5FJtozRsR07wEAm0aJBwvXrABMZ
+        JIsOCNetA05kECwaJGSvDjCSSa6YkKZ36nBD0ogVDRKyT4dDbdNLFQ0SsksH
+        GMkkVAxIiB4dTkg6maJDwnXogCMZRIoGCdmfA4xkkigGJER3DicknUAxICF6
+        czgh6eTJGAnbmQOKZCO5VV+OS/H2hAkVKpfPxsTJmOgfTi9kTHQHn42JszGZ
+        7rDsRx4bEzEwJrq1PfrGxIesuHPWmAT0fFeOWO3grctrTRjZ9uVgea8vh4iT
+        T9KXozYmglyyL8dzAcP1yEmRz305XmxfjvY6ZELdPSslTex9Oc6MGunvY1IL
+        1ZVR34OjW6uFIGJ+JoMgSjNJgjwiYUZSKv1ARa0sTZKApkIGqXHQyBgdqRbg
+        QEa1MEZCqQU4kUktaIBQasGByKQWxkg4tQBHMqoFA9JkteCIpFMLYyScWnCp
+        bQa1MEbCqQU4klEt6JGmqwU3JK1a0CCh1IIDkkktjJFwagGOZFQLeqTpasEN
+        SasW9EjT1YIbklYtjJCQagGMZCO5kVq4GG9PLfBIBLNZcOyLoXs2vVhfjPHB
+        Z7PgbBamvxS1H9luFlKrWRDWvhiDxSfadbkX//qOnvTBKNvVujcf6Gc0rwQn
+        ksmQTvME4YknaAvLqAYGxTfbgBdpA06GzqWpSOuhc7reTsg5JNoa5lUXTX27
+        lDefbzJJI67u6X4uCx5zHvg0UN+ck5ilaZxIop4AChHw43yTZmRk+oeDdOn/
+        DAoq9cNJ2tR/DgSV9h1I2rR/BgWX8uEoXcq3oUxO944oKt2fQcGlepfa06T6
+        Myi4NA9H6dK8BWV6indDkRYUVHp3QGnT+xkUXGqHo3Sp3YIyPa27ofDzlRmX
+        0t1QqpRuRkGmczCKieBGqRzN2R8Z4cs5jU+cs6H3bHjpORtODj6ncec0Lq6W
+        xgUgjWeWNF4FU/t7fk5s6+R+z56DuXZJ14/XfMsvBYt74yMErzJttSnMgtNN
+        Ppfk03QAYJH0qfAvOWTCsN5ufS7cFtz9eI0OAfOgiXnQhGHQRJgIWncdM6+h
+        MXnQxLF98uo64bV1onnuYLfWGjQIU5qERVywLIljP4v8VKh7K4vSIucsLwIq
+        hZDBcelMCD3ScMCZjitogqhQsgMO1S2kCWNCeQ8HqG49TRAVToHAqY7LasKp
+        JtsQR6pqdU0QFU6MuNS/dpFNEBXOkcCpjmttgqmm6xI3KgmnQpkTB6pu5U0Q
+        FU6iwKmOC3CCqab7FDcqDm4ZcGrFjapejhNChbQsYCoAzI2EyyWR++5F8nlW
+        ioljLHrPspceY3Fy8Nm9OLsXeTX3IjXuRQ7cS251L5A1Onm/17Y6z4vXH9cP
+        68fF6++9Hyjpr7mhNnt5vVn9n/dbu/lq3iUgfs+7RMmVZ8p8/X33lTWOhUZR
+        4PtSXtCxpPLEsYzL/czAC/2ZmB3L7Fiu7FiydsATIXFR3TqkbWKKaCWIzbF0
+        +5y2Q15TH7yuPjRPFzdfcyQRolDPjYQFkqvWOg5ZGCTqh4Rzv6iGwyXqiUnd
+        Tp+Hj1jZsT1IwETP40fsTLiuJGCk4wASABGuTwkc6TiCxM6E7FwCZnoeQgJk
+        mt7LxI2pHkNiZ0J2N3Goc90gEjsTst8JmOl5FAmMCdEBxYlJQplwPVHgTMdx
+        JHYmZJcUMNPzQBIYE6JvihMTB7YFyE4qTkzNUBIrE7a3CpTJinKrbisXA+47
+        FCLneSocHYr2WfVSDkVz8NmhODuU6WfEfuSxQwkGDqWwO5TQ0aHUixEvjosR
+        L76Tp6NKfq6XKs7V1rJeqviDvNboksagqGTXMyhXX2sklFyqhs9kUASjNMAY
+        lIAMDEpxalCGpW4UKIbzMPuT2Z9c2Z8kcX96I8ms/oRa+6h0+5y2QScLole1
+        oXmwuPnEniLiRe6r/0Thh3EcJymLAs6TnIe+lFkcpKrQCl50+sSOjl1BBQzU
+        2RMAEm71FDBRK08gQLiVU+BErTsBICFXTQEjdeoEijR9xRQ3JMogSMjVUhxq
+        WyNOAEjIlVLASJ03ASIhVklxQpJAJNwKKXCk1poAkJCro4CROmkCREKsjOKE
+        xGGNAHJVFCekSpnYkbArokCRbCS3Wg3lUrw9X+JzNo/3cfQl2mfTS/kSzcFn
+        X+LsS6b3ArIfuTodf/y/AAAAAP//AwDto9SdrjsBAA==
     http_version: 
-  recorded_at: Thu, 27 Jun 2013 15:42:22 GMT
+  recorded_at: Wed, 24 Jul 2013 21:02:52 GMT
 - request:
     method: get
     uri: https://the-guide-staging.herokuapp.com/api/v1/products?page=1
@@ -179,13 +454,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.7
+      - Faraday v0.8.6
       X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - ! '*/*'
   response:
     status:
       code: 200
@@ -199,27 +474,29 @@ http_interactions:
       Access-Control-Allow-Methods:
       - OPTIONS, GET, POST, PUT, DELETE
       Access-Control-Allow-Origin:
-      - '*'
+      - ! '*'
       Access-Control-Max-Age:
       - '1000'
       Cache-Control:
       - no-cache, no-store
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 27 Jun 2013 15:42:25 GMT
-      Etag:
-      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      - Wed, 24 Jul 2013 21:02:54 GMT
       Status:
       - 200 OK
       Strict-Transport-Security:
       - max-age=31536000
       Vary:
       - Accept-Encoding
+      X-Rack-Cache:
+      - miss
       X-Request-Id:
-      - 6237ca62dd67e9ffbbc8a7c9454f679c
+      - 220a74f192df4e342a2f133e0d9c9722
       X-Runtime:
-      - '0.025699'
+      - '2.223410'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -227,35 +504,143 @@ http_interactions:
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: '{"pagination":{"total":17660,"total_pages":883,"first_page":true,"last_page":false,"previous_page":null,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1,"per_page":20,"entries_on_page":20},"data":[{"id":"5139fc6e095ca50e890005f3","created_at":"2013-03-08T14:57:50Z","updated_at":"2013-04-23T17:24:07Z","name":"Panasonic
-        Viera TC-L47E5","slug":"panasonic-viera-tc-l47e5-2","_type":"Electronics::Television","types":[],"msrp":799.0,"article_ids":["51389dc50ac94eacc70003f3"],"website_ids":[],"publish_on":"2013-03-08T14:04:53+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"513a0a39095ca5e0ee000560","model":"","resource_uri":"/products/panasonic-viera-tc-l47e5-2","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[{"id":"5139febd07989eb5fc0004cc","created_at":"2013-03-08T15:07:41Z","updated_at":"2013-03-08T15:07:41Z","name":"Front-Vanity.jpg","type":"file","tags":["design","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s50x50_Front-Vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s150x150_Front-Vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s250x250_Front-Vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s300x150_Front-Vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s300x112_Front-Vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s500x500_Front-Vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s600x400_Front-Vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s600x600_Front-Vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s940x400_Front-Vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s940x350_Front-Vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/s940x110_Front-Vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/94dc30bfb352444535c9ed62285264a175a10156/Front-Vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/uploads/tmp/20130308-1507-41-8884/Front-Vanity.jpg","file_size":113973},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5139febd07989eb5fc0004cc","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5139febd07989eb5fc0004cc"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ef82dc798de000049","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ef82dc798de000049"}}},{"id":"5138d3ec90a1bfbef20005ab","created_at":"2013-03-07T17:52:44Z","updated_at":"2013-03-08T01:46:10Z","name":"Ariston
-        TVF63X","slug":"tvf63x","_type":"Appliances::MajorAppliances::Dryer","types":[],"msrp":799.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-03-07T17:36:10+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003b0","brand_id":"51390ce25693113d8c00010c","model":"","resource_uri":"/products/tvf63x","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":2.9,"ranking":{"total":50,"rank":48,"percentile":4},"rubric":{"id":"50f9ed93bd0286638e0003b0","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"Dryers","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003b0","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003b0"}}},"attachments":[{"id":"5139011c9da86c5336000023","created_at":"2013-03-07T21:05:32Z","updated_at":"2013-03-07T21:17:18Z","name":"Ariston-TVF63X-vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s50x50_Ariston-TVF63X-vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s150x150_Ariston-TVF63X-vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s250x250_Ariston-TVF63X-vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s300x150_Ariston-TVF63X-vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s300x112_Ariston-TVF63X-vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s500x500_Ariston-TVF63X-vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s600x400_Ariston-TVF63X-vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s600x600_Ariston-TVF63X-vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s940x400_Ariston-TVF63X-vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s940x350_Ariston-TVF63X-vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/s940x110_Ariston-TVF63X-vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/Ariston-TVF63X-vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/fd7fd32dab353e117ad055ceab9572a0858122df/Ariston-TVF63X-vanity.jpg","file_size":74734},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5139011c9da86c5336000023","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5139011c9da86c5336000023"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ef82dc798de00004a","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ef82dc798de00004a"}}},{"id":"5138cff9de88c3180e0006a0","created_at":"2013-03-07T17:35:53Z","updated_at":"2013-03-11T21:04:39Z","name":"GTDS820EDWS","slug":"gtds820edws","_type":"Appliances::MajorAppliances::Dryer","types":[],"msrp":1099.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-03-07T17:15:50+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"5138d10d12494f43310004ae","model":"","resource_uri":"/products/gtds820edws","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ef82dc798de00004b","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ef82dc798de00004b"}}},{"id":"5138b9f4cb4ae870aa000522","created_at":"2013-03-07T16:01:56Z","updated_at":"2013-03-08T02:20:05Z","name":"Frigidaire
-        FAHE4044MW ","slug":"frigidaire-fahe4044mw","_type":"Appliances::MajorAppliances::WashingMachine","types":["Top-Loading"],"msrp":649.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-04-06T14:20:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003af","brand_id":"51394ad545ba4bfa85000100","model":"","resource_uri":"/products/frigidaire-fahe4044mw","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":50,"rank":47,"percentile":6},"rubric":{"id":"50f9ed93bd0286638e0003af","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:55:46Z","name":"Washing
-        Machines","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003af","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003af"}}},"attachments":[{"id":"513900c17a0082ebca000031","created_at":"2013-03-07T21:04:01Z","updated_at":"2013-03-10T02:33:58Z","name":"Front.jpg","type":"file","tags":["Front.jpg","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s50x50_Front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s150x150_Front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s250x250_Front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s300x150_Front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s300x112_Front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s500x500_Front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s600x400_Front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s600x600_Front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s940x400_Front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s940x350_Front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/s940x110_Front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/Front.jpg"},"caption":"The
-        front of the washer","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/f297fb066af56dc0200641c108a986c8e27a7ead/Front.jpg","file_size":126981},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/513900c17a0082ebca000031","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/513900c17a0082ebca000031"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ef82dc798de00004c","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ef82dc798de00004c"}}},{"id":"513639647226fa851900061f","created_at":"2013-03-05T18:28:53Z","updated_at":"2013-03-31T14:38:12Z","name":"ELEFT325","slug":"eleft325","_type":"Electronics::Television","types":[],"msrp":290.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-03-08T08:00:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"513a47f29da86c965800080b","model":"","resource_uri":"/products/eleft325","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":5.94,"ranking":{"total":262,"rank":163,"percentile":38},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ef82dc798de00004d","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ef82dc798de00004d"}}},{"id":"51362cdf9e4e47720b0004d2","created_at":"2013-03-05T17:35:27Z","updated_at":"2013-03-31T14:38:11Z","name":"Magnavox
-        32MD301B","slug":"magnavox-32md301b","_type":"Electronics::Television","types":[],"msrp":499.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-03-05T04:00:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"51377ceffcc113c3fc000490","model":"","resource_uri":"/products/magnavox-32md301b","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":4.24,"ranking":{"total":262,"rank":254,"percentile":4},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"51362fe2f15f513c230006d6","created_at":"2013-03-05T17:48:18Z","updated_at":"2013-03-10T02:30:07Z","name":"front.jpg","type":"file","tags":["vanity","design"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s50x50_front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s150x150_front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s250x250_front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s300x150_front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s300x112_front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s500x500_front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s600x400_front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s600x600_front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s940x400_front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s940x350_front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/s940x110_front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/front.jpg"},"caption":"Maybe
-        it''s just us, but that red stripe below the logo is kind of ugly.","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/1d9f29567d029a016d8e8c1b6d5ebce3d4b80ae5/front.jpg","file_size":64804},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/51362fe2f15f513c230006d6","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/51362fe2f15f513c230006d6"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de00004e","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de00004e"}}},{"id":"5134bf84f7fb8dc21b000223","created_at":"2013-03-04T15:36:36Z","updated_at":"2013-03-14T14:12:53Z","name":"LG
-        WT1101CW","slug":"lg-wt1101cw","_type":"Appliances::MajorAppliances::WashingMachine","types":["Top-Loading"],"msrp":699.0,"article_ids":[],"website_ids":["50e669d7bd028648e000001b"],"publish_on":"2013-03-04T15:14:13+00:00","upc":"","price_grabber_id":"1080763319","rubric_id":"50f9ed93bd0286638e0003af","brand_id":"513a04289da86c69df000691","model":"","resource_uri":"/products/lg-wt1101cw","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":4.23,"ranking":{"total":50,"rank":42,"percentile":16},"rubric":{"id":"50f9ed93bd0286638e0003af","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:55:46Z","name":"Washing
-        Machines","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003af","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003af"}}},"attachments":[{"id":"5134be6bf83e98e0f200029b","created_at":"2013-03-04T15:31:55Z","updated_at":"2013-03-10T02:28:50Z","name":"Vanity","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s50x50_vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s150x150_vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s250x250_vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s300x150_vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s300x112_vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s500x500_vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s600x400_vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s600x600_vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s940x400_vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s940x350_vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/s940x110_vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/f921b107b7af5ffc773a62679953a342decd3835/vanity.jpg","file_size":11636},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5134be6bf83e98e0f200029b","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5134be6bf83e98e0f200029b"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de00004f","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de00004f"}}},{"id":"512cfd37ba5f4c688e000099","created_at":"2013-02-26T18:21:43Z","updated_at":"2013-03-11T21:05:28Z","name":"Nikon
-        Coolpix S31","slug":"nikon-coolpix-s31","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":119.95,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-03T13:01:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512cff109ca88f193b0001aa","model":"","resource_uri":"/products/nikon-coolpix-s31","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000050","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000050"}}},{"id":"512cf3e000a2d9744d000091","created_at":"2013-02-26T17:41:53Z","updated_at":"2013-03-11T21:05:06Z","name":"Nikon
-        Coolpix AW110","slug":"nikon-coolpix-aw110","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":349.95,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-01-31T12:48:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512e3e1c9c4005ed4e000024","model":"","resource_uri":"/products/nikon-coolpix-aw110","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000051","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000051"}}},{"id":"512ce285ebb3185cc600066a","created_at":"2013-02-26T16:27:49Z","updated_at":"2013-03-11T21:04:00Z","name":"Nikon
-        Coolpix S9500","slug":"nikon-coolpix-s9500","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":349.95,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-02T11:23:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512e3a3bb4ea102fca00002c","model":"","resource_uri":"/products/nikon-coolpix-s9500","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000052","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000052"}}},{"id":"512cd7548087b2a042000821","created_at":"2013-02-26T15:40:04Z","updated_at":"2013-03-11T21:04:15Z","name":"Fujifilm
-        F900EXR","slug":"fujifilm-f900exr","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-01T10:26:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512ce232184a8a15e800019b","model":"","resource_uri":"/products/fujifilm-f900exr","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000053","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000053"}}},{"id":"512be11481470fe1c10001a6","created_at":"2013-02-25T22:09:24Z","updated_at":"2013-03-11T21:05:26Z","name":"Canon
-        PowerShot ELPH 115 IS","slug":"canon-powershot-elph-115-is","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":169.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-05T17:43:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512be189a8758504860001e9","model":"","resource_uri":"/products/canon-powershot-elph-115-is","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000054","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000054"}}},{"id":"512bc7f34b8e6d1129000109","created_at":"2013-02-25T20:22:11Z","updated_at":"2013-03-11T21:03:58Z","name":"Canon
-        PowerShot 330 HS","slug":"powershot-330-hs","_type":"Electronics::Cameras::PointAndShoot","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-01T13:55:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"512bcc738f5db50843000114","model":"","resource_uri":"/products/powershot-330-hs","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000055","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000055"}}},{"id":"51278bac6143ac867900023c","created_at":"2013-02-22T15:15:56Z","updated_at":"2013-03-31T14:38:13Z","name":"Hisense
-        55XT710","slug":"hisense-55xt710","_type":"Electronics::Television","types":[],"msrp":1099.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-02-19T09:09:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"5139d7a59da86c69df000506","model":"","resource_uri":"/products/hisense-55xt710","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":5.69,"ranking":{"total":262,"rank":200,"percentile":24},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"512f6e1375dec71baf0003ec","created_at":"2013-02-28T14:47:47Z","updated_at":"2013-03-07T21:38:33Z","name":"Front.jpg","type":"file","tags":["design","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s50x50_Front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s150x150_Front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s250x250_Front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s300x150_Front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s300x112_Front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s500x500_Front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s600x400_Front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s600x600_Front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s940x400_Front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s940x350_Front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/s940x110_Front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/Front.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/18854f7a0bd828558fef3e17f91eebfda017a260/Front.jpg","file_size":52258},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/512f6e1375dec71baf0003ec","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/512f6e1375dec71baf0003ec"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d5ff82dc798de000056","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d5ff82dc798de000056"}}},{"id":"5124f2fad7ee352066000492","created_at":"2013-02-20T15:59:54Z","updated_at":"2013-03-31T14:38:13Z","name":"Sceptre
-        E325BV-HDH","slug":"sceptre-e325bv-hdh","_type":"Electronics::Television","types":[],"msrp":599.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-02-20T15:17:23+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"5138f58e1eb889ace70006ec","model":"","resource_uri":"/products/sceptre-e325bv-hdh","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":6.53,"ranking":{"total":262,"rank":68,"percentile":75},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"5124f32449a663e0a4000078","created_at":"2013-02-20T16:00:36Z","updated_at":"2013-02-28T04:50:10Z","name":"Vanity","type":"file","tags":["design","vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s50x50_Sceptre-vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s150x150_Sceptre-vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s250x250_Sceptre-vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s300x150_Sceptre-vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s300x112_Sceptre-vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s500x500_Sceptre-vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s600x400_Sceptre-vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s600x600_Sceptre-vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s940x400_Sceptre-vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s940x350_Sceptre-vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/s940x110_Sceptre-vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/Sceptre-vanity.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/cc7ee4dd808e6c1fd44aee4410d5a38aadf4018c/Sceptre-vanity.jpg","file_size":102514},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5124f32449a663e0a4000078","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5124f32449a663e0a4000078"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d60f82dc798de000057","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d60f82dc798de000057"}}},{"id":"5123ba2a6c477e686e000811","created_at":"2013-02-19T17:45:14Z","updated_at":"2013-03-31T14:38:13Z","name":"LG
-        47LM8600","slug":"lg-47lm8600","_type":"Electronics::Television","types":[],"msrp":2299.0,"article_ids":[],"website_ids":["50e669d7bd028648e000000f"],"publish_on":"2013-02-15T12:59:00+00:00","upc":"","price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003a6","brand_id":"5138f6a4e2289ec912000723","model":"","resource_uri":"/products/lg-47lm8600","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":6.1,"ranking":{"total":262,"rank":130,"percentile":51},"rubric":{"id":"50f9ed93bd0286638e0003a6","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"TV
-        Ratings (rating-specs group)","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003a6","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003a6"}}},"attachments":[{"id":"5124dd0bd7ee35a84e00049d","created_at":"2013-02-20T14:26:19Z","updated_at":"2013-02-28T04:50:05Z","name":"Vanity","type":"file","tags":["vanity","design"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s50x50_Front.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s150x150_Front.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s250x250_Front.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s300x150_Front.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s300x112_Front.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s500x500_Front.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s600x400_Front.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s600x600_Front.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s940x400_Front.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s940x350_Front.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/s940x110_Front.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/Front.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/24f678aada559ffa66d89622c204a49b8468bc28/Front.jpg","file_size":41661},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/5124dd0bd7ee35a84e00049d","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/5124dd0bd7ee35a84e00049d"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d60f82dc798de000058","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d60f82dc798de000058"}}},{"id":"511e5a198021d5fed7000425","created_at":"2013-02-15T15:54:01Z","updated_at":"2013-03-11T21:03:59Z","name":"Nikon
-        1 V2","slug":"nikon-1-v2-2","_type":"Electronics::Cameras::DSLR","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e000000d"],"publish_on":"2013-02-15T15:50:06+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"511e8fe3a82eb136f1000028","model":"","resource_uri":"/products/nikon-1-v2-2","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d60f82dc798de000059","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d60f82dc798de000059"}}},{"id":"51101841be0d9f1d3c000045","created_at":"2013-02-04T20:21:21Z","updated_at":"2013-03-11T21:04:00Z","name":"Fujifilm
-        X-E1","slug":"fujifilm-x-e1-3","_type":"Electronics::Cameras::DSLR","types":[],"msrp":999.95,"article_ids":[],"website_ids":[],"publish_on":"2013-02-04T20:16:10+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"51101841be0d9f1d3c000047","model":"","resource_uri":"/products/fujifilm-x-e1-3","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d60f82dc798de00005a","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d60f82dc798de00005a"}}},{"id":"510019f7a0a353b1fc000076","created_at":"2013-01-23T17:12:23Z","updated_at":"2013-03-11T21:06:04Z","name":"Dell
-        UltraSharp U2713HM","slug":"dell-ultrasharp-u2713hm","_type":"Electronics::ComputerMonitor","types":[],"msrp":799.0,"article_ids":[],"website_ids":["50e669d7bd028648e0000029"],"publish_on":"2013-01-31T12:05:00+00:00","upc":"","price_grabber_id":"","rubric_id":null,"brand_id":"51001f564ffb7443bf000015","model":"","resource_uri":"/products/dell-ultrasharp-u2713hm","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d60f82dc798de00005b","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d60f82dc798de00005b"}}},{"id":"50fa347b96ab5860160c8e5e","created_at":"2013-01-14T18:13:17Z","updated_at":"2013-01-21T07:43:59Z","name":"Dacor
-        DDW24S","slug":"dacor-ddw24s","_type":"Appliances::MajorAppliances::Dishwasher","types":[],"msrp":null,"article_ids":[],"website_ids":["50e669d7bd028648e0000021"],"publish_on":"2013-01-14T18:13:00+00:00","upc":null,"price_grabber_id":null,"rubric_id":null,"brand_id":"50f9ed7ebd0286638e0002c5","model":"DDW24S","resource_uri":"/products/dacor-ddw24s","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d60f82dc798de00005c","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d60f82dc798de00005c"}}}]}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAP5A8FEAA+ydba/bNpaA/4rhD4tdbJTLV5Hyt26mgwG2nQ0mAXbQweJC
+        L1Ti5l7bsH3TpEX/+1KW5GtbpHkoyuptoAJFEkumHpMizfP4iPxtvkk/LFfp
+        frlezRe/zffrffowX2AhBX9V/+ten6F284VM2Kt5udzu9odX5ov99km9mj+k
+        xxfK9GGnX9ls1efl+mnXvLp6enh4NV+pL+1p5NV8/bS/X5f32fppVeyOb1yX
+        5U7t5wv0ap4/bbdq1b4D60LVtn27PqwPbZdqd79eHV/8/dW8SPfpfPGv3+bL
+        Yr6Yc1SmhCUiidOMyxjhGOUcCzHXpW9VulfFfaovNicIowjJiOD3WCwwWVD5
+        kz7naVOcnUMjxKtzEF6gZMFQdc4qfdTXnv/t7eztx/V+vXtMt/vZj4xV19g9
+        PH3Qxz5uos3xWPRYH7vff91Ub/z+QeX77Xq1zHeLxRtd2DbVf3m7Xq72362K
+        dx/X670+uzpZV9K//u/V/HG33cwXSfI6SV7NdYHL/EHdL4vm6C8q2y337Qu6
+        AlQcJ4XICkRkzKRCh/+KuT5185Q9LHcf76tWr2sAkwjz94jotl8g/p8ILRA6
+        VEOuz5hXrbrM1f2HbZpluikONcwooxwjqY9unzJ9/PBy3d7ZNl0V921DJKqI
+        y5ojpjVInui3Pa4LpW+3ebf6tmq3ftrqKz5tl/qEu812XTzl+92dsULTbf5x
+        +Vnd7/a6zfTp2df7qvX0keXufpevt8vVh/ss3amH5er5Rm3eVbS3cv0hqm7Q
+        NOz8cN89Lnc73T121QF94xxPr++iY2n1DXP8Z6F2umm/Nv/Wd2e6Wd7ry386
+        lJOvH6q2b3rd9lAJd/qMu8/4rsbY6Yt/3Kqyuof2+81ucXe3/6iiD0/LQkX6
+        c+pe++H1R7Vdf3pKN5vX+frx8v2/P9fiDS/ye/XR9vs0//ioe+XurP/lMRe8
+        bvaEqRQhmibS0P9038IRQe8JXjC+INzS/zrnHPtf9HwDRdUNFGF9rRi9/nnz
+        oelA+rRy+VDdEfpTHbrH53S13H+tOsNntT028I6jLxw19aGroxrL1C+qONbG
+        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
+        lUz3KAEA
     http_version: 
-  recorded_at: Thu, 27 Jun 2013 15:42:26 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Wed, 24 Jul 2013 21:02:54 GMT
+recorded_with: VCR 2.4.0

@@ -11,6 +11,7 @@ RSpec.configure do |config|
   config.alias_example_to :fit, :focused => true
   config.alias_example_to :pit, :pending => true
   config.run_all_when_everything_filtered = true
+  #config.backtrace_clean_patterns = []
 end
 
 VCR.configure do |config|

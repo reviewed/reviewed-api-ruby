@@ -6,6 +6,8 @@ module Reviewed
       @resource = opts[:resource]
       @scope = opts[:scope]
       @client = opts[:client] || Reviewed::Client.new
+      @skip_cache = false
+      @reset_cache = false
     end
 
     def path
@@ -33,13 +35,48 @@ module Reviewed
     end
 
     def object_from_response(method, url, params={})
-      response = client.send(method, url, params)
+      response = client.send(method, url, params.merge(cache_control_params))
       resource.new(response.body)
     end
 
+    def cached?
+      !uncached?
+    end
+
+    def uncached?
+      skip_cache? || reset_cache?
+    end
+
+    def with_no_cache
+      @skip_cache = true
+      self
+    end
+
+    def with_new_cache
+      @reset_cache = true
+      self
+    end
+
     def collection_from_response(method, url, params={})
-      response = client.send(method, url, params)
+      response = client.send(method, url, params.merge(cache_control_params))
       Reviewed::Collection.new(client, resource, response, params)
+    end
+
+    def cache_control_params
+      params = {}
+      params.merge!({:"skip-cache" => true}) if skip_cache?
+      params.merge!({:"reset-cache" => true}) if reset_cache?
+      params
+    end
+
+    private
+
+    def skip_cache?
+      @skip_cache
+    end
+
+    def reset_cache?
+      @reset_cache
     end
   end
 end

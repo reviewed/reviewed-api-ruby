@@ -7,6 +7,7 @@ describe Reviewed::Article, vcr: true do
   end
 
   before(:each) do
+    Faraday::Cache.store.clear
     @article = client.articles.find('big-green-egg-medium-charcoal-grill-review', { with_attachments: true })
   end
 
@@ -63,11 +64,8 @@ describe Reviewed::Article, vcr: true do
       end
 
       it 'finds attachments by tag' do
-        attachments = @article.attachments('old-hero')
-        attachments.length.should == 1
-        attachments.each do |attachment|
-          attachment.tags.join(',').should match(/hero/i)
-        end
+        attachments = @article.attachments('hero')
+        attachments.map(&:tags).flatten.should == ['hero']
       end
 
       it 'does not have any matching attachments' do

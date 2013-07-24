@@ -8,13 +8,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.7
+      - Faraday v0.8.6
       X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - ! '*/*'
   response:
     status:
       code: 200
@@ -28,27 +28,29 @@ http_interactions:
       Access-Control-Allow-Methods:
       - OPTIONS, GET, POST, PUT, DELETE
       Access-Control-Allow-Origin:
-      - '*'
+      - ! '*'
       Access-Control-Max-Age:
       - '1000'
       Cache-Control:
       - no-cache, no-store
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 27 Jun 2013 15:41:21 GMT
-      Etag:
-      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      - Wed, 24 Jul 2013 21:02:20 GMT
       Status:
       - 200 OK
       Strict-Transport-Security:
       - max-age=31536000
       Vary:
       - Accept-Encoding
+      X-Rack-Cache:
+      - miss
       X-Request-Id:
-      - a4094f7195089bb5a0a46e50ebf1250c
+      - 1141cf5ed09f59bfd56f7368fcd2d93d
       X-Runtime:
-      - '0.016078'
+      - '1.051643'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -56,199 +58,224 @@ http_interactions:
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: '{"id":"50fb2e6fbd0286d5550135a2","created_at":"2011-11-29T20:18:15Z","updated_at":"2013-03-07T22:08:45Z","name":"Big
-        Green Egg Medium Charcoal Grill Review","branch_name":"master","summary":"Super-simple
-        charcoal grill has good performance. ","meta_description":null,"website_ids":["50e669d7bd028648e0000023"],"author_ids":["50fc4e94bd0286d5550b4bf8"],"tags":[],"classifications":["review"],"publish_on":"2011-11-29T20:17:00+00:00","attachment_ids":["50fb2e71bd0286d5550135b3","50fb2e71bd0286d5550135cb","50fb2e71bd0286d5550135cc","50fb2e72bd0286d5550135d0","50fb2e72bd0286d5550135d1","50fb2e72bd0286d5550135d5","50fb2e72bd0286d5550135d6","50fb2e74bd0286d5550135e4"],"primary_product_id":"50fa2cfc96ab5860160c6ac2","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review.htm","disqus_uri":"Big-Green-Egg-Medium-Charcoal-Grill-Review","product_ids":["50fa2cfc96ab5860160c6ac2","50fa2ce096ab5860160c6a4b","50fa2cfd96ab5860160c6ac7","50fa2ced96ab5860160c6a7f"],"related_article_ids":[],"price_grabber_id":null,"publishable":true,"publishable_on":"2011-10-12T19:31:00+00:00","slug":"big-green-egg-medium-charcoal-grill-review.htm","is_template":false,"is_branch":false,"deals":[],"related_articles":[],"pages":[{"id":"50fb2e70bd0286d5550135a8","name":"Introduction","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/introduction","slug":"introduction","sections":[{"id":"50fb2e70bd0286d5550135a9","name":"Introduction","body":"The
-        {{product.name}} is a classic charcoal grill with a simple design: a ceramic
-        vessel that holds a load of charcoal. While the design is simple, don''t think
-        that it offers generic performance as well. The {{product.name}} will heat
-        your food up quick and maintain consistent high-temperature cooking.","notes":null}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e71bd0286d5550135ab","name":"Design","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/design","slug":"design","sections":[{"id":"50fb2e71bd0286d5550135ad","name":"Product
-        Tour","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n\n\n{{product.attachments[''Front
-        Photo'']}}  \n  \n  \n{{product.attachments[''Side Photo'']}}  \n  \n  \n{{product.attachments[''Lid
-        Open Photo'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135ae","name":"Controls","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n\n\n{{product.attachments[''Controls
-        1 Photo'']}}  \n  \n  \n\n\n{{product.attachments[''Controls 2 Photo'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135af","name":"Main
-        Grilling Area","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n\n\n{{product.attachments[''Main
-        Grilling Area Photo 1'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135b0","name":"Warming
-        Area","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n\n\n{{product.attachments[''Warming
-        Area Photo 1'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135b2","name":"Thermometer","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n\n\n{{product.attachments[''Thermometer
-        Photo 1'']}}\n\n","notes":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e71bd0286d5550135b4","name":"Performance","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/performance","slug":"performance","sections":[{"id":"50fb2e71bd0286d5550135b6","name":"Heatup
-        Time","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThe
-        {{product.model}} was a very quick grill to heat up; we found that it could
-        reach our low temperature target of 325&#xB0;F in just 35 seconds and our
-        high temperature target of 625&#xB0;F in just 36 seconds. We reached these
-        two settings by adjusting the air vents on the lid and on the bottom of the
-        grill body: the low fire setting by half opening the vent, and the high fire
-        setting by completely opening it.\n\n\n\n{{article.attachments[''table-b297567d41f58254691baba562ae65d34cb1c3f0.csv'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135b7","name":"Low
-        Fire Cooking Performance","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nRunning
-        at our low temperature target of about 325&#xB0;F, we found that the grill
-        would take just over 11 minutes to cook our test patties, which is fairly
-        fast for a  grill of this type. \n\n\n\n\n\n{{comparison_bars title=\"Low
-        Fire Performance\", attribute=\"Low Temp Performance Rating\", xLabel=\"Cooking
-        Performance Score\"}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135b8","name":"Low
-        Temperature Uniformity","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nWe
-        also look at the consistency of the temperature across the cooking surface,
-        and the {{product.model}} did well here, producing uniform temperatures across
-        the cooking area. We did find that it was a little hotter at one edge, but
-        again, that is not unusual for a charcoal grill.\n\n\n\n{{product.attachments[''Low
-        Temp Uniformity Image'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135b9","name":"Low
-        Temperature Consistency","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThe
-        temperature also remained consistent over time, with only moderate variations
-        in the temperature. This should mean good, even cooking of food\n\n\n\n{{product.attachments[''Low
-        Temp Consistency Image'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135ba","name":"High
-        Fire Cooking Performance","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nOpening
-        the air vents on the base and lid of the grill increased the temperature,
-        and we found equally good performance from this grill cooking food at these
-        higher temperatures. Here, the grill was able to cook our test patties in
-        just over 8 minutes.  \n\n\n\n\n\n{{comparison_bars title=\"High Fire Cooking
-        Performance\", attribute=\"High Temp Performance Rating\", xLabel=\"Cooking
-        Performance Score\"}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135bb","name":"High
-        Temperature Uniformity","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nWe
-        did find that the temperature across the cooking area was a lot less consistent
-        here, though; the extra flow of air from the open vents seems to create more
-        hot zones, especially in the center of the cooking grate, which was nearly
-        200&#xB0;F hotter than close to the edges.\n\n\n\n{{product.attachments[''High
-        Temp Uniformity Image'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135bc","name":"High
-        Temperature Consistency","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThe
-        temperature also varied over time, with the temperature rising and falling
-        on the cooking grate somewhat more often as the fire rose and fell than we
-        like to see. \n\n\n\n{{product.attachments[''High Temp Consistency Image'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135be","name":"Case
-        & Handle Temperature","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nAlthough
-        the grill body got rather hot (rising to a toasty 300&#xB0;F), the handle
-        that you use to lift the lid remained cool; even after running the grill for
-        a full hour, this wooden handle didn''t go much above 80&#xB0;F, which means
-        that it is safe and comfortable to use. \n\n\n\n{{product.manufacturer_specs['''']}}Handle
-        Photo 1\"  />  \n   \nThe image below was taken with an infrared camera to
-        show the heat levels of the lid. The numbers at the bottom indicate the temperature
-        scale.   \n{{product.attachments[''IR Photo'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135bf","name":"Output
-        & Fuel Life","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nWe
-        don&#x2019;t measure the BTU/Hr output of charcoal grills, but we did find
-        that this grill can produce a lot of heat with a large load of charcoal onboard.
-        It also retains heat well: the body of the grill remains very warm for several
-        hours after the charcoal has run out.\n\n\n\n","notes":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e71bd0286d5550135c0","name":"Features
-        & Usability","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/features-and-usability","slug":"features-and-usability","sections":[{"id":"50fb2e71bd0286d5550135c2","name":"Controls","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThe
-        controls on this grill are basic, to put it mildly: you control the temperature
-        by opening and closing vents on the base of the grill body and the lid. Open
-        the vents, and more air rushes through to the charcoal fuel, leading to a
-        higher temperature. \n\n\n\n{{product.attachments[''Controls 1 Photo'']}}  \n  \n  \n\n\n{{product.attachments[''Controls
-        2 Photo'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c3","name":"Fuel","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThe
-        {{product.model}} uses charcoal, which fits into the space below the grate.\n\n\n\n{{product.attachments[''Fuel
-        Photo 1'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c4","name":"Lighter/Ignition","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThere
-        is no lighter on this grill, so you have to ignite the charcoal yourself.\n\n\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c5","name":"Cooking
-        Area","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThe
-        cooking area is rather small: just 177 square inches. In our tests, we were
-        only able to fit two of our test patties onto this space, so that might be
-        a big problem for large families or party use. If you want to cook a lot of
-        food at once, you should look at a gas grill with a larger cooking area, or
-        one of the larger Big Green Egg models that offers more space to cook.\n\n\n\n{{product.attachments[''Main
-        Grilling Area Photo 1'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c6","name":"Warming
-        Area","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nThere
-        is no warming area on this grill.\n\n\n\n{{product.attachments[''Warming Area
-        Photo 1'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c7","name":"Other
-        Areas","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nNo
-        side areas or other places to put food before or after cooking are included.
-        Big Green Egg does offer a number of shelves that clip onto the side of the
-        grill, as well as a range of wooden tables designed to hold the Big Green
-        Egg medium grill. These do cost extra, though. \n\n\n\n{{product.attachments[''Side
-        Area Photo 1'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c8","name":"Cleanup","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nCleaning
-        up the grill is easy; the cooking grate lifts out for easy cleaning, although
-        the cast iron is not suitable for dishwashing. You have to scoop out the ash
-        from the charcoal, as there is no way to remove it from underneath. \n\n\n\n{{product.attachments[''Grease
-        Trap Photo 1'']}}  \n  \n  \n{{product.attachments[''Cleanup Photo 1'']}}{{product.attachments[''Cleanup
-        Photo 2'']}}\n\n","notes":""},{"id":"50fb2e71bd0286d5550135c9","name":"Other
-        Features","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n\n\n{{product.attachments[''Other
-        Features Photo 1'']}}\n\n","notes":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e71bd0286d5550135cd","name":"Weber  Performer
-        Charcoal Grill Comparison","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/weber-performer-charcoal-grill-comparison","slug":"weber-performer-charcoal-grill-comparison","sections":[{"id":"50fb2e71bd0286d5550135cf","name":"Comparison
-        Overview","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n{{article.attachments[''table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv'']}}\n\nBoth
-        of these grills use charcoal fuel, but the Weber offers the relative luxury
-        of a gas-assisted starter, and has a much larger cooking area. The Big Green
-        Egg is more consistent, though, and has a simple, straightforward design that
-        will appeal to charcoal purists. \n\n{{article.attachments[''table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv'']}}\n\n","notes":null}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e72bd0286d5550135d2","name":"Primo
-        Kamado Comparison","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/primo-kamado-comparison","slug":"primo-kamado-comparison","sections":[{"id":"50fb2e72bd0286d5550135d4","name":"Comparison
-        Overview","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n{{article.attachments[''table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv'']}}\n\nBoth
-        of these grills offer the same simple, straightforward design to grilling,
-        using charcoal fuel and not offering any bells or whistles. The Big Green
-        Egg feels better constructed, though, and more likely to stand up to heavy
-        use and weather. It is also better finished, with some nice touches like a
-        wooden handle that stays cooler and a better seal around the lid that keeps
-        the heat in. \n\n{{article.attachments[''table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv'']}}\n\n","notes":null}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e72bd0286d5550135d7","name":"Kenmore
-        S3218AR Comparison","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/kenmore-s3218ar-comparison","slug":"kenmore-s3218ar-comparison","sections":[{"id":"50fb2e72bd0286d5550135d9","name":"Comparison
-        Overview","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\n{{article.attachments[''table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv'']}}\n\nThe
-        eternal battle of the grill purists is here: charcoal vs gas. The charcoal
-        fuel of the Big Green Egg produces a more natural heat, but takes longer to
-        get running when you include the time to load and prep the grill with fuel).
-        The Kenmore also has more features, with a side burner and a more controllable
-        heat level. But in the end, the choice comes down to which you prefer to cook
-        with: charcoal or gas. \n\n{{article.attachments[''table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv'']}}\n\n","notes":null}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}},{"id":"50fb2e72bd0286d5550135da","name":"Conclusion","resource_uri":"/content/big-green-egg-medium-charcoal-grill-review/conclusion","slug":"conclusion","sections":[{"id":"50fb2e72bd0286d5550135dc","name":"Performance","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nWe
-        found good performance from the Big Green Egg, with short cooking times and
-        uniform temperatures. We did find that the temperatures did vary somewhat
-        with the vents open and the grill running at maximum, but this didn''t seem
-        to be a problem when we cooked our test dishes. Our only major issue here
-        was the fact that the cooking area is very small; we were only able to get
-        two test patties onto it at a time. \n\n\n\n","notes":""},{"id":"50fb2e72bd0286d5550135dd","name":"Usability","body":"{{section_header}}{{section.name}}{{/section_header}}\n\n\nAt
-        the risk of throwing out a cliche, the {{product.brand.name}} is so simple,
-        even a caveman could use it. Using the grill just involves loading it with
-        charcoal, firing it up and throwing the food onto the grill. As long as the
-        caveman hasn''t grown accustomed to things like lighters, side burners and
-        lights, though: this grill eschews these for a more straightforward design.
-        \n\n\n\n","notes":""}],"permissions":{"read":true,"create":false,"update":false,"destroy":false}}],"products":[{"id":"50fa2ce096ab5860160c6a4b","created_at":"2011-09-28T15:42:10Z","updated_at":"2013-03-14T14:36:39Z","name":"Weber  Performer
-        Charcoal Grill","slug":"weber-performer-charcoal-grill","_type":"Home::Grills::Charcoal","types":["Natural
-        Gas"],"msrp":null,"article_ids":["50fb2e4cbd0286d55501338d","50fb2e5ebd0286d55501349a","50fb2e67bd0286d55501351e","50fb2e6bbd0286d555013560","50fb2e6fbd0286d5550135a2"],"website_ids":["50e669d7bd028648e0000023"],"publish_on":"2011-09-28T15:49:00+00:00","upc":null,"price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003b5","brand_id":"50f9ed78bd0286638e0001f2","model":"Charcoal
-        Grill","resource_uri":"/products/weber-performer-charcoal-grill","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":0.1,"ranking":{"total":3,"rank":3,"percentile":0},"rubric":{"id":"50f9ed93bd0286638e0003b5","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"2011
-        Charcoal Grill Rubric","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003b5","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003b5"}}},"is_primary_product":false,"websites":[{"id":"50e669d7bd028648e0000023","created_at":"2013-01-04T05:34:15Z","updated_at":"2013-01-19T06:42:05Z","name":"Grills","url":"grillsinfo.com","code":"GRI","category":null,"featured_video_id":null,"ad_campaign_group":{"id":"51377ab09f5e85f5a3000484","created_at":"2013-03-06T17:19:44Z","updated_at":"2013-03-06T17:19:44Z","website_id":"50e669d7bd028648e0000023","ad_campaigns":[],"permissions":{"read":false,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/ad_campaign_groups","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups"},"resource":{"rel":"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484"}}},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/websites","href":"https://the-guide-staging.herokuapp.com/api/v1/websites"},"resource":{"rel":"/api/v1/websites/50e669d7bd028648e0000023","href":"https://the-guide-staging.herokuapp.com/api/v1/websites/50e669d7bd028648e0000023"}}}],"manufacturer_specs":[{"id":"50fa36a0bd0286ee4a03a686","name":"brand_name","value":"Performer","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a687","name":"manufacturer_name","value":"Weber","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a688","name":"manual_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a689","name":"manual_text","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a68a","name":"manufacturer_text","value":null,"value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a68b","name":"manufacturer_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a68c","name":"series_name","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa36a0bd0286ee4a03a68d","name":"Fuel","value":["Natural
-        Gas"],"value_units":"","value_type":"MultiListItem","order":0,"options":["LP
-        Gas","Natural Gas","Charcoal","Electricity","Natural Gas (adaptor sold separately)","Propane
-        (adaptor sold separately)"]},{"id":"50fa36a0bd0286ee4a03a68e","name":"Install
-        Type","value":"Freestanding","value_units":"","value_type":"String","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa36a0bd0286ee4a03a68f","name":"Burners","value":1,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa36a0bd0286ee4a03a690","name":"Total
-        cooking area","value":363,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa36a0bd0286ee4a03a691","name":"Height","value":40.0,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa36a0bd0286ee4a03a692","name":"Width","value":50.25,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa36a0bd0286ee4a03a693","name":"Depth","value":28.5,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa36a0bd0286ee4a03a694","name":"Finish
-        or Color","value":"Black","value_units":"","value_type":"String","order":0,"options":["Electricity"]},{"id":"50fa36a0bd0286ee4a03a695","name":"Control
-        Dials","value":0,"value_units":"","value_type":"Integer","order":0,"options":["Electricity"]},{"id":"50fa36a0bd0286ee4a03a696","name":"Ignition
-        type","value":"Manual","value_units":"","value_type":"String","order":0,"options":["Push-button
-        Electronic","Auto Electronic","Manual","Other"]},{"id":"50fa36a0bd0286ee4a03a697","name":"Side
-        Burner","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa36a0bd0286ee4a03a698","name":"Rotisserie","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]}],"attachments":[{"id":"50fce120bd0286f12a01075c","created_at":"2013-01-21T06:33:04Z","updated_at":"2013-01-21T06:33:04Z","name":"Weber-Performer-Vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s50x50_Weber-Performer-Vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s150x150_Weber-Performer-Vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s250x250_Weber-Performer-Vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s300x150_Weber-Performer-Vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s300x112_Weber-Performer-Vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s500x500_Weber-Performer-Vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s600x400_Weber-Performer-Vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s600x600_Weber-Performer-Vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s940x400_Weber-Performer-Vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s940x350_Weber-Performer-Vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/s940x110_Weber-Performer-Vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/Weber-Performer-Vanity.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/a75898a3eeb010e96a73f5c146bc587abb775d5a/Weber-Performer-Vanity.jpg","file_size":33646,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fce120bd0286f12a01075c","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fce120bd0286f12a01075c"}}}],"brand":{"id":"50f9ed78bd0286638e0001f2","created_at":"2011-09-21T14:57:52Z","updated_at":"2013-01-19T00:49:04Z","name":"Weber","slug":"weber","url":null,"resource_uri":"/products?brand=weber","website_ids":["50e669d7bd028648e0000023"],"websites":[{"code":"GRI","name":"Grills","url":"grillsinfo.com"}],"logo_url":"http://reviewed-staging.s3.amazonaws.com/brand/01545cd3e6b182be8c6cdabccbdcb877bba2cf9a/logo.png","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/brands","href":"https://the-guide-staging.herokuapp.com/api/v1/brands"},"resource":{"rel":"/api/v1/brands/50f9ed78bd0286638e0001f2","href":"https://the-guide-staging.herokuapp.com/api/v1/brands/50f9ed78bd0286638e0001f2"}}},"awards":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d209156bd0a60000031","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d209156bd0a60000031"}}},{"id":"50fa2ced96ab5860160c6a7f","created_at":"2011-10-05T17:14:10Z","updated_at":"2013-03-14T14:36:44Z","name":"Kenmore
-        S3218AR","slug":"kenmore-s3218ar","_type":"Home::Grills::Gas","types":["Propane"],"msrp":null,"article_ids":["50fb2e47bd0286d55501334a","50fb2e4cbd0286d55501338d","50fb2e50bd0286d5550133d0","50fb2e63bd0286d5550134dd","50fb2e6fbd0286d5550135a2"],"website_ids":["50e669d7bd028648e0000023"],"publish_on":"2011-10-05T17:10:00+00:00","upc":null,"price_grabber_id":"883339143","rubric_id":"50f9ed93bd0286638e0003b4","brand_id":"50f9ed77bd0286638e0001c9","model":"S3218AR","resource_uri":"/products/kenmore-s3218ar","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":3.27,"ranking":{"total":7,"rank":6,"percentile":15},"rubric":{"id":"50f9ed93bd0286638e0003b4","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"2011
-        Gas Grill Rubric","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003b4","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003b4"}}},"is_primary_product":false,"websites":[{"id":"50e669d7bd028648e0000023","created_at":"2013-01-04T05:34:15Z","updated_at":"2013-01-19T06:42:05Z","name":"Grills","url":"grillsinfo.com","code":"GRI","category":null,"featured_video_id":null,"ad_campaign_group":{"id":"51377ab09f5e85f5a3000484","created_at":"2013-03-06T17:19:44Z","updated_at":"2013-03-06T17:19:44Z","website_id":"50e669d7bd028648e0000023","ad_campaigns":[],"permissions":{"read":false,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/ad_campaign_groups","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups"},"resource":{"rel":"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484"}}},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/websites","href":"https://the-guide-staging.herokuapp.com/api/v1/websites"},"resource":{"rel":"/api/v1/websites/50e669d7bd028648e0000023","href":"https://the-guide-staging.herokuapp.com/api/v1/websites/50e669d7bd028648e0000023"}}}],"manufacturer_specs":[{"id":"50fa369bbd0286ee4a039bed","name":"brand_name","value":"(Kenmore)","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bee","name":"manufacturer_name","value":"Kenmore","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bef","name":"manual_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bf0","name":"manual_text","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bf1","name":"manufacturer_text","value":null,"value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bf2","name":"manufacturer_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bf3","name":"series_name","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa369bbd0286ee4a039bf4","name":"Fuel","value":["LP
-        Gas"],"value_units":"","value_type":"MultiListItem","order":0,"options":["LP
-        Gas","Natural Gas","Charcoal","Electricity","Natural Gas (adaptor sold separately)","Propane
-        (adaptor sold separately)"]},{"id":"50fa369bbd0286ee4a039bf5","name":"Install
-        Type","value":"Freestanding","value_units":"","value_type":"String","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bf6","name":"Burners","value":5,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bf7","name":"BTU
-        Output (total)","value":85000,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bf8","name":"Total
-        cooking area","value":784,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bf9","name":"Primary
-        cooking area","value":400,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bfa","name":"Warming
-        rack area","value":290,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bfb","name":"Height","value":60.8,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bfc","name":"Width","value":48.6,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bfd","name":"Depth","value":24.6,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa369bbd0286ee4a039bfe","name":"Finish
-        or Color","value":"Red / Stainless","value_units":"","value_type":"String","order":0,"options":["Electricity"]},{"id":"50fa369bbd0286ee4a039bff","name":"Control
-        Dials","value":7,"value_units":"","value_type":"Integer","order":0,"options":["Electricity"]},{"id":"50fa369bbd0286ee4a039c00","name":"Ignition
-        type","value":"Auto Electronic","value_units":"","value_type":"String","order":0,"options":["Push-button
-        Electronic","Auto Electronic","Manual","Other"]},{"id":"50fa369bbd0286ee4a039c01","name":"Side
-        Burner","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa369bbd0286ee4a039c02","name":"Rotisserie","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]}],"attachments":[{"id":"50fce11fbd02860b13010754","created_at":"2013-01-21T06:33:03Z","updated_at":"2013-01-21T06:33:03Z","name":"Kenmore-Vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s50x50_Kenmore-Vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s150x150_Kenmore-Vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s250x250_Kenmore-Vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s300x150_Kenmore-Vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s300x112_Kenmore-Vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s500x500_Kenmore-Vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s600x400_Kenmore-Vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s600x600_Kenmore-Vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s940x400_Kenmore-Vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s940x350_Kenmore-Vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/s940x110_Kenmore-Vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/Kenmore-Vanity.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/b3be76a7d03c4414a123dc6c05c1d303859102bc/Kenmore-Vanity.jpg","file_size":32529,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fce11fbd02860b13010754","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fce11fbd02860b13010754"}}}],"brand":{"id":"50f9ed77bd0286638e0001c9","created_at":"2011-04-13T15:03:17Z","updated_at":"2013-01-19T00:49:05Z","name":"Kenmore","slug":"kenmore","url":null,"resource_uri":"/products?brand=kenmore","website_ids":["50e669d7bd028648e000002b","50e669d7bd028648e0000021","50e669d7bd028648e0000023","50e669d7bd028648e0000019","50e669d7bd028648e000001b","50e669d7bd028648e000001d"],"websites":[{"code":"RFI","name":"Refrigerators","url":"refrigeratorinfo.com"},{"code":"WDI","name":"Laundry","url":"washerdryerinfo.com"},{"code":"VCI","name":"Vacuums","url":"vacuumcleanerinfo.com"},{"code":"DWI","name":"Dishwashers","url":"dishwashersinfo.com"},{"code":"GRI","name":"Grills","url":"grillsinfo.com"},{"code":"OVI","name":"Ovens","url":"oveninfo.com"}],"logo_url":"http://reviewed-staging.s3.amazonaws.com/brand/ee5037a5bec182596e7e41a91fa7f9667a9aa658/logo.png","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/brands","href":"https://the-guide-staging.herokuapp.com/api/v1/brands"},"resource":{"rel":"/api/v1/brands/50f9ed77bd0286638e0001c9","href":"https://the-guide-staging.herokuapp.com/api/v1/brands/50f9ed77bd0286638e0001c9"}}},"awards":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d209156bd0a60000032","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d209156bd0a60000032"}}},{"id":"50fa2cfc96ab5860160c6ac2","created_at":"2011-10-12T18:55:14Z","updated_at":"2013-03-14T14:36:39Z","name":"Big
-        Green Egg Medium","slug":"big-green-egg-medium","_type":"Home::Grills::Charcoal","types":["Charcoal"],"msrp":649.0,"article_ids":["50fb2e67bd0286d55501351e","50fb2e6bbd0286d555013560","50fb2e6fbd0286d5550135a2"],"website_ids":["50e669d7bd028648e0000023"],"publish_on":"2011-10-12T18:55:00+00:00","upc":null,"price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003b5","brand_id":"50f9ed79bd0286638e000215","model":"Medium","resource_uri":"/products/big-green-egg-medium","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":5.74,"ranking":{"total":3,"rank":2,"percentile":34},"rubric":{"id":"50f9ed93bd0286638e0003b5","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"2011
-        Charcoal Grill Rubric","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003b5","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003b5"}}},"is_primary_product":true,"websites":[{"id":"50e669d7bd028648e0000023","created_at":"2013-01-04T05:34:15Z","updated_at":"2013-01-19T06:42:05Z","name":"Grills","url":"grillsinfo.com","code":"GRI","category":null,"featured_video_id":null,"ad_campaign_group":{"id":"51377ab09f5e85f5a3000484","created_at":"2013-03-06T17:19:44Z","updated_at":"2013-03-06T17:19:44Z","website_id":"50e669d7bd028648e0000023","ad_campaigns":[],"permissions":{"read":false,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/ad_campaign_groups","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups"},"resource":{"rel":"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484"}}},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/websites","href":"https://the-guide-staging.herokuapp.com/api/v1/websites"},"resource":{"rel":"/api/v1/websites/50e669d7bd028648e0000023","href":"https://the-guide-staging.herokuapp.com/api/v1/websites/50e669d7bd028648e0000023"}}}],"manufacturer_specs":[{"id":"50fa3698bd0286ee4a0394dd","name":"brand_name","value":"(Big
-        Green Egg)","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394de","name":"manufacturer_name","value":"Big
-        Green Egg","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394df","name":"manual_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394e0","name":"manual_text","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394e1","name":"manufacturer_text","value":null,"value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394e2","name":"manufacturer_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394e3","name":"series_name","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a0394e4","name":"Fuel","value":["Charcoal"],"value_units":"","value_type":"MultiListItem","order":0,"options":["LP
-        Gas","Natural Gas","Charcoal","Electricity","Natural Gas (adaptor sold separately)","Propane
-        (adaptor sold separately)"]},{"id":"50fa3698bd0286ee4a0394e5","name":"Install
-        Type","value":"Freestanding","value_units":"","value_type":"String","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a0394e6","name":"Total
-        cooking area","value":177,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a0394e7","name":"Finish
-        or Color","value":"Green","value_units":"","value_type":"String","order":0,"options":["Electricity"]},{"id":"50fa3698bd0286ee4a0394e8","name":"Ignition
-        type","value":"Manual","value_units":"","value_type":"String","order":0,"options":["Push-button
-        Electronic","Auto Electronic","Manual","Other"]},{"id":"50fa3698bd0286ee4a0394e9","name":"Side
-        Burner","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa3698bd0286ee4a0394ea","name":"Rotisserie","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa3698bd0286ee4a0394eb","name":"Original
-        Price","value":649.0,"value_units":"","value_type":"Decimal","order":0,"options":[]}],"attachments":[{"id":"50fce12cbd0286de7b010793","created_at":"2013-01-21T06:33:16Z","updated_at":"2013-01-21T06:33:16Z","name":"MEgg.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s50x50_MEgg.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s150x150_MEgg.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s250x250_MEgg.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s300x150_MEgg.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s300x112_MEgg.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s500x500_MEgg.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s600x400_MEgg.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s600x600_MEgg.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x400_MEgg.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x350_MEgg.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/s940x110_MEgg.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/MEgg.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/bec0caff763e70d206e53410ca0678172fe5bd28/MEgg.jpg","file_size":24813,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fce12cbd0286de7b010793","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fce12cbd0286de7b010793"}}}],"brand":{"id":"50f9ed79bd0286638e000215","created_at":"2011-10-12T17:05:13Z","updated_at":"2013-01-19T00:49:04Z","name":"Big
-        Green Egg","slug":"big-green-egg","url":null,"resource_uri":"/products?brand=big-green-egg","website_ids":["50e669d7bd028648e0000023"],"websites":[{"code":"GRI","name":"Grills","url":"grillsinfo.com"}],"logo_url":"http://reviewed-staging.s3.amazonaws.com/brand/c32bb02dc90868b3732566a0274ca535cc59c464/logo.png","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/brands","href":"https://the-guide-staging.herokuapp.com/api/v1/brands"},"resource":{"rel":"/api/v1/brands/50f9ed79bd0286638e000215","href":"https://the-guide-staging.herokuapp.com/api/v1/brands/50f9ed79bd0286638e000215"}}},"awards":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d209156bd0a60000033","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d209156bd0a60000033"}}},{"id":"50fa2cfd96ab5860160c6ac7","created_at":"2011-10-12T19:32:52Z","updated_at":"2013-03-14T14:36:38Z","name":"Primo
-        Kamado","slug":"primo-kamado","_type":"Home::Grills::Charcoal","types":["Charcoal"],"msrp":829.99,"article_ids":["50fb2e4cbd0286d55501338d","50fb2e5ebd0286d55501349a","50fb2e6fbd0286d5550135a2"],"website_ids":["50e669d7bd028648e0000023"],"publish_on":"2011-10-12T19:31:00+00:00","upc":null,"price_grabber_id":"","rubric_id":"50f9ed93bd0286638e0003b5","brand_id":"50f9ed79bd0286638e000214","model":"Kamado","resource_uri":"/products/primo-kamado","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":10.0,"ranking":{"total":3,"rank":1,"percentile":67},"rubric":{"id":"50f9ed93bd0286638e0003b5","created_at":"2013-01-19T00:49:23Z","updated_at":"2013-06-21T15:39:18Z","name":"2011
-        Charcoal Grill Rubric","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics/50f9ed93bd0286638e0003b5","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics/50f9ed93bd0286638e0003b5"}}},"is_primary_product":false,"websites":[{"id":"50e669d7bd028648e0000023","created_at":"2013-01-04T05:34:15Z","updated_at":"2013-01-19T06:42:05Z","name":"Grills","url":"grillsinfo.com","code":"GRI","category":null,"featured_video_id":null,"ad_campaign_group":{"id":"51377ab09f5e85f5a3000484","created_at":"2013-03-06T17:19:44Z","updated_at":"2013-03-06T17:19:44Z","website_id":"50e669d7bd028648e0000023","ad_campaigns":[],"permissions":{"read":false,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/ad_campaign_groups","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups"},"resource":{"rel":"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484"}}},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/websites","href":"https://the-guide-staging.herokuapp.com/api/v1/websites"},"resource":{"rel":"/api/v1/websites/50e669d7bd028648e0000023","href":"https://the-guide-staging.herokuapp.com/api/v1/websites/50e669d7bd028648e0000023"}}}],"manufacturer_specs":[{"id":"50fa3698bd0286ee4a03952e","name":"brand_name","value":"(Primo)","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a03952f","name":"manufacturer_name","value":"Primo","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a039530","name":"manual_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a039531","name":"manual_text","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a039532","name":"manufacturer_text","value":null,"value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a039533","name":"manufacturer_url","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a039534","name":"series_name","value":"","value_units":"","value_type":"String","order":0,"options":[]},{"id":"50fa3698bd0286ee4a039535","name":"Fuel","value":["Charcoal"],"value_units":"","value_type":"MultiListItem","order":0,"options":["LP
-        Gas","Natural Gas","Charcoal","Electricity","Natural Gas (adaptor sold separately)","Propane
-        (adaptor sold separately)"]},{"id":"50fa3698bd0286ee4a039536","name":"Install
-        Type","value":"Freestanding","value_units":"","value_type":"String","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a039537","name":"Total
-        cooking area","value":280,"value_units":"","value_type":"Integer","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a039538","name":"Height","value":429.75,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a039539","name":"Width","value":21.5,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a03953a","name":"Depth","value":21.5,"value_units":"","value_type":"Decimal","order":0,"options":["Freestanding","Portable","Install"]},{"id":"50fa3698bd0286ee4a03953b","name":"Finish
-        or Color","value":"Black Ceramic","value_units":"","value_type":"String","order":0,"options":["Electricity"]},{"id":"50fa3698bd0286ee4a03953c","name":"Ignition
-        type","value":"Manual","value_units":"","value_type":"String","order":0,"options":["Push-button
-        Electronic","Auto Electronic","Manual","Other"]},{"id":"50fa3698bd0286ee4a03953d","name":"Side
-        Burner","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa3698bd0286ee4a03953e","name":"Rotisserie","value":"No","value_units":"","value_type":"String","order":0,"options":["Yes","No"]},{"id":"50fa3698bd0286ee4a03953f","name":"Original
-        Price","value":829.99,"value_units":"","value_type":"Decimal","order":0,"options":[]}],"attachments":[{"id":"50fce12bbd02862d7701078b","created_at":"2013-01-21T06:33:15Z","updated_at":"2013-01-21T06:33:15Z","name":"Primo-Vanity.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s50x50_Primo-Vanity.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s150x150_Primo-Vanity.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s250x250_Primo-Vanity.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s300x150_Primo-Vanity.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s300x112_Primo-Vanity.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s500x500_Primo-Vanity.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s600x400_Primo-Vanity.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s600x600_Primo-Vanity.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s940x400_Primo-Vanity.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s940x350_Primo-Vanity.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/s940x110_Primo-Vanity.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/Primo-Vanity.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/ba04802a9967f9b56b0195215524b6e311ccce1a/Primo-Vanity.jpg","file_size":15587,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fce12bbd02862d7701078b","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fce12bbd02862d7701078b"}}}],"brand":{"id":"50f9ed79bd0286638e000214","created_at":"2011-10-12T17:04:59Z","updated_at":"2013-01-19T00:49:04Z","name":"Primo","slug":"primo","url":null,"resource_uri":"/products?brand=primo","website_ids":["50e669d7bd028648e0000023"],"websites":[{"code":"GRI","name":"Grills","url":"grillsinfo.com"}],"logo_url":"http://reviewed-staging.s3.amazonaws.com/brand/23f6bdb326780525380b08dcbc9cc0a26385d30c/logo.png","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/brands","href":"https://the-guide-staging.herokuapp.com/api/v1/brands"},"resource":{"rel":"/api/v1/brands/50f9ed79bd0286638e000214","href":"https://the-guide-staging.herokuapp.com/api/v1/brands/50f9ed79bd0286638e000214"}}},"awards":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51cc5d219156bd0a60000034","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51cc5d219156bd0a60000034"}}}],"authors":[{"id":"50fc4e94bd0286d5550b4bf8","created_at":"2013-01-20T20:07:48Z","updated_at":"2013-02-13T15:13:52Z","name":"Richard
-        Baguley","title":"Editor","short_bio":"Richard Baguley is a valued contributor
-        to the Reviewed.com family of sites.","long_bio":"Richard Baguley is a valued
-        contributor to the Reviewed.com family of sites.","slug":"richard-baguley","social":{"email":"","facebook":"","twitter":""},"resource_uri":"/authors/richard-baguley","avatars":{"small":"http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=48&d=mm","medium":"http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=128&d=mm","normal":"http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm"},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/authors","href":"https://the-guide-staging.herokuapp.com/api/v1/authors"},"resource":{"rel":"/api/v1/authors/50fc4e94bd0286d5550b4bf8","href":"https://the-guide-staging.herokuapp.com/api/v1/authors/50fc4e94bd0286d5550b4bf8"}}}],"attachments":[{"id":"50fb2e71bd0286d5550135b3","created_at":"2013-01-19T23:38:25Z","updated_at":"2013-01-19T23:38:25Z","name":"table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s50x50_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s150x150_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s250x250_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s300x150_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s300x112_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s500x500_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s600x400_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s600x600_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s940x400_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s940x350_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/s940x110_table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/table-b297567d41f58254691baba562ae65d34cb1c3f0.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/b297567d41f58254691baba562ae65d34cb1c3f0/table-b297567d41f58254691baba562ae65d34cb1c3f0.csv","file_size":152},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e71bd0286d5550135b3","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e71bd0286d5550135b3"}}},{"id":"50fb2e71bd0286d5550135cb","created_at":"2013-01-19T23:38:25Z","updated_at":"2013-01-19T23:38:25Z","name":"table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s50x50_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s150x150_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s250x250_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s300x150_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s300x112_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s500x500_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s600x400_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s600x600_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x400_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x350_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x110_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","file_size":152},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e71bd0286d5550135cb","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e71bd0286d5550135cb"}}},{"id":"50fb2e71bd0286d5550135cc","created_at":"2013-01-19T23:38:25Z","updated_at":"2013-01-19T23:38:25Z","name":"table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s50x50_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s150x150_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s250x250_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s300x150_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s300x112_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s500x500_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s600x400_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s600x600_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x400_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x350_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x110_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","file_size":2564},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e71bd0286d5550135cc","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e71bd0286d5550135cc"}}},{"id":"50fb2e72bd0286d5550135d0","created_at":"2013-01-19T23:38:26Z","updated_at":"2013-01-19T23:38:26Z","name":"table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s50x50_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s150x150_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s250x250_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s300x150_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s300x112_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s500x500_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s600x400_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s600x600_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x400_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x350_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x110_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","file_size":152},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e72bd0286d5550135d0","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e72bd0286d5550135d0"}}},{"id":"50fb2e72bd0286d5550135d1","created_at":"2013-01-19T23:38:26Z","updated_at":"2013-01-19T23:38:26Z","name":"table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s50x50_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s150x150_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s250x250_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s300x150_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s300x112_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s500x500_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s600x400_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s600x600_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x400_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x350_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x110_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","file_size":2564},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e72bd0286d5550135d1","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e72bd0286d5550135d1"}}},{"id":"50fb2e72bd0286d5550135d5","created_at":"2013-01-19T23:38:26Z","updated_at":"2013-01-19T23:38:26Z","name":"table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s50x50_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s150x150_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s250x250_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s300x150_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s300x112_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s500x500_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s600x400_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s600x600_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x400_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x350_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/s940x110_table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77/table-ac64d870e0ee8793ddf47a4b39eb8eb28d14ee77.csv","file_size":152},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e72bd0286d5550135d5","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e72bd0286d5550135d5"}}},{"id":"50fb2e72bd0286d5550135d6","created_at":"2013-01-19T23:38:26Z","updated_at":"2013-01-19T23:38:26Z","name":"table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","type":"file","tags":[],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s50x50_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s150x150_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s250x250_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s300x150_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s300x112_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s500x500_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s600x400_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s600x600_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x400_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x350_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/s940x110_table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","original":"http://reviewed-staging.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv"},"caption":null,"alt_text":null,"data":{"content_type":"text/csv","url":"http://reviewed-production.s3.amazonaws.com/attachment/ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea/table-ac1a1a47f44276831e4f1dcb8e6d134fc537b0ea.csv","file_size":2564},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e72bd0286d5550135d6","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e72bd0286d5550135d6"}}},{"id":"50fb2e74bd0286d5550135e4","created_at":"2013-01-19T23:38:28Z","updated_at":"2013-01-19T23:38:28Z","name":"BGE-medium-web2.jpg","type":"file","tags":["old-hero"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s50x50_BGE-medium-web2.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s150x150_BGE-medium-web2.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s250x250_BGE-medium-web2.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s300x150_BGE-medium-web2.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s300x112_BGE-medium-web2.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s500x500_BGE-medium-web2.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s600x400_BGE-medium-web2.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s600x600_BGE-medium-web2.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x400_BGE-medium-web2.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x350_BGE-medium-web2.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x110_BGE-medium-web2.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg","file_size":81744,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e74bd0286d5550135e4","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e74bd0286d5550135e4"}}}],"websites":[{"id":"50e669d7bd028648e0000023","created_at":"2013-01-04T05:34:15Z","updated_at":"2013-01-19T06:42:05Z","name":"Grills","url":"grillsinfo.com","code":"GRI","category":null,"featured_video_id":null,"ad_campaign_group":{"id":"51377ab09f5e85f5a3000484","created_at":"2013-03-06T17:19:44Z","updated_at":"2013-03-06T17:19:44Z","website_id":"50e669d7bd028648e0000023","ad_campaigns":[],"permissions":{"read":false,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/ad_campaign_groups","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups"},"resource":{"rel":"/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484","href":"https://the-guide-staging.herokuapp.com/api/v1/ad_campaign_groups/51377ab09f5e85f5a3000484"}}},"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/websites","href":"https://the-guide-staging.herokuapp.com/api/v1/websites"},"resource":{"rel":"/api/v1/websites/50e669d7bd028648e0000023","href":"https://the-guide-staging.herokuapp.com/api/v1/websites/50e669d7bd028648e0000023"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/articles","href":"https://the-guide-staging.herokuapp.com/api/v1/articles"},"resource":{"rel":"/api/v1/articles/50fb2e6fbd0286d5550135a2","href":"https://the-guide-staging.herokuapp.com/api/v1/articles/50fb2e6fbd0286d5550135a2"}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        AKpoUboqQAEA
     http_version: 
-  recorded_at: Thu, 27 Jun 2013 15:41:22 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Wed, 24 Jul 2013 21:02:20 GMT
+recorded_with: VCR 2.4.0

@@ -1,6 +1,9 @@
 require 'spec_helper.rb'
 
 describe Reviewed::Request do
+  before do
+    Faraday::Cache.store.clear
+  end
 
   let(:request) do
     Reviewed::Request.new(
@@ -45,6 +48,24 @@ describe Reviewed::Request do
         request.path
       end
     end
+  end
+
+  it "does not use cached version when with_no_cache is used" do
+    request.with_no_cache.should be_uncached
+  end
+
+  it "caches requests that haven't been called with with_no_cache or with_new_cache" do
+    request.should be_cached
+  end
+
+  it "calls client with skip-cache if with_no_cache is used" do
+    client = Reviewed::Client.new
+    client.articles.with_no_cache.cache_control_params.should include(:"skip-cache")
+  end
+
+  it "calls client with reset-cache if with_new_cache is used" do
+    client = Reviewed::Client.new
+    client.articles.with_new_cache.cache_control_params.should include(:"reset-cache")
   end
 
   describe '#find' do
