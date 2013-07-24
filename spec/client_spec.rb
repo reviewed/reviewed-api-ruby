@@ -3,7 +3,7 @@ require 'spec_helper.rb'
 describe Reviewed::Client do
 
   before do
-    Reviewed::Cache.store.clear
+    Faraday::Cache.store.clear
   end
 
   let(:client) { Reviewed::Client.new }

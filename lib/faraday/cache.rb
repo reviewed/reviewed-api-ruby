@@ -1,6 +1,6 @@
 require 'active_support/cache'
 
-module Reviewed
+module Faraday
   class Cache
 
     def self.store

@@ -7,7 +7,7 @@ describe Reviewed::Article, vcr: true do
   end
 
   before(:each) do
-    Reviewed::Cache.store.clear
+    Faraday::Cache.store.clear
     @article = client.articles.find('big-green-egg-medium-charcoal-grill-review', { with_attachments: true })
   end
 

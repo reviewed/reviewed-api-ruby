@@ -2,7 +2,7 @@ require 'spec_helper.rb'
 
 describe Reviewed::Request do
   before do
-    Reviewed::Cache.store.clear
+    Faraday::Cache.store.clear
   end
 
   let(:request) do
