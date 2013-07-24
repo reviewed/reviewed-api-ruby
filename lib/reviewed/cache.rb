@@ -4,7 +4,9 @@ module Reviewed
   class Cache
 
     def self.store
-      @store ||= ActiveSupport::Cache.lookup_store(:redis_store, ENV["REDISCLOUD_URL"], {expires_in: 90.minutes})
+      @store ||= ActiveSupport::Cache.lookup_store(:redis_store,
+                                                   ENV['REVIEWED_CACHE_REDIS_URL'],
+                                                   { expires_in: Integer(ENV['REVIEWED_CACHE_TIMEOUT'] || 90).minutes } )
     end
 
     def initialize(app)
@@ -13,6 +15,7 @@ module Reviewed
 
     def call(env)
       @url = env[:url]
+      @auth_header = env[:request_headers]['X-Reviewed-Authorization']
 
       if serve_from_cache && self.class.store.exist?(cache_key)
         Hashie::Mash.new(Marshal.load( self.class.store.read(cache_key) ))
@@ -21,9 +24,6 @@ module Reviewed
           if store_response
             self.class.store.delete(cache_key)
             self.class.store.write(cache_key, Marshal.dump(response))
-            cache_key
-          else
-            response
           end
         end
       end
@@ -40,7 +40,7 @@ module Reviewed
     end
 
     def cache_key
-      @url.request_uri
+      [@auth_header, @url.request_uri].join(':')
     end
 
   end
