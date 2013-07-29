@@ -1,29 +1,27 @@
-require 'active_support/cache'
+require 'reviewed/cache'
 
 module Faraday
   class Cache
 
-    def self.store
-      @store ||= ActiveSupport::Cache.lookup_store(:redis_store,
-                                                   ENV['REVIEWED_CACHE_REDIS_URL'],
-                                                   { expires_in: Integer(ENV['REVIEWED_CACHE_TIMEOUT'] || 90).minutes } )
-    end
-
     def initialize(app)
       @app = app
+    end
+
+    def store
+      Reviewed::Cache.store
     end
 
     def call(env)
       @url = env[:url]
       @auth_header = env[:request_headers]['X-Reviewed-Authorization']
 
-      if serve_from_cache && self.class.store.exist?(cache_key)
-        Hashie::Mash.new(Marshal.load( self.class.store.read(cache_key) ))
+      if serve_from_cache && store.exist?(cache_key)
+        Hashie::Mash.new(Marshal.load( store.read(cache_key) ))
       else
         @app.call(env).on_complete do |response|
           if store_response
-            self.class.store.delete(cache_key)
-            self.class.store.write(cache_key, Marshal.dump(response))
+            store.delete(cache_key)
+            store.write(cache_key, Marshal.dump(response), write_options)
           end
         end
       end
@@ -41,6 +39,10 @@ module Faraday
 
     def cache_key
       [@auth_header, @url.request_uri].join(':')
+    end
+
+    def write_options
+      { expires_in: Integer(ENV['REVIEWED_CACHE_TIMEOUT'] || 90).minutes }
     end
 
   end
