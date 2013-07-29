@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'faraday_middleware', '>= 0.9.0'
   gem.add_dependency 'hashie', '~> 1.2'
   gem.add_dependency 'rack'
-  gem.add_dependency 'redis-rails'
+  gem.add_dependency 'redis-activesupport'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec', '>= 2.10'
