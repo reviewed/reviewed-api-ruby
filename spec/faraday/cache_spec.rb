@@ -18,15 +18,15 @@ describe Faraday::Cache do
     it "caches anything that doesn't have skip-cache or reset-cache" do
       mock_cache_val = mock
       Marshal.stub(:dump).with(hash_including(:body => 'I like turtles')).and_return(mock_cache_val)
-      Faraday::Cache.store.should_receive(:write).with("#{TEST_KEY}:/articles", mock_cache_val)
+      Reviewed::Cache.store.should_receive(:write).with("#{TEST_KEY}:/articles", mock_cache_val, anything)
       conn.get('/articles')
     end
 
     it "can cache more than one thing" do
       mock_cache_val = mock
       Marshal.stub(:dump => mock_cache_val)
-      Faraday::Cache.store.should_receive(:write).with("#{TEST_KEY}:/articles", mock_cache_val)
-      Faraday::Cache.store.should_receive(:write).with("#{TEST_KEY}:/products", mock_cache_val)
+      Reviewed::Cache.store.should_receive(:write).with("#{TEST_KEY}:/articles", mock_cache_val, anything)
+      Reviewed::Cache.store.should_receive(:write).with("#{TEST_KEY}:/products", mock_cache_val, anything)
 
       conn.get('/articles')
       conn.get('/products')
@@ -34,22 +34,22 @@ describe Faraday::Cache do
 
     it "serves responses from the cache when fresh and does not call the app" do
       marshalled_response = Marshal.dump(body: 'old musty response')
-      Faraday::Cache.store.stub(:exist? => true)
-      Faraday::Cache.store.should_receive(:read).with("#{TEST_KEY}:/articles").and_return(marshalled_response)
+      Reviewed::Cache.store.stub(:exist? => true)
+      Reviewed::Cache.store.should_receive(:read).with("#{TEST_KEY}:/articles").and_return(marshalled_response)
       resp = conn.get '/articles'
       resp[:body].should eq("old musty response")
     end
 
     describe "cache busting and skipping" do
       it "does not cache responses with skip-cache as a query param" do
-        Faraday::Cache.store.should_not_receive(:read)
-        Faraday::Cache.store.should_not_receive(:write)
+        Reviewed::Cache.store.should_not_receive(:read)
+        Reviewed::Cache.store.should_not_receive(:write)
         conn.get '/articles', {:"skip-cache" => true}
       end
 
       it "replaces cached content with app response when reset-cache is a query param" do
-        Faraday::Cache.store.should_not_receive(:read)
-        Faraday::Cache.store.should_receive(:write)
+        Reviewed::Cache.store.should_not_receive(:read)
+        Reviewed::Cache.store.should_receive(:write)
         conn.get '/articles', {:"reset-cache" => true}
       end
     end

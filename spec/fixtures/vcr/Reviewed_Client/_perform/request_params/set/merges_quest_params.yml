@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.7
+      - Faraday v0.8.6
       X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -36,19 +36,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 27 Jun 2013 15:41:55 GMT
-      Etag:
-      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      - Mon, 29 Jul 2013 21:24:10 GMT
       Status:
       - 200 OK
       Strict-Transport-Security:
       - max-age=31536000
       Vary:
       - Accept-Encoding
+      X-Rack-Cache:
+      - miss
       X-Request-Id:
-      - 651c5a3f278243fe81d8b568578d8ed2
+      - 1e84211d6339d4df76d4352c192dc1e5
       X-Runtime:
-      - '0.016078'
+      - '0.104108'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -57,9 +57,8 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"pagination":{"total":13067,"total_pages":13067,"first_page":true,"last_page":false,"previous_page":null,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1,"per_page":1,"entries_on_page":1},"data":[{"id":"51bb4116aba4288eda0000d7","created_at":"2013-06-14T16:13:10Z","updated_at":"2013-06-24T14:58:49Z","name":"OMG
-        a feature on a branch","branch_name":"master","summary":null,"meta_description":"weeee
-        feature","website_ids":["50e669d7bd028648e0000023"],"author_ids":["5113c597f981b8f03b00057d"],"tags":[],"classifications":["feature"],"publish_on":"2013-06-14T16:08:43+00:00","attachment_ids":[],"primary_product_id":null,"resource_uri":"/features/omg-a-feature","disqus_uri":"/features/omg-a-feature","product_ids":[],"related_article_ids":[],"price_grabber_id":null,"publishable":true,"publishable_on":null,"slug":"omg-a-feature","is_template":false,"is_branch":false,"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/articles","href":"https://the-guide-staging.herokuapp.com/api/v1/articles"},"resource":{"rel":"/api/v1/articles/51bb4116aba4288eda0000d7","href":"https://the-guide-staging.herokuapp.com/api/v1/articles/51bb4116aba4288eda0000d7"}}}]}'
+      string: '{"pagination":{"total":14082,"total_pages":14082,"first_page":true,"last_page":false,"previous_page":null,"next_page":2,"out_of_bounds":false,"offset":0,"current_page":1,"per_page":1,"entries_on_page":1},"data":[{"id":"51f279625bfa62856d000008","created_at":"2013-07-26T13:28:02Z","updated_at":"2013-07-26T13:30:16Z","name":"How
+        we test great lyrics","branch_name":"master","summary":null,"meta_description":null,"website_ids":["50e669d7bd028648e0000031"],"author_ids":["5113c597f981b8f03b00057d"],"tags":[],"classifications":["science"],"publish_on":"2013-07-25T13:28:07+00:00","attachment_ids":[],"primary_product_id":null,"resource_uri":"/science/science-duh","disqus_uri":"/science/science-duh","product_ids":[],"related_article_ids":[],"price_grabber_id":null,"publishable":true,"publishable_on":null,"slug":"science-duh","is_template":false,"is_branch":false,"attachments":[],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/articles","href":"https://the-guide-staging.herokuapp.com/api/v1/articles"},"resource":{"rel":"/api/v1/articles/51f279625bfa62856d000008","href":"https://the-guide-staging.herokuapp.com/api/v1/articles/51f279625bfa62856d000008"}}}]}'
     http_version: 
-  recorded_at: Thu, 27 Jun 2013 15:41:56 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 29 Jul 2013 21:24:10 GMT
+recorded_with: VCR 2.4.0

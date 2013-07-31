@@ -11,7 +11,7 @@ describe Reviewed::Product do
     describe 'attachments', vcr: true do
 
       before(:each) do
-        Faraday::Cache.store.clear
+        Reviewed::Cache.store.clear
         @product = client.products.with_no_cache.find('minden-master-ii')
       end
 

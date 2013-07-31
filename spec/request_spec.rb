@@ -2,7 +2,7 @@ require 'spec_helper.rb'
 
 describe Reviewed::Request do
   before do
-    Faraday::Cache.store.clear
+    Reviewed::Cache.store.clear
   end
 
   let(:request) do
@@ -99,14 +99,14 @@ describe Reviewed::Request do
       collection.current_page.should == 2
     end
 
-    it 'filters collections using other supported options' do
-      collection = request.where(:keywords => 'minden')
+    it 'filters collections using keywords' do
+      collection = request.where(:keywords => 'Zenbook,UX31E')
       collection.total.should == 1
       collection.last_page.should be_true
     end
 
     it 'returns an empty set if no matching data was found' do
-      collection = request.where(:keywords => 'doesnotcompute')
+      collection = request.where(:keywords => 'TQ')
       collection.should be_empty
       collection.total.should == 0
       collection.out_of_bounds.should be_true

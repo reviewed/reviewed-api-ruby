@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the-guide-staging.herokuapp.com/api/v1/articles?keywords=doesnotcompute
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles?keywords=TQ
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.7
+      - Faraday v0.8.6
       X-Reviewed-Authorization:
-      - 38e397252ec670ec441733a95204f141
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -36,7 +36,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 27 Jun 2013 15:43:03 GMT
+      - Wed, 31 Jul 2013 14:01:23 GMT
       Etag:
       - '"e0aa021e21dddbd6d8cecec71e9cf564"'
       Status:
@@ -45,10 +45,12 @@ http_interactions:
       - max-age=31536000
       Vary:
       - Accept-Encoding
+      X-Rack-Cache:
+      - miss
       X-Request-Id:
-      - 61583fea337c5d8761b5433947a14712
+      - 6c5f09c110283fd75c29b605d17deeff
       X-Runtime:
-      - '0.025699'
+      - '0.000758'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -57,7 +59,7 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"pagination":{"total":0,"total_pages":0,"first_page":true,"last_page":true,"previous_page":null,"next_page":null,"out_of_bounds":true,"offset":0,"current_page":1,"per_page":20,"entries_on_page":0},"data":[]}'
+      string: '{"pagination":{"total":0,"total_pages":0,"first_page":true,"last_page":false,"previous_page":null,"next_page":null,"out_of_bounds":true,"offset":0,"current_page":1,"per_page":20,"entries_on_page":0},"data":[]}'
     http_version: 
-  recorded_at: Thu, 27 Jun 2013 15:43:04 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Wed, 31 Jul 2013 14:01:24 GMT
+recorded_with: VCR 2.4.0

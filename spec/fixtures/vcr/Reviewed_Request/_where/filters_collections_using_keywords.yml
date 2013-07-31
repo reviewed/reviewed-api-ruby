@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles?keywords=Zenbook,UX31E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.6
+      X-Reviewed-Authorization:
+      - 5bbeff36f992bbb2f6dcaf37f3e630d8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 31 Jul 2013 13:59:05 GMT
+      Etag:
+      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 43a8e52ecd076ae4897d1ccd7b74a4ef
+      X-Runtime:
+      - '0.002911'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"pagination":{"total":1,"total_pages":1,"first_page":true,"last_page":true,"previous_page":null,"next_page":null,"out_of_bounds":false,"offset":0,"current_page":1,"per_page":20,"entries_on_page":1},"data":[{"id":"50fc4bc2bd0286d5550b481a","created_at":"2013-01-04T14:47:31Z","updated_at":"2013-07-30T21:47:51Z","name":"Asus
+        Zenbook UX31E Review","branch_name":"master","summary":"The UX31E turned out
+        to be a slim and powerful machine.","meta_description":"The UX31E turned out
+        to be a slim and powerful machine.","website_ids":["50e669d7bd028648e000002f"],"author_ids":["50fc4e95bd0286d5550b4bf9"],"tags":["Conversion"],"classifications":["review"],"publish_on":"2012-10-31T00:00:00+00:00","attachment_ids":["50fc52b8bd02869049001196","50fc52b8bd028694ea001189"],"primary_product_id":"50fa304196ab5860160c7985","resource_uri":"/content/asus-zenbook-ux31e-in-depth-laptop-review-2.htm","disqus_uri":"asus-zenbook-ux31e-in-depth-laptop-review","product_ids":["50fa304196ab5860160c7985"],"related_article_ids":[],"price_grabber_id":null,"publishable":true,"publishable_on":null,"slug":"asus-zenbook-ux31e-in-depth-laptop-review-2.htm","is_template":false,"is_branch":false,"products":[{"id":"50fa304196ab5860160c7985","created_at":"2012-05-04T20:06:21Z","updated_at":"2013-04-11T14:59:44Z","name":"Asus
+        Zenbook UX31E","slug":"asus-zenbook-ux31e-2","_type":"Electronics::Computers::Laptop","types":["Ultra
+        Portable"],"msrp":null,"article_ids":["50fb3c8bbd0286d55501e40b","50fb3ca9bd0286d55501e558","50fb3cbdbd0286d55501e653","50fb3cc6bd0286d55501e6a7","50fc43b2bd0286d5550b10fa","50fc4bc2bd0286d5550b481a"],"website_ids":["50e669d7bd028648e000002f"],"publish_on":null,"upc":null,"price_grabber_id":"","rubric_id":null,"brand_id":"50f9ed70bd0286638e0000eb","model":"Zenbook
+        UX31E","resource_uri":"/products/asus-zenbook-ux31e-2","archive_state":"by_date","is_scoring_baseline":false,"archived":false,"product_rating":null,"ranking":{"total":null,"rank":null,"percentile":null},"rubric":{"name":"","permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"},"resource":{"rel":"/api/v1/rubrics","href":"https://the-guide-staging.herokuapp.com/api/v1/rubrics"}}},"is_primary_product":true,"attachments":[{"id":"50fcf70dbd02868b51014026","created_at":"2013-01-21T08:06:37Z","updated_at":"2013-01-21T08:06:37Z","name":"P_500-1.jpg","type":"file","tags":["vanity"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s50x50_P_500-1.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s150x150_P_500-1.jpg","s200x75":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s200x75_P_500-1.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s250x250_P_500-1.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s300x150_P_500-1.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s300x112_P_500-1.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s500x500_P_500-1.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s600x400_P_500-1.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s600x600_P_500-1.jpg","s630x235":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s630x235_P_500-1.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s940x400_P_500-1.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s940x350_P_500-1.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/s940x110_P_500-1.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/P_500-1.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/f885ca7a12a8110ddfeab25e838ad206c2685bae/P_500-1.jpg","file_size":27608,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fcf70dbd02868b51014026","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fcf70dbd02868b51014026"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false,"manage_baseline_products":false},"api_links":{"collection":{"rel":"/api/v1/products","href":"https://the-guide-staging.herokuapp.com/api/v1/products"},"resource":{"rel":"/api/v1/products/51f91829175f607c6c000033","href":"https://the-guide-staging.herokuapp.com/api/v1/products/51f91829175f607c6c000033"}}}],"attachments":[{"id":"50fc52b8bd02869049001196","created_at":"2013-01-20T20:25:28Z","updated_at":"2013-01-23T16:53:10Z","name":"Large
+        Hero","type":"file","tags":["Large Hero","hero"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s50x50_asus940x400.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s150x150_asus940x400.jpg","s200x75":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s200x75_asus940x400.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s250x250_asus940x400.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s300x150_asus940x400.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s300x112_asus940x400.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s500x500_asus940x400.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s600x400_asus940x400.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s600x600_asus940x400.jpg","s630x235":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s630x235_asus940x400.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s940x400_asus940x400.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s940x350_asus940x400.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/s940x110_asus940x400.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/asus940x400.jpg"},"caption":null,"alt_text":null,"data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/87658da8ee7dfddb104aade248368575c2f48b0f/asus940x400.jpg","file_size":159159,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fc52b8bd02869049001196","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fc52b8bd02869049001196"}}}],"bulk_uploads":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/articles","href":"https://the-guide-staging.herokuapp.com/api/v1/articles"},"resource":{"rel":"/api/v1/articles/50fc4bc2bd0286d5550b481a","href":"https://the-guide-staging.herokuapp.com/api/v1/articles/50fc4bc2bd0286d5550b481a"}}}]}'
+    http_version: 
+  recorded_at: Wed, 31 Jul 2013 13:59:06 GMT
+recorded_with: VCR 2.4.0

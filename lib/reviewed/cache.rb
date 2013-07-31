@@ -1,4 +1,5 @@
 require 'active_support/cache'
+require 'singleton'
 
 module Reviewed
   class Cache
