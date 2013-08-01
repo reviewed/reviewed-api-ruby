@@ -13,20 +13,20 @@ describe Faraday::Cache do
       end
     end
 
-    conn.headers = { "X-Reviewed-Authorization" => TEST_KEY }
+    conn.headers = { "X-Reviewed-Website" => 'f0000123' }
 
     it "caches anything that doesn't have skip-cache or reset-cache" do
       mock_cache_val = mock
       Marshal.stub(:dump).with(hash_including(:body => 'I like turtles')).and_return(mock_cache_val)
-      Reviewed::Cache.store.should_receive(:write).with("#{TEST_KEY}:/articles", mock_cache_val, anything)
+      Reviewed::Cache.store.should_receive(:write).with("f0000123:/articles", mock_cache_val, anything)
       conn.get('/articles')
     end
 
     it "can cache more than one thing" do
       mock_cache_val = mock
       Marshal.stub(:dump => mock_cache_val)
-      Reviewed::Cache.store.should_receive(:write).with("#{TEST_KEY}:/articles", mock_cache_val, anything)
-      Reviewed::Cache.store.should_receive(:write).with("#{TEST_KEY}:/products", mock_cache_val, anything)
+      Reviewed::Cache.store.should_receive(:write).with("f0000123:/articles", mock_cache_val, anything)
+      Reviewed::Cache.store.should_receive(:write).with("f0000123:/products", mock_cache_val, anything)
 
       conn.get('/articles')
       conn.get('/products')
@@ -35,7 +35,7 @@ describe Faraday::Cache do
     it "serves responses from the cache when fresh and does not call the app" do
       marshalled_response = Marshal.dump(body: 'old musty response')
       Reviewed::Cache.store.stub(:exist? => true)
-      Reviewed::Cache.store.should_receive(:read).with("#{TEST_KEY}:/articles").and_return(marshalled_response)
+      Reviewed::Cache.store.should_receive(:read).with("f0000123:/articles").and_return(marshalled_response)
       resp = conn.get '/articles'
       resp[:body].should eq("old musty response")
     end

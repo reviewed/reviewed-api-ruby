@@ -13,7 +13,8 @@ module Faraday
 
     def call(env)
       @url = env[:url]
-      @auth_header = env[:request_headers]['X-Reviewed-Authorization']
+
+      @website_id = env[:request_headers]['x-reviewed-website']
 
       if serve_from_cache && store.exist?(cache_key)
         Hashie::Mash.new(Marshal.load( store.read(cache_key) ))
@@ -38,7 +39,7 @@ module Faraday
     end
 
     def cache_key
-      [@auth_header, @url.request_uri].join(':')
+      [@website_id, @url.request_uri].join(':')
     end
 
     def write_options
