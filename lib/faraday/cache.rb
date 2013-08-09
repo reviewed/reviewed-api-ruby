@@ -20,7 +20,7 @@ module Faraday
         Hashie::Mash.new(Marshal.load( store.read(cache_key) ))
       else
         @app.call(env).on_complete do |response|
-          if store_response
+          if store_response(response)
             store.delete(cache_key)
             store.write(cache_key, Marshal.dump(response), write_options)
           end
@@ -34,7 +34,8 @@ module Faraday
       @url.query.blank? || !@url.query.match(/\b(skip|reset)-cache\b/)
     end
 
-    def store_response
+    def store_response(resp)
+      return false if resp[:status] != 200
       @url.query.blank? || !@url.query.match(/\bskip-cache\b/)
     end
 

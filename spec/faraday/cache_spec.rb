@@ -10,6 +10,7 @@ describe Faraday::Cache do
       builder.adapter :test, Faraday::Adapter::Test::Stubs.new do |stub|
         stub.get('/articles') { [200, {}, 'I like turtles'] }
         stub.get('/products') { [200, {}, 'Weee products'] }
+        stub.get('/kaboom') { [500, {}, 'Kaboom'] }
       end
     end
 
@@ -38,6 +39,11 @@ describe Faraday::Cache do
       Reviewed::Cache.store.should_receive(:read).with("f0000123:/articles").and_return(marshalled_response)
       resp = conn.get '/articles'
       resp[:body].should eq("old musty response")
+    end
+
+    it "does not store response when result is 500" do
+      Reviewed::Cache.store.should_not_receive(:write)
+      conn.get('/kaboom')
     end
 
     describe "cache busting and skipping" do
