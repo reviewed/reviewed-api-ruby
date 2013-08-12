@@ -22,6 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'hashie', '~> 1.2'
   gem.add_dependency 'rack'
   gem.add_dependency 'redis-activesupport'
+  gem.add_dependency 'multi_json'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec', '>= 2.10'

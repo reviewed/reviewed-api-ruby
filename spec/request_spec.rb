@@ -32,7 +32,7 @@ describe Reviewed::Request do
       end
 
       it 'with resource as an object, calls :to_path on it' do
-        article_class = mock
+        article_class = double
         article_class.should_receive(:to_path).and_return('article')
         request = Reviewed::Request.new(resource: article_class)
         request.path.should eql('article')
@@ -41,8 +41,8 @@ describe Reviewed::Request do
 
     context 'scoped resource' do
       it 'calls to path with the given scope param' do
-        article_class = mock
-        scope = mock
+        article_class = double
+        scope = double
         article_class.should_receive(:to_path).with(scope)
         request = Reviewed::Request.new(resource: article_class, scope: scope)
         request.path

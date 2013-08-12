@@ -37,7 +37,7 @@ describe Faraday::Errors do
 
       it 'raises an ApiError error' do
         client = Reviewed::Client.new
-        client.stub!(:connection).and_return(test2)
+        client.stub(:connection).and_return(test2)
         expect {
           client.send(:perform, :get, '/products/123')
         }.to raise_error(Reviewed::ApiError)
@@ -45,7 +45,7 @@ describe Faraday::Errors do
 
       it 'passes other Reviewed errors through' do
         client = Reviewed::Client.new
-        client.stub!(:connection).and_raise(Reviewed::ConfigurationError.new)
+        client.stub(:connection).and_raise(Reviewed::ConfigurationError.new)
         expect {
             client.send(:perform, :get, '/products/123')
           }.to raise_error(Reviewed::ConfigurationError)

@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
+require 'multi_json'
 require 'faraday'
 require 'faraday_middleware'
 require 'faraday/api_key'

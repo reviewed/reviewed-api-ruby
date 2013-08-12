@@ -18,7 +18,7 @@ module Faraday
 
       if serve_from_cache? && store.exist?(cache_key)
         begin
-          Hashie::Mash.new(Marshal.load( store.read(cache_key) ))
+          Hashie::Mash.new(MultiJson.load( store.read(cache_key) ))
         rescue => e
           raise e.message + ": #{cache_key}"
         end
@@ -26,7 +26,7 @@ module Faraday
         @app.call(env).on_complete do |response|
           if store_response?(response)
             store.delete(cache_key)
-            store.write(cache_key, Marshal.dump(response), write_options)
+            store.write(cache_key, MultiJson.dump(response), write_options)
           end
         end
       end

@@ -17,15 +17,15 @@ describe Faraday::Cache do
     conn.headers = { "X-Reviewed-Website" => 'f0000123' }
 
     it "caches anything that doesn't have skip-cache or reset-cache" do
-      mock_cache_val = mock
-      Marshal.stub(:dump).with(hash_including(:body => 'I like turtles')).and_return(mock_cache_val)
+      mock_cache_val = double
+      MultiJson.stub(:dump).with(hash_including(:body => 'I like turtles')).and_return(mock_cache_val)
       Reviewed::Cache.store.should_receive(:write).with("f0000123:/articles", mock_cache_val, anything)
       conn.get('/articles')
     end
 
     it "can cache more than one thing" do
-      mock_cache_val = mock
-      Marshal.stub(:dump => mock_cache_val)
+      mock_cache_val = double
+      MultiJson.stub(:dump => mock_cache_val)
       Reviewed::Cache.store.should_receive(:write).with("f0000123:/articles", mock_cache_val, anything)
       Reviewed::Cache.store.should_receive(:write).with("f0000123:/products", mock_cache_val, anything)
 
@@ -34,7 +34,7 @@ describe Faraday::Cache do
     end
 
     it "serves responses from the cache when fresh and does not call the app" do
-      marshalled_response = Marshal.dump(body: 'old musty response')
+      marshalled_response = MultiJson.dump(body: 'old musty response')
       Reviewed::Cache.store.stub(:exist? => true)
       Reviewed::Cache.store.should_receive(:read).with("f0000123:/articles").and_return(marshalled_response)
       resp = conn.get '/articles'
@@ -54,6 +54,8 @@ describe Faraday::Cache do
       end
 
       it "replaces cached content with app response when reset-cache is a query param" do
+        mock_cache_val = double
+        MultiJson.stub(:dump).and_return(mock_cache_val)
         Reviewed::Cache.store.should_not_receive(:read)
         Reviewed::Cache.store.should_receive(:write)
         conn.get '/articles', {:"reset-cache" => true}
