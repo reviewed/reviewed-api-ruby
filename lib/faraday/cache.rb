@@ -17,7 +17,11 @@ module Faraday
       @website_id = env[:request_headers]['x-reviewed-website']
 
       if serve_from_cache? && store.exist?(cache_key)
-        Hashie::Mash.new(Marshal.load( store.read(cache_key) ))
+        begin
+          Hashie::Mash.new(Marshal.load( store.read(cache_key) ))
+        rescue => e
+          raise e.message + ": #{cache_key}"
+        end
       else
         @app.call(env).on_complete do |response|
           if store_response?(response)
