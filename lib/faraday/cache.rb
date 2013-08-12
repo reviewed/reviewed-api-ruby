@@ -26,7 +26,8 @@ module Faraday
         @app.call(env).on_complete do |response|
           if store_response?(response)
             store.delete(cache_key)
-            store.write(cache_key, MultiJson.dump(response), write_options)
+            storeable_response = MultiJson.dump(response.slice(:status, :body, :response_headers))
+            store.write(cache_key, storeable_response, write_options)
           end
         end
       end
