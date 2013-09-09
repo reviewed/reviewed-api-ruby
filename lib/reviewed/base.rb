@@ -7,10 +7,11 @@ module Reviewed
 
     extend ::ActiveModel::Naming
 
-    attr_accessor :attributes
+    attr_accessor :attributes, :client
 
-    def initialize(data)
-      self.attributes = objectify(data)
+    def initialize(data, client = Reviewed::Client.new)
+      @attributes = objectify(data)
+      @client = client
     end
 
     def created_at

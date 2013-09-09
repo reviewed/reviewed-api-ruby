@@ -34,11 +34,6 @@ module Reviewed
       where({})
     end
 
-    def object_from_response(method, url, params={})
-      response = client.send(method, url, params.merge(cache_control_params))
-      resource.new(response.body)
-    end
-
     def cached?
       !uncached?
     end
@@ -55,6 +50,11 @@ module Reviewed
     def with_new_cache
       @reset_cache = true
       self
+    end
+
+    def object_from_response(method, url, params={})
+      response = client.send(method, url, params.merge(cache_control_params))
+      resource.new(response.body, client)
     end
 
     def collection_from_response(method, url, params={})
