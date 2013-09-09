@@ -7,7 +7,8 @@ describe Reviewed::Request do
 
   let(:request) do
     Reviewed::Request.new(
-      resource: Reviewed::Article
+      resource: Reviewed::Article,
+      client: Reviewed::Client.new
     )
   end
 
@@ -128,6 +129,11 @@ describe Reviewed::Request do
     it 'returns an object of the correct class' do
       response = request.object_from_response(:get, "articles/#{article_id}")
       response.should be_an_instance_of(request.resource)
+    end
+
+    it 'passes the client to the object' do
+      response = request.object_from_response(:get, "articles/#{article_id}")
+      response.client.should eql(request.client)
     end
   end
 
