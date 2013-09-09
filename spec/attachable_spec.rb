@@ -21,10 +21,6 @@ describe Reviewed::Article, vcr: true do
   end
 
   it 'uses the client to fetch scoped attachments' do
-    req = client.attachments(scope: @article)
-    @article.stub(:client).and_return(client)
-    client.stub(:attachments).with(scope: @article).and_return(req)
-    client.should_receive(:attachments)
-    @article.send(:fetch_attachments)
+    @article.attachments.count.should eql(1)
   end
 end
