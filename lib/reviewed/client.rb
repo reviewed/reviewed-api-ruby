@@ -53,7 +53,7 @@ module Reviewed
       klass_string.constantize rescue name
     end
 
-    # args are options passed to resource, for example in:
+    # args are options passed to request object, for example in:
     # client.attachments(scope: 'article')
     # args = [{scope: 'article'}]
     def method_missing(method, *args, &block)
