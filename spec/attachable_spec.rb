@@ -20,7 +20,11 @@ describe Reviewed::Article, vcr: true do
     @article.attachments('foobar').should eql([])
   end
 
-  it 'uses the client to fetch scoped attachments' do
-    @article.attachments.count.should eql(1)
+  it 'uses the client to fetch scoped attachments', focused: true do
+    req = client.attachments(scope: @article)
+    @article.stub(:client).and_return(client)
+    client.stub(:attachments).with(scope: @article).and_return(req)
+    client.should_receive(:attachments)
+    @article.send(:fetch_attachments)
   end
 end
