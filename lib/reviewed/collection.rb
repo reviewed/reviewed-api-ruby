@@ -19,7 +19,7 @@ module Reviewed
       @page_attributes = body.pagination || {}
 
       data.each do |obj|
-        self.items << klass.new(obj)
+        self.items << klass.new(obj, client)
       end
     end
 

@@ -24,6 +24,16 @@ describe Reviewed::Base do
       obj = Example.new( { foo: 'bar' } )
       obj.instance_variable_get(:@attributes).should eql( { foo: 'bar' } )
     end
+
+    it 'should have a default client if one is not passed' do
+      obj = Example.new( { foo: 'bar' })
+      obj.client.should be_an_instance_of(Reviewed::Client)
+    end
+
+    it 'should have a client if passed in' do
+      obj = Example.new( { foo: 'bar' }, "client" )
+      obj.client.should eql('client')
+    end
   end
 
   describe 'to_path' do

@@ -25,6 +25,12 @@ describe Reviewed::Collection, vcr: true do
       end
     end
 
+    it 'passes the client to each object' do
+      @collection.each do |product|
+        product.client.should eql(client)
+      end
+    end
+
     it 'fetches the first page by default' do
       @collection.current_page.should == 1
     end

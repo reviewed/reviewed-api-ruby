@@ -53,8 +53,13 @@ module Reviewed
       klass_string.constantize rescue name
     end
 
+    # args are options passed to request object, for example in:
+    # client.attachments(scope: 'article')
+    # args = [{scope: 'article'}]
     def method_missing(method, *args, &block)
-      Reviewed::Request.new(resource: resource(method), client: self)
+      opts = { client: self, resource: resource(method) }
+      opts = opts.merge!(args[0]) if args[0]
+      Reviewed::Request.new(opts)
     end
 
     def connection
