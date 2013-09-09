@@ -58,17 +58,20 @@ describe Reviewed::Client do
 
   describe '#method_missing' do
 
-    before(:each) do
-      @request = client.articles
-    end
-
     it 'returns a Reviewed::Request instance' do
-      @request.should be_an_instance_of(Reviewed::Request)
+      request = client.articles
+      request.should be_an_instance_of(Reviewed::Request)
     end
 
     it 'sets the correct instance variables' do
-      @request.resource.should eql(Reviewed::Article)
-      @request.client.should eql(client)
+      request = client.articles
+      request.resource.should eql(Reviewed::Article)
+      request.client.should eql(client)
+    end
+
+    it 'passes arguments to the request' do
+      request = client.articles(scope: "faux_scope")
+      request.instance_variable_get(:@scope).should eql('faux_scope')
     end
   end
 

@@ -19,4 +19,8 @@ describe Reviewed::Article, vcr: true do
     @article.should_receive(:fetch_attachments).with({tags: 'foobar'})
     @article.attachments('foobar').should eql([])
   end
+
+  it 'uses the client to fetch scoped attachments' do
+    @article.attachments.count.should eql(1)
+  end
 end

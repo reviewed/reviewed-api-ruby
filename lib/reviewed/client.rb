@@ -54,7 +54,9 @@ module Reviewed
     end
 
     def method_missing(method, *args, &block)
-      Reviewed::Request.new(resource: resource(method), client: self)
+      opts = { client: self, resource: resource(method) }
+      opts = opts.merge!(args[0]) if args[0]
+      Reviewed::Request.new(opts)
     end
 
     def connection

@@ -21,7 +21,7 @@ module Reviewed
     end
 
     def fetch_attachments opts={}
-      req = Request.new :resource => Attachment, :scope => self
+      req = client.attachments(scope: self)
       req.where opts
     end
   end
