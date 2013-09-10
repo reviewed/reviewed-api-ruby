@@ -1,12 +1,28 @@
 module Reviewed
   module Attachable
 
-    def attachments tag=nil, opts={}
-      if default_attachments.include?(tag.to_s)
-        return attributes['attachments'].select { |x| x.tags.include?(tag.to_s) }
+    def attachments opts={}
+      tags = opts.has_key?(:tags) ? [opts[:tags]].flatten : []
+      attachments = []
+
+      if tags.present?
+        defaults = default_attachments & tags # attachments that already exist
+        fetch = tags - defaults # attachments we need to fetch
+
+        if defaults.present?
+          tags.each do |tag|
+            attachments <<  attributes['attachments'].select { |x| x.tags.include?(tag.to_s) }
+          end
+        end
+
+        if fetch.present?
+          attachments << fetch_attachments(opts.merge!(tags: fetch))
+        end
       else
-        fetch_attachments(opts.merge!(tags: tag)).to_a
+        attachments = fetch_attachments(opts).to_a
       end
+
+      return attachments.flatten.uniq.compact
     end
 
     def gallery tags=nil, num=8, page=1

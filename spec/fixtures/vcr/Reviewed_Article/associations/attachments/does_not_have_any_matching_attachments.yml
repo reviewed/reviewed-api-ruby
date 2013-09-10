@@ -308,4 +308,124 @@ http_interactions:
       string: '{"data":[]}'
     http_version: 
   recorded_at: Mon, 29 Jul 2013 21:24:02 GMT
-recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50fb2e6fbd0286d5550135a2/attachments?tags%5B0%5D=home-hero&tags%5B1%5D=hero
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      X-Reviewed-Authorization:
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2013 15:55:13 GMT
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 75ec1c8a1cd1ab0d43dd98a7b3fff7de
+      X-Runtime:
+      - '0.094329'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"515efe2d12629bec1d0004ab","created_at":"2013-04-05T16:39:09Z","updated_at":"2013-04-05T16:39:39Z","name":"medium-hero.jpg","type":"file","tags":["hero"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s50x50_medium-hero.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s150x150_medium-hero.jpg","s200x75":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s200x75_medium-hero.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s250x250_medium-hero.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s300x150_medium-hero.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s300x112_medium-hero.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s500x500_medium-hero.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s600x400_medium-hero.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s600x600_medium-hero.jpg","s630x235":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s630x235_medium-hero.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s940x400_medium-hero.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s940x350_medium-hero.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/s940x110_medium-hero.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/medium-hero.jpg"},"caption":"","alt_text":"","data":{"content_type":"image/jpeg","url":"http://reviewed-production.s3.amazonaws.com/attachment/e3e8492d1f4850b4c1c83880e9afbb6adc1172e6/medium-hero.jpg","file_size":124864},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/515efe2d12629bec1d0004ab","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/515efe2d12629bec1d0004ab"}}},{"id":"50fb2e74bd0286d5550135e4","created_at":"2013-01-19T23:38:28Z","updated_at":"2013-04-09T14:23:59Z","name":"BGE-medium-web2.jpg","type":"file","tags":["home-hero"],"versions":{"s50x50":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s50x50_BGE-medium-web2.jpg","s150x150":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s150x150_BGE-medium-web2.jpg","s200x75":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s200x75_BGE-medium-web2.jpg","s250x250":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s250x250_BGE-medium-web2.jpg","s300x150":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s300x150_BGE-medium-web2.jpg","s300x112":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s300x112_BGE-medium-web2.jpg","s500x500":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s500x500_BGE-medium-web2.jpg","s600x400":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s600x400_BGE-medium-web2.jpg","s600x600":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s600x600_BGE-medium-web2.jpg","s630x235":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s630x235_BGE-medium-web2.jpg","s940x400":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x400_BGE-medium-web2.jpg","s940x350":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x350_BGE-medium-web2.jpg","s940x110":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/s940x110_BGE-medium-web2.jpg","original":"http://reviewed-staging.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg"},"caption":"","alt_text":"","data":{"url":"http://reviewed-production.s3.amazonaws.com/attachment/63583c1baea391b437d54fbee74bc35234ec3ff2/BGE-medium-web2.jpg","file_size":81744,"content_type":"image/jpeg"},"position":0,"processing":null,"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/attachments","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments"},"resource":{"rel":"/api/v1/attachments/50fb2e74bd0286d5550135e4","href":"https://the-guide-staging.herokuapp.com/api/v1/attachments/50fb2e74bd0286d5550135e4"}}}]}'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2013 15:55:14 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50fb2e6fbd0286d5550135a2/attachments?tags%5B0%5D=doesnotcompute
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      X-Reviewed-Authorization:
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2013 16:02:05 GMT
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 35b8905c0b5e3d5c41c5877ca5c89583
+      X-Runtime:
+      - '0.036075'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2013 16:02:06 GMT
+recorded_with: VCR 2.5.0
