@@ -22,7 +22,7 @@ describe Reviewed::Article, vcr: true do
 
   it 'merges local and fetched tags' do
     @article.stub(:fetch_attachments).
-      and_return(Reviewed::Article.new(tags: ['fetched']))
+      and_return([Reviewed::Article.new(tags: ['fetched'])])
     @article.should_receive(:fetch_attachments).with({tags: ['foobar']})
     attachments = @article.attachments(tags: ['hero', 'foobar'])
     attachments.count.should eql(2)

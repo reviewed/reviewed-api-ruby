@@ -16,7 +16,7 @@ module Reviewed
         end
 
         if fetch.present?
-          attachments << fetch_attachments(opts.merge!(tags: fetch))
+          attachments << fetch_attachments(opts.merge!(tags: fetch)).to_a
         end
       else
         attachments = fetch_attachments(opts).to_a

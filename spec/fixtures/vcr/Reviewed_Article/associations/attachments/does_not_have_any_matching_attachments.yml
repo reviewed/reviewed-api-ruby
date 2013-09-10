@@ -428,4 +428,66 @@ http_interactions:
       string: '{"data":[]}'
     http_version: 
   recorded_at: Tue, 10 Sep 2013 16:02:06 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/articles/50fb2e6fbd0286d5550135a2/attachments?tags%5B0%5D=doesnotcompute
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      X-Reviewed-Authorization:
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2013 17:58:09 GMT
+      Etag:
+      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 69eb819d768e4d69a16cea6456d2e5a0
+      X-Runtime:
+      - '0.000934'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2013 17:58:10 GMT
 recorded_with: VCR 2.5.0
