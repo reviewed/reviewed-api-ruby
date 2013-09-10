@@ -20,24 +20,24 @@ describe Reviewed::Product do
       end
 
       it 'returns attachments of the correct class' do
-        @product.attachments(:gallery).each do |attachment|
+        @product.attachments(tags: 'gallery').each do |attachment|
           attachment.should be_an_instance_of(Reviewed::Attachment)
         end
       end
 
       it 'returns attachments by tag' do
-        @product.attachments(:vanity).length.should == 1
+        @product.attachments(tags: 'vanity').length.should == 1
       end
 
       it 'matches attachments by tag properly' do
-        attachments = @product.attachments('vanity')
+        attachments = @product.attachments(tags: 'vanity')
         attachments.each do |attachment|
           attachment.tags.join(',').should match(/vanity/i)
         end
       end
 
       it 'does not have any matching attachments' do
-        attachments = @product.attachments('doesnotcompute')
+        attachments = @product.attachments(tags: 'doesnotcompute')
         attachments.length.should == 0
       end
     end
