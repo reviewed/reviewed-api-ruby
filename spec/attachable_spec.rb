@@ -20,11 +20,13 @@ describe Reviewed::Article, vcr: true do
     @article.attachments(tags: 'foobar').should eql([])
   end
 
-  it 'merges local and fetched tags' do
+  it 'merges local and fetched tags', focused: true do
+    @article.stub(:fetch_attachments).
+      and_return(Reviewed::Article.new(tags: ['fetched']))
     @article.should_receive(:fetch_attachments).with({tags: ['foobar']})
     attachments = @article.attachments(tags: ['hero', 'foobar'])
-    attachments.count.should eql(1)
-    attachments.first.tags.should eql(['hero'])
+    attachments.count.should eql(2)
+    attachments.map(&:tags).flatten.should eql(['hero', 'fetched'])
   end
 
   it 'passes options to fetch_attachments when no tags present' do
