@@ -58,18 +58,18 @@ describe Reviewed::Article, vcr: true do
       end
 
       it 'assigns attachments to the correct class' do
-        @article.attachments(:gallery).each do |attachment|
+        @article.attachments(tags: 'gallery').each do |attachment|
           attachment.should be_an_instance_of(Reviewed::Attachment)
         end
       end
 
       it 'finds attachments by tag' do
-        attachments = @article.attachments('hero')
+        attachments = @article.attachments(tags: 'hero')
         attachments.map(&:tags).flatten.should == ['hero']
       end
 
       it 'does not have any matching attachments' do
-        attachments = @article.attachments('doesnotcompute')
+        attachments = @article.attachments(tags: 'doesnotcompute')
         attachments.length.should == 0
       end
 
