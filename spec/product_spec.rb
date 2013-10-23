@@ -16,7 +16,7 @@ describe Reviewed::Product do
       end
 
       it 'no longer has_many :attachments' do
-        Reviewed::Product._embedded_many.should_not include({"attachments"=>Reviewed::Attachment})
+        Reviewed::Product._embedded_many.should_not include({"attachments"=>"Reviewed::Attachment"})
       end
 
       it 'returns attachments of the correct class' do
@@ -50,7 +50,7 @@ describe Reviewed::Product do
     end
 
     it 'has_many :manufacturer_specs' do
-      Reviewed::Product._embedded_many.should include({"manufacturer_specs"=>Reviewed::ManufacturerSpec})
+      Reviewed::Product._embedded_many.should include({"manufacturer_specs"=>"Reviewed::ManufacturerSpec"})
     end
 
     it 'returns attachments of the correct class' do

@@ -35,16 +35,7 @@ describe Reviewed::Embeddable do
         it 'stores the correct embedded relationship' do
           Reviewed::MockEmbeddable._embedded_many.should be_empty
           Reviewed::MockEmbeddable.has_many("mock_embeddables")
-          Reviewed::MockEmbeddable._embedded_many.should eql([{ "mock_embeddables" => Reviewed::MockEmbeddable }])
-        end
-      end
-
-      context 'invalid name' do
-
-        it 'errors' do
-          expect {
-            Reviewed::MockEmbeddable.has_many("bad_name")
-          }.to raise_error
+          Reviewed::MockEmbeddable._embedded_many.should eql([{ "mock_embeddables" => "Reviewed::MockEmbeddable" }])
         end
       end
     end
@@ -54,7 +45,7 @@ describe Reviewed::Embeddable do
       it 'stores the correct embedded relationship' do
         Reviewed::MockEmbeddable._embedded_many.should be_empty
         Reviewed::MockEmbeddable.has_many("mock_embeddables", as: "test")
-        Reviewed::MockEmbeddable._embedded_many.should eql([{ "test" => Reviewed::MockEmbeddable }])
+        Reviewed::MockEmbeddable._embedded_many.should eql([{ "test" => "Reviewed::MockEmbeddable" }])
       end
     end
 
@@ -63,7 +54,7 @@ describe Reviewed::Embeddable do
       it 'stores the correct embedded relationship' do
         Reviewed::MockEmbeddable._embedded_many.should be_empty
         Reviewed::MockEmbeddable.has_many("mock_embeddables", class_name: "Reviewed::Article")
-        Reviewed::MockEmbeddable._embedded_many.should eql([{ "mock_embeddables" => Reviewed::Article }])
+        Reviewed::MockEmbeddable._embedded_many.should eql([{ "mock_embeddables" => "Reviewed::Article" }])
       end
     end
   end
@@ -73,7 +64,7 @@ describe Reviewed::Embeddable do
     it 'stores the correct embedded relationship' do
       Reviewed::MockEmbeddable._embedded_one.should be_empty
       Reviewed::MockEmbeddable.has_one("mock_embeddable")
-      Reviewed::MockEmbeddable._embedded_one.should eql([{ "mock_embeddable" => Reviewed::MockEmbeddable }])
+      Reviewed::MockEmbeddable._embedded_one.should eql([{ "mock_embeddable" => "Reviewed::MockEmbeddable" }])
     end
   end
 
@@ -98,7 +89,7 @@ describe Reviewed::Embeddable do
     let(:mocked) { Reviewed::MockEmbeddable.new }
 
     before(:each) do
-      Reviewed::MockEmbeddable._embedded_many = [ { "articles" => Reviewed::Article } ]
+      Reviewed::MockEmbeddable._embedded_many = [ { "articles" => "Reviewed::Article" } ]
     end
 
     context 'relationship exists in json' do
@@ -129,7 +120,7 @@ describe Reviewed::Embeddable do
     let(:mocked) { Reviewed::MockEmbeddable.new }
 
     before(:each) do
-      Reviewed::MockEmbeddable._embedded_one = [ { "article" => Reviewed::Article } ]
+      Reviewed::MockEmbeddable._embedded_one = [ { "article" => "Reviewed::Article" } ]
     end
 
     it 'objectifies' do
@@ -152,37 +143,13 @@ describe Reviewed::Embeddable do
         Reviewed::Embeddable.embedded_name("mock_embeddable").should eql("Reviewed::MockEmbeddable")
       end
     end
-  end
-
-  describe '.embedded_class' do
 
     context 'opts_name' do
 
       context 'valid' do
 
         it 'returns a class_constant' do
-          Reviewed::Embeddable.embedded_class("test", "Reviewed::MockEmbeddable")
-            .should eql(Reviewed::MockEmbeddable)
-        end
-      end
-
-      context 'invalid' do
-
-        it 'errors' do
-          expect {
-            Reviewed::Embeddable.embedded_class("test", "Reviewed::MockBad")
-          }.to raise_error
-        end
-      end
-    end
-
-    context 'name' do
-
-      context 'valid' do
-
-        it 'returns a class_constant' do
-          Reviewed::Embeddable.embedded_class("mock_embeddables")
-            .should eql(Reviewed::MockEmbeddable)
+          Reviewed::Embeddable.embedded_name("test", "Reviewed::MockEmbeddable").should eql("Reviewed::MockEmbeddable")
         end
       end
     end
