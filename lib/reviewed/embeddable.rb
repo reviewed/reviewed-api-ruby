@@ -6,13 +6,8 @@ module Reviewed
     end
 
     class << self
-
-      def embedded_class(name, opts_name=nil)
-        name = opts_name ? opts_name : embedded_name(name)
-        name.constantize
-      end
-
-      def embedded_name(name)
+      def embedded_name(name, opts_name=nil)
+        return opts_name if opts_name
         ["Reviewed", name.singularize.classify].join("::")
       end
     end
@@ -25,11 +20,11 @@ module Reviewed
 
     def objectify_has_many(json)
       self.class._embedded_many.each do |map|
-        key, value = [map.keys[0], map.values[0]]
-
-        if json.has_key?(key)
-          json[key] = json[key].map do |obj|
-            value.new(obj)
+        assoc_name, klass_name = [map.keys[0], map.values[0]]
+        klass = klass_name.constantize
+        if json.has_key?(assoc_name)
+          json[assoc_name] = json[assoc_name].map do |obj|
+            klass.new(obj)
           end
         end
       end
@@ -38,10 +33,10 @@ module Reviewed
 
     def objectify_has_one(json)
       self.class._embedded_one.each do |map|
-        key, value = [map.keys[0], map.values[0]]
-
-        if json.has_key?(key)
-          json[key] = value.new(json[key])
+        assoc_name, klass_name = [map.keys[0], map.values[0]]
+        klass = klass_name.constantize
+        if json.has_key?(assoc_name)
+          json[assoc_name] = klass.new(json[assoc_name])
         end
       end
       return json
@@ -55,15 +50,15 @@ module Reviewed
       end
 
       def has_many(name, opts={})
-        klass = Reviewed::Embeddable.embedded_class(name.to_s, opts[:class_name])
+        klass_string = Reviewed::Embeddable.embedded_name(name.to_s, opts[:class_name])
         association = opts[:as] || name
-        _embedded_many << { association.to_s => klass }
+        _embedded_many << { association.to_s => klass_string }
       end
 
       def has_one(name, opts={})
-        klass = Reviewed::Embeddable.embedded_class(name.to_s, opts[:class_name])
+        klass_string = Reviewed::Embeddable.embedded_name(name.to_s, opts[:class_name])
         association = opts[:as] || name
-        _embedded_one << { association.to_s => klass }
+        _embedded_one << { association.to_s => klass_string }
       end
 
       def _embedded_many

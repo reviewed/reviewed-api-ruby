@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/products/best-of-year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 23 Oct 2013 20:26:06 GMT
+      Etag:
+      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - dd3ae6ddb7599b7e77a8452fbc99d009
+      X-Runtime:
+      - '0.000745'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"message":"Record Not Found"}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2013 20:26:21 GMT
+- request:
+    method: get
+    uri: https://the-guide-staging.herokuapp.com/api/v1/awards/best-of-year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Reviewed-Authorization:
+      - 38e397252ec670ec441733a95204f141
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - x-pagination, x-requested-with, x-requested-by, x-reviewed-authorization,
+        x-skip-cache, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '1000'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 23 Oct 2013 20:26:36 GMT
+      Etag:
+      - '"e0aa021e21dddbd6d8cecec71e9cf564"'
+      Last-Modified:
+      - Tue, 22 Oct 2013 22:00:41 GMT
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 61a50ad8fd2bb86b35243656a36792fe
+      X-Runtime:
+      - '0.000745'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"50fef5cf85b7580c5100000c","created_at":"2013-01-22T20:25:51Z","updated_at":"2013-10-22T22:00:41Z","name":"Best
+        of Year","year":"2012","description":"It''s hard to know what to buy. There
+        are tons of electronics and home good our there with conflicting user reviews
+        everywhere you turn. How do you know which to trust? Our advice is simple:
+        let good science decide!  Our labs test hundred of products each year. Only
+        a precious few are great enough to earn a prestigious Best of Year award.
+        \n\nThe Best of Year awards are just that: the absolute best products of the
+        last calendar year. There are options at every price point, and lots of special
+        award categories to help you find just what you need.","slug":"best-of-year","resource_uri":"http://www.reviewed.com/awards/best-of-year","article_ids":[],"image_badge":{"small":"http://reviewed-staging.s3.amazonaws.com/uploads/award/image_badge/50fef5cf85b7580c5100000c/small_leapaxlr8r-banner-companies.png","medium":"http://reviewed-staging.s3.amazonaws.com/uploads/award/image_badge/50fef5cf85b7580c5100000c/medium_leapaxlr8r-banner-companies.png","large":"http://reviewed-staging.s3.amazonaws.com/uploads/award/image_badge/50fef5cf85b7580c5100000c/large_leapaxlr8r-banner-companies.png"},"articles":[],"permissions":{"read":true,"create":false,"update":false,"destroy":false},"api_links":{"collection":{"rel":"/api/v1/awards","href":"https://the-guide-staging.herokuapp.com/api/v1/awards"},"resource":{"rel":"/api/v1/awards/50fef5cf85b7580c5100000c","href":"https://the-guide-staging.herokuapp.com/api/v1/awards/50fef5cf85b7580c5100000c"}}}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2013 20:26:51 GMT
+recorded_with: VCR 2.4.0

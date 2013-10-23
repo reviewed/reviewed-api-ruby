@@ -16,27 +16,27 @@ describe Reviewed::Article, vcr: true do
     describe 'pages' do
 
       it 'has_many :pages' do
-        Reviewed::Article._embedded_many.should include({"pages"=>Reviewed::Page})
+        Reviewed::Article._embedded_many.should include({"pages"=>"Reviewed::Page"})
       end
     end
 
     describe 'deals' do
 
       it 'has_many :deals' do
-        Reviewed::Article._embedded_many.should include({"deals"=>Reviewed::Deal})
+        Reviewed::Article._embedded_many.should include({"deals"=>"Reviewed::Deal"})
       end
     end
 
     describe 'related_articles' do
       it 'has_many :related_articles' do
-        Reviewed::Article._embedded_many.should include({"related_articles"=>Reviewed::Article})
+        Reviewed::Article._embedded_many.should include({"related_articles"=>"Reviewed::Article"})
       end
     end
 
     describe 'products' do
 
       it 'has_many :products' do
-        Reviewed::Article._embedded_many.should include({"products"=>Reviewed::Product})
+        Reviewed::Article._embedded_many.should include({"products"=>"Reviewed::Product"})
       end
 
       it 'returns products of the correct class' do
@@ -49,7 +49,7 @@ describe Reviewed::Article, vcr: true do
     describe 'attachments' do
 
       it 'does not has_many :attachments' do
-        Reviewed::Article._embedded_many.should_not include({"attachments"=>Reviewed::Attachment})
+        Reviewed::Article._embedded_many.should_not include({"attachments"=>"Reviewed::Attachment"})
       end
 
       it 'gets gallery attachments' do
