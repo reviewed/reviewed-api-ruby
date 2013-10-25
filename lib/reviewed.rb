@@ -41,6 +41,12 @@ module Reviewed
   end
   class ConfigurationError < Reviewed::BaseError; end
   class ResourceNotFound < Reviewed::BaseError; end
-  class ApiError < Reviewed::BaseError; end
+  class ApiError < Reviewed::BaseError
+    attr_reader :http_status
+    def initialize(opts={})
+      @http_status = opts[:http_status]
+      super(opts)
+    end
+  end
 end
 
