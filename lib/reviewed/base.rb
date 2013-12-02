@@ -47,7 +47,7 @@ module Reviewed
 
       def association_name klass=nil
         klass ||= self
-        klass.name.demodulize.downcase.pluralize
+        klass.name.demodulize.underscore.pluralize
       end
 
     end
