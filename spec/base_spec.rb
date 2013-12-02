@@ -61,6 +61,14 @@ describe Reviewed::Base do
     it 'returns the demodulized & pluralized version of itself' do
       Reviewed::Article.association_name.should eql("articles")
     end
+
+    it 'works for multi word module names' do
+      module Reviewed
+        class FooBar < Base
+        end
+      end
+      Reviewed::FooBar.association_name.should eql("foo_bars")
+    end
   end
 
   describe 'attributes' do

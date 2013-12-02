@@ -12,7 +12,6 @@ describe Reviewed::Collection, vcr: true do
   end
 
   before(:each) do
-    Reviewed::Cache.store.clear
     @collection = client.products.with_no_cache.all # creates a collection
   end
 

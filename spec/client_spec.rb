@@ -2,10 +2,6 @@ require 'spec_helper.rb'
 
 describe Reviewed::Client do
 
-  before do
-    Reviewed::Cache.store.clear
-  end
-
   let(:client) { Reviewed::Client.new }
 
   describe 'config' do
