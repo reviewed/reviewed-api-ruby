@@ -29,6 +29,7 @@ require 'reviewed/author'
 require 'reviewed/page'
 require 'reviewed/website'
 require 'reviewed/notification'
+require 'reviewed/event'
 
 module Reviewed
   class BaseError < StandardError
