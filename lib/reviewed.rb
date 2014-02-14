@@ -30,6 +30,7 @@ require 'reviewed/page'
 require 'reviewed/website'
 require 'reviewed/notification'
 require 'reviewed/event'
+require 'reviewed/gallery'
 
 module Reviewed
   class BaseError < StandardError
