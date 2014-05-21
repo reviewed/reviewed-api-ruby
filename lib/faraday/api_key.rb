@@ -11,4 +11,4 @@ module Faraday
   end
 end
 
-Faraday.register_middleware :request, api_key: Faraday::ApiKey
+Faraday::Request.register_middleware(api_key: Faraday::ApiKey)
