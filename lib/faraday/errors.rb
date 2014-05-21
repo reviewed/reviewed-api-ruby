@@ -11,4 +11,4 @@ module Faraday
   end
 end
 
-Faraday.register_middleware :response, errors: Faraday::Errors
+Faraday::Response.register_middleware(errors: Faraday::Errors)
